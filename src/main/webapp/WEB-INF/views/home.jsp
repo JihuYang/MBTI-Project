@@ -8,5 +8,6 @@
 <h1>
 	WELCOME TO MBTI WEB SITE
 </h1>
+<h1>Copyright Handong Global University</h1>
 </body>
 </html>
