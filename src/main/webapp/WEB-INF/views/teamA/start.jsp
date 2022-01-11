@@ -21,9 +21,27 @@
     <div class="col">
       1 of 3
     </div>
-    <div class="col bg-white content">
-      2 of 3
-    </div>
+    <div id = "main" class="col border border-5 content">
+	    <div id="top" class="top">
+		    <div class="explaination">
+		    	내 안의 개발자를 찾아서...
+		    </div>
+		    <div class="number">
+		    36, 750명 참여
+		    </div>
+		</div>
+	    <div id="middle" class="middle text-center">
+	    	<div class="bar text-white">
+	    		내가 개발자라면?
+	    	</div> 
+	    	<div class="window bg-white">
+	    		개발자<br>유형 테스트 
+	    	</div> 	
+	    </div>
+	    <div id="bottom" class="bottom">
+			<button type="button" class="btn btn-light btn-run">Run</button>
+		</div>
+	</div>
     <div class="col">
       3 of 3
     </div>
