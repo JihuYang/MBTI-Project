@@ -19,11 +19,11 @@
 <div class="container-fluid">
 <div class="row text-center">
     <div class="col">
-      1 of 3
+      
     </div>
-    <div id = "main" class="col border border-5 content">
+    <div id = "main" class="col content ">
 	    <div id="top" class="top">
-		    <div class="explaination">
+		    <div class="explaination text-white">
 		    	내 안의 개발자를 찾아서...
 		    </div>
 		    <div class="number">
@@ -36,14 +36,16 @@
 	    	</div> 
 	    	<div class="window bg-white">
 	    		개발자<br>유형 테스트 
-	    	</div> 	
+	    		<img id = "front_img" src="../resources/img/teamA/Front.png" class="mx-auto d-block" alt="...">	 
+	    	</div>
 	    </div>
-	    <div id="bottom" class="bottom">
+	    <div id="bottom" class="bottom front">
 			<button type="button" class="btn btn-light btn-run">Run</button>
 		</div>
+
 	</div>
     <div class="col">
-      3 of 3
+   
     </div>
   </div>
   

@@ -33,6 +33,7 @@ body{
 
 .explanation {
 	font-size:2vw;
+	color: white;
 }
 
 .middle {
@@ -41,7 +42,7 @@ body{
 
 .bar {
 	padding: 10px;
-	background-image: url("../img/bar.png");
+	background-image: url("../img/teamA/bar.png");
 	background-size: cover;
 }
 
@@ -61,6 +62,23 @@ body{
 	
 }
 
+#front_img{
+	width: 40%;
+}
+
+
+/*question page*/
+.window-question {
+	height: 20vh;
+	border: 3px solid black;
+	font-size: 3vw;
+}
+
+.btn-answer {
+	width: 100%;
+	height: 90px;
+	border: 3px solid black;
+}
 
 footer {
   color: white;
