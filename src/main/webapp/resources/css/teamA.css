@@ -5,15 +5,60 @@
 	--sub-color: #FFD44A;  /*yellow*/
 	--grey-color: #959595;
 }
+@font-face {
+    font-family: 'establishRetrosansOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* start page */
 
 body{
 	 background-image: url("../img/teamA/background.png");
 	 background-size: cover;
      height: 100vh;
 }
+.container-fluid {
+	 font-family: 'establishRetrosansOTF';
+}
 
 .content{
 	height: 100vh;
+}
+
+.top {
+	height: 20vh;
+	margin-top: 5vh;
+}
+
+.explanation {
+	font-size:2vw;
+}
+
+.middle {
+	height: 40vh;
+}
+
+.bar {
+	padding: 10px;
+	background-image: url("../img/bar.png");
+	background-size: cover;
+}
+
+.window {
+	height: 40vh;
+	border: 3px solid black;
+	font-size: 3vw;
+}
+
+.bottom {
+	padding-top: 10vh;
+}
+
+.btn-run {
+	width: 10vw;
+	border: 3px solid black;
+	
 }
 
 
