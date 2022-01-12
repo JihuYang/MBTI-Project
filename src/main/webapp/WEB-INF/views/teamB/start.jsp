@@ -28,19 +28,28 @@
            width: 100%;
            background-color: #CBCBCB;
            font: Roboto;
-           font-size:10px;
+           font-size:15px;
+        }
+        /*img css*/
+        .mainImg {
+        	width: 300px;
+        	height: 300px;
+        }
+        .startbnt {
+        	width: 180px;
+        	height: 180px;
         }
       	</style>
 </head>
 <body>
 	<div id="root">
 		<div id="optadATF" style="min-height:110px"></div>
-		<div class = "main-container">
-			<img src = "ddd" alt="MBTI:배우자 캐릭터 찾기">
+		<div class = "main-container"><br>
+			<img src = "../resources/img/teamB_start_mainImg.jpeg" alt="MBTI:배우자 캐릭터 찾기" class="mainImg">
 			<div class = "text-area">
-				<h3>배우자를 찾고싶다고? 감당할 수 있겠어?</h3>
+				<h2>배우자를 찾고싶다고? 감당할 수 있겠어?</h2>
 			</div>
-			<img src = "ddd" alt="start-btn" onclick="location.href='./question'">
+			<img src = "../resources/img/teamB_start_startBnt.png" alt="start-btn" class="startbnt" onclick="location.href='./question'">
 			<div class = "participants">
                 현재까지 총 14,312 명이 배우자를 찾았어요!
                 <span class="Cursor Cursor--blinking">|</span>
