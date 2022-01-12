@@ -23,7 +23,8 @@
             justify-content: center;
 	    }
         .footer{
-           position: absolute;
+           position: fixed;
+           left: 0;
            bottom: 0;
            width: 100%;
            background-color: #CBCBCB;
@@ -32,8 +33,9 @@
         }
         /*img css*/
         .mainImg {
-        	width: 300px;
-        	height: 300px;
+        	max-width: 350px;
+        	width: 100%;
+        	height: auto;
         }
         .startbnt {
         	width: 180px;

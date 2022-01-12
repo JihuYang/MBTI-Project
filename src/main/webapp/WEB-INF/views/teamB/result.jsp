@@ -6,7 +6,19 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>teamBResult</title>
+	<style>
+		.footer{
+           position: fixed;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: #CBCBCB;
+           font: Roboto;
+           font-size:15px;
+        }
+	</style>
 </head>
 <body>
 	<div id = "root">
@@ -17,7 +29,7 @@
 				<img src = "ddd" alt="MBTI:결과">
 			</div>
 			<div class = "to-other-link">
-				<a class="other-link" target="blank" rel="link" href="링크 주소?"><img src="이미지 주소?" class="img-btn" alt="another-test"></a>
+				<a class="other-link" target="blank" rel="link" href="링크 주소"><img src="이미지 주소?" class="img-btn" alt="another-test"></a>
 			</div>
 		</div>
 		<div class="footer">
