@@ -18,7 +18,7 @@
 		var progressbar = $("#progressbar"), progressLabel = $(".progress-label");
 
 		progressbar.progressbar({
-			value : 1 / 12 * 100,
+			value : 25,
 			change : function() {
 				progressLabel.text("Current Progress: "
 						+ progressbar.progressbar("value") + "%");
@@ -36,7 +36,7 @@
 
 .progress-label {
 	font-weight: bold;
-	margin:auto;
+	margin: auto;
 	text-shadow: 1px 1px 0 #fff;
 }
 
@@ -72,7 +72,7 @@
 
 .quiz-question {
 	margin: auto;
-	font-size:20px;
+	font-size: 20px;
 	font-weight: bold;
 }
 
@@ -82,28 +82,30 @@ footer {
 </style>
 </head>
 <body>
-	<div id="main"></div>
-	<div id="progressDiv">
-		<div id="progressbar"></div>
+	<div class="main">
+		<div id="progressDiv">
+			<div id="progressbar"></div>
 
-		<div class="progress-label" style='width: 100%; text-align: center; padding-top: 100px'>Q1/12</div>
+			<div class="progress-label"
+				style='width: 100%; text-align: center; padding-top: 100px'>Q1/12</div>
 
 
-	</div>
-	<div class="quiz-question" for="baboya"
-		style='width: 100%; text-align: center; padding-top: 100px'>힘들게
-		공부한 시험 결과가 좋지 않다... 어떻게 하면 기분이 나아질까..</div>
+		</div>
 
-	<div class="imgDiv"
-		style='width: 100%; text-align: center; padding-top: 100px'>
-		<img class="quiz-img" src="../resources/img/teamC/q1.png" width="150" />
-	</div>
-
-	<div id="quiz-button" style='width: 100%; text-align: center;'>
+		<div class="quiz-question"
+			style='width: 100%; text-align: center; padding-top: 100px'>힘들게
+			공부한 시험 결과가 좋지 않다... 어떻게 하면 기분이 나아질까..</div>
+		<div class="imgDiv"
+			style='width: 100%; text-align: center; padding-top: 100px'>
+			<img class="quiz-img" src="../resources/img/teamC/q1.png" width="150" />
+		</div>
+		
+		<div id="quiz-button" style='width: 100%; text-align: center;'>
 		<button id="Button1" onclick="moveSlider(-1)">사람들과 만나서 놀아야지!!
 			집에 혼자 있으면 괜히 울적해지기만 한다.</button>
 		<button id="Button2" onclick="">집에서 조용히 쉬어야지 이럴 때 나가봤자 더
 			힘들어...</button>
+	</div>
 	</div>
 	<footer> </footer>
 </body>
