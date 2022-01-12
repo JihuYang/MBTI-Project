@@ -51,7 +51,7 @@
 			</div>
 			<img src = "../resources/img/teamB_start_startBnt.png" alt="start-btn" class="startbnt" onclick="location.href='./question'">
 			<div class = "participants">
-                현재까지 총 14,312 명이 배우자를 찾았어요
+                현재까지 총 14,312 명이 배우자를 찾았어요!
                 <span class="Cursor Cursor--blinking">|</span>
             </div>
 		</div>
