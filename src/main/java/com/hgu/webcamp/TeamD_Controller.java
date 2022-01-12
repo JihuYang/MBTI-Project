@@ -43,4 +43,12 @@ public class TeamD_Controller {
 		return "teamD/result";
 	}
 	
+	@RequestMapping(value = "/loading", method = RequestMethod.GET)
+	public String teamD_loading(Model model) {
+		
+		System.out.println("loading page loaded");
+		
+		return "teamD/loading";
+	}
+	
 }

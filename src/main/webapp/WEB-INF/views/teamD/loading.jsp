@@ -6,12 +6,12 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>teamDQuestion</title>
+	<title>teamDLoading</title>
 	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
 </head>
 <body>
 <div id="wrapper">
-<h1>question 페이지</h1>
+<h1>loading 페이지</h1>
 </div>
 </body>
 </html>
