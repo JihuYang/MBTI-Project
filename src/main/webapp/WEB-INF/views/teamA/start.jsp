@@ -24,7 +24,7 @@
     <div id = "main" class="col content ">
 	    <div id="top" class="top">
 		    <div class="explaination text-white">
-		    	내 안의 개발자를 찾아서...
+		    	내 안의 개발자를 찾아서.....
 		    </div>
 		    <div class="number">
 		    36, 750명 참여
