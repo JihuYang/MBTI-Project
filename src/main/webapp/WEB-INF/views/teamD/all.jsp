@@ -109,7 +109,7 @@
 		
 		<h1>차은주 선생님</h1>
 		<div id="wrapper">
-		</div>
+		</div> 
 		
 		<h1>신혼부부</h1>
 		<div id="wrapper">
