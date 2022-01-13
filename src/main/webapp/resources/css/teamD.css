@@ -1,12 +1,12 @@
-@charset "UTF-8";
+@charset "UTF-8"; 
 @import url('https://fonts.googleapis.com/css?family=Gaegu:300,700') ;
-body {
+body {  
 	background-image : url("../img/teamD/teamD_background.jpg") ;
 	background-repeat : no-repeat ;
 	background-size: cover;
 	height: 100vh;	
 	font-family : 'Gaegu' ;
-}
+} 
 
 p {
 	font-size: 20px;
@@ -14,8 +14,8 @@ p {
 }
 
 #wrapper {
-	width : 470px ;
-	height: 95vh;
+	width : 470px ;  
+	height: 95vh; 
 	margin : 20px auto ;
 	background-color : rgb(255,255,255, 0.9) ;
 	border : 4px solid ;
@@ -57,6 +57,7 @@ p {
 	margin-bottom : 20px ;
 	background-image : url("../img/teamD/start img.png") ;
 }
+<<<<<<< HEAD
 
 #ESFP{
 	width : 80% ;
@@ -65,3 +66,10 @@ p {
 	margin-bottom : 25px ;
 	background-image : url("../img/teamD/봉미선.png") ;
 }
+=======
+.name {
+	font-weight : bolder ;
+	font-size : 5em ;
+	text-align : center ;
+}
+>>>>>>> branch 'teamD' of https://github.com/JihuYang/MBTI-Project
