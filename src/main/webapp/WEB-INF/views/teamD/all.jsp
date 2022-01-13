@@ -38,7 +38,7 @@
 		    background-color : white ;
 		    border-top : solid black ;
 		    text-align : center ;
-		    padding-top : 15px ;
+		    padding-top : 15px ; 
 		    padding-bottom : 10px ;
 		}
 		footer h2 {
