@@ -30,3 +30,8 @@ body {
 	margin-bottom : 20px ;
 	background-image : url("../img/teamD/start img.png") ;
 }
+.name {
+	font-weight : bolder ;
+	font-size : 5em ;
+	text-align : center ;
+}
