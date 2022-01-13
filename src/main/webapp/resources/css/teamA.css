@@ -103,9 +103,8 @@ body{
 .bar {
 	padding: 10px;
 	height: 6vh;
-	/*background-image: url("../img/teamA/bar.png");*/
-	background-image: url("../img/teamA/window_bar.png");
-	background-size: cover;
+	background-image: url("../img/teamA/bar.png");/* 	background-image: url("../img/teamA/window_bar.png");
+ */	background-size: cover;
 }
 
 .bar-text{
@@ -181,6 +180,17 @@ body{
 .question{
 	color: #4D5EB3;
 }
+
+/* result page */
+
+.border-top-black {
+	border-top: 3px solid black;
+}
+
+.fs-7{
+	font-size: 0.5rem;
+}
+
 
 footer {
   color: white;
