@@ -45,6 +45,13 @@
 			display : inline ;
 			margin : 20px;
 		}
+		img {
+			width : 200px ;
+			height : 200px ;
+			position : relative ;
+			top : 400px ;
+			left : -70px ;
+		}
 	</style>
 </head> 
 <body style="background-attachment : fixed ;">
@@ -52,67 +59,82 @@
 	<div id="contents"> 
 		<h1>짱구</h1>
 		<div id="wrapper">
-		<img src="../../../resources/img/teamD/짱구.png">
+		<img src="../resources/img/teamD/짱구.png">
 		</div>
 		
 		<h1>짱아</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/짱아.png">
 		</div>
 		
 		<h1>신형만</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/신형만.png" style="width : 250px; height :250px;left : 320px;top:300px;">
 		</div>
 		
 		<h1>봉미선</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/봉미선.png" style="width : 250px; height :250px; left : 320px;top:300px;">
 		</div>
 		
 		<h1>흰둥이</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/흰둥이 투명 배경.png" style="width:230px; height:230px;top:380px;">
 		</div>
 		
 		<h1>철수</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/철수.png" style="width:150px; height:150px;left:-30px;">
 		</div>
 		
 		<h1>유리</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/유리.png">
 		</div>
 		
 		<h1>훈이</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/훈이.png" style="top:350px;">
 		</div>
 		
 		<h1>맹구</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/맹구 투명 배경.png" style="top:370px; height:230px; width:230px;left:-90px;top:350px;">
 		</div>
 		
 		<h1>나미리 선생님</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/나미리 선생님.png" style="width:250px; height:250px;top:350px;">
 		</div>
 		
 		<h1>채성아 선생님</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/채성아 선생님.png" style="width:250px; height:250px;top:300px;left:-120px;">
 		</div>
 		
 		<h1>원장 선생님</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/원장님.png" style="width:250px; height:250px;top:300px; left:-100px;">
 		</div>
 		
 		<h1>옆집 아줌마</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/옆집 아주머니.png" style="width:250px; height:250px;top:300px;left:-100px;">
 		</div>
 		
 		<h1>수지</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/수지.png" style="top:350px; left : -50px">
 		</div>
 		 
 		<h1>차은주 선생님</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/차은주 선생님.png" style="width:230px;height:260px;left:330px;top:290px;">
 		</div> 
 		 
 		<h1>신혼부부</h1>
 		<div id="wrapper">
+		<img src="../resources/img/teamD/신혼부부.png" style="width:230px;height:230px; top:330px;">
 		</div>
 	</div>
 	
