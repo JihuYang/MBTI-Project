@@ -49,7 +49,7 @@
 </head>
 <body style="background-attachment : fixed ;">
 <div id="all-contents">
-	<div id="contents">
+	<div id="contents"> 
 		<h1>짱구</h1>
 		<div id="wrapper">
 		<img src="../../../resources/img/teamD/짱구.png">
