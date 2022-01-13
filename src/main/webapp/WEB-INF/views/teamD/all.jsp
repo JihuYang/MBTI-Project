@@ -6,11 +6,12 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>teamBStart</title>
+	<title>teamDAll</title>
+	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
 </head>
 <body>
-<h1>
-	start page
-</h1>
+<div id="wrapper">
+<h1>all 페이지</h1>
+</div>
 </body>
 </html>
