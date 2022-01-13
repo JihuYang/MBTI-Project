@@ -40,7 +40,7 @@
 		    text-align : center ;
 		    padding-top : 15px ; 
 		    padding-bottom : 10px ;
-		}
+		} 
 		footer h2 {
 			display : inline ;
 			margin : 20px;
