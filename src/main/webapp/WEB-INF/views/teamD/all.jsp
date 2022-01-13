@@ -45,6 +45,9 @@
 			display : inline ;
 			margin : 20px;
 		}
+		footer h2:hover {
+			cursor : pointer ;
+		}
 		img {
 			width : 200px ;
 			height : 200px ;
@@ -139,8 +142,8 @@
 	</div>
 	
 	<footer id="footer">
-	<h2 href="start" style="text-align : center ;">첫 화면으로 돌아가기</h2>
-	<h2 href="question" style="text-align : center ;">검사하러 가기</h2>
+	<h2 onclick ="location.href='start'" style="text-align : center ;">첫 화면으로 돌아가기</h2>
+	<h2 onclick ="location.href='question'" style="text-align : center ;">검사하러 가기</h2>
 	</footer>
 </div>
 </body>
