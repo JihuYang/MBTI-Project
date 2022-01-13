@@ -46,7 +46,7 @@
 			margin : 20px;
 		}
 	</style>
-</head>
+</head> 
 <body style="background-attachment : fixed ;">
 <div id="all-contents">
 	<div id="contents"> 
