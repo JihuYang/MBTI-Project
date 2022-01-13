@@ -106,7 +106,7 @@
 		<h1>수지</h1>
 		<div id="wrapper">
 		</div>
-		
+		 
 		<h1>차은주 선생님</h1>
 		<div id="wrapper">
 		</div> 
