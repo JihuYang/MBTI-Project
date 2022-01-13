@@ -1,1 +1,120 @@
 @charset "UTF-8";
+
+* {
+	box-sizing: border-size;
+}
+
+body{
+	height: 100vh;
+}
+
+.content{
+	height:100vh;	
+}
+
+
+footer {
+  color: black;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+
+.startHeader {	
+	position: relative;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	
+}
+
+.tag {
+	font-family: "Do Hyeon";
+}
+
+.title {
+	position: relative;
+	font-size: 1.8em;
+	font-weight: 400;
+	letter-spacing: 0.05rem;
+	text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+	font-family: "Black Han Sans";	
+}
+
+#titleBg {
+	background-color: red;
+	position: absolute;	
+	top: 35px;
+	margin-left: 7rem;
+	width:16rem;
+	height: 2rem;
+}
+
+.startMain {
+	height: 350px;
+	margin-top: 50px;
+	position: relative;
+}
+
+.startMain > div {
+	position: absolute;
+	width: 27rem;
+	height: 15rem;
+}
+.box1 {
+	left: 20px;
+	background-color: rgba(0, 255, 0, 1);
+	border: 2px solid black;
+	
+}
+.box2 {
+	left: 10px;
+	top: 10px;
+	background-color: rgba(255, 255, 0, 1);
+	border: 2px solid black;	
+}
+.box3 {
+	top: 20px;
+	background-color: rgba(255, 0, 0, 1);
+	border: 2px solid black;
+}
+
+.startMain .box3 img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-left: 13rem;
+	margin-top: 1rem;
+	margin-right : 1rem;	
+}
+
+.nickname {
+	margin-top: -5rem;
+	text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+	font-family: "Black Han Sans";
+	font-size: 1.5em;
+	text-align: left;
+	margin-left: 1em;
+}
+.mainName {
+	font-size: 2em;
+}
+
+.btnContainer {
+	width: 100%;
+}
+
+.startButton {
+	width: 100%;
+	font-family: "Black Han Sans";
+	background-color: red;
+	border: 2px solid black;
+	color: white;
+	letter-spacing: 2px;
+	box-shadow: 10px 5px 5px black;
+}
+
+.btntext1 {
+	font-size: 2rem;
+}
