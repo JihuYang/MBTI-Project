@@ -8,6 +8,11 @@ body {
 	font-family : 'Gaegu' ;
 }
 
+p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
 #wrapper {
 	width : 470px ;
 	height: 95vh;
@@ -16,17 +21,47 @@ body {
 	border : 4px solid ;
 	border-radius : 100px ;
 }
+
 #wrapper h1 {
 	text-align : center ;
 	margin : 100px 0px 80px 0px;
 }
+
 #wrapper h2 {
 	text-align : center ;
 }
+
+#wrapper1 {
+	width : 470px ;
+	height: 95vh;
+	margin : 20px auto ;
+	background-color : rgb(255,255,255, 0.9) ;
+	border : 4px solid ;
+	border-radius : 100px ;
+}
+
+#wrapper1 h1{
+	padding: 5px;
+	text-align: center;
+	font-size: 45px;
+}
+
+#result_more{
+	padding: 15px;
+}
+
 #img {
 	width : 90% ;
 	height : 30% ;
 	margin : 0 auto ;
 	margin-bottom : 20px ;
 	background-image : url("../img/teamD/start img.png") ;
+}
+
+#ESFP{
+	width : 80% ;
+	height : 20% ;
+	margin : 0 auto ;
+	margin-bottom : 25px ;
+	background-image : url("../img/teamD/봉미선.png") ;
 }
