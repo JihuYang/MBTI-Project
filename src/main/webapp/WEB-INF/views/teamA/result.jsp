@@ -192,28 +192,70 @@
 		          <div class="comment-block pt-2 pb-2">
 		            <div class="d-flex flex-start">
 		              <img
-		                class="rounded-circle shadow-1-strong me-3"
+		                class="rounded-circle shadow-1-strong me-3 border border-secondary"
 		                src="../resources/img/teamA/ENTJ.png"
 		                alt="avatar"
 		                width="40"
 		                height="40"
 		              />
 		              <div class="w-100">
-		                <div class="d-flex justify-content-between align-items-center mb-3">
-		                  <h6 class="fw-bold mb-0">
-		                    타고난 팀장 <br>
-		                    <span class="text-dark ms-2">ㅋㅋ 갑질 가능성 99.99%래...ㅋㅋ</span>
-		                  </h6>
-		                  <p class="mb-0">x</p>
-		                </div>
 		                <div class="d-flex justify-content-between align-items-center">
-		                  <p class="small mb-0" style="color: #aaa;">
-		                    <a href="#!" class="link-grey">2021.01.02 11:35</a>
-		                  </p>
+		                  <p class="fw-bold mb-0 main-color fs-6">
+		                    타고난 팀장</p>
+		                  <p class="mb-0 text-muted">x</p>
+		                </div>
+		                <p class="text-dark">ㅋㅋ 갑질 가능성 99.99%래...ㅋㅋ</p>
+		                <div>
+		                    <p class="text-muted fs-6">2021.01.02 11:35</p>
 		                </div>
 		              </div>
 		            </div>
 		          </div>
+		          <div class="comment-block pt-2 pb-2">
+		            <div class="d-flex flex-start">
+		              <img
+		                class="rounded-circle shadow-1-strong me-3 border border-secondary"
+		                src="../resources/img/teamA/ENTJ.png"
+		                alt="avatar"
+		                width="40"
+		                height="40"
+		              />
+		              <div class="w-100">
+		                <div class="d-flex justify-content-between align-items-center">
+		                  <p class="fw-bold mb-0 main-color fs-6">
+		                    타고난 팀장</p>
+		                  <p class="mb-0 text-muted">x</p>
+		                </div>
+		                <p class="text-dark">ㅋㅋ 갑질 가능성 99.99%래...ㅋㅋ</p>
+		                <div>
+		                    <p class="text-muted fs-6">2021.01.02 11:35</p>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="comment-block pt-2 pb-2">
+		            <div class="d-flex flex-start">
+		              <img
+		                class="rounded-circle shadow-1-strong me-3 border border-secondary"
+		                src="../resources/img/teamA/ENTJ.png"
+		                alt="avatar"
+		                width="40"
+		                height="40"
+		              />
+		              <div class="w-100">
+		                <div class="d-flex justify-content-between align-items-center">
+		                  <p class="fw-bold mb-0 main-color fs-6">
+		                    타고난 팀장</p>
+		                  <p class="mb-0 text-muted">x</p>
+		                </div>
+		                <p class="text-dark">ㅋㅋ 갑질 가능성 99.99%래...ㅋㅋ</p>
+		                <div>
+		                    <p class="text-muted fs-6">2021.01.02 11:35</p>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		          
         </div>
 					    
 					    </div>
