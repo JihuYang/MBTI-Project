@@ -47,11 +47,11 @@
 	<div id="root">
 		<div id="optadATF" style="min-height:110px"></div>
 		<div class = "main-container"><br>
-			<img src = "../resources/img/teamB_start_mainImg.jpeg" alt="MBTI:배우자 캐릭터 찾기" class="mainImg">
+			<img src = "../resources/img/main_img.png" alt="MBTI:배우자 캐릭터 찾기" class="mainImg" style="width:600px;">
 			<div class = "text-area">
 				<h2>배우자를 찾고싶다고? 감당할 수 있겠어?</h2>
 			</div>
-			<img src = "../resources/img/teamB_start_startBnt.png" alt="start-btn" class="startbnt" onclick="location.href='./question'">
+			<img src = "../resources/img/main_start.png" alt="start-btn" class="startbnt" onclick="location.href='./question'">
 			<div class = "participants">
                 현재까지 총 14,312 명이 배우자를 찾았어요!
                 <span class="Cursor Cursor--blinking">|</span>
