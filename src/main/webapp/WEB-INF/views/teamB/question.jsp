@@ -29,7 +29,6 @@
             word-break: keep-all;
       }
         .option-btn {
-        	
             height: 8em;
             width: 325px;
             margin: 20px 0;
@@ -64,21 +63,20 @@
            padding-bottom: 0.5em;
            border-radius: 50px;
            background-color: #FFD336;
-      }
+      	}
     </style>
 </head>
 <body>
 <div id="root">
         <div id="optadATF" style="min-height:110px"></div>
         <div class="question-count">
-            <h2>1/12</h2>
+            <h2>1 / 12</h2>
         </div>
         <div class="question">
             <h2 class="question-p line">
             <mark>바쁜 일정을 끝내고</mark>
             <mark>드디어 쉰다!</mark> 
             <mark>무엇을 할까?</mark></h2>
-              
         </div>
         <div class="option-btn-div">
             <button value="I" class="option-btn"><h3>쉴 땐 혼자가 좋아!<br>집에서 혼자만의 시간을 지낸다.</h3></button>
