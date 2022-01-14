@@ -18,6 +18,10 @@
     font-weight: normal;
     font-style: normal;
 }
+.main-color{
+	color: var(--main-color);
+}
+
 /* start page */
 
 body{
@@ -321,6 +325,19 @@ body{
 
 .comment-block{
 	border-bottom: 1px solid var(--grey-color);
+}
+
+.comment-block img{
+	background-color: white;
+}
+
+.comment-block p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.comment-block .fs-6{
+    font-size: 0.8rem!important;
 }
 
 footer {
