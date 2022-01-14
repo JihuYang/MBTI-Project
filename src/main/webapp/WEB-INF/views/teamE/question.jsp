@@ -62,6 +62,13 @@
     
     .number {
        text-align: left;
+       border-radius: 14px;
+	padding: 0px 12px;
+  	text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #ededed;
+  color: #848484;
   	
     }
     
