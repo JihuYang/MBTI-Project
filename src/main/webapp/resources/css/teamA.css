@@ -199,6 +199,16 @@ body{
 	border-radius: 10px;
 	font-size: 1.2rem;
 }
+
+.btn-type {
+	width: 90%;
+	height: 300px;
+	border: 3px solid black;
+	box-shadow: 5px 5px var(--main-color), 8px 8px black;
+	border-radius: 10px;
+	font-size: 1.2rem;
+}
+
 footer {
   color: white;
   height: 30px;

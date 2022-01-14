@@ -67,6 +67,25 @@
 								</div>
 							</div>
 						</div>
+						<div id="fourth-section" class="mt-5 border-top-black">
+							<div class="row mt-3">
+								<div class="col">
+									<div id="type-good" class="text-center">
+										<button class="btn btn-light btn-type">
+											<div class="mt-3 fs-7">갑질 가능성 99%</div>
+											타고난 팀장 <img id="front_img"
+												src="../resources/img/teamA/ESFJ.png"
+												class="mx-auto d-block" alt="...">
+										</button>
+									</div>
+								</div>
+								<div class="col">
+									<div id="type-bad" class="text-center">
+										<button class="btn btn-light btn-type">타고난 팀장</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div id="bottom" class="bottom">
