@@ -22,6 +22,14 @@ public class TeamE_Controller {
 		
 		return "teamE/start";
 	}
+	
+	@RequestMapping(value = "/relation", method = RequestMethod.GET)
+	public String teamE_relation(Model model) {
+		
+		System.out.println("start page loaded");
+		
+		return "teamE/relation";
+	}
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
