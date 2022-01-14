@@ -11,6 +11,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'OTWelcomeBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 /* start page */
 
 body{
@@ -192,6 +199,15 @@ body{
 	font-size: 0.5rem;
 }
 
+.font-ex {
+	font-family: 'OTWelcomeBA';
+}
+
+.type{
+	background-color: var(--sub-color);
+	width: fit-content;
+}
+
 .btn-job {
 	width: 80%;
 	height: 60px;
@@ -208,6 +224,23 @@ body{
 	box-shadow: 5px 5px var(--main-color), 8px 8px black;
 	border-radius: 10px;
 	font-size: 1.2rem;
+}
+
+.btn-save {
+	width: 90%;
+	height: 50px;
+	border: 3px solid black;
+	box-shadow: 5px 5px var(--main-color), 8px 8px black;
+	border-radius: 10px;
+	font-size: 1.2rem;
+}
+
+.img-type {
+	width: 100%;
+}
+
+.img-share {
+	width: 10%;
 }
 
 footer {

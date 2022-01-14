@@ -16,6 +16,64 @@
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="../resources/css/teamA.css">
+
+<script type="text/javascript">
+	function sendTo() {
+		Kakao.Auth
+				.login({
+					scope : 'PROFILE,TALK_MESSAGE',
+					success : function() {
+						Kakao.API
+								.request({
+									url : '/v2/api/talk/memo/default/send',
+									data : {
+										template_object : {
+											object_type : 'feed',
+											content : {
+												title : '딸기 치즈 케익',
+												description : '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+												image_url : 'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+												link : {
+													mobile_web_url : 'https://developers.kakao.com',
+													web_url : 'https://developers.kakao.com',
+												},
+											},
+											social : {
+												like_count : 286,
+												comment_count : 45,
+												shared_count : 845,
+											},
+											buttons : [
+													{
+														title : '웹으로 보기',
+														link : {
+															mobile_web_url : 'https://developers.kakao.com',
+															web_url : 'https://developers.kakao.com',
+														},
+													},
+													{
+														title : '앱으로 보기',
+														link : {
+															mobile_web_url : 'https://developers.kakao.com',
+															web_url : 'https://developers.kakao.com',
+														},
+													}, ],
+										},
+									},
+									success : function(res) {
+										alert('success: ' + JSON.stringify(res))
+									},
+									fail : function(err) {
+										alert('error: ' + JSON.stringify(err))
+									},
+								})
+					},
+					fail : function(err) {
+						alert('failed to login: ' + JSON.stringify(err))
+					},
+				})
+	}
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>teamAResult</title>
 </head>
@@ -32,12 +90,15 @@
 							<div class="mt-3">갑질 가능성 99%</div>
 							<div>
 								<h1>타고난 팀장</h1>
+								<img src="../resources/img/teamA/ESTJ.png"
+									class="img-type mx-auto d-block" alt="...">
+								<div class="mt-3 text-muted">당신은 혹시.. ESTJ?</div>
 							</div>
 						</div>
 						<div id="second-section" class="mt-5 border-top-black">
 							<div class="text-left">
 								<div class="mt-3 ms-3">성격은?</div>
-								<div class="m-3 me-4 fs-7">
+								<div class="m-3 me-4 fs-6 font-ex">
 									<ul>
 										<li>당신은~리더가 되기 위해 태어난 사람~ 동료 개발자들을 채찍질해서 어떻게든 프로젝트 끝냄.</li>
 										<li>불도저 같은 성향으로 자칫하면 팀의 꼰대가 될 수 있으니 조심 또 조심!!</li>
@@ -54,14 +115,14 @@
 						<div id="third-section" class="mt-5 border-top-black">
 							<div class="text-center">
 								<div class="mt-3">나에게 어울리는 개발 직무는?</div>
-								<div class="m-3 fs-7">
+								<div class="m-3 fs-6 font-ex">
 									<p class="text-muted">단순한 업무보다는 복잡한 문제를 해결하는 업무가 잘 어울리겠군요!
 										사람을 이끄는 능력이 탁월하기 때문에 관리자가 될 가능성이 높아보여요.</p>
 								</div>
 								<div id="job" class="text-center">
-									<button class="btn btn-light btn-job">네트워크 관리자</button>
+									<button class="btn btn-light btn-job fs-5">네트워크 관리자</button>
 								</div>
-								<div class="m-3 fs-7">
+								<div class="m-3 fs-6 font-ex">
 									<p>네트워크 관리자는 클라이언트, 서버, 인터넷 및 인트라넷 형태의 전산망 관련 하드웨어 및 소프트웨어
 										자원을 관리하고 운영한다. 지도력과 통솔력이 있는 당신에게 안성맞춤이랄까?</p>
 								</div>
@@ -69,38 +130,58 @@
 						</div>
 						<div id="fourth-section" class="mt-5 border-top-black">
 							<div class="row mt-3">
-								<div class="col">
+								<div class="col pe-0">
 									<div id="type-good" class="text-center">
-										<button class="btn btn-light btn-type">
+										<button class="btn btn-light btn-type ">
+											<div class="type font-ex ">함께하면 좋은</div>
 											<div class="mt-3 fs-7">갑질 가능성 99%</div>
-											타고난 팀장 <img id="front_img"
-												src="../resources/img/teamA/ESFJ.png"
-												class="mx-auto d-block" alt="...">
+											<h3>타고난 팀장</h3>
+											<img src="../resources/img/teamA/ESFJ.png"
+												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
 								</div>
-								<div class="col">
+								<div class="col ps-0">
 									<div id="type-bad" class="text-center">
-										<button class="btn btn-light btn-type">타고난 팀장</button>
+										<button class="btn btn-light btn-type ">
+											<div class="type font-ex ">멀리하면 좋은</div>
+											<div class="mt-3 fs-7">갑질 가능성 99%</div>
+											<h3>타고난 팀장</h3>
+											<img src="../resources/img/teamA/INTP.png"
+												class="img-type mx-auto d-block" alt="...">
+										</button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="bottom" class="bottom">
-					<button type="button" class="btn btn-light btn-answer">답안
-						1</button>
-				</div>
-				<div id="bottom" class="bottom">
-					<button type="button" class="btn btn-light btn-answer">답안
-						2</button>
-				</div>
 
+				<div id="bottom" class="bottom">
+					<div class="row">
+						<div class="col">
+							<button type="button" class="btn btn-light btn-save">저장하기</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-light btn-save">다시하기</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<img src="../resources/img/teamA/kakaotalk.png"
+								class="img-share mx-auto d-block" alt="...">
+						</div>
+						<div class="col">
+							<img src="../resources/img/teamA/kakaotalk.png"
+								class="img-share mx-auto d-block" alt="...">
+						</div>
+					</div>
+				</div>
+				
 			</div>
 			<div class="col"></div>
-		</div>
 
+		</div>
 	</div>
 	<footer class="text-center">
 		<span class="align-middle">@2022 MBTI에 진심인 팀 All rights
