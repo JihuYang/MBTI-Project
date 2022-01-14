@@ -13,20 +13,21 @@
 	<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
 </head>
 <body>
-	<div id = "root">
+	<div id = "result container">
 		<div id="optadATF" style="min-height:110px"></div>
-		<div class = "main-container">
-			<img src = "../resources/img/ISTJ_쉘든.png" alt="MBTI:결과 img" ><br>
-			<div class = "other_test" style="margin-top:100px;">
-				<img src = "../resources/img/check.png" alt="MBTI:결과" style="vertical-align:middle;">
-				<span style="font-size:40px; font-weight: bold;">다른 테스트 하러가기</span>
+		<div class = "result-wrap">
+			<div class="img-result">
+				<img src = "../resources/img/teamB/ISTJ_쉘든.png" alt="MBTI:결과 img" ><br>
 			</div>
-				
+			<div class = "other_test" style="margin-top:100px;">
+				<img src = "../resources/img/teamB/check.png" alt="MBTI:결과" style="vertical-align:center; weight:auto; height:20px;" >
+				<span style="font-size:20px; font-weight: bold;">다른 테스트 하러가기</span>
+			</div><br>
 			<div class="other_test_list" style="margin-bottom:150px;">
-				<h3 style="hont-size:34px;">내가 개발자라면? 개발자 유형 테스트</h3>
-				<h3 style="hont-size:34px;">MBTI 유형에 맞는 찰떡 공부법</h3>
-				<h3 style="hont-size:34px;">짱구에서 나는 누굴까?</h3>
-				<h3 style="hont-size:34px;">인간관계 유형별 MBTI</h3>
+				<h3 style="font-size:20px;">내가 개발자라면? 개발자 유형 테스트</h3>
+				<h3 style="font-size:20px;">MBTI 유형에 맞는 찰떡 공부법</h3>
+				<h3 style="font-size:20px;">짱구에서 나는 누굴까?</h3>
+				<h3 style="font-size:20px;">인간관계 유형별 MBTI</h3>
 			</div>
 
 			<div class = "to-other-link" style="display:none;">
@@ -37,7 +38,7 @@
 			</div>
 		</div>
 		<div class="footer">
-			<p>@HGU 2022 Winter Camp</p>
+			<p class=footer-text>@HGU 2022 Winter Camp</p>
 		</div>
 	</div>
 </body>

@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
 </head>
 <body>
-	<div id="intro-wrap">
+	<div class="intro-wrap">
 		<div id="optadATF" style="min-height:110px"></div>
 		<div class = "top-wrap"><br><br>
 			<img src = "../resources/img/teamB/main_img.png" alt="MBTI:배우자 캐릭터 찾기" class="intro-mainImg" style="width:600px;">
@@ -46,8 +46,7 @@
 					<a href="https://www.handong.edu/" target="_blank" onclick="GA_Event('MBTI_intro', 'footer_logo', 'Click');">
 					<img src="../resources/img/teamB/hgu-logo.png" alt=""></a>
 				</div>
-				<div class="footer-copy">ⓒ 2022 HGU Winter Camp. All Rights Reserved.
-				</div>
+				<div class="footer-copy">ⓒ 2022 HGU Winter Camp. All Rights Reserved.</div>
 			</div>
 			
 		</div>
