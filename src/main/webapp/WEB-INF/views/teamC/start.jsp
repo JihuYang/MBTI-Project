@@ -28,21 +28,16 @@
 	<div class="container-fluid">
 		<div class="row text-center">
 			<div class="col"></div>
-			<div class="col bg-white content">
+			<div class="col bg-white content style="width:300; overflow-x:hidden; margin:0 auto;"">
 				<div class="startHeader">
-					<div class="tag">#MBTI &nbsp; #찰떡공부</div>
+					<div class="tag ">#MBTI &nbsp; #찰떡공부</div>
 					<div id="titleBg"></div>
 					<div class="title">나에게 맞는 공부법은?</div>
 				</div>
 				<div class="startMain">
-					<div class="box1"></div>
-					<div class="box2"></div>
-					<div class="box3">
-						<img src="../resources/img/teamC/character.png" />
-						<div class="nickname">
-							<div class="subName">"공부는 자고로 씨끄러워야 하는 법"</div>
-							<div class="mainName">인싸형 공부러</div>
-						</div>
+					
+					<div class="box">
+						<img src="../resources/img/teamC/startImage.png" />
 					</div>
 				</div>
 				<div class="btnContainer">
