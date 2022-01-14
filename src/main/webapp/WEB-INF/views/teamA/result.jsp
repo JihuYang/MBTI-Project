@@ -96,13 +96,34 @@
 					<button type="button" class="btn btn-light btn-answer">답안
 						2</button>
 				</div>
+				<div id="comment" class="mt-5 mb-5 comment">
+					<div class="comment-container">
+					    <div class="p-3 comment-bubble">
+					    <span class="text-white">댓글 [12]</span>
+					    <div class="scroll-comment">
+					    <div class="comment-block pt-2 pb-2">
+					    Comment
+					    </div>
+					    </div>
+					    
+					    </div>
+					    <div class="p-3 comment-shadow">
+					    </div>
+					</div>
+					<div class="input-group mt-5 mb-5">
+					  <input type="text" class="form-control p-3" placeholder="댓글을 입력하세요. " aria-label="댓글 입력" aria-describedby="basic-addon2">
+					  <div class="input-group-append">
+					    <button class="btn btn-outline-secondary p-3" type="button">등록  </button>
+					  </div>
+					</div>
+				</div>
 
 			</div>
 			<div class="col"></div>
 		</div>
 
 	</div>
-	<footer class="text-center">
+	<footer class="mt-5 text-center">
 		<span class="align-middle">@2022 MBTI에 진심인 팀 All rights
 			reserved.</span>
 	</footer>
