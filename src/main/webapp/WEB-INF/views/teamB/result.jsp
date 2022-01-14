@@ -5,37 +5,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>teamBResult</title>
-	<style>
-		:root {
-			background-color: #ededed;
-		    color: black;
-		    font: sans-serif, "NanumSquare", "Noto Sans";
-	    }
-	    body {
-	    	height: auto;
-            display: block;
-            background-color: var(background-color);
-            text-align: center;
-            justify-content: center;
-	    }
-
-	    .other_test_list{
-	    	background-color: C4C4C4;
-	    	border-radius: 35px;
-	    }
-        .footer{
-           position: fixed;
-           left: 0;
-           bottom: 0;
-           width: 100%;
-           background-color: #CBCBCB;
-           font: Roboto;
-           font-size:15px;
-        }
-	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta id="metaDescription" name="description" content="MBTI로 나의 배우자 캐릭터 찾기">
+	<meta id="metaKeywords" name="keywords" content="MBTI로 나의 배우자 캐릭터 찾기">
+	<title>[결과]나의 배우자는 누구?</title>
+	<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
 </head>
 <body>
 	<div id = "root">
