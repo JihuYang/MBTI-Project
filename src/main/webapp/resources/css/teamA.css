@@ -158,11 +158,12 @@ body{
 	
 }
 .question-format{
-	font-size: 1.5rem;
+	font-size: 1.6vw;
+	line-height:3;
 }
 .question-content{
-	font-size: 2rem;
-	line-height: 3;
+	font-size: 1.8vw;
+	
 }
 
 .void{
