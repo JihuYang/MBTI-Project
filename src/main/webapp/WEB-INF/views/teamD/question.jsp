@@ -7,10 +7,11 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamDQuestion</title>
+	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
 </head>
 <body>
-<h1>
-	question page
-</h1>
+<div id="wrapper">
+<h1>question 페이지</h1>
+</div>
 </body>
 </html>
