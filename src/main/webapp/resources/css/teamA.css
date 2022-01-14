@@ -243,6 +243,86 @@ body{
 	width: 10%;
 }
 
+
+.comment-container{
+	position: relative;
+	height: 40vh;
+}
+
+.comment-bubble {
+	position: relative;
+	background: var(--sub-color);
+	border-radius: .4em;
+	width: 100%;
+	border: 2px solid black;
+	z-index: 10;
+	height: 40vh;
+	text-align:left;
+}
+
+.comment-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 70%;
+	width: 0;
+	height: 0;
+	border: 36px solid transparent;
+	border-top-color: var(--sub-color);
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -18px;
+	margin-bottom: -36px;
+}
+
+.comment-shadow {
+	position: absolute;
+	background: white;
+	border-radius: .4em;
+	width: 100%;
+	border: 2px solid black;
+	top:0px;
+	height: 100%;
+	color: white;
+	margin: 5px;
+}
+
+.comment-shadow:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 69%;
+	width: 0;
+	height: 0;
+	border: 36px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -18px;
+	margin-bottom: -36px;
+}
+.scroll-comment{
+	overflow-y: scroll;
+}
+
+.comment .input-group{
+	border-radius: 5px;
+	box-shadow: 3px 3px white, 5px 5px black;
+}
+
+.comment .input-group .btn {
+    color: white;
+    background-color: var(--main-color);
+    border: 2px solid black;
+}
+.comment .input-group>.form-control, .input-group>.form-select {
+    border: 2px solid black;
+}
+
+.comment-block{
+	border-bottom: 1px solid var(--grey-color);
+}
+
 footer {
   color: white;
   height: 30px;
@@ -251,4 +331,5 @@ footer {
   position: fixed;
   bottom: 0;
   left:0;
+  z-index: 99999;
 }
