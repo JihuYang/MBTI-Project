@@ -71,7 +71,7 @@
 <div id="root">
         <div id="optadATF" style="min-height:110px"></div>
         <div class="question-count">
-            <h2>1 / 12</h2>
+            <h2>1/12</h2>
         </div>
         <div class="question">
             <h2 class="question-p line">
