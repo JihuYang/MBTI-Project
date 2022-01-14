@@ -163,44 +163,43 @@
 							<button type="button" class="btn btn-light btn-save">저장하기</button>
 						</div>
 						<div class="col">
-							<button type="button" class="btn btn-light btn-save">다시하기</button>
+							<button type="button" class="btn btn-light btn-save"
+								onclick="location.href='./start'">다시하기</button>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row mt-5">
 						<div class="col">
 							<img src="../resources/img/teamA/kakaotalk.png"
 								class="img-share mx-auto d-block" alt="...">
+							<p>카카오톡 공유</p>
 						</div>
 						<div class="col">
-							<img src="../resources/img/teamA/kakaotalk.png"
+							<img src="../resources/img/teamA/link.png"
 								class="img-share mx-auto d-block" alt="...">
+							<p>링크 복사</p>
 						</div>
 					</div>
 				</div>
-				
-				<div id="bottom" class="bottom">
-					<button type="button" class="btn btn-light btn-answer">답안
-						2</button>
-				</div>
+
 				<div id="comment" class="mt-5 mb-5 comment">
 					<div class="comment-container">
-					    <div class="p-3 comment-bubble">
-					    <span class="text-white">댓글 [12]</span>
-					    <div class="scroll-comment">
-					    <div class="comment-block pt-2 pb-2">
-					    Comment
-					    </div>
-					    </div>
-					    
-					    </div>
-					    <div class="p-3 comment-shadow">
-					    </div>
+						<div class="p-3 comment-bubble">
+							<span class="text-white">댓글 [12]</span>
+							<div class="scroll-comment">
+								<div class="comment-block pt-2 pb-2">Comment</div>
+							</div>
+
+						</div>
+						<div class="p-3 comment-shadow"></div>
 					</div>
 					<div class="input-group mt-5 mb-5">
-					  <input type="text" class="form-control p-3" placeholder="댓글을 입력하세요. " aria-label="댓글 입력" aria-describedby="basic-addon2">
-					  <div class="input-group-append">
-					    <button class="btn btn-outline-secondary p-3" type="button">등록  </button>
-					  </div>
+						<input type="text" class="form-control p-3"
+							placeholder="댓글을 입력하세요. " aria-label="댓글 입력"
+							aria-describedby="basic-addon2">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary p-3" type="button">등록
+							</button>
+						</div>
 					</div>
 				</div>
 

@@ -54,10 +54,10 @@
 	    	</div>
 	    </div>
 	    <div id="bottom" class="bottom">
-			<button type="button" class="btn btn-light btn-answer">답안 1</button>
+			<button type="button" class="btn btn-light btn-answer" onclick="location.href='./result'">답안 1</button>
 		</div>
 		 <div id="bottom" class="bottom">
-			<button type="button" class="btn btn-light btn-answer">답안 2</button>
+			<button type="button" class="btn btn-light btn-answer" onclick="location.href='./result'">답안 2</button>
 		</div>
 
 	</div>
