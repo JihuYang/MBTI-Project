@@ -37,7 +37,7 @@
 						</li>
 						<li>
 							<a href="'./link'"target="_blank" onclick="GA_Event('MBTI_intro', 'about', 'Click');">
-								<span>IMG REFERENCE</span>
+								<span onclick="location.href='./reference'">IMG REFERENCE</span>
 							</a>
 						</li>
 					</ul>

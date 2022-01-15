@@ -11,14 +11,6 @@
 	<meta id="metaKeywords" name="keywords" content="MBTI로 나의 배우자 캐릭터 찾기">
 	<title>배우자 찾는 중..</title>
 	<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
-   
-       <style>
-        .question-count {
-           font-family: Roboto;
-            margin-top: 4rem;
-           color: #777777;
-        }
-    </style>
 </head>
 <body>
    <div id="question-wrap">

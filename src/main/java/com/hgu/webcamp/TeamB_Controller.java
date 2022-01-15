@@ -22,9 +22,7 @@ public class TeamB_Controller {
 		
 		return "teamB/start";
 	}
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
+	
 	@RequestMapping(value = "/question", method = RequestMethod.GET)
 	public String teamB_question(Model model) {
 		
@@ -32,9 +30,7 @@ public class TeamB_Controller {
 		
 		return "teamB/question";
 	}
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
+	
 	@RequestMapping(value = "/result", method = RequestMethod.GET)
 	public String teamB_result(Model model) {
 		
@@ -43,4 +39,11 @@ public class TeamB_Controller {
 		return "teamB/result";
 	}
 	
+	@RequestMapping(value = "/reference", method = RequestMethod.GET)
+	public String teamB_reference(Model model) {
+		
+		System.out.println("reference page loaded");
+		
+		return "teamB/reference";
+	}
 }
