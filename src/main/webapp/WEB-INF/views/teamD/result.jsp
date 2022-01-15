@@ -8,24 +8,54 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamDResult</title>
 	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
+	<style>
+		#endbar{
+			text-align: center;
+			font-weight: bold;
+			font-size: 25px;
+			height: 50px;
+			padding: 15px;
+		}
+		#endbar:hover {
+			cursor : pointer ;
+		}
+	</style>
 </head>
 
-<body>
+<body style="background-attachment : fixed ;">
 	<div id="wrapper1">
 		<h1>나랑 꼭 닮은<br>짱구 속 등장인물은?</h1>
-		<table>
+		
+		<div id="result">
+		<table style="width:100%">
 			<tr>
-				<td><div id="ESFP"></div>
-				<td><h2>타고난 리더십 봉미선 (ESFP)</h2></td>
+				<td><img src="../resources/img/teamD/흰둥이 투명 배경.png" style="width:230px; height:230px;top:380px;">
+				<td><h2>활발한<br>귀염둥이 흰둥이 (ENFP)</h2>
+				<p>+ 상성 좋은 케미:<br>외유내강 차은주<br>
+				- 상성 않좋은 케미:<br>행동대장 신혼부부</p>
+				</td>
 		</table>
-	<div id="result_more">
-		<p>자기확신이 뚜렷하고 호불호가 확실한 당신, 모임 같은 건 좋아하지만 리더하는 건 너무 싫어요. 막상 시키면 잘하지만요.<br>
-		항상 명확한 사실을 토대로 일을 처리해요.<br>
-		현실적이고 꼼꼼해서 계획은 철저히 세우지만 융통성이 ‘0’에 가까워요. 더불어 황소고집은 덤이고요. 물론 능력은 뛰어나서 남들이 보기에 힘든 일도 차근차근 잘 수행해요.<br>
-		눈치가 빠르고 말도 잘하기에 말싸움에서 져본 적이 없어요. 겉과 속이 다른 사람이 있으면 다 알고 바로 아웃!<br>
-		다만 공감능력은 부족해서 친구가 속상해 하고 있어도 위로는 잘 못해줘요. 참견하는 것을 싫어해서 말하지는 않지만 속으로 누가 옳고 그른지는 항상 판단하고 있어요.<br>
-		한국인 중의 10.7%가 나랑 같은 유형이에요.</p>
-	</div>
+		</div>
+		
+		<div id="result_more">
+			<p>당신은 흰둥이처럼 자유로운 아이디어 뱅크!<br>
+				표현력이 풍부한 당신, 대화를 즐기는 리액션쟁이에요. 자유로운 영혼이라 톡톡튀는 아이디어도 많지만 주의가 산만하다는 말도 자주 들어요. 친구들에게 돌아이라고 놀리는게 나한테는 극찬이에요.<br>
+				누가 나서지 않으면 답답해서 스스로 나서요. 지루하고 반복되는 일상은 싫어요. 하루하루가 즐겁고 재미있었으면 좋겠어요.<br>
+				싫고 좋은게 명확해요. 그래서 싫은 사람에게 아부하는 것은 나랑 다른 세계의 일이에요.<br>
+				나를 위해 돈을 쓰고 싶을 때에는 바로 FLEX해버려요. 한 번 사는 인생인데! 가만히 집콕하는게 싫어요. 코시국 너무 싫은것.<br><br>
+				한국인 중의 8.4%가 나랑 같은 유형이에요.</p>
+		</div>
+		
+		<div id="end">
+		<table style="width: 100%" id="endbar">
+			<tr>
+				<td onclick="location.href='start'">
+				<div id="img1"><img id="back" style="float:none;width:40px;height:42px;" src="../resources/img/teamD/back.png" >다시하기</div></td>
+				<td onclick="location.href='share'">
+				<div id="img2"><img id="share" style="float:none;width:40px;height:40px;" src="../resources/img/teamD/share.png">결과 공유하기</div></td>
+			</tr>
+		</table>
+		</div>
 	</div>
 </body>
 </html>

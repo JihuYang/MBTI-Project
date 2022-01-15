@@ -33,7 +33,7 @@ p {
 
 #wrapper1 {
 	width : 470px ;
-	height: 95vh;
+	height: auto;
 	margin : 20px auto ;
 	background-color : rgb(255,255,255, 0.9) ;
 	border : 4px solid ;
@@ -46,6 +46,11 @@ p {
 	font-size: 45px;
 }
 
+#result{
+	text-align: center;
+	border: none;
+}
+
 #result_more{
 	padding: 15px;
 }
@@ -56,15 +61,6 @@ p {
 	margin : 0 auto ;
 	margin-bottom : 20px ;
 	background-image : url("../img/teamD/start img.png") ;
-}
-
-
-#ESFP{
-	width : 80% ;
-	height : 20% ;
-	margin : 0 auto ;
-	margin-bottom : 25px ;
-	background-image : url("../img/teamD/봉미선.png") ;
 }
 
 .name {
