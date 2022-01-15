@@ -23,7 +23,7 @@
 </head>
 
 <body style="background-attachment : fixed ;">
-	<div id="wrapper1">
+	<div id="wrapper_version1">
 		<h1>나랑 꼭 닮은<br>짱구 속 등장인물은?</h1>
 		
 		<div id="result">

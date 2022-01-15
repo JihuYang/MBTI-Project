@@ -8,6 +8,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>teamDLoading</title>
 	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
+	<script>
+		function imageChange(){
+
+		}
+	</script>
+	
 	<style>
 		h1{
 			padding: 5px;
@@ -19,6 +25,7 @@
 <body>
 	<div id="wrapper">
 		<h1>닮은 캐릭터 찾는 중</h1>
+		<div id="images"></div>
 	</div>
 </body>
 </html>
