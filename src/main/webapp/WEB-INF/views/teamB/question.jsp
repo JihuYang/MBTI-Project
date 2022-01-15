@@ -17,23 +17,15 @@
       <div id="optadATF" style="min-height: 110px"></div>
       <div class= "qBox-wrap">
 			<div class="qBox">
-				<p class="q-count">
-					<strong>1</strong><span> / 12</span>
-				</p>
-				<h2>
-					<span class="question">바쁜 일정을 끝내고 드디어 쉰다!<br> 무엇을 할까?
-					</span>
-				</h2>
-				<br>
+				<p class="q-count"><strong>1</strong><span> / 12</span></p>
+				<h2><span class="question">바쁜 일정을 끝내고 드디어 쉰다!<br> 무엇을 할까?</span></h2><br>
 				<div class="option-btn-div">
 					<button value="q1-1" name="q1" class="option-btn"
-						onclick="location.href='./result'">
-						<h3>
-							쉴 땐 혼자가 좋아!<br>집에서 혼자만의 시간을 지낸다.
-						</h3>
+						onclick="location.href='./loading'">
+						<h3>쉴 땐 혼자가 좋아!<br>집에서 혼자만의 시간을 지낸다.</h3>
 					</button>
 					<button value="q1-2" name="q1" class="option-btn"
-						onclick="location.href='./result'">
+						onclick="location.href='./loading'">
 						<h3>함께가 재밌지! 친구들과 약속을 잡는다.</h3>
 					</button>
 				</div>
@@ -45,7 +37,7 @@
 				</div>
 			</div>
 		</div>
-      <div class="footer">
+      	<div class="footer">
 			<p class=footer-text>@HGU 2022 Winter Camp</p>
 		</div>
    </div>

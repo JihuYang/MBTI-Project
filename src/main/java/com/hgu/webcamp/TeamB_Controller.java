@@ -46,4 +46,12 @@ public class TeamB_Controller {
 		
 		return "teamB/reference";
 	}
+	
+	@RequestMapping(value = "/loading", method = RequestMethod.GET)
+	public String teamB_loading(Model model) {
+		
+		System.out.println("loading page loaded");
+		
+		return "teamB/loading";
+	}
 }
