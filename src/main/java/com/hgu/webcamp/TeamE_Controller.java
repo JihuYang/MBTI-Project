@@ -26,7 +26,7 @@ public class TeamE_Controller {
 	@RequestMapping(value = "/relation", method = RequestMethod.GET)
 	public String teamE_relation(Model model) {
 		
-		System.out.println("start page loaded");
+		System.out.println("relation page loaded");
 		
 		return "teamE/relation";
 	}

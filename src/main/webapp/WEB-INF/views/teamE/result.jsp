@@ -46,39 +46,69 @@
             background-color: #fff;
             border:1px solid black;
         }
+        
+        .text-b {
+    	top: 50%;
+    	left: 35%;
+    	position: absolute;
+        text-align: center;
+        font-size: 16px;
+		-webkit-transform:rotate(9deg);        
+    }
+        
+         .box {
+    	margin: 0px 0px 60px;	
+    	position:relative;
+    }
+    
+    .resultContent {
+    	border: 1px solid black;	
+    	
+    }
+    
+    .goodRelation {
+    	border: 1px solid black;	
+    }
+    
+    .badRelation {
+    	border: 1px solid black;
+    }
+    
     </style>
     
 </head>
 <body>
 
 <!-- 결과 화면 -->
-<div class="question">
-    <div class="topbar-logo"></div>
-    <img src="../pictures/mbtiStartPicture.png">
-    <h1 class="text-a">ESFP <br> 자유로운 영혼을 가진 0</h1><br><br>
-
-    <!-- class="img-main-title block-90" -->
-    <img src="../pictures/mbtiStartPicture.png">
+<div class="result">
+	<div class="box">
+	<h1 class="text-b">ESFP <br> 자유로운 영혼을 가진 0</h1>
+    <img src="../resources/img/teamE/bar.jpg" class="bar"/>
+	</div>
+    
+    <div class="resultContent">
     <p class="text-a">밖에서 노는 걸 좋아하는 0</p>
     <p class="text-a">정이 많아서 0들이 좋아함</p>
     <p class="text-a">잘 먹고 잘 자고 생각이 단순한 0</p>
     <p class="text-a">근데 멘탈은 쿠크다스다</p><br>
     <p class="text-a">원래 mbti인 ISFJ와 상성이 좋음</p>
-
-    <img src="../pictures/mbtiStartPicture.png">
-    <p>잘맞는 유형</p>
+    </div>
+	
+	<div class="goodRelation">
+	<p>잘 맞는 유형</p> 
     <p>ISFJ</p>
-    <img src="../pictures/mbtiStartPicture.png">
-
-    <img src="../pictures/mbtiStartPicture.png">
+	</div>
+    
+    <div class="badRealtion">
     <p>안 맞는 유형</p>
     <p>INFP</p>
-    <img src="../pictures/mbtiStartPicture.png">
+    </div>
+    
     <br>
     <button class="btn-result">다시하기</button><br>
     <button class="btn-result">저장하기</button><br>
     <button>카카오톡 공유</button>
-    <img src="../pictures/mbtiStartPicture.png">
+    
 
 
 </div>
