@@ -49,7 +49,7 @@ img{vertical-align:top;}
 
 /* result */
 .result-wrap{max-width:600px;min-height:812px;margin:0 auto;box-sizing:border-box; background:#ededed;}
-.result-wrap .img-result{max-width:325px;width:100%;margin:15px auto 0;}
+.result-wrap .img-result{max-width:600px;width:100%;margin:15px auto 0;}
 .result-wrap .img-result img{width:100%;}
 .cont-wrap .txt-1{text-align:center;margin-top:10px;font-weight:300;font-size:18px;letter-spacing:-0.05em;}
 .cont-wrap .txt-2{text-align:center;}
