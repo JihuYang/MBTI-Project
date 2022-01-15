@@ -74,19 +74,19 @@ img{vertical-align:top;}
 
 /* check */
 .qBox-wrap{max-width:600px;min-height:812px;margin:0 auto;background:#ededed;}
-.qBox-wrap .q-wrap{}
-.qBox-wrap .q-wrap .qBox{display:none;min-height:667px;padding:0 25px;background:#E2EFF5;}
-.qBox-wrap .q-wrap .qBox .q-count{padding-top:100px; padding-bottom:30px;text-align:center;}
-.qBox-wrap .q-wrap .qBox .q-count strong{color: black; font-weight:bold; font-size:20px;}
-.qBox-wrap .q-wrap .qBox .q-count span{color: grey; font-weight:300;font-size:20px;}
-.qBox-wrap .q-wrap .qBox .question {padding-top:100px;box-shadow: inset 0 -11px 0 #FFD336;line-height: 21px;}
-.qBox-wrap .q-wrap .qBox .title img{width:95px;}
-.qBox-wrap .q-wrap .qBox .percentage{padding-top:26px;text-align:center;}
-.qBox-wrap .q-wrap .qBox .percentage .progress-wrap{position:relative;width:203px;height:6px;margin:0 auto;background:#fff;}
-.qBox-wrap .q-wrap .qBox .percentage .progress-wrap .progress-bar{display:inline-block;position:absolute;top:0;left:0;height:6px;background:#fad349;}
-.qBox-wrap .q-wrap .qBox .percentage .progress-wrap .bar-text{display:inline-block;width:146px;height:32px;margin-top:15px;padding-top:15px;font-size:8px;font-weight:500;background-size:100%;}
-.qBox-wrap .q-wrap .qBox .option-btn-div{position: relative;display: flex;flex-direction: column;justify-content: center;align-items: center;}
-.qBox-wrap .q-wrap .qBox .option-btn-div .option-btn{height: 8em;width: 325px;margin: 20px 0;background: #CBCBCB;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 21px;border: none;}
+.qBox-wrap {}
+.qBox-wrap  .qBox{display:none;min-height:667px;padding:0 25px;background:#E2EFF5;}
+.qBox-wrap  .qBox .q-count{padding-top:100px; padding-bottom:30px;text-align:center;}
+.qBox-wrap  .qBox .q-count strong{color: black; font-weight:bold; font-size:20px;}
+.qBox-wrap  .qBox .q-count span{color: grey; font-weight:300;font-size:20px;}
+.qBox-wrap  .qBox .question {padding-top:100px;box-shadow: inset 0 -11px 0 #FFD336;line-height: 21px;}
+.qBox-wrap  .qBox .title img{width:95px;}
+.qBox-wrap  .qBox .percentage{padding-top:26px;text-align:center;}
+.qBox-wrap  .qBox .percentage .progress-wrap{position:relative;width:203px;height:6px;margin:0 auto;background:#fff;}
+.qBox-wrap  .qBox .percentage .progress-wrap .progress-bar{display:inline-block;position:absolute;top:0;left:0;height:6px;background:#fad349;}
+.qBox-wrap  .qBox .percentage .progress-wrap .bar-text{display:inline-block;width:146px;height:32px;margin-top:15px;padding-top:15px;font-size:8px;font-weight:500;background-size:100%;}
+.qBox-wrap  .qBox .option-btn-div{position: relative;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.qBox-wrap  .qBox .option-btn-div .option-btn{height: 8em;width: 325px;margin: 20px 0;background: #CBCBCB;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 21px;border: none;}
 .qBox-wrap > div:nth-child(1){min-height:667px;}
 .qBox-wrap > div:nth-child(2){min-height:667px;}
 .qBox-wrap > div:nth-child(3){min-height:667px;}
