@@ -18,13 +18,20 @@
 	<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
 	<style>
 
-	
-
-	
-	.btn-warning {
+	.btn-fink {
     color: #000;
     background-color: #FF9E9E;
     border-color: #FF9E9E;
+	}
+	.comments {
+	max-width:500px;min-height:400px;position: relative;margin:0 auto; background:#ededed;
+	padding: 10px;
+	border: 2px solid #ffc107;
+	border-radius: 17px;
+	
+	}
+	label {
+    display: flex;
 	}
 	
 	
@@ -37,26 +44,41 @@
 			<div class="img-result">
 				<img src = "../resources/img/teamB/ENFJ.png" alt="MBTI:결과 img" ><br>
 			</div>
+			<div class="comments" style="margin-top:100px;"><label style="font-size: 20px; width: 50%;">댓글 6</label>
+				<div class="input-group mb-3">
+				  <input type="text" class="form-control" placeholder="댓글을 입력하세요." aria-label="comments" aria-describedby="button-addon2">
+				  <button class="btn btn-warning" type="button" id="button-addon2">Button</button>
+				</div>
+				<hr>
+				<div id="cmt1">
+					<img src = "../resources/img/teamB/main_img.png" alt="사진" style="width:30px; height:30px; border-radius:100px; border:2px; float:left; margin-right:14px;">
+					<div id="nickname" style="float:left;">
+						<div>김땡땡<br></div>
+					</div>
+					<div id="recommend" style="float:right;">
+					<img src="../resources/img/teamB/추천.png" alt="추천" style="width:15px; height:15px; border-radius:100px;">
+					<img src="../resources/img/teamB/비추천.png" alt="비추천" style="width:15px; height:15px; border-radius:100px; margin-left:20px;">
+					</div>
+					
+					<div id="content" style="float:left;">
+						<span><br></span>
+					</div>
+					
+
+				</div>
+			</div>
+
+			
 			<div style="margin-top:100px;">
 				<img src = "../resources/img/teamB/check.png" alt="MBTI:결과" style="vertical-align:center; weight:auto; height:20px;" >
 				<span class = "other_test" style="font-size:20px; font-weight: bold;">다른 테스트 하러가기</span>
 			</div><br>
 			<div class="btn-group-vertical" style="margin-bottom:150px;">
-			 	<button type="button" class="btn btn-warning" style="border-radius:15px; margin-bottom:10px;"><h3 style="font-size:20px;">내가 개발자라면? 개발자 유형 테스트</h3></button>
-				<button type="button" class="btn btn-warning" style="border-radius:15px; margin-bottom:10px;"><h3 style="font-size:20px;">MBTI 유형에 맞는 찰떡 공부법</h3></button>
-				<button type="button" class="btn btn-warning" style="border-radius:15px; margin-bottom:10px;"><h3 style="font-size:20px;">짱구에서 나는 누굴까?</h3></button>
-				<button type="button" class="btn btn-warning" style="border-radius:15px; margin-bottom:10px;"><h3 style="font-size:20px;">인간관계 유형별 MBTI</h3></button>
-			</div>
-			<div class="other_test_list" >
-				
-			</div>
-			
-			<div class = "to-other-link" style="display:none;">
-				<a class="other-link" target="blank" rel="link1" href="링크 주소"><img src="이미지 주소?" class="img-btn" alt="another-test-link-1"></a><br>
-				<a class="other-link" target="blank" rel="link2" href="링크 주소"><img src="이미지 주소?" class="img-btn" alt="another-test-link-2"></a><br>
-				<a class="other-link" target="blank" rel="link3" href="링크 주소"><img src="이미지 주소?" class="img-btn" alt="another-test-link-3"></a><br>
-				<a class="other-link" target="blank" rel="link4" href="링크 주소"><img src="이미지 주소?" class="img-btn" alt="another-test-link-4"></a>
-			</div>
+			 	<button type="button" class="btn btn-warning btn-fink" style="border-radius:15px; margin-bottom:10px;"><h3 style="font-size:20px;">내가 개발자라면? 개발자 유형 테스트</h3></button>
+				<button type="button" class="btn btn-warning btn-fink" style="border-radius:15px; margin-bottom:10px;"><h3 style="font-size:20px;">MBTI 유형에 맞는 찰떡 공부법</h3></button>
+				<button type="button" class="btn btn-warning btn-fink" style="border-radius:15px; margin-bottom:10px;"><h3 style="font-size:20px;">짱구에서 나는 누굴까?</h3></button>
+				<button type="button" class="btn btn-warning btn-fink" style="border-radius:15px; margin-bottom:10px;"><h3 style="font-size:20px;">인간관계 유형별 MBTI</h3></button>
+			</div>			
 		</div>
 		<div class="footer">
 			<p class=footer-text>@HGU 2022 Winter Camp</p>
