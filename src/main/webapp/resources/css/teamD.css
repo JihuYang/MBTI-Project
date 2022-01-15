@@ -31,21 +31,6 @@ p {
 	text-align : center ;
 }
 
-#wrapper1 {
-	width : 470px ;
-	height: auto;
-	margin : 20px auto ;
-	background-color : rgb(255,255,255, 0.9) ;
-	border : 4px solid ;
-	border-radius : 100px ;
-}
-
-#wrapper1 h1{
-	padding: 5px;
-	text-align: center;
-	font-size: 45px;
-}
-
 #result{
 	text-align: center;
 	border: none;
