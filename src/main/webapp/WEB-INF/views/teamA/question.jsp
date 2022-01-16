@@ -38,7 +38,7 @@
 		    </div>
 		</div>
 	     <div id="middle" class="middle text-center">
-	    	<div class="bar text-white">
+	    	<div class="bar bar-q text-white">
 	    	<!-- 	<span class="bar-text">내가 개발자라면?</span> -->
 	    	</div> 
 	    	<div class="p-3 window-question bg-white">
@@ -46,7 +46,7 @@
 	    	<span class="void">void </span><span class="Qnum">Question1 </span><span class="char">() {</span>
 	    	</div>
 	    	<div class="question-content">
-	    	<span class="printf">printf</span><span class="char">(</span><span class="question">"여기에 질문을 적어주세요"</span><span class="char">);</span>
+	    	<span class="printf">printf</span><span class="char">(</span><span class="question">"회사 첫 출근. 옆자리에 앉은 사람이 이것저것 물어본다면 나는?"</span><span class="char">);</span>
 	    	</div>
 	    	<div class="question-format">
 	    	<span class="char">}</span>
@@ -54,10 +54,10 @@
 	    	</div>
 	    </div>
 	    <div id="bottom" class="bottom">
-			<button type="button" class="btn btn-light btn-answer" onclick="location.href='./result'">답안 1</button>
+			<button type="button" class="btn btn-light btn-answer" onclick="location.href='./result'">역시 세상은 따뜻해ㅠㅠ(감동)</button>
 		</div>
 		 <div id="bottom" class="bottom">
-			<button type="button" class="btn btn-light btn-answer" onclick="location.href='./result'">답안 2</button>
+			<button type="button" class="btn btn-light btn-answer" onclick="location.href='./result'">내가 알아서 할 수 있는ㄷ.. 초큼 부담스럽다..</button>
 		</div>
 
 	</div>
