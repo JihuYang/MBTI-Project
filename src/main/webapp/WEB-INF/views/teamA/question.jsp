@@ -18,7 +18,7 @@
 <body>
 <div class="container-fluid">
 <div class="row text-center">
-    <div class="col">
+    <div class="col d-none d-md-block">
       
     </div>
     <div id = "main" class="col content ">
@@ -61,7 +61,7 @@
 		</div>
 
 	</div>
-    <div class="col">
+    <div class="col d-none d-md-block">
    
     </div>
   </div>
