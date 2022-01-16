@@ -55,6 +55,18 @@ p {
 	padding: 15px;
 }
 
+#endbar {
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	height: 50px;
+	padding: 15px;
+}
+
+#endbar:hover {
+	cursor: pointer;
+}
+
 #img {
 	width : 90% ;
 	height : 30% ;

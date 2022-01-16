@@ -8,18 +8,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamDResult</title>
 	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
-	<style>
-		#endbar{
-			text-align: center;
-			font-weight: bold;
-			font-size: 25px;
-			height: 50px;
-			padding: 15px;
-		}
-		#endbar:hover {
-			cursor : pointer ;
-		}
-	</style>
 </head>
 
 <body style="background-attachment : fixed ;">
@@ -29,7 +17,7 @@
 		<div id="result">
 		<table style="width:100%">
 			<tr>
-				<td><img src="../resources/img/teamD/흰둥이 투명 배경.png" style="width:230px; height:230px;top:380px;">
+				<td><img src="../resources/img/teamD/흰둥이 투명 배경.png" style="width:230px; height:230px;">
 				<td><h2>활발한<br>귀염둥이 흰둥이 (ENFP)</h2>
 				<p>+ 상성 좋은 케미:<br>외유내강 차은주<br>
 				- 상성 않좋은 케미:<br>행동대장 신혼부부</p>
