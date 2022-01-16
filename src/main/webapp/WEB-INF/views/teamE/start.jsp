@@ -20,7 +20,15 @@
             display: flex;
             align-items: center;
             width: 100%;
-            height: 54px;
+            height: 45px;
+            padding: 0 20px;
+        }
+        
+        .middle-logo {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 27px;
             padding: 0 20px;
         }
         /* 제목 */
@@ -57,7 +65,7 @@
         }
 
         .thinker {
-            margin:24px auto;
+            margin:35px auto;
         }
 
         /* 정렬 */
@@ -84,6 +92,7 @@
     <h1 class="title text-a">인간관계 유형별 MBTI</h1>
     <p class="subtitle text-a">이 사람과 있을 때 나는 어떤 유형의 사람일까?</p>
     <img src="../resources/img/teamE/mbtiStartPicture.png" class="thinker" />
+    <div class="middle-logo"></div>
     <!-- class="img-main-title block-90" -->
     <button class="btn-normal" onclick="location.href='question'">테스트 시작</button>
 
