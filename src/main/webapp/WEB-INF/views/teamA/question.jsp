@@ -54,10 +54,10 @@
 	    	</div>
 	    </div>
 	    <div id="bottom" class="bottom">
-			<button type="button" class="btn btn-light btn-answer" onclick="location.href='./result'">역시 세상은 따뜻해ㅠㅠ(감동)</button>
+			<button type="button" class="btn btn-light btn-answer" onclick="location.href='./loading'">역시 세상은 따뜻해ㅠㅠ(감동)</button>
 		</div>
 		 <div id="bottom" class="bottom">
-			<button type="button" class="btn btn-light btn-answer" onclick="location.href='./result'">내가 알아서 할 수 있는ㄷ.. 초큼 부담스럽다..</button>
+			<button type="button" class="btn btn-light btn-answer" onclick="location.href='./loading'">내가 알아서 할 수 있는ㄷ.. 초큼 부담스럽다..</button>
 		</div>
 
 	</div>

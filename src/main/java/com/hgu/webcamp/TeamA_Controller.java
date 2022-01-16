@@ -35,6 +35,16 @@ public class TeamA_Controller {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
+	@RequestMapping(value = "/loading", method = RequestMethod.GET)
+	public String teamA_loading(Model model) {
+		
+		System.out.println("loading page loaded");
+		
+		return "teamA/loading";
+	}
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
 	@RequestMapping(value = "/result", method = RequestMethod.GET)
 	public String teamA_result(Model model) {
 		
