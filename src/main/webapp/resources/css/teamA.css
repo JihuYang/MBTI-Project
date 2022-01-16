@@ -224,9 +224,14 @@ body{
 
 .type{
 	background-color: var(--sub-color);
-	width: fit-content;
+	width: max-content;
+	display: inline-block;
 }
 
+/* li {
+    list-style-image: url("../img/teamA/listicon.png");
+} */
+   
 .btn-job {
 	width: 80%;
 	height: 60px;
