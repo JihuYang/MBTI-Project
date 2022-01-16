@@ -80,8 +80,10 @@ footer {
 }
 .box1 {
 	height: 200px;
-	background-color: red;
+	background-color: #FF333F;
 	position: relative;
+	border-radius: 10px;
+	
 }
 
 
@@ -116,7 +118,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	/*margin-bottom: 10px;*/
-	font-family: "Black Han Sans";
+	font-family: "Song Myung";
 	text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
 	text-align: left;
 	font-size: 1.2em;
@@ -173,7 +175,8 @@ footer {
 	padding: 5px;
 	border: 3px solid black;
 	top: 5px;	 
-	box-shadow: -2px 2px 0 black;
+	box-shadow: 4px 4px 0 black;
+	border-radius: 10px;
 }
 
 .method {
@@ -197,7 +200,7 @@ footer {
 }
 
 .place {
-	background-color: rgba(255, 0, 0, 0.9);	
+	background-color:#FF333F;	
 }
 
 .two_btn {
@@ -234,4 +237,7 @@ footer {
 	margin-top: 5px;
 	width: 30px;
 	height: 30px;
+}
+.wholeBox{
+	border-radius: 10px;
 }
