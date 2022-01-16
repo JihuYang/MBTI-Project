@@ -235,12 +235,19 @@ body{
 	background-color: var(--sub-color);
 	width: max-content;
 	display: inline-block;
+	padding-top: 4px;
 }
 
-/* li {
-    list-style-image: url("../img/teamA/listicon.png");
-} */
+li {
+    background: url("../img/teamA/listicon.png") no-repeat 0px 1px;
+   	list-style-type: none;
+    padding: 0px 0px 8px 30px;
+}
    
+ul {
+	padding-left: 1rem;
+}
+
 .btn-job {
 	width: 80%;
 	height: 60px;
@@ -252,7 +259,6 @@ body{
 
 .btn-type {
 	width: 90%;
-	height: 300px;
 	border: 3px solid black;
 	box-shadow: 5px 5px var(--main-color), 8px 8px black;
 	border-radius: 10px;
@@ -275,7 +281,6 @@ body{
 .img-share {
 	width: 20%;
 }
-
 
 .comment-container{
 	position: relative;
@@ -387,6 +392,11 @@ footer {
   }
   .d-lg-block {
     display:none!important;
+}
+#main {
+	margin-right: 1rem;
+	margin-left: 1rem;
+	
 }
 .bar{
 	height: 6vh;
