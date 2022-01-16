@@ -81,7 +81,7 @@
 	<div class="container-fluid">
 		<div class="row text-center">
 			<div class="col d-none d-lg-block"></div>
-			<div id="main" class="col content ">
+			<div id="main" class="col content-result ">
 				<div id="middle" class="middle text-center mt-3">
 					<div class="bar text-white"></div>
 					<div class="py-3 window-question bg-white">
