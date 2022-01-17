@@ -21,6 +21,8 @@
     <div class="middle-logo"></div>
     <!-- class="img-main-title block-90" -->
     <button class="btn-normal" onclick="location.href='question'">테스트 시작</button>
+    <div class="low-logo"></div>
+    
 
 </div>
 </body>

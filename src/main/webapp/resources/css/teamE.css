@@ -22,6 +22,14 @@
             height: 27px;
             padding: 0 20px;
         }
+        
+        .low-logo {
+        	 display: flex;
+            align-items: center;
+            width: 100%;
+            height: 45px;
+            padding: 0 20px;
+        }
         /* 제목 */
         .title {
             display: block;
