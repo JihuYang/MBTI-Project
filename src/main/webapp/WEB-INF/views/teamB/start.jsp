@@ -11,10 +11,11 @@
 	<meta id="metaKeywords" name="keywords" content="MBTI로 나의 배우자 캐릭터 찾기">
 	<title>나의 배우자는 누구?</title>
 	<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
+	
 </head>
 <body>
 	<div class="intro-wrap">
-		<div id="optadATF" style="min-height:110px"></div>
+		<div id="optadATF" style="min-height:150px"></div>
 		<div class = "top-wrap"><br><br>
 			<img src = "../resources/img/teamB/main_img.png" alt="MBTI:배우자 캐릭터 찾기" class="intro-mainImg" style="width:600px;">
 			<div class = "text-area"><br>
@@ -22,8 +23,23 @@
 			</div>
 			<img src = "../resources/img/teamB/main_start.png" alt="start-btn" class="startbnt" onclick="location.href='./question'">
 			<div class = "participants">
-                현재까지 총 14,312 명이 배우자를 찾았어요!
-                <span class="Cursor Cursor--blinking">|</span>
+                <span class="text"></span>
+                <span class="blink">|</span>
+                <script>
+				const content = "현재까지 총 14,312 명이 배우자를 찾았어요!";
+				const text = document.querySelector(".text");
+				let i = 0;
+			
+				function typing(){
+				    let txt = content[i++];
+				    text.innerHTML += txt=== "\n" ? "<br/>": txt;
+				    if (i > content.length) {
+				        text.textContent = "";
+				        i = 0;
+				    }
+				}
+				setInterval(typing, 200)
+				</script>
             </div>
 		</div>
 		<div class="footer-wrap">
@@ -36,8 +52,8 @@
 							</a>
 						</li>
 						<li>
-							<a href="'./link'"target="_blank" onclick="GA_Event('MBTI_intro', 'about', 'Click');">
-								<span>IMG REFERENCE</span>
+							<a href="link"target="_blank" onclick="GA_Event('MBTI_intro', 'about', 'Click');">
+								<span onclick="location.href='./reference'">IMG REFERENCE</span>
 							</a>
 						</li>
 					</ul>
