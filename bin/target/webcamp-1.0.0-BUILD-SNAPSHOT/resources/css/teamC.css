@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@charset "UTF-8";
+
+:root{
+	
+}
+
+
+body{
+	 background-image: url("../img/teamC/background.png");
+	 background-size: cover;
+     height: 100vh;
+}
+
+.content{
+	height: 100vh;
+}
+
+
+footer {
+  color: black;
+  height: 30px;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+
+.tag {
+	margin-top:50px;
+	font-family: "Do Hyeon";
+}
+
+.title {
+	position: relative;
+	font-size: 2.7em;
+	font-weight: 400;
+	letter-spacing: 0.05rem;
+	color: black;
+	font-family: "Black Han Sans";	
+}
+
+
+.startMain {
+	width:420px;
+	margin-top: 80px;
+}
+.startMain .box img {
+	width: 300px;
+	height: 200px;
+	
+}
+
+
+
+
+
+.btnContainer {
+	width: 100%;
+}
+
+.startButton {
+	margin-top: 80px;
+	width: 100%;
+	font-family: "Black Han Sans";
+	background: #FF333F;
+	border: 5px solid #000000;
+	color: white;
+	letter-spacing: 2px;
+	box-shadow: 10px 10px 0px #000000;
+}
+
+.btntext1 {
+	font-size: 2rem;
+	color: black;
+}
+
+
+
+
