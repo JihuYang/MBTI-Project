@@ -36,7 +36,19 @@
 	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 	crossorigin="anonymous"></script>
+<style>
+@media only screen and (max-width: 600px) {
 
+  .col{
+    width:0%;
+  }
+  .content{
+  	width:100%;
+  }
+
+}
+
+</style>
 </head>
 <body>
 	<div class="container-fluid">
@@ -166,7 +178,7 @@
 									<p class="text-muted fs-8">2022.01.17</p>
 								</div>
 							</div>
-							<div class="comment-list-content w-100">
+							<div class="comment-list-content" style= "width:300px">
 								<p>여기에 댓글을 쓴다.이렇게 길게 쓰면 어떻게 될지 궁금해서 길게 써보는데 왠지 안 예쁠 것 같다...
 									음 점점</p>
 

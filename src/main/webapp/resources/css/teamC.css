@@ -1,6 +1,17 @@
 @charset "UTF-8";
 
 
+@media only screen and (max-width: 600px) {
+
+  .col{
+    width:0%;
+  }
+  .content{
+  	width:100%;
+  }
+
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -10,6 +21,9 @@ body{
 	 background-size: cover;
      height: 100vh;
 }
+
+
+
 
 .content{
 	height: 100vh;
@@ -241,3 +255,5 @@ footer {
 .wholeBox{
 	border-radius: 10px;
 }
+
+
