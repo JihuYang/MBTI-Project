@@ -218,6 +218,7 @@
     	width: 192px;
     	display: inline-block;		
     	margin-bottom: 40px;
+    	color: rgb(53, 255, 53);
     }
     
     .badRelation {
@@ -225,6 +226,7 @@
     	width: 192px;
     	display: inline-block;	
     	margin-bottom: 40px;
+    	color: rgb(255, 102, 102);
     }
     
     .share {
