@@ -39,7 +39,7 @@
 <body>
 	<div id="wrapper_version2">
 		<h1>닮은 캐릭터 찾는 중</h1>
-		<div id="images"><img id="image1" src="../resources/img/teamD/신혼부부.png" style="width:340px; height:420;"></div>
+		<div id="images" onclick="location.href='result'"><img id="image1" src="../resources/img/teamD/신혼부부.png" style="width:340px; height:420;"></div>
 	</div>
 </body>
 </html>
