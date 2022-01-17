@@ -434,5 +434,8 @@ footer {
    .bar-q{
   height:6vh!important;
   }
+  .scroll-comment{
+  height: 30vh;
+  }
 
 }
