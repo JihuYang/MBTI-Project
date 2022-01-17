@@ -8,78 +8,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamEQuestion</title>
 	
-	<style>
-    body {
-        min-width: 320px;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .topbar-logo {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 54px;
-        padding: 0 20px;
-    }
-
-    .title {
-
-    }
-
-    .text-b {
-    	top: 50%;
-    	left: 20%;
-    	position: absolute;
-        text-align: center;
-        font-size: 16px;
-		-webkit-transform:rotate(9deg);        
-    }
-
-    button {
-        cursor: pointer;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius:8px;
-    }
-
-    .btn-question-1 {
-        width: 100%; height: 60px;
-        color: #fff;
-        border:1px solid black;
-        background-color: #000;
-    }
-    
-    .btn-question-2 {
-        width: 100%; height: 60px;
-        color: #fff;
-        border:1px solid black;
-        margin: 0px 0px 40px;
-        background-color: #000;
-    }
-    
-    .number {
-       text-align: left;
-       border-radius: 14px;
-	padding: 0px 12px;
-  	text-align: center;
-  font-size: 14px;
-  line-height: 26px;
-  background-color: #fff;
-  border: 1px solid black;
-  color: #848484;
-  	
-    }
-    
-    .box {
-    	margin: 0px 0px 60px;	
-    	position:relative;
-    }
-    
-
-</style>
+	<link rel="stylesheet" type="text/css" href="../resources/css/teamE.css">
 
 </head>
 <body>
@@ -88,7 +17,7 @@
 <div class="question">
     <!-- <div class="topbar-logo logo-none"></div> -->
     <div class = "box">
-    <h1 class="title text-b">친구들과 의논할 때 내가 말하는 방식은?</h1>
+    <h1 class="text-b">친구들과 의논할 때 내가 말하는 방식은?</h1>
     <img src="../resources/img/teamE/bar.jpg" class="bar" />
     </div>
     
