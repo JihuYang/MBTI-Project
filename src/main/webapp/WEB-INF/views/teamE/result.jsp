@@ -78,11 +78,13 @@
     .outer {
     	border: 2px solid black;
     	margin-bottom: 40px;
+    	background-color: #000;
     }
     
     .resultContent {
     	border: 2px solid black;	
     	margin: 20px;
+    	background-color: white;
     }
     
     
@@ -90,8 +92,7 @@
     .goodRelation {
     	text-align: center;
     	width: 192px;
-    	display: inline-block;	
-    	border: 2px solid black;	
+    	display: inline-block;		
     	margin-bottom: 40px;
     }
     
@@ -99,7 +100,6 @@
     	text-align: center;
     	width: 192px;
     	display: inline-block;	
-    	border: 2px solid black;
     	margin-bottom: 40px;
     }
     
@@ -146,7 +146,7 @@
 <!-- 결과 화면 -->
 <div class="result">
 	<div class="box">
-	<h1 class="text-b">ESFP <br> 자유로운 영혼을 가진 0</h1>
+	<h1 class="text-b">ESFP <br> 자유로운 영혼을 가진 친구</h1>
     <img src="../resources/img/teamE/bar.jpg" class="bar"/>
     <img src="../resources/img/teamE/water.jpg" class="main-animal"/>
 	</div>

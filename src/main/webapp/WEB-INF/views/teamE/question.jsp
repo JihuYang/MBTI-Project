@@ -47,17 +47,17 @@
 
     .btn-question-1 {
         width: 100%; height: 60px;
-        color: #000;
-        background-color: #fff;
+        color: #fff;
         border:1px solid black;
+        background-color: #000;
     }
     
     .btn-question-2 {
         width: 100%; height: 60px;
-        color: #000;
-        background-color: #fff;
+        color: #fff;
         border:1px solid black;
         margin: 0px 0px 40px;
+        background-color: #000;
     }
     
     .number {
@@ -67,7 +67,8 @@
   	text-align: center;
   font-size: 14px;
   line-height: 26px;
-  background-color: #ededed;
+  background-color: #fff;
+  border: 1px solid black;
   color: #848484;
   	
     }
