@@ -12,39 +12,35 @@
 	
 	 <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	
-	
+
 	<title>[결과]나의 배우자는 누구?</title>
 	<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
-	<style>
-
-	.btn-fink {
-    color: #000;
-    background-color: #FF9E9E;
-    border-color: #FF9E9E;
-	}
-	.comments {
-	max-width:500px;min-height:400px;position: relative;margin:0 auto; background:#ededed;
-	padding: 10px;
-	border: 2px solid #ffc107;
-	border-radius: 17px;
-	
-	}
-	label {
-    display: flex;
-	}
-	
-	
-	</style>
 </head>
 <body>
-	<div id = "result container">
-		<div id="optadATF" style="min-height:110px"></div>
+	
+		
 		<div class = "result-wrap">
+		<div id="optadATF" style="min-height:110px"></div>
 			<div class="img-result">
-				<img src = "../resources/img/teamB/ENFJ.png" alt="MBTI:결과 img" ><br>
+				<img src = "../resources/img/teamB/ENFJ.png" alt="MBTI:결과 img" >
+			</div><br>
+			<div class = "share-wrap">
+				<p>공유 및 저장하기</p>
+				<a href="" onclick="GA_Event('MBTI_result', 'share_kakao', 'Click');">
+					<img src = "../resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
+				<a href="" onclick="GA_Event('MBTI_result', 'share_link', 'Click');">
+					<img src = "../resources/img/teamB/link_icon.png" alt="linkicon"></a>
+				<a href="" onclick="GA_Event('MBTI_result', 'share_save', 'Click');">
+					<img src = "../resources/img/teamB/save_icon.png" alt="saveicon"></a>
 			</div>
-			<div class="comments" style="margin-top:100px;"><label style="font-size: 20px; width: 50%;">댓글 6</label>
+			<div class="restarticon">
+    			<a href="javascript:resetLink();" onclick="GA_Event('MBTI_result', 'restart', 'Click');">테스트 다시하기</a>
+    		</div>
+			<div class="comments" style="margin-top:100px;"><label style="font-size: 20px; width: 50%;">댓글 1</label>
+				<div class="input-group mb-3">
+				<input type="text" class="form-control" name="userId" placeholder="닉네임 입력" />
+				<input type="text" class="form-control" name="userPwd" placeholder="패스워드 입력" />
+				</div>
 				<div class="input-group mb-3">
 				  <input type="text" class="form-control" placeholder="댓글을 입력하세요." aria-label="comments" aria-describedby="button-addon2">
 				  <button class="btn btn-warning" type="button" id="button-addon2">Button</button>
@@ -53,15 +49,15 @@
 				<div id="cmt1">
 					<img src = "../resources/img/teamB/main_img.png" alt="사진" style="width:30px; height:30px; border-radius:100px; border:2px; float:left; margin-right:14px;">
 					<div id="nickname" style="float:left;">
-						<div>김땡땡<br></div>
+						<div>구루미<br></div>
 					</div>
 					<div id="recommend" style="float:right;">
 					<img src="../resources/img/teamB/추천.png" alt="추천" style="width:15px; height:15px; border-radius:100px;">
 					<img src="../resources/img/teamB/비추천.png" alt="비추천" style="width:15px; height:15px; border-radius:100px; margin-left:20px;">
 					</div>
 					
-					<div id="content" style="float:left;">
-						<span><br></span>
+					<div id="content" style="float:center;">
+						<span>아니...욘두는 좀 심한 거 아님?<br></span>
 					</div>
 					
 
@@ -83,6 +79,6 @@
 		<div class="footer">
 			<p class=footer-text>@HGU 2022 Winter Camp</p>
 		</div>
-	</div>
+	
 </body>
 </html>

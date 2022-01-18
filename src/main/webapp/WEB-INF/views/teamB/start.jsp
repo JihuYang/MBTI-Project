@@ -52,15 +52,15 @@
 							</a>
 						</li>
 						<li>
-							<a href="link"target="_blank" onclick="GA_Event('MBTI_intro', 'about', 'Click');">
-								<span onclick="location.href='./reference'">IMG REFERENCE</span>
+							<a href="./reference" target="_blank" onclick="GA_Event('MBTI_intro', 'about', 'Click');">
+								<span>IMG REFERENCE</span>
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div class="footer-hgulogo">
 					<a href="https://www.handong.edu/" target="_blank" onclick="GA_Event('MBTI_intro', 'footer_logo', 'Click');">
-					<img src="../resources/img/teamB/hgu-logo.png" alt=""></a>
+					<img src="../resources/img/teamB/hgu-logo.png" alt="HGU"></a>
 				</div>
 				<div class="footer-copy">ⓒ 2022 HGU Winter Camp. All Rights Reserved.</div>
 			</div>
