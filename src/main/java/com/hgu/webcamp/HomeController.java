@@ -20,7 +20,7 @@ public class HomeController {
 		
 		System.out.println("WELCOME TO MBTI WEB SITE");
 		
-		return "home";
+		return "index";
 	}
 	
 }
