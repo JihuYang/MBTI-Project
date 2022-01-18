@@ -55,6 +55,7 @@
 		<div class="row text-center">
 			<div class="col"></div>
 			<div class="col bg-white content">
+				
 				<div class="wholeBox">
 					<div class="box1">
 						<img src="../resources/img/teamC/character.png" />
@@ -110,7 +111,7 @@
 					<div class="smtitle place">찰떡 공부장소!</div>
 					<div class="studyPlace">같이하자! 스터디 카페</div>
 				</div>
-				<div class="wholeBox two_btn re_btn"">다시하기</div>
+				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
 				<div class="wholeBox two_btn sv_btn">저장하기</div>
 
 				<div class="shareBtn">
@@ -211,6 +212,11 @@
 		<span class="align-middle">@2022 MBTI에 진심인 팀 All rights
 			reserved.</span>
 	</footer>
+	<script>
+	function moveTo(){
+		location.href="start";
+	}
+	</script>
 </body>
 
 </html>
