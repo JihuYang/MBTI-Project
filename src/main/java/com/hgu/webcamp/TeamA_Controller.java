@@ -45,9 +45,12 @@ public class TeamA_Controller {
 		
 		System.out.println("question page loaded");
 		
-//		int testId = Integer.parseInt(request.getParameter("testId"));
+		System.out.println(request.getParameter("testId"));
 		
-		int testId = 1;
+		 
+		int testId = 1; //테스트이름
+//		int questionNum = 1;
+		
 		
 
 		List<questionDTO> question = questionService.readQuestion(testId);

@@ -7,7 +7,7 @@ function readQuestion(testId) {
 		type : "POST",
 		async : false,
 		data : {
-			testId : testId,
+			testId : testId
 		},
 		success : function(data) {
 			console.log("read success");

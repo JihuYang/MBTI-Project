@@ -31,7 +31,7 @@
 					<%@ include file="../ajaxContent/teamA/question.jsp"%>
 				</div>
 				<div id="bottom" class="bottom">
-<%-- 					<button type="button" class="btn btn-light btn-answer"
+<%--   					<button type="button" class="btn btn-light btn-answer"
 						onclick="readQuestion(${1})">역시 세상은 따뜻해ㅠㅠ(감동)</button> --%>
 					<button type="button" class="btn btn-light btn-answer"
 						onclick="location.href='./loading')">역시 세상은 따뜻해ㅠㅠ(감동)</button>
