@@ -121,6 +121,7 @@ config.properties
 MBTI-Project/.classpath
 MBTI-Project/.project
 MBTI-Project/src/main/webapp/META-INF/maven/com.hgu/webcamp/pom.properties
+MBTI-Project/target/m2e-wtp/web-resources/META-INF/maven/com.hgu/webcamp/pom.properties
 MBTI-Project/src/main/webapp/META-INF/maven/com.hgu/MANIFEST.MF
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,java-web,eclipse,maven
