@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="question">
+
+	
+	<select id="readQuestion" resultType="com.hgu.webcamp.DTO.questionDTO" parameterType="hashmap">
+		SELECT * FROM camp1.question WHERE testId = #{testId} 
+	</select>
+	 
+</mapper>
