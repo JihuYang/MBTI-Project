@@ -115,6 +115,7 @@ buildNumber.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 
+.project
 .properties
 config.properties
 MBTI-Project/.classpath
