@@ -48,6 +48,10 @@
 	color:black;
 	
 }
+#Button1:hover{
+	background:#fae1e3;
+	
+}
 
 #Button2 {
 	display: block;
@@ -59,7 +63,10 @@
 	border-radius:10px;
 	color:black;
 }
-
+#Button2:hover{
+	background:#fae1e3;
+	
+}
 #quiz-img {
 	margin-top: 10px;
 }

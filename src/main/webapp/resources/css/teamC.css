@@ -73,6 +73,10 @@ footer {
 	box-shadow: 10px 10px 0px #000000;
 	border-radius:10px;
 }
+.startButton:hover{
+	background:#fae1e3;
+	
+}
 
 .btntext1 {
 	font-size: 2rem;
