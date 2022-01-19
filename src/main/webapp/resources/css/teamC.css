@@ -1,20 +1,27 @@
 @charset "UTF-8";
 
 @media only screen and (max-width: 600px) {
-	.col {
+	.col{
 		width: 0%;
+		
 	}
+	
 	.content {
 		width: 100%;
 	}
 }
 
+
+
 * {
 	box-sizing: border-box;
 }
 
+.background{
+	background-image: url("../img/teamC/all4.png");
+}
 body {
-	background-image: url("../img/teamC/background.png");
+	
 	background-size: cover;
 	height: 100vh;
 }
@@ -35,35 +42,28 @@ footer {
 }
 
 .tag {
-	margin-top: 50px;
+	margin-top: 150px;
 	font-family: "Do Hyeon";
 }
 
 .title {
 	position: relative;
-	font-size: 2.7em;
-	font-weight: 400;
+	font-size: 6em;
+	font-weight: 500;
 	letter-spacing: 0.05rem;
 	color: black;
 	font-family: "Black Han Sans";
+	text-shadow: 5px 5px 0px white;
 }
 
-.startMain {
-	width: 420px;
-	margin-top: 80px;
-}
-
-.startMain .box img {
-	width: 300px;
-	height: 200px;
-}
 
 .btnContainer {
-	width: 100%;
+	width: 450px;
+	margin-top: 60px;
 }
 
 .startButton {
-	margin-top: 80px;
+	margin:auto;
 	width: 100%;
 	font-family: "Black Han Sans";
 	background: #FF333F;
@@ -71,6 +71,7 @@ footer {
 	color: white;
 	letter-spacing: 2px;
 	box-shadow: 10px 10px 0px #000000;
+	border-radius:10px;
 }
 
 .btntext1 {

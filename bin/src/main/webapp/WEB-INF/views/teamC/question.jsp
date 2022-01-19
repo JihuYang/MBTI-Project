@@ -110,9 +110,9 @@
 				</div>
 
 				<div id="quiz-button" style='width: 100%;'>
-					<button id="Button1" onclick="moveSlider(-1) ">사람들과 만나서
+					<button id="Button1" onclick="moveTo()">사람들과 만나서
 						놀아야지!! 집에 혼자 있으면 괜히 울적해지기만 한다.</button>
-					<button id="Button2" onclick="" style='margin-top: 20px'>집에서 조용히 쉬어야지 이럴 때 나가봤자 더
+					<button id="Button2" onclick="moveTo()" style='margin-top: 20px'>집에서 조용히 쉬어야지 이럴 때 나가봤자 더
 						힘들어...</button>
 				</div>
 			</div>
@@ -124,5 +124,10 @@
 		<span class="align-middle">@2022 MBTI에 진심인 팀 All rights
 			reserved.</span>
 	</footer>
+	<script>
+	function moveTo() {
+		location.href="loading";
+	}
+	</script>
 </body>
 </html>
