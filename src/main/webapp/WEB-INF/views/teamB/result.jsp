@@ -28,7 +28,7 @@
 				<p>공유 및 저장하기</p>
 				<a href="" onclick="GA_Event('MBTI_result', 'share_kakao', 'Click');">
 					<img src = "../resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
-				<a href="" onclick="GA_Event('MBTI_result', 'share_link', 'Click');">
+				<a href="" onclick="share_link(); return false;">
 					<img src = "../resources/img/teamB/link_icon.png" alt="linkicon"></a>
 				<a href="" onclick="GA_Event('MBTI_result', 'share_save', 'Click');">
 					<img src = "../resources/img/teamB/save_icon.png" alt="saveicon"></a>
@@ -80,6 +80,19 @@
 		<div class="footer">
 			<p class=footer-text>@HGU 2022 Winter Camp</p>
 		</div>
-	
+	<script type="text/javascript">
+		function share_link(){
+		
+			var url = '';
+			var textarea = document.createElement("textarea");
+			document.body.appendChild(textarea);
+			url = "http://localhost:8080/webcamp/teamB/start";
+			textarea.value = url;
+			textarea.select();
+			document.execCommand("copy");
+			document.body.removeChild(textarea);
+			alert("URL이 복사되었습니다.")
+		}
+	</script>
 </body>
 </html>
