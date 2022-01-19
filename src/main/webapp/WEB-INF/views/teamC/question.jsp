@@ -49,7 +49,7 @@
 	
 }
 #Button1:hover{
-	background:#fae1e3;
+	background:#ffbfcd;
 	
 }
 
@@ -64,7 +64,7 @@
 	color:black;
 }
 #Button2:hover{
-	background:#fae1e3;
+	background:#ffbfcd;
 	
 }
 #quiz-img {

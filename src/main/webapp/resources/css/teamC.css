@@ -42,7 +42,6 @@ footer {
 }
 
 .tag {
-	margin-top: 150px;
 	font-family: "Do Hyeon";
 }
 
@@ -53,13 +52,14 @@ footer {
 	letter-spacing: 0.05rem;
 	color: black;
 	font-family: "Black Han Sans";
-	text-shadow: 5px 5px 0px white;
+	
+
 }
 
 
 .btnContainer {
-	width: 450px;
-	margin-top: 60px;
+	width: 400px;
+	margin-top: 30px;
 }
 
 .startButton {
@@ -74,7 +74,7 @@ footer {
 	border-radius:10px;
 }
 .startButton:hover{
-	background:#fae1e3;
+	background:#ffbfcd;
 	
 }
 
@@ -260,5 +260,6 @@ footer {
 	font-size: 1.7em;
 	font-weight: bold;
 	font-family: "Black Han Sans";
+	background-color: #FF333F;
 	
 }
