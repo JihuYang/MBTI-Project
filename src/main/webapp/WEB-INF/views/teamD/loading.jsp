@@ -6,6 +6,10 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!--  responsive web -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Latest compiled and minified CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<title>teamDLoading</title>
 	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
 	<script>
@@ -36,10 +40,11 @@
 		}
 	</style>
 </head>
+
 <body>
 	<div id="wrapper_version2">
 		<h1>닮은 캐릭터 찾는 중</h1>
-		<div id="images" onclick="location.href='result'"><img id="image1" src="../resources/img/teamD/신혼부부.png" style="width:340px; height:420;"></div>
+		<div id="images" onclick="location.href='result'"><img class="img-fluid" id="image1" src="../resources/img/teamD/신혼부부.png"></div>
 	</div>
 </body>
 </html>
