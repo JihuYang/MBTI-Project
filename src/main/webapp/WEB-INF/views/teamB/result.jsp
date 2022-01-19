@@ -34,7 +34,8 @@
 					<img src = "../resources/img/teamB/save_icon.png" alt="saveicon"></a>
 			</div>
 			<div class="restarticon">
-    			<a href="javascript:resetLink();" onclick="GA_Event('MBTI_result', 'restart', 'Click');">테스트 다시하기</a>
+    			<input type="button" value="테스트 다시하기" onclick="location.href='./start'">
+   
     		</div>
 			<div class="comments" style="margin-top:100px;"><label style="font-size: 20px; width: 50%;">댓글 1</label>
 				<div class="input-group mb-3">

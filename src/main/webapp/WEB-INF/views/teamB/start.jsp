@@ -15,7 +15,7 @@
 </head>
 <body>
 	<div class="intro-wrap">
-		<div id="optadATF" style="min-height:150px"></div>
+		<div id="optadATF" style="min-height:110px"></div>
 		<div class = "top-wrap"><br><br>
 			<img src = "../resources/img/teamB/main_img.png" alt="MBTI:배우자 캐릭터 찾기" class="intro-mainImg" style="width:600px;">
 			<div class = "text-area"><br>
