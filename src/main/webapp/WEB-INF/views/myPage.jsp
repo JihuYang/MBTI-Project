@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Shop Homepage - Start Bootstrap Template</title>
+        <title>소크라테스 - 마이페이지 </title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="../resources/img/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -50,121 +50,104 @@
         </nav>
         <!-- Header-->
         <header class="bg-dark main-header">
-            <div class="container px-4 px-lg-5 mb-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">소크라테스트 </h1>
-                    <p class="lead fw-normal text-white-50 mb-0">너 자신을 알라! MBTI 통합 사이트 </p>
-                </div>
+            <div class="container px-4 px-lg-5 mb-3">
             </div>
         </header>
+       
         <!-- Section-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
+        <section class="my-content py-5">
+         <div class="container px-4 px-lg-5 mt-5 text-center">
+         	<div class="form-signin">
+			  <form>
+			    <img class="mb-4 rounded-circle border border-dark" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="" width="150" height="150">
+			   
+			    <div class="mb-3 row">
+				    <label for="staticNickname" class="col-sm-2 col-form-label mypage-label">닉네임 </label>
+				    <div class="col-sm-10">
+				      <input type="text" readonly class="form-control-plaintext border border-secondary rounded p-3" id="staticNickname" value="산동동산 ">
+				    </div>
+				  </div>
+			     <div class="mb-3 row">
+				    <label for="staticMBTI" class="col-sm-2 col-form-label mypage-label">MBTI </label>
+				    <div class="col-sm-10">
+				      <input type="text" readonly class="form-control-plaintext border border-secondary rounded p-3" id="staticMBTI" value="ISFP ">
+				    </div>
+				  </div>
+			
+			    <button class="w-50 btn btn-lg btn-dark mt-2" type="submit">수정</button>
+			  </form>
+			</div>
+			         	
+          
+            </div>
             
-                <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
+
+            <div class="container px-4 px-lg-5 mt-5">
+            	<div class="strike pb-5">
+				    <span>지난 테스트 결과 </span>
+				</div>
+                <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-left bg-light">
+                    <div class="col my-3">
                         <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!— Date badge—>
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">2021-01-18</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
+                                    <h5 class="fw-bolder">맞춤 공부법 테스트 </h5>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
+                                    나에게 맞는 공부법은?
                                 </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    <!-- Product price-->
-                                    $120.00 - $280.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
+                                   <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center my-2">
+                                        <div><i class="bi bi-caret-right"></i>3,680</div>
                                     </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
-                                </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">테스트하기 </a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                      <div class="col my-3">
                         <div class="card h-100">
+                        <!— Date badge—>
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">2021-01-18</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
+                                    <h5 class="fw-bolder">맞춤 공부법 테스트 </h5>
                                     <!-- Product price-->
-                                    $40.00
+                                    나에게 맞는 공부법은?
                                 </div>
+                                   <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center my-2">
+                                        <div><i class="bi bi-caret-right"></i>3,680</div>
+                                    </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">테스트하기 </a></div>
                             </div>
                         </div>
                     </div>
+                    
+                   
+                  
                 </div>
             </div>
         </section>
+       
+       
+       
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
+        <footer class="py-3 bg-dark main-footer">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; MBTI에 진심인 팀 2022</p></div>
         </footer>
         <!-- Bootstrap core JS-->
