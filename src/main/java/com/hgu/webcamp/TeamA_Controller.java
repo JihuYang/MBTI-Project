@@ -2,6 +2,8 @@ package com.hgu.webcamp;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -37,18 +39,31 @@ public class TeamA_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/question", method = RequestMethod.GET)
-	public String teamA_question(ModelAndView mv) {
-
+	public ModelAndView teamA_question(HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		
 		System.out.println("question page loaded");
+		
+//		int testId = Integer.parseInt(request.getParameter("testId"));
+		
+		int testId = 1;
+		
 
-		List<questionDTO> question = questionService.readQuestion(1);
+		List<questionDTO> question = questionService.readQuestion(testId);
 		
 		for (questionDTO q : question) {
 			
 			System.out.println(q.toString());
 		}
+		
+		mv.addObject("questions", question);
+		
+		System.out.println(mv);
+		
+		mv.setViewName("teamA/question");
 
-		return "teamA/question";
+		return mv;
 	}
 
 	/**
