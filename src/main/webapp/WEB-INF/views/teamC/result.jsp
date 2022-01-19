@@ -58,7 +58,7 @@
 				
 				<div class="wholeBox">
 					<div class="box1">
-						<img src="../resources/img/teamC/character.png" />
+						<img src="../resources/img/teamC/mbti/ESFJ.png" />
 						<div class="resultName">
 							"공부는 자고로 시끄러워야 하는 법" <br> <span id="resultNick">인싸형
 								공부러</span>
