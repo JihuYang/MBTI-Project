@@ -1,6 +1,96 @@
 @charset "UTF-8";
 
+/* index */
+
+body{
+	min-height: 100vh;
+}
+
 .main-header{
 	padding-top: 3rem !important;
 	padding-bottom: 10rem !important;
+	position:relative;
 }
+
+    .strike {
+    	font-size: 2rem;
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap; 
+    }
+
+    .strike > span {
+        position: relative;
+        display: inline-block;
+    }
+	
+    .strike > span:before,
+    .strike > span:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        height: 1px;
+        background: var(--bs-body-color);
+    }
+
+    .strike > span:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+
+    .strike > span:after {
+        left: 100%;
+        margin-left: 15px;
+    }
+    
+    .main-content{
+    	position: absolute;
+    	top: 30vh;
+    	left: 5vw;
+    	right: 5vw;
+    	min-height: 100vh;
+    }
+    
+.main-footer {
+    clear: both;
+    position: relative;
+    /* bottom: 0; */
+    /* left: 0; */
+    margin-top: 110vh;
+    width: 100%;
+}
+    
+    .recommend a{
+    	text-decoration: none;
+    	color: black;
+    }
+    
+    
+    
+    
+    /* myPage */
+    
+   .my-content {
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    right: 5vw;
+    min-height: 100vh;
+} 
+
+.form-signin {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+.mypage-label{
+	line-height: 2.5;
+	display: inline-block;
+	font-weight: 700;
+}
+    
