@@ -42,5 +42,12 @@ public class TeamC_Controller {
 		
 		return "teamC/result";
 	}
+	//로딩을 위한 mapping 
+	@RequestMapping(value ="/loading", method = RequestMethod.GET)
+	public String teamC_loading(Model model) {
+		System.out.println("loading page loaded");
+		
+		return "teamC/loading";
+	}
 	
 }
