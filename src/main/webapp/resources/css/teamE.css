@@ -1,1 +1,277 @@
 @charset "UTF-8";
+
+        body{
+            min-width: 320px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* 상단 로고 */
+        .topbar-logo {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 45px;
+            padding: 0 20px;
+        }
+        
+        .middle-logo {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 27px;
+            padding: 0 20px;
+        }
+        
+        .low-logo {
+        	 display: flex;
+            align-items: center;
+            width: 100%;
+            height: 45px;
+            padding: 0 20px;
+        }
+        /* 제목 */
+        .title {
+            display: block;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+        }
+
+        /* 버튼 */
+        button {
+            cursor: pointer;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-normal {
+            width: 80%; height: 60px;
+            font-size: 18px; color: #fff;
+            background-color: #000;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* 인트로 화면 */
+        .intro h1 {
+            font-size: 30px;
+            margin: 24px 0px 8px;
+        }
+
+        .thinker {
+            margin:35px auto;
+        }
+
+        /* 정렬 */
+
+        .text-a {
+            text-align: center;
+        }
+        
+        .thinker {
+        	display: block;
+        	margin: 24px auto;
+        	width: 90%;
+        	height: 400px;
+        }
+        
+
+
+
+
+
+    
+
+    .text-b {
+    	top: 50%;
+    	left: 20%;
+    	position: absolute;
+        text-align: center;
+        font-size: 16px;
+		-webkit-transform:rotate(9deg);        
+    }
+
+    button {
+        cursor: pointer;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:8px;
+    }
+
+    .btn-question-1 {
+        width: 100%; height: 60px;
+        color: #fff;
+        border:1px solid black;
+        background-color: #000;
+    }
+    
+    .btn-question-2 {
+        width: 100%; height: 60px;
+        color: #fff;
+        border:1px solid black;
+        margin: 0px 0px 40px;
+        background-color: #000;
+    }
+    
+    .number {
+       text-align: left;
+       border-radius: 14px;
+	padding: 0px 12px;
+  	text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #fff;
+  border: 1px solid black;
+  color: #848484;
+  	
+    }
+    
+    .box {
+    	margin: 0px 0px 60px;	
+    	position:relative;
+    }
+    
+    
+    
+    
+    body {
+            min-width: 320px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .text-d {
+            text-align: center;
+        }
+
+        .mbti h1 {
+            font-size: 30px;
+            margin: 24px 0px 8px;
+        }
+
+        .topbar-logo {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 54px;
+            padding: 0 20px;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-result {
+        	
+            width: 100%; height: 60px;
+            color: #000;
+            background-color: #fff;
+            border:2px solid black;
+        }
+        
+        .text-c {
+    	top: 45%;
+    	left: 35%;
+    	position: absolute;
+        text-align: center;
+        font-size: 16px;
+		-webkit-transform:rotate(9deg);        
+    }
+        
+         .box {
+    	margin: 0px 0px 60px;	
+    	position:relative;
+    }
+    
+    	.main-animal {
+    	top: 70%;
+    	left: 45%;
+    	position: absolute;
+    	width: 35px;
+    	height: 30px;
+    	}
+    	
+    	.animals {
+    	width: 35px;
+    	height: 30px;
+    	}
+    
+    .outer {
+    	border: 2px solid black;
+    	margin-bottom: 40px;
+    	background-color: #000;
+    }
+    
+    .resultContent {
+    	border: 2px solid black;	
+    	margin: 20px;
+    	background-color: white;
+    }
+    
+    
+    
+    .goodRelation {
+    	text-align: center;
+    	width: 192px;
+    	display: inline-block;		
+    	margin-bottom: 40px;
+    	color: rgb(53, 255, 53);
+    }
+    
+    .badRelation {
+    	text-align: center;
+    	width: 192px;
+    	display: inline-block;	
+    	margin-bottom: 40px;
+    	color: rgb(255, 102, 102);
+    }
+    
+    .share {
+    	background-color: black;
+    	color: white;
+    	border-radius: 14px;
+    	border: 1px solid black;
+  		margin-bottom: 30px;
+  		margin-left: 40%;
+  		margin-top: 10px;
+    }
+    
+    .kakao {
+    	margin-left: 45%;
+    	width: 40px;
+    	height: 40px;
+    	boarder-radius: 30px;
+    }
+    
+    .comments {
+    	width: 90%;		
+    	margin-left: 7%;
+    	margin-bottom: 40px;
+    }
+    
+    .texts {
+    	display: inline-block;
+    }
+    
+    .btn-comments {
+    	display: inline-block;
+    	width: 40px;
+    	background-color: black;
+    	color: white;
+    	margin-bottom: 50px;
+    }
+    
+    
+    
+    

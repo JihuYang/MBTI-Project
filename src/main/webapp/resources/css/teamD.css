@@ -31,23 +31,62 @@ p {
 	text-align : center ;
 }
 
-#wrapper1 {
-	width : 470px ;
-	height: 95vh;
-	margin : 20px auto ;
-	background-color : rgb(255,255,255, 0.9) ;
-	border : 4px solid ;
+#wrapper_version1 {
+ 	width : 470px ;
+ 	height: 95vh auto;
+ 	margin : 20px auto ;
+ 	background-color : rgb(255,255,255, 0.9) ;
+ 	border : 4px solid ;
 	border-radius : 100px ;
 }
 
-#wrapper1 h1{
-	padding: 5px;
+#wrapper_version1 h1{
 	text-align: center;
-	font-size: 45px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#result{
+	text-align: center;
+	border: none;
 }
 
 #result_more{
 	padding: 15px;
+}
+
+#an1, #an2{
+ 	width : 400px ;
+ 	height: 150px;
+ 	margin : 20px auto ;
+ 	border : 4px solid black;
+	border-radius : 50px;
+}
+
+#an1 h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 10px;
+}
+
+#an2 h2{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 10px;
+}
+
+#endbar {
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	height: 50px;
+	padding: 15px;
+}
+
+#endbar:hover {
+	cursor: pointer;
 }
 
 #img {
@@ -56,15 +95,6 @@ p {
 	margin : 0 auto ;
 	margin-bottom : 20px ;
 	background-image : url("../img/teamD/start img.png") ;
-}
-
-
-#ESFP{
-	width : 80% ;
-	height : 20% ;
-	margin : 0 auto ;
-	margin-bottom : 25px ;
-	background-image : url("../img/teamD/봉미선.png") ;
 }
 
 .name {
