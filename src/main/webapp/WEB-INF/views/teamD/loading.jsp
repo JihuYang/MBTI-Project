@@ -12,11 +12,6 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<title>teamDLoading</title>
 	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
-	<script>
-		function imageChange(){
-			
-		} 
-	</script>
 	
 	<style>
 		#wrapper_version2{
