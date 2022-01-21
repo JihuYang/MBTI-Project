@@ -9,6 +9,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- 공유하기 -->
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="../resources/js/shareProject.js" ></script>
+
 <!-- Bootstrap CSS -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -38,16 +42,13 @@
 	crossorigin="anonymous"></script>
 <style>
 @media only screen and (max-width: 600px) {
-
   .col{
     width:0%;
   }
   .content{
   	width:100%;
   }
-
 }
-
 </style>
 </head>
 <body>
@@ -58,7 +59,7 @@
 				
 				<div class="wholeBox">
 					<div class="box1">
-						<img src="../resources/img/teamC/character.png" />
+						<img src="../resources/img/teamC/mbti/ESFJ.png" />
 						<div class="resultName">
 							"공부는 자고로 시끄러워야 하는 법" <br> <span id="resultNick">인싸형
 								공부러</span>
@@ -115,8 +116,9 @@
 				<div class="wholeBox two_btn sv_btn">저장하기</div>
 
 				<div class="shareBtn">
-					<img src="../resources/img/teamC/kakaoLogo.png" /> <img
-						src="../resources/img/teamC/copyLink.png" />
+				<button class="sharebtn-kakao" type="button" onclick="sendLinkCustom();"><img  src="../resources/img/teamC/kakaoLogo.png" /></button>
+					<button class="sharebtn-link" type="button" onclick="copyLink('여기에 링크를 넣어주세요');"><img src="../resources/img/teamC/copyLink.png"/></button>
+				
 				</div>
 				<div>
 					<br> <br> <br>

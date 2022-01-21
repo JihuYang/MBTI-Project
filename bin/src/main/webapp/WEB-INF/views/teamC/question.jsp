@@ -41,20 +41,32 @@
 	width: 400px;
 	height: 87px;
 	display: block;
-	background: #4BDF86;
+	background: #FFC700;
 	border: 3px solid #000000;
 	box-shadow: 10px 10px 0px #000000;
+	border-radius:10px;
+	color:black;
+	
+}
+#Button1:hover{
+	background:#FFE58A;
+	
 }
 
 #Button2 {
 	display: block;
 	width: 400px;
 	height: 87px;
-	background: #FF005C;
+	background: #FFC700;
 	border: 3px solid #000000;
 	box-shadow: 10px 10px 0px #000000;
+	border-radius:10px;
+	color:black;
 }
-
+#Button2:hover{
+	background:#FFE58A;
+	
+}
 #quiz-img {
 	margin-top: 10px;
 }
@@ -93,7 +105,7 @@
 			<div class="col bg-white content">
 				<div id="progressDiv">
 					<div class="progress" style='margin-top: 40px'>
-						<div class="progress-bar bg-danger" role="progressbar"
+						<div class="progress-bar bg-warning" role="progressbar"
 							style="width: 10%" aria-valuenow="10" aria-valuemin="0"
 							aria-valuemax="100"></div>
 					</div>
@@ -106,7 +118,7 @@
 				<div class="quiz-question">힘들게 공부한 시험 결과가 좋지 않다... 어떻게 하면 기분이
 					나아질까..</div>
 				<div class="quiz-img"  style='margin-top: 20px'>
-					<img src="../resources/img/teamC/q1.png" width="150" />
+					<img src="../resources/img/teamC/q1.png" height="200px" />
 				</div>
 
 				<div id="quiz-button" style='width: 100%;'>
