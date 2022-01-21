@@ -102,3 +102,6 @@ p {
 	font-size : 5em ;
 	text-align : center ;
 }
+#an1,#an2:hover {
+	cursor : pointer ;
+}
