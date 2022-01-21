@@ -49,12 +49,13 @@ public class TeamA_Controller {
 		
 		 
 		int testId = 1; //테스트이름
-		int userId = 1; // 사용자 아이디 
-//		int questionNum = 1;
-		
+		int questionNum = 1;  
+		int questionId = 1;
 		
 
-		List<questionDTO> question = questionService.readQuestion(testId);
+		//List<questionDTO> question = questionService.readQuestion(testId);
+		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
+
 		
 		for (questionDTO q : question) {
 			

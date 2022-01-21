@@ -22,13 +22,11 @@
 			<span class="void">void </span><span class="Qnum">Question1 </span><span
 				class="char">() {</span>
 		</div>
-		<c:forEach items="${questions}" var="q" varStatus="status">
 			<div class="question-content" >
 				<span class="printf">printf</span><span class="char">(</span><span
-					class="question">${q.question}</span><span
+					class="question">${questions[0].question}</span><span
 					class="char">);</span>
 			</div>
-		</c:forEach>
 		<div class="question-format">
 			<span class="char">}</span>
 		</div>

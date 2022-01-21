@@ -15,7 +15,7 @@
 		SELECT *
 		FROM camp1.question as q JOIN camp1.answer as a
 		ON q.testId = a.testId
-		WHERE q.testId = 1 AND q.questionNum = 1 AND a.questionId=1;
+		WHERE q.testId = #{testId} AND q.questionNum = #{questionNum} AND a.questionId = #{questionId};
 	</select>
 
 </mapper>
