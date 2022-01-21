@@ -15,7 +15,7 @@
 	<script>
 		function imageChange(){
 			
-		}
+		} 
 	</script>
 	
 	<style>
