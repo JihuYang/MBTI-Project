@@ -30,17 +30,12 @@
 				<div id="questionContent">
 					<%@ include file="../ajaxContent/teamA/question.jsp"%>
 				</div>
-				<div id="bottom" class="bottom">
-<%--   					<button type="button" class="btn btn-light btn-answer"
-						onclick="readQuestion(${1})">역시 세상은 따뜻해ㅠㅠ(감동)</button> --%>
-					<button type="button" class="btn btn-light btn-answer"
-						onclick="location.href='./loading')">역시 세상은 따뜻해ㅠㅠ(감동)</button>
-				</div>
-				<div id="bottom" class="bottom">
-					<button type="button" class="btn btn-light btn-answer"
-						onclick="location.href='./loading'">내가 알아서 할 수 있는ㄷ.. 초큼
-						부담스럽다..</button>
-				</div>
+				<c:forEach items="${questions}" var="q" varStatus="status">
+					<div id="bottom" class="bottom">
+						<button type="button" class="btn btn-light btn-answer"
+							onclick="location.href='./loading')">${q.answer}}</button>
+					</div>
+				</c:forEach>
 
 			</div>
 			<div class="col d-none d-lg-block"></div>
