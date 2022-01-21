@@ -24,13 +24,13 @@
 <title>teamCStart</title>
 </head>
 <body>
-<div class="background">
+
 	<div class="container-fluid">
 		<div class="row text-center" >
 			<div class="col">
 			</div>
 			<div class="col content">
-			<div class="start bg-white" style="border: 5px solid black; box-shadow: 10px 10px 0px #000000; margin:150px 0 100px 0; border-radius: 10px; padding: 30px 30px 30px 30px;">
+			<div class="start bg-white" style="border: 5px solid black; box-shadow: 10px 10px 0px #000000; margin:80px 0 100px 0; border-radius: 10px; padding: 30px 30px 30px 30px;">
 				<div class="startHeader">
 					<div class="tag ">#MBTI &nbsp; #나에게 맞는 공부법은?</div>
 					<div id="titleBg"></div>
@@ -38,6 +38,7 @@
 				</div>
 				
 				<div class="btnContainer">
+					<img src="../resources/img/teamC/background-img.png" style="width:300px"/>
 					<button class="startButton" onclick="moveToQ()">
 					<div class="btntext1">터치해서 알아보기</div> 
 					<div class="btntext2"> 지금까지 55,816명이 알아봤어요.</div>
@@ -49,7 +50,7 @@
 
 		</div>
 	</div>
-</div>
+
 	<footer class="text-center">
 		<span>@2022 MBTI에 진심인 팀 All rights reserved.</span>
 	</footer>
