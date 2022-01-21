@@ -3,9 +3,19 @@
 
 <mapper namespace="question">
 
-	
-	<select id="readQuestion" resultType="com.hgu.webcamp.DTO.questionDTO" parameterType="hashmap">
-		SELECT * FROM camp1.question WHERE testId = #{testId} 
+
+	<select id="readQuestion"
+		resultType="com.hgu.webcamp.DTO.questionDTO" parameterType="hashmap">
+		SELECT *
+		FROM camp1.question WHERE testId = #{testId}
 	</select>
-	 
+
+	<select id="readQuestionAndAnswer"
+		resultType="com.hgu.webcamp.DTO.questionDTO" parameterType="hashmap">
+		SELECT *
+		FROM camp1.question as q JOIN camp1.answer as a
+		ON q.testId = a.testId
+		WHERE q.testId = 1 AND q.questionNum = 1 AND a.questionId=1;
+	</select>
+
 </mapper>

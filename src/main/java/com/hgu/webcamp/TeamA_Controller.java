@@ -49,6 +49,7 @@ public class TeamA_Controller {
 		
 		 
 		int testId = 1; //테스트이름
+		int userId = 1; // 사용자 아이디 
 //		int questionNum = 1;
 		
 		
