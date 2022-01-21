@@ -86,9 +86,9 @@
 
 
     
-
+	/* 질문 내용 */
     .text-b {
-    	top: 50%;
+    	top: 70%;
     	left: 20%;
     	position: absolute;
         text-align: center;
