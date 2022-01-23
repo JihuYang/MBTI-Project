@@ -17,7 +17,7 @@
 <div class="question">
     <!-- <div class="topbar-logo logo-none"></div> -->
     <div class = "box">
-    <div class="text-b">친구들과 의논할 때 내가 말하는 방식은?</div>
+    <div class="text-b"><%@ include file="../ajaxContent/teamE/question.jsp"%></div>
     <img src="../resources/img/teamE/bar.jpg" class="bar" />
     </div>
     
