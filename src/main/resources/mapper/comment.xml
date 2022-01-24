@@ -2,22 +2,26 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="comment">
 	<insert id="insertComment">
-	insert into COMMENT (comment)
-	values 
-	(#{comment})
+		insert into camp1.comment (testId, userId, comment, regDate)
+		values
+		(#{testId}, #{userId}, #{comment}, #{regDate})
+
 	</insert>
 	<update id="updateComment">
-	update COMMENT
+		update COMMENT
 		set comment=#{comment}
 		where seq=#{seq}
 	</update>
 	<delete id="deleteComment">
-	delete from COMMENT where seq=#{seq}
+		delete from COMMENT where seq=#{seq}
 	</delete>
-	<select id="getComment" resultType="string">
-	select * from COMMENT where seq=#{seq}
+	<select id="getComment" resultType="com.hgu.webcamp.DTO.commentDTO">
+		select * from COMMENT where seq=#{seq}
 	</select>
-	<select id="getCommentList" resultType="string">
-	select * from COMMENT order by seq desc
+	<select id="getCommentList"
+		resultType="com.hgu.webcamp.DTO.commentDTO">
+		SELECT comment.testId, user.id, user.nickName, user.name, comment,
+		comment.regdate
+		FROM camp1.comment JOIN camp1.user ON comment.userID = user.id;
 	</select>
 </mapper>
