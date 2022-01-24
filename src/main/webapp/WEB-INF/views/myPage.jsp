@@ -78,7 +78,7 @@
             </div>
             
 
-            <div class="container px-4 px-lg-5 mt-5">
+            <div class="container px-4 px-lg-5 my-5">
             	<div class="strike pb-5">
 				    <span>지난 테스트 결과 </span>
 				</div>
