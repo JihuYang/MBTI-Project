@@ -39,10 +39,6 @@
     		</div>
 			<div class="comments" style="margin-top:100px;"><label style="font-size: 20px; width: 50%;">댓글 1</label>
 				<div class="input-group mb-3">
-				<input type="text" class="form-control" name="userId" placeholder="닉네임 입력" />
-				<input type="text" class="form-control" name="userPwd" placeholder="패스워드 입력" />
-				</div>
-				<div class="input-group mb-3">
 				  <input type="text" class="form-control" placeholder="댓글을 입력하세요." aria-label="comments" aria-describedby="button-addon2">
 				  <button class="btn btn-warning" type="button" id="button-addon2">Button</button>
 				</div>

@@ -27,11 +27,36 @@
 	    <span class=" mb-3 fw-normal">소셜 로그인으로 시작하기 </span> 
     </div>
     <div class="mt-3 login-form">
-    <div class="login-btn w-100 p-3 mb-3 rounded border-secondary"><img style="width: 20px;" src="resources/img/teamProject/kakao.png"/><a class="w-100" href="#" onclick="" >카카오로 가입하기</a></div>
+    <div class="login-btn w-100 p-3 mb-3 rounded border-secondary"><img style="width: 20px;" src="resources/img/teamProject/kakao.png"/><a class="w-100" href="javascript:kakaoLogin();"  >카카오로 가입하기</a></div>
     <div class="login-btn w-100 p-3 mb-3 rounded border-secondary"><img style="width: 20px;" src="resources/img/teamProject/google.png"/><a class="w-100" href="#" onclick="" >구글로 가입하기</a></div>
 </div>
   </form>
 </main>
-    
+
+	<!-- 카카오 로그인 -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+	<script>
+		window.Kakao.init("0f073d0c9ad305070b99347eac9612a9");
+		function kakaoLogin() {
+			window.Kakao.Auth.login({
+				scope: 'profile_nickname, profile_image, account_email', 
+				success : function(response) {
+					console.log(response)
+					window.Kakao.API.request({
+						url: '/v2/user/me',
+						success: (res) => {
+							const kakao_account = res.kakao_account;
+							console.log(kakao_account)
+						}
+					});
+					
+				},
+				fail : function(error) {
+					console.log(error);
+				}
+			});
+		}
+	</script>
+	
     </body>
 </html>

@@ -18,26 +18,26 @@ public class commentDAO {
 	
 	
 	public int insertComment(commentDTO dto) {
-		int result = sqlSession.insert("mapper.insertComment", dto);
+		int result = sqlSession.insert("comment.insertComment", dto);
 		return result;
 	}
 	
 	public int deleteComment(int id) {
-		int result = sqlSession.delete("mapper.deleteComment", id);
+		int result = sqlSession.delete("comment.deleteComment", id);
 		return result;
 	}
 	public int updateComment(commentDTO dto) {
-		int result = sqlSession.update("mapper.updateComment", dto);
+		int result = sqlSession.update("comment.updateComment", dto);
 		return result;
 	}
 	
 	public commentDTO getComment(int seq) {
-		commentDTO one = sqlSession.selectOne("mapper.getComment", seq);
+		commentDTO one = sqlSession.selectOne("comment.getComment", seq);
 		return one;
 
 	}
 	public List<commentDTO> getCommentList() {
-		List<commentDTO> list = sqlSession.selectList("mapper.getCommentList");
+		List<commentDTO> list = sqlSession.selectList("comment.getCommentList");
 		return list;
 	}
 
