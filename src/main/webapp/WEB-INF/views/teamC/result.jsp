@@ -11,8 +11,7 @@
 
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="../resources/js/shareProject.js" ></script>
-
+<script type="text/javascript" src="../resources/js/shareProject.js"></script>
 
 <!-- Bootstrap CSS -->
 <link
@@ -83,20 +82,20 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-				<div class="smtitle method">찰떡 공부법!</div>
+					<div class="smtitle method">찰떡 공부법!</div>
 					<ul>
 						<li>다른 사람을 챙기다보니 자신을 소홀히 하기 쉬움</li>
 						<li>냉철하지 못해 손해보는 경우 발생</li>
 						<li>한꺼번에 많은 양을 공부하면 집중력 약해짐</li>
 					</ul>
 					<div class="box2">
-					<div class="smtitle study">찰떡 파트너!</div>
-					<div class="mbtiPartner">ESTJ. ESFJ. ENFJ. ISTJ</div>
-					<div class="box2">
-					<div class="smtitle place">찰떡 공부장소!</div>
-					<div class="studyPlace">같이하자! 스터디 카페</div>
+						<div class="smtitle study">찰떡 파트너!</div>
+						<div class="mbtiPartner">ESTJ. ESFJ. ENFJ. ISTJ</div>
+						<div class="box2">
+							<div class="smtitle place">찰떡 공부장소!</div>
+							<div class="studyPlace">같이하자! 스터디 카페</div>
+						</div>
 					</div>
-				</div>
 				</div>
 
 				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
@@ -104,9 +103,14 @@
 				<div class="wholeBox two_btn cmt_btn" onclick="moveToC()">댓글보기</div>
 
 				<div class="shareBtn">
-				<button class="sharebtn-kakao" type="button" onclick="sendLinkCustom();"><img  src="../resources/img/teamC/kakaoLogo.png" /></button>
-					<button class="sharebtn-link" type="button" onclick="copyLink('여기에 링크를 넣어주세요');"><img src="../resources/img/teamC/copyLink.png"/></button>
-				
+
+					<button class="sharebtn-kakao" type="button" onclick="sendLinkDefault();">
+						<img src="../resources/img/teamC/kakaoLogo.png" />
+					</button>
+					<button class="sharebtn-link" type="button"  onclick="copyLink();">
+						<img src="../resources/img/teamC/copyLink.png" />
+					</button>
+
 				</div>
 
 
@@ -115,19 +119,19 @@
 			</div>
 			<div class="col"></div>
 		</div>
+	</div>
 
-
-		<footer class="text-center">
-			<span>@2022 MBTI에 진심인 팀 All rights reserved.</span>
-		</footer>
-		<script>
-			function moveTo() {
-				location.href = "start";
-			}
-			function moveToC() {
-				location.href = "comment";
-			}
-		</script>
+	<footer class="text-center">
+		<span>@2022 MBTI에 진심인 팀 All rights reserved.</span>
+	</footer>
+	<script>
+		function moveTo() {
+			location.href = "start";
+		}
+		function moveToC() {
+			location.href = "comment";
+		}
+	</script>
 </body>
 
 </html>

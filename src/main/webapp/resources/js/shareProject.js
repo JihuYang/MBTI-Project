@@ -1,3 +1,6 @@
+
+var link = document.location.href;
+
 //카카오톡 공유하기 
 Kakao.init("1841f627e245ac59ac935b451f4720e1"); //어플의 Javascript Key 값 
 	function sendLinkCustom() {
@@ -20,23 +23,14 @@ Kakao.init("1841f627e245ac59ac935b451f4720e1"); //어플의 Javascript Key 값
 								webUrl : 'https://developers.kakao.com',
 							},
 						},
-						social : {
-							likeCount : 100,
-							commentCount : 200,
-							sharedCount : 300,
-						},
+						
 						buttons : [ {
-							title : '웹으로 보기',
+							title : '나만보기 ',
 							link : {
 								mobileWebUrl : 'https://developers.kakao.com',
 								webUrl : 'https://developers.kakao.com',
 							},
-						}, {
-							title : '앱으로 보기',
-							link : {
-								mobileWebUrl : 'https://developers.kakao.com',
-								webUrl : 'https://developers.kakao.com',
-							},
+						
 						}, ],
 					})
 		}
@@ -46,12 +40,13 @@ Kakao.init("1841f627e245ac59ac935b451f4720e1"); //어플의 Javascript Key 값
 		window.kakaoDemoException && window.kakaoDemoException(e)
 	}
 	
-	
+
+
 //링크 복사 	
-var copyLink = function(str) {
-    // 클립보드로 링크 복사
-navigator.clipboard.writeText(str)
-	.then(function () {
-		alert('URL 복사가 완료되었습니다.')
-	})
-};	
+var copyLink = function() {
+	// 클립보드로 링크 복사
+	navigator.clipboard.writeText(link)
+		.then(function() {
+			alert('URL 복사가 완료되었습니다.' + link)
+		})
+};
