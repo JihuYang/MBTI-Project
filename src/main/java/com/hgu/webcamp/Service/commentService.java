@@ -14,5 +14,5 @@ public interface commentService {
 
 	public commentDTO getComment(int seq);
 
-	public List<commentDTO> getCommentList();
+	public List<commentDTO> getCommentList(int testId);
 }

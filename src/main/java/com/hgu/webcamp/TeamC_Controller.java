@@ -1,9 +1,17 @@
 package com.hgu.webcamp;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.hgu.webcamp.DTO.commentDTO;
+import com.hgu.webcamp.DTO.questionDTO;
+import com.hgu.webcamp.Service.*;
 
 /**
  * Handles requests for the application home page.
@@ -11,6 +19,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping(value = "/teamC")
 public class TeamC_Controller {
+	
+	@Autowired
+	commentService commentService;
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -54,7 +65,12 @@ public class TeamC_Controller {
 		public String teamC_comment(Model model) {
 			System.out.println("comment page loaded");
 			int userId=1;
-			int testId=1;
+			int testId=1;	
+			List<commentDTO> comment = new ArrayList<commentDTO>();
+
+			comment = commentService.getCommentList(testId);
+			
+			System.out.println(comment.toString());
 			
 			return "teamC/comment";
 		}

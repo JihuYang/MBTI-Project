@@ -1,6 +1,8 @@
 package com.hgu.webcamp.DAO;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -10,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import com.hgu.webcamp.DTO.commentDTO;
 
 
-@Repository
+@Repository("commentDAO")
 public class commentDAO {
 	
 	@Autowired
@@ -36,8 +38,11 @@ public class commentDAO {
 		return one;
 
 	}
-	public List<commentDTO> getCommentList() {
-		List<commentDTO> list = sqlSession.selectList("comment.getCommentList");
+	public List<commentDTO> getCommentList(int testId) {
+		Map<String, Object> commentParam = new HashMap<String, Object>();
+		commentParam.put("testId", testId);
+
+		List<commentDTO> list = sqlSession.selectList("comment.getCommentList", commentParam);
 		return list;
 	}
 

@@ -1,5 +1,6 @@
 package com.hgu.webcamp;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -7,12 +8,14 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.hgu.webcamp.DTO.commentDTO;
 import com.hgu.webcamp.DTO.questionDTO;
 import com.hgu.webcamp.Service.*;
 
@@ -25,6 +28,9 @@ public class TeamA_Controller {
 
 	@Autowired
 	questionService questionService;
+	
+	@Autowired
+	commentService commentService;
 
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -105,11 +111,22 @@ public class TeamA_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/result", method = RequestMethod.GET)
-	public String teamA_result(Model model) {
-
+	public ModelAndView teamA_result(Model model) {
+		ModelAndView mv = new ModelAndView();
 		System.out.println("result page loaded");
+		
+		int testId = 1;
+		
+		List<commentDTO> comment = new ArrayList<commentDTO>();
 
-		return "teamA/result";
+		comment = commentService.getCommentList(testId);
+		
+		mv.addObject("comments",comment);
+		mv.setViewName("teamA/result");
+		
+		System.out.println(mv);
+
+		return mv;
 	}
 	
 	// ajax로 값을 주고받는 Controller 
@@ -136,4 +153,14 @@ public class TeamA_Controller {
 		
 		return question;
 		}
+	
+	@RequestMapping(value = "/delete_ok/{id}", method = RequestMethod.GET)
+	public String deletePostOK(@PathVariable("id") int id) {
+		int i = commentService.deleteComment(id);
+		
+		if(i == 0) System.out.println("Error! delete Failed");
+		else System.out.println("댓글 삭제 완료.");
+		
+		return "redirect:../result";
+	}
 }
