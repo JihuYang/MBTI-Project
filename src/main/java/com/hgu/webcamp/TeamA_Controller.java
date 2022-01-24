@@ -9,6 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.hgu.webcamp.DTO.questionDTO;
@@ -45,27 +47,35 @@ public class TeamA_Controller {
 		
 		System.out.println("question page loaded");
 		
-		System.out.println(request.getParameter("testId"));
 		
-		 
+		int questionNum= 1; // question 테이블에서 문제 
+		int questionId = 1; // answer 테이블에서 문제 
 		int testId = 1; //테스트이름
-//		int questionNum = 1;
-		
-		
 
-		List<questionDTO> question = questionService.readQuestion(testId);
+		/*String temp = request.getParameter("questionNum");
+		System.out.println("ajax로 전달한 값 : " + temp);
+		if(temp != null) {
+			questionNum = Integer.parseInt(temp);
+			questionNum++;
+		}
+		System.out.println(questionNum);
 		
+		  
+		questionId = questionNum;
+		*/
+
+		//List<questionDTO> question = questionService.readQuestion(testId);
+		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
+
 		for (questionDTO q : question) {
 			
 			System.out.println(q.toString());
 		}
-		
-		mv.addObject("questions", question);
+		//mv.addObject("questionNum", questionNum);
+		mv.addObject("questions", question);		
+		mv.setViewName("teamA/question");
 		
 		System.out.println(mv);
-		
-		mv.setViewName("teamA/question");
-
 		return mv;
 	}
 
@@ -101,5 +111,29 @@ public class TeamA_Controller {
 
 		return "teamA/result";
 	}
-
+	
+	// ajax로 값을 주고받는 Controller 
+	@RequestMapping(value = "/ajax", method = RequestMethod.POST)
+	public @ResponseBody List<questionDTO> ajax_question(@RequestParam("questionNum") int questionNum) {
+				
+		
+		System.out.println("ajax conveyed value to server");
+		
+		int testId = 1;
+		int questionId = 1;
+		
+		questionNum++;
+		
+		questionId = questionNum;
+		
+		//List<questionDTO> question = questionService.readQuestion(testId);
+		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
+		
+		
+		for (questionDTO q : question) {
+			System.out.println(q.toString());
+		}
+		
+		return question;
+		}
 }

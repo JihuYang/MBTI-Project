@@ -1,10 +1,11 @@
 package com.hgu.webcamp;
 
 import org.springframework.stereotype.Controller;
+
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
+import com.hgu.webcamp.DTO.commentDTO;
 /**
  * Handles requests for the application home page.
  */
@@ -17,9 +18,9 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
-		
+		commentDTO dto = new commentDTO();
 		System.out.println("WELCOME TO MBTI WEB SITE");
-		
+		dto.toString();
 		return "index";
 	}
 	

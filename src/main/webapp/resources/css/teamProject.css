@@ -55,10 +55,10 @@ body{
     
 .main-footer {
     clear: both;
-    position: relative;
-    /* bottom: 0; */
+    position: fixed;
+    bottom: 0;
     /* left: 0; */
-    margin-top: 110vh;
+   /*  margin-top: 110vh; */
     width: 100%;
 }
     
@@ -93,4 +93,102 @@ body{
 	display: inline-block;
 	font-weight: 700;
 }
+
+/*Register page*/
+
+.form-select:focus {
+    border-color: grey;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(66 70 73 / 50%);
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: grey;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(66 70 73 / 50%);
+}
+
+input:-internal-autofill-selected {
+    background-color: white !important;
+}
+
+
+.registration {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.form-select{
+	padding-top: 0.4rem!important;
+	font-size: 1em !important;
+}
+ 
+/*Login page*/
+
+.login {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.form-login {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+.center-block > a {
+    border-color: #e6e6e6;
+    color: #222222;
+    -webkit-display: flex;
+    display: -ms-flex;
+    display: flex;
+    height: 3.75rem;
+    border-radius: 10px;
+    margin-bottom: 0.7rem;
+}
+
+.login-btn {
+    display: inline-block;
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: center;
+    user-select: none;
+    text-decoration: none;
+    outline: 0;
+    vertical-align: middle;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    color: #222;
+    background-color: #fff;
+    position: relative;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
     
+.login-btn .button-icon {
+    position: absolute;
+    left: 0.8125rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login-form a{
+	text-decoration: none;
+	color: black;
+}
+
+

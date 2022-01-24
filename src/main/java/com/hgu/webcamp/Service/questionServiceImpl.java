@@ -23,4 +23,14 @@ public class questionServiceImpl implements questionService{
 		List<questionDTO> question = questionDAO.readQuestion(testId);
 		return question;
 	}
+	
+	/**
+	 * Read the 1 questions and 2 answers of that question
+	 */
+	@Override
+	public List<questionDTO> readQuestionAndAnswer(int testId, int questionNum, int questionId){
+		List<questionDTO> question = questionDAO.readQuestionAndAnswer(testId, questionNum, questionId);
+		return question;
+	}
+	
 }

@@ -49,5 +49,15 @@ public class TeamC_Controller {
 		
 		return "teamC/loading";
 	}
+	//comment
+		@RequestMapping(value ="/comment", method = RequestMethod.GET)
+		public String teamC_comment(Model model) {
+			System.out.println("comment page loaded");
+			int userId=1;
+			int testId=1;
+			
+			return "teamC/comment";
+		}
+		
 	
 }

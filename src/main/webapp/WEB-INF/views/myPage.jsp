@@ -17,27 +17,23 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="resources/css/styles.css" type="text/css" rel="stylesheet" />
         <link href="resources/css/teamProject.css" type="text/css" rel="stylesheet" />
+
+  		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
       
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">소크라테스트</a>
+                <a class="navbar-brand" href="./index">소크라테스트</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">All Products</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
-                            </ul>
-                        </li> -->
                     </ul>
                     <form class="d-flex">
                         <button class="btn btn-outline-dark" type="submit">
@@ -64,17 +60,17 @@
 			    <div class="mb-3 row">
 				    <label for="staticNickname" class="col-sm-2 col-form-label mypage-label">닉네임 </label>
 				    <div class="col-sm-10">
-				      <input type="text" readonly class="form-control-plaintext border border-secondary rounded p-3" id="staticNickname" value="산동동산 ">
+				      <input type="text" readonly class="form-control-plaintext border border-secondary rounded p-3" id="staticNickname" value="산동동산 " disabled>
 				    </div>
 				  </div>
 			     <div class="mb-3 row">
 				    <label for="staticMBTI" class="col-sm-2 col-form-label mypage-label">MBTI </label>
 				    <div class="col-sm-10">
-				      <input type="text" readonly class="form-control-plaintext border border-secondary rounded p-3" id="staticMBTI" value="ISFP ">
+				      <input type="text" readonly class="form-control-plaintext border border-secondary rounded p-3" id="staticMBTI" value="ISFP " disabled>
 				    </div>
 				  </div>
 			
-			    <button class="w-50 btn btn-lg btn-dark mt-2" type="submit">수정</button>
+			    <button id="myPage-btn" class="w-50 btn btn-lg btn-dark mt-2" type="submit" onclick="change()" value="수정">수정</button>
 			  </form>
 			</div>
 			         	
@@ -82,7 +78,7 @@
             </div>
             
 
-            <div class="container px-4 px-lg-5 mt-5">
+            <div class="container px-4 px-lg-5 my-5">
             	<div class="strike pb-5">
 				    <span>지난 테스트 결과 </span>
 				</div>
@@ -92,23 +88,18 @@
                         <!— Date badge—>
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">2021-01-18</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="resources/img/teamProject/teamA_thumbnail.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">맞춤 공부법 테스트 </h5>
-                                    <!-- Product price-->
-                                    나에게 맞는 공부법은?
+                                    <h5 class="fw-bolder">개발자 유형 테스트  </h5>
+                            
                                 </div>
-                                   <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center my-2">
-                                        <div><i class="bi bi-caret-right"></i>3,680</div>
-                                    </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">테스트하기 </a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./teamA/result">내 결과 보기 </a></div>
                             </div>
                         </div>
                     </div>
@@ -117,23 +108,18 @@
                         <!— Date badge—>
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">2021-01-18</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="resources/img/teamProject/teamC_thumbnail.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">맞춤 공부법 테스트 </h5>
-                                    <!-- Product price-->
-                                    나에게 맞는 공부법은?
+                               
                                 </div>
-                                   <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center my-2">
-                                        <div><i class="bi bi-caret-right"></i>3,680</div>
-                                    </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">테스트하기 </a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./teamC/result">내 결과 보기 </a></div>
                             </div>
                         </div>
                     </div>

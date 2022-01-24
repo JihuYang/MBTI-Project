@@ -17,9 +17,9 @@ public class TeamProject_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/index", method = RequestMethod.GET)
-	public String teamA_start(Model model) {
+	public String teamProject_index(Model model) {
 		
-		System.out.println("main page loaded");
+		System.out.println("index page loaded");
 		
 		return "/index";
 	}
@@ -27,11 +27,31 @@ public class TeamProject_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/myPage", method = RequestMethod.GET)
-	public String teamA_question(Model model) {
+	public String teamProject_myPage(Model model) {
 		
 		System.out.println("my page loaded");
 		
 		return "/myPage";
+	}
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	public String teamProject_register(Model model) {
+		
+		System.out.println("register page loaded");
+		
+		return "/register";
+	}
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String teamProject_login(Model model) {
+		
+		System.out.println("login loaded");
+		
+		return "/login";
 	}
 
 }
