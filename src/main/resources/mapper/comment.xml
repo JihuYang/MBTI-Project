@@ -2,8 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="comment">
 	<insert id="insertComment">
-		insert into camp1.comment (testId, userId, comment,
-		regDate)
+		insert into camp1.comment (testId, userId, comment, regDate)
 		values
 		(#{testId}, #{userId}, #{comment}, #{regDate})
 
@@ -16,17 +15,13 @@
 	<delete id="deleteComment">
 		delete from COMMENT where seq=#{seq}
 	</delete>
-	<select id="getComment"
-		resultType="com.hgu.webcamp.DTO.commentDTO">
+	<select id="getComment" resultType="com.hgu.webcamp.DTO.commentDTO">
 		select * from COMMENT where seq=#{seq}
 	</select>
 	<select id="getCommentList"
 		resultType="com.hgu.webcamp.DTO.commentDTO">
-		SELECT comment.testId, user.id, user.nickName, user.name, mbti.type, comment,
+		SELECT comment.testId, user.id, user.nickName, user.name, comment,
 		comment.regdate
-		FROM ((camp1.comment 
-        JOIN camp1.user ON comment.userID = user.id)
-        JOIN camp1.mbti ON user.mbti = mbti.id)
-		WHERE testId = 1;
+		FROM camp1.comment JOIN camp1.user ON comment.userID = user.id;
 	</select>
 </mapper>
