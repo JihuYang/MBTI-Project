@@ -46,12 +46,22 @@
 						url: '/v2/user/me',
 						success: (res) => {
 							const nickname = res.properties.nickname ;
+<<<<<<< HEAD
 							const email = res.kakao_account.email ;
 							
 							console.log(nickname) ;
 							console.log(email) ;
 							
 							location.href="register?profile_nickname="+nickname+"&account_email="+email ;
+=======
+		                    const email = res.kakao_account.email ;
+							
+							console.log(nickname);
+							console.log(email);
+							
+							location.href="register?profile_nickname="+nickname+"&kakao_account="+email ;
+							
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 						}
 					});
 					
@@ -62,6 +72,7 @@
 			});
 		}
 	</script>
+	
 	
     </body>
 </html>
