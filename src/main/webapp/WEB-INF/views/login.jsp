@@ -45,8 +45,14 @@
 					window.Kakao.API.request({
 						url: '/v2/user/me',
 						success: (res) => {
-							const kakao_account = res.kakao_account;
-							console.log(kakao_account)
+							const nickname = res.properties.nickname ;
+		                    const email = res.kakao_account.email ;
+							
+							console.log(nickname);
+							console.log(email);
+							
+							location.href="register?profile_nickname="+nickname+"&kakao_account="+email ;
+							
 						}
 					});
 					
@@ -57,6 +63,7 @@
 			});
 		}
 	</script>
+	
 	
     </body>
 </html>

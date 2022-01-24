@@ -24,12 +24,22 @@
       
     </head>
     <body class="registration">
+    
+    <%
+    	String nickname = request.getParameter("profile_nickname");
+    	String email = request.getParameter("account_email");
+    
+    %>
+    
     <main class="form-signin">
+    
+    
+    
   <form>
     <h1 class="font-weight-bold">회원가입 </h1>
     <div class="mb-2">
     	<!-- 이름 로그인 한 정보에서 가져오기   -->
-	    <span class=" mb-3 fw-normal">정수산나님!</span> <br>
+	    <span class=" mb-3 fw-normal"><%=nickname %>님!</span> <br>
 	    <span class=" mb-3 fw-normal">몇가지 정보를 알려주세요 </span> 
     </div>
     <div class="form-floating mt-3">
