@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.hgu.webcamp.DTO.UserDTO;
-import com.hgu.webcamp.User.*;
+import com.hgu.webcamp.DTO.userDTO;
+import com.hgu.webcamp.Service.*;
+import com.hgu.webcamp.DAO.*;
+
 
 /**
  * Handles requests for the application board.
@@ -18,8 +20,11 @@ import com.hgu.webcamp.User.*;
 @Controller
 public class User_Controller {
 	
-	@Autowired
-	UserServiceImpl service;
+//	@Autowired
+//	UserServiceImpl service;
+	
+//	@Autowired
+//	userDAO service;
 	
 //	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
 	
@@ -33,21 +38,21 @@ public class User_Controller {
 	}
 	
 	 @RequestMapping(value="/loginOk", method=RequestMethod.POST)
-	   public String loginCheck(HttpSession session, UserDTO dto) {
+	   public String loginCheck(HttpSession session, userDTO dto) {
 	      String returnURL = "";
 	      if(session.getAttribute("login") != null) {
 	         session.removeAttribute("login");
 	      }
 	      
-	      UserDTO logindto = service.getUser(dto);
-	      if ( logindto != null ) {
-	         System.out.println("로그인 성공!");
-	         session.setAttribute("login", logindto);
-	         returnURL = "redirect:/board/list";
-	      } else {
-	         System.out.println("로그인 실패!");
-	         returnURL = "redirect:/login/login";
-	      }
+//	      userDTO logindto = service.getUser(dto);
+//	      if ( logindto != null ) {
+//	         System.out.println("로그인 성공!");
+//	         session.setAttribute("login", logindto);
+//	         returnURL = "redirect:/board/list";
+//	      } else {
+//	         System.out.println("로그인 실패!");
+//	         returnURL = "redirect:/login/login";
+//	      }
 	      return returnURL;
 	   }
 	 

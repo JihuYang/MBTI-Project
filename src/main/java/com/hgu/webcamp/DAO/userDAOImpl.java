@@ -20,6 +20,7 @@ public class userDAOImpl implements userDAO {
 	 */
 	public List<userDTO> getUser(int id) {
 		List<userDTO> user = new ArrayList<userDTO>();
+		return user;
 		
 	}
 }
