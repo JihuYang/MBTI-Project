@@ -56,11 +56,14 @@ public class TeamE_Controller {
 		
 		 
 		int testId = 5; //테스트이름
-//		int questionNum = 1;
+		int questionNum = 1; //문제번호
+		int questionId = 1; //
 		
 		
 
 		List<questionDTO> question = questionService.readQuestion(testId);
+		//List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
+
 		
 		for (questionDTO q : question) {
 			
