@@ -20,7 +20,7 @@
     <img src="../resources/img/teamE/mbtiStartPicture.png" class="thinker" />
     <div class="middle-logo"></div>
     <!-- class="img-main-title block-90" -->
-    <button class="btn-normal" onclick="location.href='question'">테스트 시작</button>
+    <button class="btn-normal" onclick="location.href='./who'">테스트 시작</button>
     <div class="low-logo"></div>
     
 

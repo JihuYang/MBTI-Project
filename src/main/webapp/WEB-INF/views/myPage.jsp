@@ -28,7 +28,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">소크라테스트</a>
+                <a class="navbar-brand" href="./index">소크라테스트</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -88,23 +88,18 @@
                         <!— Date badge—>
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">2021-01-18</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="resources/img/teamProject/teamA_thumbnail.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">맞춤 공부법 테스트 </h5>
-                                    <!-- Product price-->
-                                    나에게 맞는 공부법은?
+                                    <h5 class="fw-bolder">개발자 유형 테스트  </h5>
+                            
                                 </div>
-                                   <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center my-2">
-                                        <div><i class="bi bi-caret-right"></i>3,680</div>
-                                    </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">테스트하기 </a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./teamA/result">내 결과 보기 </a></div>
                             </div>
                         </div>
                     </div>
@@ -113,23 +108,18 @@
                         <!— Date badge—>
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">2021-01-18</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="resources/img/teamProject/teamC_thumbnail.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">맞춤 공부법 테스트 </h5>
-                                    <!-- Product price-->
-                                    나에게 맞는 공부법은?
+                               
                                 </div>
-                                   <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center my-2">
-                                        <div><i class="bi bi-caret-right"></i>3,680</div>
-                                    </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">테스트하기 </a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./teamC/result">내 결과 보기 </a></div>
                             </div>
                         </div>
                     </div>
