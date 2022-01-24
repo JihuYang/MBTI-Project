@@ -24,16 +24,21 @@
       
     </head>
     <body class="registration">
+    
+    <%
+    	String nickname = request.getParameter("profile_nickname") ;
+    	String email = request.getParameter("account_email") ;
+    %>
     <main class="form-signin">
-  <form>
+  <form name="information" onSubmit="return Confirm()">
     <h1 class="font-weight-bold">회원가입 </h1>
     <div class="mb-2">
     	<!-- 이름 로그인 한 정보에서 가져오기   -->
-	    <span class=" mb-3 fw-normal">정수산나님!</span> <br>
+	    <span class=" mb-3 fw-normal"><%=nickname%>님!</span> <br>
 	    <span class=" mb-3 fw-normal">몇가지 정보를 알려주세요 </span> 
     </div>
     <div class="form-floating mt-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="닉네임 ">
+      <input name="nickname" type="text" class="form-control" id="floatingInput" placeholder="닉네임 ">
       <label for="">닉네임 </label>
     </div>
    <!--  <div class="form-floating mt-3">
@@ -42,7 +47,7 @@
     </div> -->
     <!-- MBTI DB에서 select option 가져오기   -->
     <div class="form-floating mt-3">
-	<select class="form-select" aria-label="Default select example">
+	<select name="mbti" class="form-select" aria-label="Default select example">
 	  <option selected>내 MBTI </option>
 	  <option value="1">ISFP</option>
 	  <option value="2">INTJ</option>
@@ -56,5 +61,15 @@
     
     </body>
     <script src="resources/js/teamProject.js"></script>
+    <script>
+    //닉네임을 입력하지 않았을 경우 alert창
+    function Confirm(){
+    	if(information.nickname.value==""){
+    		information.nickname.focus() ;
+    		alert("닉네임을 입력해 주세요") ;
+    	
+    	}
+    }
+    </script>
 
 </html>
