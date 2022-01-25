@@ -2,32 +2,20 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="user">
 
-	<select id="getUser"
-		resultType="com.hgu.webcamp.DTO.userDTO">
+	<select id="getUser" resultType="com.hgu.webcamp.DTO.userDTO">
 		SELECT
 		name, email, nickName, mbti, type FROM camp1.user
 		LEFT JOIN camp1.mbti ON user.mbti = mbti.id
 		WHERE user.id = #{userId};
 	</select>
 	
-	<select id="deleteUser"
-		resultType="com.hgu.webcamp.DTO.userDTO">
+	<delete id="deleteUser">
 		DELETE
 		from user
-		WHERE id = #{userId};
-	</select>
+		WHERE id = #{id};
+	</delete>
 	
-	<select id="insertUser"
-		resultType="com.hgu.webcamp.DTO.userDTO">
-		insert into user
-	</select>
-	
-	<select id="updateUser"
-		resultType="com.hgu.webcamp.DTO.userDTO">
-		UPDATE
-		nickName, mbti, type FROM camp1.user
-		LEFT JOIN camp1.mbti ON user.mbti = mbti.id
-		WHERE user.id = #{userId};
-	</select>
+	<update id="updateUser">
+	</update>
 
 </mapper>

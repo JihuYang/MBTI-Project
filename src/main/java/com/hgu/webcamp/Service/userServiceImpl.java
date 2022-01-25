@@ -13,9 +13,9 @@ public class userServiceImpl implements userService {
 	@Autowired
 	userDAO dao;
 	
-	public int insertUser(userDTO dto) {
-		return dao.insertUser(dto);
-	}
+//	public int insertUser(userDTO dto) {
+//		return dao.insertUser(dto);
+//	}
 
 	public int deleteUser(int id) {
 		return dao.deleteUser(id);
