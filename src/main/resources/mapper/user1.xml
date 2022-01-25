@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+
+	<select id="getUser" resultType="com.hgu.webcamp.DTO.userDTO">
+		SELECT
+		name, email, nickName, mbti, type FROM camp1.user
+		LEFT JOIN camp1.mbti ON user.mbti = mbti.id
+		WHERE user.id = #{userId};
+	</select>
+	
+	<delete id="deleteUser">
+		DELETE
+		from user
+		WHERE id = #{id};
+	</delete>
+	
+	<update id="updateUser">
+	</update>
+
+</mapper>

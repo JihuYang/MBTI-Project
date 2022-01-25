@@ -3,13 +3,16 @@ package com.hgu.webcamp.DTO;
 import java.util.Date;
 
 public class commentDTO {
+
+
 	private int id;
 	private int testId;
-	private int userId;
-	private String userNickname;
-	private String userName;
+	private String nickname;
+	private String name;
 	private String comment;
+	private String type;
 	private Date regDate;
+
 	public int getId() {
 		return id;
 	}
@@ -22,23 +25,17 @@ public class commentDTO {
 	public void setTestId(int testId) {
 		this.testId = testId;
 	}
-	public int getUserId() {
-		return userId;
+	public String getNickname() {
+		return nickname;
 	}
-	public void setUserId(int userId) {
-		this.userId = userId;
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
 	}
-	public String getUserNickname() {
-		return userNickname;
+	public String getName() {
+		return name;
 	}
-	public void setUserNickname(String userNickname) {
-		this.userNickname = userNickname;
-	}
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getComment() {
 		return comment;
@@ -46,20 +43,25 @@ public class commentDTO {
 	public void setComment(String comment) {
 		this.comment = comment;
 	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
 	public Date getRegDate() {
 		return regDate;
 	}
 	public void setRegDate(Date regDate) {
 		this.regDate = regDate;
 	}
+	
 	@Override
 	public String toString() {
-		System.out.println("commentDTO [id=" + id + ", testId=" + testId + ", userId=" + userId + ", userNickname=" + userNickname
-				+ ", userName=" + userName + ", comment=" + comment + ", regDate=" + regDate + "]");
-		
-		return "commentDTO [id=" + id + ", testId=" + testId + ", userId=" + userId + ", userNickname=" + userNickname
-				+ ", userName=" + userName + ", comment=" + comment + ", regDate=" + regDate + "]";
+		return "commentDTO [id=" + id + ", testId=" + testId + ", nickname=" + nickname + ", name=" + name
+				+ ", comment=" + comment + ", type=" + type + ", regDate=" + regDate + "]";
 	}
+
 	
 	
 }

@@ -33,7 +33,7 @@ public class commentServiceImpl implements commentService {
 		return dao.getComment(seq);
 	}
 
-	public List<commentDTO> getCommentList(){
-		return dao.getCommentList();
+	public List<commentDTO> getCommentList(int testId){
+		return dao.getCommentList(testId);
 	}
 }
