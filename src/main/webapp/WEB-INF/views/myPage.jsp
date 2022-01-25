@@ -60,13 +60,13 @@
 			    <div class="mb-3 row">
 				    <label for="staticNickname" class="col-sm-2 col-form-label mypage-label">닉네임 </label>
 				    <div class="col-sm-10">
-				      <input type="text" readonly class="form-control-plaintext border border-secondary rounded p-3" id="staticNickname" value="산동동산 " disabled>
+				      <input type="text" readonly class="form-control-plaintext border border-secondary rounded p-3" id="staticNickname" value="${info.nickName}" disabled>
 				    </div>
 				  </div>
 			     <div class="mb-3 row">
 				    <label for="staticMBTI" class="col-sm-2 col-form-label mypage-label">MBTI </label>
 				    <div class="col-sm-10">
-				      <input type="text" readonly class="form-control-plaintext border border-secondary rounded p-3" id="staticMBTI" value="ISFP " disabled>
+				      <input type="text" readonly class="form-control-plaintext border border-secondary rounded p-3" id="staticMBTI" value="${info.type}" disabled>
 				    </div>
 				  </div>
 			

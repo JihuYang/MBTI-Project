@@ -1,9 +1,16 @@
 package com.hgu.webcamp;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.hgu.webcamp.DTO.userDTO;
+import com.hgu.webcamp.Service.userService;
 /**
  * Handles requests for the application home page.
  */
@@ -12,6 +19,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 public class TeamProject_Controller {
 
+	@Autowired
+	userService userService;
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -27,11 +36,19 @@ public class TeamProject_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/myPage", method = RequestMethod.GET)
-	public String teamProject_myPage(Model model) {
+	public ModelAndView teamProject_myPage(HttpServletRequest request) {
+		
+		userDTO dto = new userDTO();
+		int id=1;
+		dto=userService.getUser(id);
+		
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("info", dto);
+		mv.setViewName("/myPage");
 		
 		System.out.println("my page loaded");
 		
-		return "/myPage";
+		return mv;
 	}
 	/**
 	 * Simply selects the home view to render by returning its name.
