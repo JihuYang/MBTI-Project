@@ -9,6 +9,7 @@ public class questionDTO {
 	private int questionNum;
 	private String question;
 	private String answer;
+	private String result;
 	private Date regDate;
 	
 	public int getId() {
@@ -19,6 +20,12 @@ public class questionDTO {
 	}
 	public int getQuestionId() {
 		return questionId;
+	}
+	public String getResult() {
+		return result;
+	}
+	public void setResult(String result) {
+		this.result = result;
 	}
 	public void setQuestionId(int questionId) {
 		this.questionId = questionId;
@@ -51,7 +58,6 @@ public class questionDTO {
 	@Override
 	public String toString() {
 		return "questionDTO [id=" + id + ", questionId=" + questionId + ", questionNum=" + questionNum + ", question="
-				+ question + ", answer=" + answer + ", regDate=" + regDate + "]";
+				+ question + ", answer=" + answer + ", result=" + result + ", regDate=" + regDate + "]";
 	}
-
 }
