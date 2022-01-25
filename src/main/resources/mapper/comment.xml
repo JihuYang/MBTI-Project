@@ -20,10 +20,10 @@
 	</select>
 	<select id="getCommentList"
 		resultType="com.hgu.webcamp.DTO.commentDTO">
-		SELECT user.id, comment.testId, user.nickName, user.name, mbti.type, comment, comment.regdate
-		FROM ((camp1.comment 
-        JOIN camp1.user ON comment.userID = user.id)
+		SELECT comment.id, comment.testId, comment.userId, user.nickName, user.name, mbti.type, comment, comment.regdate
+      	FROM ((camp1.comment 
+        JOIN camp1.user ON comment.userId = user.id)
         JOIN camp1.mbti ON user.mbti = mbti.id)
-		WHERE testId = 1;
+      	WHERE testId = #{testId}
 	</select>
 </mapper>
