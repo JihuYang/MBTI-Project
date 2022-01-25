@@ -3,9 +3,29 @@
 <mapper namespace="user">
 
 	<select id="getUser"
-		resultType="com.hgu.webcamp.DTO.userDTO" parameterType="hashmap">
+		resultType="com.hgu.webcamp.DTO.userDTO">
 		SELECT
 		name, email, nickName, mbti, type FROM camp1.user
+		LEFT JOIN camp1.mbti ON user.mbti = mbti.id
+		WHERE user.id = #{userId};
+	</select>
+	
+	<select id="deleteUser"
+		resultType="com.hgu.webcamp.DTO.userDTO">
+		DELETE
+		from user
+		WHERE id = #{userId};
+	</select>
+	
+	<select id="insertUser"
+		resultType="com.hgu.webcamp.DTO.userDTO">
+		insert into user
+	</select>
+	
+	<select id="updateUser"
+		resultType="com.hgu.webcamp.DTO.userDTO">
+		UPDATE
+		nickName, mbti, type FROM camp1.user
 		LEFT JOIN camp1.mbti ON user.mbti = mbti.id
 		WHERE user.id = #{userId};
 	</select>

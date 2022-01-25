@@ -27,6 +27,19 @@ public class User_Controller {
 //	userDAO service;
 	
 //	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
+	/**
+     * Create User
+     */
+  /**
+    @RequestMapping(value = "/createUser", method = RequestMethod.POST)
+    public String addUser(userDTO dto) { 
+       int i = userDAO.insertUser(dto) ;
+       if(i==0) System.out.println("회원가입 실패!") ;
+       else System.out.println("회원가입 성공!") ;
+
+       return "redirect:index" ;
+    }*/
+	
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -59,7 +72,7 @@ public class User_Controller {
 	 @RequestMapping(value="/logout")
 	 public String logout(HttpSession session) {
 		 session.invalidate();
-		 return "redirect:/login/login";
+		 return "redirect:/index";
 	 }
 
 }

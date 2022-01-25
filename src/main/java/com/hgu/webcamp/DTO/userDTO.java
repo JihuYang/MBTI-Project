@@ -7,6 +7,7 @@ public class userDTO {
 	private String profileImage;
 	private String email;
 	private int mbti;
+	
 	public int getId() {
 		return id;
 	}
