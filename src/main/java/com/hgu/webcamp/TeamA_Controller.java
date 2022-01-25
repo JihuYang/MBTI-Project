@@ -50,7 +50,7 @@ public class TeamA_Controller {
 		
 		int questionNum= 1; // question 테이블에서 문제 
 		int questionId = 1; // answer 테이블에서 문제 
-		int testId = 1; //테스트이름
+		int testId = 1; // 테스트이름
 
 		/*String temp = request.getParameter("questionNum");
 		System.out.println("ajax로 전달한 값 : " + temp);
@@ -95,9 +95,9 @@ public class TeamA_Controller {
 	 */
 	@RequestMapping(value = "/loading", method = RequestMethod.GET)
 	public String teamA_loading(Model model) {
-
+		
 		System.out.println("loading page loaded");
-
+		
 		return "teamA/loading";
 	}
 
