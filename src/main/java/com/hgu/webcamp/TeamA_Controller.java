@@ -116,12 +116,14 @@ public class TeamA_Controller {
 		System.out.println("result page loaded");
 		
 		int testId = 1;
+		int userId = 2;
 		
 		List<commentDTO> comment = new ArrayList<commentDTO>();
 
 		comment = commentService.getCommentList(testId);
 		
 		mv.addObject("comments",comment);
+		mv.addObject("userId", userId);
 		mv.setViewName("teamA/result");
 		
 		System.out.println(mv);

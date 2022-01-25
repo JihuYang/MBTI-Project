@@ -16,7 +16,11 @@
 			<div class="w-100">
 				<div class="d-flex justify-content-between align-items-center">
 					<p class="fw-bold mb-0 main-color fs-6">${comment.type}</p>
-					<p class="mb-0 text-muted"><a id=delbtn href="javascript:delete_ok('${comment.id}')">x</a></p>
+					<c:if test="${userId == comment.userId}">
+						<p class="mb-0 text-muted">
+							<a id=delbtn href="javascript:delete_ok('${comment.id}')">x</a>
+						</p>
+					</c:if>
 				</div>
 				<p class="text-dark">${comment.comment}</p>
 				<div>
@@ -30,8 +34,9 @@
 	</div>
 </c:forEach>
 <script>
-	function delete_ok(id){
+	function delete_ok(id) {
 		var a = confirm("정말로 삭제하겠습니까?");
-		if(a) location.href='delete_ok/'+id;
+		if (a)
+			location.href = 'delete_ok/' + id;
 	}
 </script>
