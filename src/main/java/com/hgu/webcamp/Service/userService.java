@@ -6,7 +6,7 @@ import com.hgu.webcamp.DTO.userDTO;
 
 
 public interface userService {
-//	public int insertUser(userDTO dto);
+	public int insertUser(userDTO dto);
 
 	public int deleteUser(int id);
 
