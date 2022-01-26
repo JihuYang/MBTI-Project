@@ -45,7 +45,7 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark main-header">
+        <header class="bg-dark myPage-header">
             <div class="container px-4 px-lg-5 mb-3">
             </div>
         </header>
