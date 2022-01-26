@@ -13,7 +13,7 @@ public class userDAOImpl implements userDAO {
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 	
-	private String namespace = "user1";
+	private String namespace = "user";
 	
 	/**
 	 * get user information

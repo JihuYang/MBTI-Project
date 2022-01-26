@@ -74,5 +74,7 @@ public class User_Controller {
 		 session.invalidate();
 		 return "redirect:/index";
 	 }
+	 
+	 
 
 }
