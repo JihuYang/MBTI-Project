@@ -10,15 +10,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>teamDQuestion</title>
 	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
+	<script src="../resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
 </head>
 <body>
 	<div id="wrapper">
-		<h1>Q1. 떡잎마을 방범대에 합류하게 됐다. 처음보는 짱구에게 나는</h1>
-		<div id="an1" onclick="location.href='loading'">
-			<h2>짱구가 나에게<br>말을 걸 때까지 기다린다</h2><br>
+		<h1>Q<span id="Qnum">1</span>. ${questions[0].question}</h1>
+		<div id="an1" class="btn1" onclick="saveType(${1}, '${questions[0].result}')">
+			<h2>${questions[0].answer}</h2><br>
 		</div>
-		<div id="an2" onclick="location.href='loading'">
-			<h2>오호!!!<br>짱구에게 먼저 다가가 말을 건다</h2>
+		<div id="an2" class="btn2" onclick="saveType(${2}, '${questions[1].result}')">
+			<h2>${questions[1].answer}</h2>
 		</div>
 	</div>
 </body>

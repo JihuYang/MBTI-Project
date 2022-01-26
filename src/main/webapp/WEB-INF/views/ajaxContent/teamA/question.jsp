@@ -7,7 +7,7 @@
 	<div class="speech-container mb-3">
 		<div class="p-3 speech-bubble">
 			<div class="number">
-				<span>1/12번째 </span>
+				<span><span id="qNum">${questions[0].questionNum}</span>/12번째 </span>
 			</div>
 		</div>
 		<div class="p-3 speech-shadow"></div>
@@ -19,7 +19,7 @@
 	</div>
 	<div class="p-3 window-question bg-white">
 		<div class="question-format">
-			<span class="void">void </span><span class="Qnum">Question1 </span><span
+			<span class="void">void </span><span class="Qnum">Question<span id="Qnum">${questions[0].questionNum}</span></span><span
 				class="char">() {</span>
 		</div>
 			<div class="question-content" >
