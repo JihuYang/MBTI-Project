@@ -75,12 +75,14 @@ public class TeamC_Controller {
 		System.out.println("result page loaded");
 		
 		int testId = 3;
+		int userId = 2;
 		
 		List<commentDTO> comment = new ArrayList<commentDTO>();
 
 		comment = commentService.getCommentList(testId);
 		
 		mv.addObject("comments",comment);
+		mv.addObject("userId", userId);
 		mv.setViewName("teamC/result");
 		
 		System.out.println(mv);
@@ -90,8 +92,8 @@ public class TeamC_Controller {
 	
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)
-	public String addPostOK(HttpServletRequest request) throws ParseException {
-		
+	public String addPostOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
+		request.setCharacterEncoding("utf-8");
 		//HttpSession session = request.getSession();
 		//String userid = request.getSession().getAttribute("").toString();
 		int userId = 2;
@@ -142,6 +144,15 @@ public class TeamC_Controller {
 			System.out.println("데이터 수정 성공 ");
 		}
 		return "redirect:result";
+	}
+	@RequestMapping(value = "/deleteok/{id}", method = RequestMethod.GET)
+	public String deletePostOK(@PathVariable("id") int id) {
+		int i = commentService.deleteComment(id);
+		
+		if(i == 0) System.out.println("Error! delete Failed");
+		else System.out.println("댓글 삭제 완료.");
+		
+		return "redirect:../result";
 	}
 	
 }

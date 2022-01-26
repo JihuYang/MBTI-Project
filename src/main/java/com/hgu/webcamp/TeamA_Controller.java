@@ -1,6 +1,10 @@
 package com.hgu.webcamp;
 
+import java.io.UnsupportedEncodingException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -164,5 +168,38 @@ public class TeamA_Controller {
 		else System.out.println("댓글 삭제 완료.");
 		
 		return "redirect:../result";
+	}
+	
+	@RequestMapping(value = "/addok", method = RequestMethod.POST)
+	public String addPostOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
+		request.setCharacterEncoding("utf-8");
+		//HttpSession session = request.getSession();
+		//String userid = request.getSession().getAttribute("").toString();
+		int userId = 2;
+		int testId = 1;
+		
+		SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
+    	Date regDate=f.parse(f.format(new Date()));
+		
+		String comment = request.getParameter("comment");
+		
+		commentDTO dto = new commentDTO();
+		dto.setComment(comment);
+		dto.setRegDate(regDate);
+		dto.setUserId(userId);
+		dto.setTestId(testId);
+		
+		
+		int i = commentService.insertComment(dto);
+		if(i==0) {
+			System.out.println("데이터 추가 실패 ");
+			
+		}
+		else {
+			System.out.println("데이터 추가 성공 ");
+		}
+
+
+		return "redirect:result";
 	}
 }

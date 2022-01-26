@@ -62,6 +62,11 @@
 	function moveTo() {
 		location.href = "start";
 	}
+	function delete_ok(id) {
+		var a = confirm("정말로 삭제하겠습니까?");
+		if (a)
+			location.href = '../teamC/deleteok/' + id;
+	}
 	
 </script>
 
@@ -200,7 +205,7 @@
 
 									</div>
 
-
+								<c:if test="${userId == comment.userId}">
 									<div class="dropdown comment-menu">
 										<button class="btn" id="menu1" type="button"
 											data-toggle="dropdown">
@@ -208,11 +213,12 @@
 										</button>
 										<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
 											<li role="presentation"><a role="menuitem" tabindex="-1"
-												href="#">삭제</a></li>
+												href="javascript:delete_ok('${comment.id}')">삭제</a></li>
 											<li role="presentation"><a role="menuitem" tabindex="-1"
 												href="javascript:doDisplay(${comment.id});">수정</a></li>
 										</ul>
 									</div>
+									</c:if>
 								</div>
 
 							</div>
