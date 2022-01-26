@@ -50,7 +50,7 @@
 <!-- comment 수정 부분 -->
 <script type="text/javascript">
 	function doDisplay(id) {
-		$("#"+id+"2").toggle();
+		$("#" + id + "2").toggle();
 		var con = document.getElementById(id);
 		if (con.style.display == 'none') {
 			con.style.display = 'flex';
@@ -67,7 +67,6 @@
 		if (a)
 			location.href = '../teamC/deleteok/' + id;
 	}
-	
 </script>
 
 </head>
@@ -142,9 +141,11 @@
 				<div class="wholeBox two_btn sv_btn">저장하기</div>
 
 				<div class="shareBtn">
+					<a id="kakao-link-btn" href="javascript:sendLink()"> <img
+						src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+					</a>
 
-					<button class="sharebtn-kakao" type="button"
-						onclick="sendLinkDefault();">
+					<button class="sharebtn-kakao" type="button" onclick="sendLink();">
 						<img src="../resources/img/teamC/kakaoLogo.png" />
 					</button>
 					<button class="sharebtn-link" type="button" onclick="copyLink();">
@@ -205,19 +206,19 @@
 
 									</div>
 
-								<c:if test="${userId == comment.userId}">
-									<div class="dropdown comment-menu">
-										<button class="btn" id="menu1" type="button"
-											data-toggle="dropdown">
-											<i class="bi bi-three-dots-vertical"></i><span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-											<li role="presentation"><a role="menuitem" tabindex="-1"
-												href="javascript:delete_ok('${comment.id}')">삭제</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1"
-												href="javascript:doDisplay(${comment.id});">수정</a></li>
-										</ul>
-									</div>
+									<c:if test="${userId == comment.userId}">
+										<div class="dropdown comment-menu">
+											<button class="btn" id="menu1" type="button"
+												data-toggle="dropdown">
+												<i class="bi bi-three-dots-vertical"></i><span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+												<li role="presentation"><a role="menuitem"
+													tabindex="-1" href="javascript:delete_ok('${comment.id}')">삭제</a></li>
+												<li role="presentation"><a role="menuitem"
+													tabindex="-1" href="javascript:doDisplay(${comment.id});">수정</a></li>
+											</ul>
+										</div>
 									</c:if>
 								</div>
 

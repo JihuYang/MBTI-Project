@@ -18,6 +18,10 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
+	
+<!-- 공유하기 -->
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="../resources/js/shareProject.js"></script>
 
 <title>[결과]나의 배우자는 누구?</title>
 <link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
@@ -45,9 +49,9 @@
 		<br>
 		<div class="share-wrap">
 			<p>공유 및 저장하기</p>
-			<a href="" onclick="GA_Event('MBTI_result', 'share_kakao', 'Click');">
-				<img src="../resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon">
-			</a> <a href="" onclick="share_link(); return false;"> <img
+			<a id="kakao-link-btn" href="javascript:sendLink()"> 
+				<img src="../resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
+			<a id="copy-link-btn" href="javascript:copyLink()">  <img
 				src="../resources/img/teamB/link_icon.png" alt="linkicon"></a> <a
 				href="" onclick="GA_Event('MBTI_result', 'share_save', 'Click');">
 				<img src="../resources/img/teamB/save_icon.png" alt="saveicon">

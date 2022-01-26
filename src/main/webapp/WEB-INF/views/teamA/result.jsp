@@ -18,6 +18,11 @@
 	crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="../resources/css/teamA.css">
 
+<!-- 공유하기 -->
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="../resources/js/shareProject.js"></script>
+
+
 <script type="text/javascript">
 	function sendTo() {
 		Kakao.Auth
@@ -170,13 +175,15 @@
 					</div>
 					<div class="row mt-5">
 						<div class="col">
+						<a id="kakao-link-btn" href="javascript:sendLink()"> 
 							<img src="../resources/img/teamA/kakaotalk.png"
-								class="img-share mx-auto d-block" alt="...">
+								class="img-share mx-auto d-block" alt="..."></a>
 							<p>카카오톡 공유</p>
 						</div>
 						<div class="col">
+						<a id="copy-link-btn" href="javascript:copyLink()"> 
 							<img src="../resources/img/teamA/link.png"
-								class="img-share mx-auto d-block" alt="...">
+								class="img-share mx-auto d-block" alt="..."></a>
 							<p>링크 복사</p>
 						</div>
 					</div>
