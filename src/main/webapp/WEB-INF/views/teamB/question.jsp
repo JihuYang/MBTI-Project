@@ -19,16 +19,16 @@
       <div id="optadATF" style="min-height: 110px"></div>
       <div class= "qBox-wrap">
 			<div class="qBox">
-				<p class="q-count"><span id="Qnum"><strong>${questions[0].questionNum}</strong></span><span> / 12</span></p>
+				<p class="q-count"><strong id="Qnum">${questions[0].questionNum}</strong><span> / 12</span></p>
 				<h2><span class="question">${questions[0].question}</span></h2><br>
 				<div class="option-btn-div">
-					<button value="q1-1" name="q1" class="option-btn btn1"
+					<button value="q1-1" name="q1" class="option-btn"
 						onclick="saveType(${1}, '${questions[0].result}')">
-						<h3>${questions[0].answer}</h3>
+						<h3 class="btn1">${questions[0].answer}</h3>
 					</button>
-					<button value="q1-2" name="q1" class="option-btn btn2"
+					<button value="q1-2" name="q1" class="option-btn"
 						onclick="saveType(${2}, '${questions[1].result}')">
-						<h3>${questions[1].answer}</h3>
+						<h3 class="btn2">${questions[1].answer}</h3>
 					</button>
 				</div>
 				<div class="percentage">

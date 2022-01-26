@@ -1,5 +1,7 @@
 package com.hgu.webcamp.DAO;
 
+import java.util.List;
+
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -13,7 +15,7 @@ public class userDAOImpl implements userDAO {
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 	
-	private String namespace = "user1";
+	private String namespace = "user";
 	
 	/**
 	 * get user information
@@ -35,5 +37,10 @@ public class userDAOImpl implements userDAO {
 	public userDTO getUser(int id) {
 		userDTO one = sqlSession.selectOne("user.getUser", id);
 		return one;
+	}
+	
+	public List<userDTO> readAllMbti() {
+		List<userDTO> mbtiList = sqlSession.selectList(namespace + ".readAllMbti");
+		return mbtiList;
 	}
 }

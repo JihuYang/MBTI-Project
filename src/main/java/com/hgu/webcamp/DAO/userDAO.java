@@ -1,5 +1,7 @@
 package com.hgu.webcamp.DAO;
 
+import java.util.List;
+
 import com.hgu.webcamp.DTO.userDTO;
 
 public interface userDAO {
@@ -10,4 +12,5 @@ public interface userDAO {
 	public int deleteUser(int id);
 	public int updateUser(userDTO dto);
 	public userDTO getUser(int id);
+	public List<userDTO> readAllMbti();
 }

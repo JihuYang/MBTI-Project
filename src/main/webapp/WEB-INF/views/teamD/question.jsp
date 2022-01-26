@@ -17,11 +17,11 @@
 <body>
 	<div id="wrapper">
 		<h1>Q<span id="Qnum">1</span>. ${questions[0].question}</h1>
-		<div id="an1" class="btn1" onclick="saveType(${1}, '${questions[0].result}')">
-			<h2>${questions[0].answer}</h2><br>
+		<div id="an1" onclick="saveType(${1}, '${questions[0].result}')">
+			<h2 class="btn1">${questions[0].answer}</h2><br>
 		</div>
-		<div id="an2" class="btn2" onclick="saveType(${2}, '${questions[1].result}')">
-			<h2>${questions[1].answer}</h2>
+		<div id="an2" onclick="saveType(${2}, '${questions[1].result}')">
+			<h2 class="btn2" >${questions[1].answer}</h2>
 		</div>
 	</div>
 </body>

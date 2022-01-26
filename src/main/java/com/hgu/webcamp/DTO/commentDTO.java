@@ -7,12 +7,12 @@ public class commentDTO {
 
 	private int id;
 	private int testId;
+	private int userId;
 	private String nickname;
 	private String name;
 	private String comment;
 	private String type;
 	private Date regDate;
-
 	public int getId() {
 		return id;
 	}
@@ -24,6 +24,12 @@ public class commentDTO {
 	}
 	public void setTestId(int testId) {
 		this.testId = testId;
+	}
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 	public String getNickname() {
 		return nickname;
@@ -55,13 +61,13 @@ public class commentDTO {
 	public void setRegDate(Date regDate) {
 		this.regDate = regDate;
 	}
-	
 	@Override
 	public String toString() {
-		return "commentDTO [id=" + id + ", testId=" + testId + ", nickname=" + nickname + ", name=" + name
-				+ ", comment=" + comment + ", type=" + type + ", regDate=" + regDate + "]";
+		return "commentDTO [id=" + id + ", testId=" + testId + ", userId=" + userId + ", nickname=" + nickname
+				+ ", name=" + name + ", comment=" + comment + ", type=" + type + ", regDate=" + regDate + "]";
 	}
 
+	
 	
 	
 }
