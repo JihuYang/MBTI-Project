@@ -24,7 +24,7 @@ function kakaoLogin() {
 						type: 'POST',
 						url : 'login.jsp',
 						data: {
-							"nickname" : $('#nicknake').val(),
+							"nickname" : $('#nickname').val(),
 							"email" : $('#email').val(),
 							"image" : $('#image').val() 
 						},
