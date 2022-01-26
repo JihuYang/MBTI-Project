@@ -1,44 +1,39 @@
-
 var link = document.location.href;
+var links = link.split('/');
+var link2 = links[0]+links[1]+links[2];
 
 //카카오톡 공유하기 
-Kakao.init("1841f627e245ac59ac935b451f4720e1"); //어플의 Javascript Key 값 
-	function sendLinkCustom() {
-		debugger;
-		Kakao.Link.sendCustom({
-			templateId : 69198 //숫자값 
-		});
-	}
-	try {
-		function sendLinkDefault() {
-			Kakao.Link
-					.sendDefault({
-						objectType : 'feed',
-						content : {
-							title : 'Test Homepage Title',
-							description : '#Test #Homepage #Kakao Link Description',
-							imageUrl : 'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-							link : {
-								mobileWebUrl : 'https://developers.kakao.com',
-								webUrl : 'https://developers.kakao.com',
-							},
-						},
-						
-						buttons : [ {
-							title : '나만보기 ',
-							link : {
-								mobileWebUrl : 'https://developers.kakao.com',
-								webUrl : 'https://developers.kakao.com',
-							},
-						
-						}, ],
-					})
-		}
-		;
-		window.kakaoDemoCallback && window.kakaoDemoCallback()
-	} catch (e) {
-		window.kakaoDemoException && window.kakaoDemoException(e)
-	}
+	Kakao.init("1841f627e245ac59ac935b451f4720e1"); //어플의 Javascript Key 값 
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '소크라테스트',
+        description: '#mbti #개발자 유형 #배우자 #공부 #짱구 #이상형',
+        imageUrl:'https://user-images.githubusercontent.com/82192923/151129688-ab781188-69ee-407f-95d4-8eb19c6c0672.png',
+        link: {
+          mobileWebUrl: 'http://localhost:8080/webcamp/',
+          webUrl: 'http://localhost:8080/webcamp/',
+        },
+      },
+      buttons: [
+        {
+          title: '내 결과 보기',
+          link: {
+            mobileWebUrl: link,
+            webUrl: link,
+          },
+        },
+        {
+          title: '다시하기',
+          link: {
+            mobileWebUrl: link,
+            webUrl: link,
+          },
+        },
+      ],
+    })
+  }
 	
 
 
