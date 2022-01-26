@@ -30,4 +30,8 @@
 	<update id="updateUser">
 	</update>
 	
+	<select id="getMBTIlist">
+  		select * from camp1.mbti
+  	</select>
+	
   </mapper>
