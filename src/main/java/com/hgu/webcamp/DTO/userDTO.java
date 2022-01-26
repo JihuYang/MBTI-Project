@@ -45,4 +45,10 @@ public class userDTO {
 	public void setMbti(int mbti) {
 		this.mbti = mbti;
 	}
+	
+	@Override
+	public String toString() {
+		return "userDTO [id=" + id + ", nickName=" + nickName + ", profileImage=" + profileImage + ", email=" + email
+				+ ", type=" + type + ", mbti=" + mbti + "]";
+	}
 }
