@@ -10,6 +10,22 @@ body{
 	padding-top: 3rem !important;
 	padding-bottom: 10rem !important;
 	position:relative;
+ 
+}
+
+.main-header::before {    
+      content: "";
+     background-image: url("../img/teamProject/main_background.png");
+     	
+	 background-position: center; /* Center the image */
+	  background-repeat: no-repeat; /* Do not repeat the image */
+	  background-size: 850px!important;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      bottom: 260px;
+      left: 0px;
+      opacity: 0.2;
 }
 
     .strike {
@@ -71,6 +87,27 @@ body{
     
     
     /* myPage */
+    
+    .myPage-header{
+    	padding-top: 3rem !important;
+	padding-bottom: 10rem !important;
+	position:relative;
+    }
+    
+    .myPage-header::before {    
+      content: "";
+     background-image: url("../img/teamProject/main_background.png");
+     	
+	 background-position: center; /* Center the image */
+	  background-repeat: no-repeat; /* Do not repeat the image */
+	  background-size: 500px!important;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      bottom: 450px;
+      left: 0px;
+      opacity: 0.2;
+}
     
    .my-content {
     position: absolute;
