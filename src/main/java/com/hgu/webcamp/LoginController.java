@@ -33,7 +33,7 @@ public class LoginController {
 		u.setName(paramMap.get("name"));
 		u.setEmail(email);
 		
-		//회원정보가 없는 경우
+		//회원정보가 없는 경우sssss
 		if(userService.readUserByEmail(u.getEmail())==0) {
 			System.out.println("DB Insert: " + paramMap.get("name"));
 			session.setAttribute("tempUser", paramMap.get("email"));
