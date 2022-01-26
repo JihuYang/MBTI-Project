@@ -31,7 +31,7 @@
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit" onclick="location.href='./login'">
+                        <button class="btn btn-outline-dark" type="button" onclick="location.href='./login'">
                             <i class="bi bi-box-arrow-in-right"></i>
                            로그인 
                         </button>

@@ -3,6 +3,7 @@ package com.hgu.webcamp.DTO;
 public class userDTO {
 	
 	private int id;
+	private String name;
 	private String nickName;
 	private String profileImage;
 	private String email;
@@ -14,6 +15,12 @@ public class userDTO {
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getNickName() {
 		return nickName;

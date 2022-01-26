@@ -1,7 +1,10 @@
 package com.hgu.webcamp.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +17,8 @@ public class userServiceImpl implements userService {
 	
 	@Autowired
 	userDAO dao;
+	
+	SqlSession sqlSession;
 
 	public int deleteUser(int id) {
 		return dao.deleteUser(id);
@@ -34,5 +39,19 @@ public class userServiceImpl implements userService {
 	public int insertUser(userDTO dto) {
 		return dao.insertUser(dto);
 	}
+	
+	@Override
+	public int readUserByEmail(String email) {
+		Map<String, Object> userListParam = new HashMap<String, Object>();
+		userListParam.put("email", email);
+		int id = 0;
+		try {
+			id = sqlSession.selectOne("com.hgu.webcamp.DAO.userDAOInterface"+".readUserByEmail",userListParam);
+		} catch (NullPointerException e) {
+			System.out.println(e);
+			id = 0;
+		}
+		return id;
+	};
 
 }
