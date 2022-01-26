@@ -6,7 +6,7 @@ import com.hgu.webcamp.DTO.userDTO;
 
 
 public interface userService {
-//	public int insertUser(userDTO dto);
+	public int insertUser(userDTO dto);
 
 	public int deleteUser(int id);
 
@@ -15,5 +15,7 @@ public interface userService {
 	public userDTO getUser(int id);
 	
 	public List<userDTO> readAllMbti();
+	
+	public int readUserByEmail(String email);
 
 }

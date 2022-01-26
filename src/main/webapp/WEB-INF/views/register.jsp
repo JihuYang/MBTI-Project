@@ -96,6 +96,9 @@
 			alert("닉네임을 입력해 주세요");
 
 		}
+		else {
+    		location.href="loginPost" ; 
+    	}
 	}
 </script>
 
