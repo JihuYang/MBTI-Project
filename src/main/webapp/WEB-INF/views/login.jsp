@@ -35,34 +35,54 @@
 	  </form>
 	</main>
 
-	<!-- 카카오 로그인 -->
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-	<script>
-		window.Kakao.init("0f073d0c9ad305070b99347eac9612a9");
-		function kakaoLogin() {
-			window.Kakao.Auth.login({
-				scope: 'profile_nickname, profile_image, account_email', 
-				success : function(response) {
-					console.log(response)
-					window.Kakao.API.request({
-						url: '/v2/user/me',
-						success: (res) => {
-							const kakao_account = res.kakao_account;
-							console.log(kakao_account)
-						}
-					});
-					
-				},
-				fail : function(error) {
-					console.log(error);
-				}
-			});
-		}
-	</script>
 	
-	<!-- google signin api -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
+	//kakao login
+	Kakao.init("0f073d0c9ad305070b99347eac9612a9");
+	function kakaoLogin() {
+		window.Kakao.Auth.login({
+			scope: 'profile_nickname, profile_image, account_email', 
+			success : function(response) {
+				console.log(response)
+				window.Kakao.API.request({
+					url: '/v2/user/me',
+					success: (res) => {
+						const kakao_account = res.kakao_account;
+						const name = res.properties.nickname;
+						const email = res.kakao_account.email;
+						
+						
+						 $.ajax({
+					                  type: 'POST',
+					                  url : 'snsLogin',
+					                  async: false,
+					                  data: {
+					                     name : name,
+					                     email : email,
+					                     
+					                  },
+					                  success: function(data){
+					                     console.log("카카오 데이터 가져오기 성공");
+					                     alert("Kakao login success!");
+					                     //location.href="/webcamp/register";
+					                  },
+					                  error:function(){  
+					                     console.log("카카오 데이터 가져오기 실패");
+					                        //location.reload();
+					                  }
+					               })
+					}
+				});
+				
+			},
+			fail : function(error) {
+				console.log(error);
+			}
+		});
+	};
+	
 	// google signin API
 	var googleUser = {};
 	var startApp = function() {
