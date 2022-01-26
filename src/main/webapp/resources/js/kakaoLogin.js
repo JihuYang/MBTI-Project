@@ -30,7 +30,7 @@ function kakaoLogin() {
 						},
 						success: function(){
 							System.out.println("카카오 데이터 가져오기 성공");
-							location.href="mbtiDropdown";
+							location.href="/register";
 						},
 						error:function(){  
 							System.out.println("카카오 데이터 가져오기 실패");
