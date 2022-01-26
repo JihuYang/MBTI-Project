@@ -126,7 +126,10 @@ public class TeamA_Controller {
 
 		comment = commentService.getCommentList(testId);
 		
+		int count = comment.size();
+		
 		mv.addObject("comments",comment);
+		mv.addObject("count", count);
 		mv.addObject("userId", userId);
 		mv.setViewName("teamA/result");
 		
