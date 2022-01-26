@@ -155,4 +155,5 @@ public class TeamC_Controller {
 		return "redirect:../result";
 	}
 	
+	
 }

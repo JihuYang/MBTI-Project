@@ -1,6 +1,7 @@
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <fmt:formatDate value="${now}" pattern="yyyy-MM-dd" var="nowDate" />
 
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -8,14 +9,16 @@
 <%@ page session="false"%>
 <div id="comment" class="mt-5 mb-3 p-3 comment">
 	<span class="text-black">댓글 [12]</span>
+	<form:form method="post" action="../teamB/addok">
 	<div class="input-group mt-1 mb-1">
-		<input type="text" class="form-control p-3" placeholder="댓글을 입력하세요. "
+		<input type="text" name="comment" class="form-control p-3" placeholder="댓글을 입력하세요. "
 			aria-label="댓글 입력" aria-describedby="basic-addon2">
 		<div class="input-group-append">
-			<button class="btn btn-outline-secondary p-3" type="button">등록
+			<button class="btn btn-outline-secondary p-3" type="submit">등록
 			</button>
 		</div>
 	</div>
+	</form:form>
 	<div class="comment-container">
 		<div class="p-3 comment-bubble">
 			<div class="scroll-comment ">
