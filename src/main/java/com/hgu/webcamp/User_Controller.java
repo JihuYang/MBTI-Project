@@ -20,8 +20,8 @@ import com.hgu.webcamp.DAO.*;
 @Controller
 public class User_Controller {
 	
-//	@Autowired
-//	UserServiceImpl service;
+	@Autowired
+	userServiceImpl userService;
 	
 //	@Autowired
 //	userDAO service;
@@ -34,8 +34,8 @@ public class User_Controller {
     @RequestMapping(value = "/createUser", method = RequestMethod.POST)
     public String addUser(userDTO dto) { 
        int i = userDAO.insertUser(dto) ;
-       if(i==0) System.out.println("회원가입 실패!") ;
-       else System.out.println("회원가입 성공!") ;
+       if(i==0) System.out.println("�쉶�썝媛��엯 �떎�뙣!") ;
+       else System.out.println("�쉶�썝媛��엯 �꽦怨�!") ;
 
        return "redirect:index" ;
     }*/
@@ -59,11 +59,11 @@ public class User_Controller {
 	      
 //	      userDTO logindto = service.getUser(dto);
 //	      if ( logindto != null ) {
-//	         System.out.println("로그인 성공!");
+//	         System.out.println("濡쒓렇�씤 �꽦怨�!");
 //	         session.setAttribute("login", logindto);
 //	         returnURL = "redirect:/board/list";
 //	      } else {
-//	         System.out.println("로그인 실패!");
+//	         System.out.println("濡쒓렇�씤 �떎�뙣!");
 //	         returnURL = "redirect:/login/login";
 //	      }
 	      return returnURL;
@@ -75,6 +75,17 @@ public class User_Controller {
 		 return "redirect:/index";
 	 }
 	 
+	 @RequestMapping(value = "/loginPost", method = {RequestMethod.POST, RequestMethod.GET})
+     public String addUser(userDTO dto) { 
+        int i = userService.insertUser(dto);
+
+        if(i==0) {
+        	return "redirect:index" ;
+        }
+        else {
+        	return "forward:index" ;
+        }
+     }
 	 
 
 }
