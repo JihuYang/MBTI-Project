@@ -200,7 +200,7 @@
 						</div>
 						<div class="p-3 comment-shadow"></div> -->
 						<div class="p-3 comment-bubble">
-							<span class="text-white">댓글 [12]</span>
+							<span class="text-white">댓글 [${count}]</span>
 							<div class="scroll-comment">
 
 								<div class="mb-3 mt-3">
