@@ -69,11 +69,12 @@ function readQuestion() {
 			/* TeamA ajax로 받은 문제와 답들을 출력 */
 			$(".question").empty();
 			$(".question").append(data[0].question);
-/*			console.log(data[0].question);
+			
+			console.log(data[0].question);
 			console.log(data[0].answer);
 			console.log(data[1].answer);
 			console.log(data[0].questionNum);
-*/			
+						
 			$(".btn1").empty();
 			$(".btn2").empty();
 			$(".btn1").append(data[0].answer);

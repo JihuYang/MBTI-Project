@@ -60,10 +60,11 @@ public class TeamC_Controller {
 		int questionNum= 1; // question 테이블에서 문제 
 		int questionId = 1 ; // answer 테이블에서 문제 
 		int testId = 3; // 테스트이름
-
+		int check = 1;
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
 
-		mv.addObject("questions", question);		
+		mv.addObject("questions", question);	
+		mv.addObject("check", check);
 		mv.setViewName("teamC/question");
 		
 		System.out.println(mv);
