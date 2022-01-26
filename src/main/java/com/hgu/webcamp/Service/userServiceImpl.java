@@ -1,5 +1,7 @@
 package com.hgu.webcamp.Service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,4 +30,9 @@ public class userServiceImpl implements userService {
 	public userDTO getUser(int id) {
 		return dao.getUser(id);
 	}
+	
+	public List<userDTO> readAllMbti() {
+		return dao.readAllMbti();
+	}
+
 }

@@ -17,6 +17,10 @@
 		WHERE user.id = #{userId};
 	</select>
 	
+	 <select id="readAllMbti" resultType="com.hgu.webcamp.DTO.userDTO">
+		SELECT * FROM camp1.mbti
+	</select>
+	
 	<delete id="deleteUser">
 		DELETE
 		from user

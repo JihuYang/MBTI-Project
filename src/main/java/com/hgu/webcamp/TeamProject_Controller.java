@@ -1,5 +1,7 @@
 package com.hgu.webcamp;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,11 +56,20 @@ public class TeamProject_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
-	public String teamProject_register(Model model) {
+	public ModelAndView teamProject_register(Model model) {
 		
+		List<userDTO> mbtiList = userService.readAllMbti();
+//		for(userDTO mbti : mbtiList) {
+//			System.out.println(mbti.toString());
+//		}
 		System.out.println("register page loaded");
 		
-		return "/register";
+		ModelAndView mv = new ModelAndView();
+
+		mv.addObject("mbtiList", mbtiList);
+		mv.setViewName("/register");
+		
+		return mv;
 	}
 	/**
 	 * Simply selects the home view to render by returning its name.
