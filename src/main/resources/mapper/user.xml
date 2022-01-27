@@ -33,5 +33,13 @@
 	<select id="getMBTIlist">
   		select * from camp1.mbti
   	</select>
+  	
+  	<update id="updateViews">
+  		UPDATE camp1.test SET views = views + 1 WHERE id = #{id};
+  	</update>
+  	
+  	<select id="readViews" resultType="int">
+  		SELECT views FROM camp1.test WHERE id = #{id};
+  	</select>
 	
   </mapper>

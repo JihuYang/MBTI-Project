@@ -23,6 +23,7 @@ import com.hgu.webcamp.DTO.commentDTO;
 import com.hgu.webcamp.DTO.questionDTO;
 import com.hgu.webcamp.Service.commentService;
 import com.hgu.webcamp.Service.questionService;
+import com.hgu.webcamp.Service.userService;
 
 /**
  * Handles requests for the application home page.
@@ -32,19 +33,31 @@ import com.hgu.webcamp.Service.questionService;
 public class TeamC_Controller {
 	@Autowired
 	questionService questionService;
+	
 	@Autowired
 	commentService commentService;
+	
+	@Autowired
+	userService userService;
 
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/start", method = RequestMethod.GET)
-	public String teamC_start(Model model) {
+	public ModelAndView teamC_start(Model model) {
 		
+		ModelAndView mv = new ModelAndView();
 		System.out.println("start page loaded");
 		
-		return "teamC/start";
+		int testId = 3;
+		int views = 0;
+		
+		views = userService.readViews(testId);
+
+		mv.addObject("views", views);
+		mv.setViewName("teamC/start");
+		return mv;
 	}
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -62,7 +75,8 @@ public class TeamC_Controller {
 		int testId = 3; // 테스트이름
 		int check = 1;
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-
+		userService.updateViews(testId);
+		
 		mv.addObject("questions", question);	
 		mv.addObject("check", check);
 		mv.setViewName("teamC/question");
@@ -115,7 +129,7 @@ public class TeamC_Controller {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/result", method = RequestMethod.GET)
+	@RequestMapping(value = "/result/ESFJ", method = RequestMethod.GET)
 	public ModelAndView teamC_result(Model model) {
 		
 		ModelAndView mv = new ModelAndView();
@@ -130,7 +144,7 @@ public class TeamC_Controller {
 		
 		mv.addObject("comments",comment);
 		mv.addObject("userId", userId);
-		mv.setViewName("teamC/result");
+		mv.setViewName("teamC/result/ESFJ");
 		
 		System.out.println(mv);
 		
@@ -168,7 +182,7 @@ public class TeamC_Controller {
 		}
 
 
-		return "redirect:result";
+		return "redirect:result/ESFJ";
 	}
 	
 	@RequestMapping(value = "/editok", method = RequestMethod.POST)
@@ -190,7 +204,7 @@ public class TeamC_Controller {
 		else {
 			System.out.println("데이터 수정 성공 ");
 		}
-		return "redirect:result";
+		return "redirect:result/ESFJ";
 	}
 	@RequestMapping(value = "/deleteok/{id}", method = RequestMethod.GET)
 	public String deletePostOK(@PathVariable("id") int id) {
@@ -199,7 +213,7 @@ public class TeamC_Controller {
 		if(i == 0) System.out.println("Error! delete Failed");
 		else System.out.println("댓글 삭제 완료.");
 		
-		return "redirect:../result";
+		return "redirect:../result/ESFJ";
 	}
 	
 

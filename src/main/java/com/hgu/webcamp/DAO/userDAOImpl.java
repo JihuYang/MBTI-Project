@@ -43,4 +43,12 @@ public class userDAOImpl implements userDAO {
 		List<userDTO> mbtiList = sqlSession.selectList(namespace + ".readAllMbti");
 		return mbtiList;
 	}
+	public int updateViews(int id) {
+		int result = sqlSession.update("user.updateViews", id);
+		return result;
+	}
+	public int readViews(int id) {
+		int views = sqlSession.selectOne("user.readViews", id);
+		return views;
+	}
 }

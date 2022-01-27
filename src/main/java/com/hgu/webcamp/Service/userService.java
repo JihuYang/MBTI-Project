@@ -17,5 +17,8 @@ public interface userService {
 	public List<userDTO> readAllMbti();
 	
 	public int readUserByEmail(String email);
+	
+	public int updateViews(int id);
 
+	public int readViews(int id);
 }

@@ -15,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.hgu.webcamp.DTO.questionDTO;
 import com.hgu.webcamp.Service.questionService;
+import com.hgu.webcamp.Service.userService;
 
 /**
  * Handles requests for the application home page.
@@ -26,15 +27,26 @@ public class TeamE_Controller {
 	@Autowired
 	questionService questionService;
 	
+	@Autowired
+	userService userService;
+	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/start", method = RequestMethod.GET)
-	public String teamE_start(Model model) {
+	public ModelAndView teamE_start(Model model) {
 		
+		ModelAndView mv = new ModelAndView();
+
 		System.out.println("start page loaded");
-		
-		return "teamE/start";
+		int testId = 5;
+		int views = 0;
+				
+		views = userService.readViews(testId);
+
+		mv.addObject("views", views);
+		mv.setViewName("teamE/start");
+		return mv;
 	}
 	
 	@RequestMapping(value = "/who", method = RequestMethod.GET)
@@ -60,7 +72,8 @@ public class TeamE_Controller {
 		int testId = 5; // 테스트이름
 
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-
+		userService.updateViews(testId);
+		
 		mv.addObject("questions", question);		
 		mv.setViewName("teamE/question");
 		

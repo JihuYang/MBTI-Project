@@ -34,17 +34,28 @@ public class TeamA_Controller {
 	questionService questionService;
 	
 	@Autowired
+	userService userService;
+	
+	@Autowired
 	commentService commentService;
 
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/start", method = RequestMethod.GET)
-	public String teamA_start(Model model) {
+	public ModelAndView teamA_start(Model model) {
 
+		ModelAndView mv = new ModelAndView();
 		System.out.println("start page loaded");
+		
+		int testId = 1;
+		int views = 0;
+		
+		views = userService.readViews(testId);
 
-		return "teamA/start";
+		mv.addObject("views", views);
+		mv.setViewName("teamA/start");
+		return mv;
 	}
 
 	/**
@@ -61,9 +72,10 @@ public class TeamA_Controller {
 		int questionNum= 1; // question 테이블에서 문제 
 		int questionId = 1; // answer 테이블에서 문제 
 		int testId = 1; // 테스트이름
-
+		
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-
+		userService.updateViews(testId);
+		
 		mv.addObject("questions", question);		
 		mv.setViewName("teamA/question");
 		
@@ -78,7 +90,10 @@ public class TeamA_Controller {
 	public String teamA_question_1(Model model) {
 
 		System.out.println("question page loaded");
-
+		
+		int testId = 1;
+		userService.updateViews(testId);
+		
 		return "teamA/question/1";
 	}
 
@@ -179,4 +194,23 @@ public class TeamA_Controller {
 
 		return "redirect:result";
 	}
+	/*
+	// ajax로 값을 주고받는 Controller 
+		@RequestMapping(value = "/resu", method = RequestMethod.POST)
+		public @ResponseBody String ajax_question(@RequestParam("mbtiType") String mbtiType) {
+							
+			int testId = 1;
+			int questionId = 1;
+			// ajax로부터 받은 문제 번호를 1증가 시키고 questionId에도 해당 값 부여   
+			//questionNum++;
+			//questionId = questionNum;
+			System.out.println(mbtiType);
+			
+			
+			// 데이터베이스에서 testId, questionNum, questionId 에 따른 값 가져오기   
+			//List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
+			// ajax로 보내기 
+			return mbtiType;
+			}
+			*/
 }

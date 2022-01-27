@@ -53,5 +53,13 @@ public class userServiceImpl implements userService {
 		}
 		return id;
 	};
+	
+	public int updateViews(int id) {
+		return dao.updateViews(id);
+	}
+	
+	public int readViews(int id) {
+		return dao.readViews(id);
+	}
 
 }

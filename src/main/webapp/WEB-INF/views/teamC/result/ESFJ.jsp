@@ -15,7 +15,7 @@
 
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="../resources/js/shareProject.js"></script>
+<script type="text/javascript" src="../../resources/js/shareProject.js"></script>
 
 <!-- Bootstrap CSS -->
 <link
@@ -24,7 +24,7 @@
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
 <!-- teamC css -->
-<link rel="stylesheet" type="text/css" href="../resources/css/teamC.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/teamC.css">
 <!-- google font -->
 <link href='https://fonts.googleapis.com/css?family=Black Han Sans'
 	rel='stylesheet'>
@@ -60,12 +60,12 @@
 	}
 
 	function moveTo() {
-		location.href = "start";
+		location.href = "../start";
 	}
 	function delete_ok(id) {
 		var a = confirm("정말로 삭제하겠습니까?");
 		if (a)
-			location.href = '../teamC/deleteok/' + id;
+			location.href = '../../teamC/deleteok/' + id;
 	}
 </script>
 
@@ -80,7 +80,7 @@
 						"공부는 자고로 시끄러워야 하는 법" <br> <span id="resultNick">인싸형
 							공부러</span>
 					</div>
-					<img class="result-img" src="../resources/img/teamC/ESFJ.png" />
+					<img class="result-img" src="../../resources/img/teamC/ESFJ.png" />
 
 					<div class="box2">
 						<div class="resultDesc">
@@ -146,10 +146,10 @@
 					</a>
 
 					<button class="sharebtn-kakao" type="button" onclick="sendLink();">
-						<img src="../resources/img/teamC/kakaoLogo.png" />
+						<img src="../../resources/img/teamC/kakaoLogo.png" />
 					</button>
 					<button class="sharebtn-link" type="button" onclick="copyLink();">
-						<img src="../resources/img/teamC/copyLink.png" />
+						<img src="../../resources/img/teamC/copyLink.png" />
 					</button>
 
 				</div>
@@ -159,7 +159,7 @@
 					<div class="comment">
 						<div class="text-start comment-number">댓글 1</div>
 
-						<form:form method="post" action="../teamC/addok">
+						<form:form method="post" action="../../teamC/addok">
 							<div class="d-flex p-2 comment-add">
 								<input type="text" name="comment" class="comment-add-text"
 									style="border: none; border-radius: 10px; width: 90%"
@@ -176,7 +176,7 @@
 
 									<div class="comment-list">
 										<img class="rounded-circle border border-secondary"
-											src="../resources/img/teamC/${comment.type}.png" alt="avatar"
+											src="../../resources/img/teamC/${comment.type}.png" alt="avatar"
 											width="60" height="60" />
 									</div>
 
@@ -190,7 +190,7 @@
 									<div id="show-comment" class="comment-list-content w-100">
 										<p id="${comment.id}2" style="display: block;">${comment.comment}</p>
 
-										<form:form method="post" action="../teamC/editok">
+										<form:form method="post" action="../../teamC/editok">
 											<div class="p-2 comment-add" id="${comment.id}"
 												style="display: none;">
 												<textarea rows="3" name="comment"

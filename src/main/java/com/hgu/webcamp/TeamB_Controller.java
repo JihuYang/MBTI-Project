@@ -30,6 +30,7 @@ import com.hgu.webcamp.DTO.commentDTO;
 import com.hgu.webcamp.DTO.questionDTO;
 import com.hgu.webcamp.Service.*;
 
+
 /**
  * Handles requests for the application home page.
  */
@@ -41,16 +42,27 @@ public class TeamB_Controller {
 
 	@Autowired
 	commentService commentService;
+	
+	@Autowired
+	userService userService;
 
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/start", method = RequestMethod.GET)
-	public String teamB_start(Model model) {
+	public ModelAndView teamB_start(Model model) {
 		
+		ModelAndView mv = new ModelAndView();
+		
+		int views = 0; // 테스트 한 횟수 
+		int testId=2;
 		System.out.println("start page loaded");
 		
-		return "teamB/start";
+		views = userService.readViews(testId);
+
+		mv.addObject("views", views);
+		mv.setViewName("teamB/start");
+		return mv;
 	}
 	/*
 	@RequestMapping(value = "/question", method = RequestMethod.GET)
@@ -75,10 +87,15 @@ public class TeamB_Controller {
 		int questionNum= 1; // question 테이블에서 문제 
 		int questionId = 1; // answer 테이블에서 문제 
 		int testId = 2; // 테스트이름
+		
 
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-
-		mv.addObject("questions", question);		
+		/* 문제 조회수 업데이트 */
+		userService.updateViews(testId);
+		
+		
+		
+		mv.addObject("questions", question);
 		mv.setViewName("teamB/question");
 		
 		System.out.println(mv);

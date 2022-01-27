@@ -72,7 +72,7 @@
 
 						<button class="startButton" onclick="moveToQ()">
 							<div class="btntext1">터치해서 알아보기</div>
-							<div class="btntext2">지금까지 55,816명이 알아봤어요.</div>
+							<div class="btntext2">지금까지 ${views}명이 알아봤어요.</div>
 						</button>
 					</div>
 				</div>

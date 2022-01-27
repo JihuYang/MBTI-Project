@@ -29,7 +29,7 @@
 		    <div class="speech-container mb-3">
 		    <div class="p-3 speech-bubble">
 		    	<div class="number">
-		    	36, 750명 참여
+		    	${views} 명 참여
 		    </div>
 		    </div>
 		    <div class="p-3 speech-shadow">

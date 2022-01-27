@@ -38,7 +38,9 @@ function saveType(answer, mbti) {
 			for (const item of resultAry) {
 				resultUrl += item;
 			}
+			/*conveyType();*/
 			window.location.href = "loading";
+			
 		}
 	}
 
@@ -93,3 +95,29 @@ function readQuestion() {
 		}
 	});
 }
+
+/*
+function conveyType(mbtiType) {
+
+	$.ajax({
+			url: "resu",
+			type: "POST",
+			async: false,
+			data : {
+				mbtiType : mbtiType
+			},
+			success : function(data) {
+			
+				console.log("read conveyType");
+				
+				
+			},
+			
+			error : function(request, status, error) {
+			console.log("code:" + request.status + "\n"
+				+ "message:" + request.responseText + "\n"
+					+ "error:" + error);
+		}
+			});
+}
+*/

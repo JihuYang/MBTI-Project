@@ -26,15 +26,26 @@ public class TeamD_Controller {
 	
 	@Autowired
 	questionService questionService;
+	
+	@Autowired
+	userService userService;
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/start", method = RequestMethod.GET)
-	public String teamD_start(Model model) {
+	public ModelAndView teamD_start(Model model) {
 		
 		System.out.println("start page loaded");
-		
-		return "teamD/start";
+		ModelAndView mv = new ModelAndView();
+
+		int testId = 4;
+		int views = 0;
+				
+		views = userService.readViews(testId);
+
+		mv.addObject("views", views);
+		mv.setViewName("teamD/start");
+		return mv;
 	}
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -52,7 +63,8 @@ public class TeamD_Controller {
 		int testId = 4; // 테스트이름
 
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-
+		userService.updateViews(testId);
+		
 		mv.addObject("questions", question);		
 		mv.setViewName("teamD/question");
 		
