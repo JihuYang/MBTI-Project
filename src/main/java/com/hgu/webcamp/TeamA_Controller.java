@@ -118,7 +118,10 @@ public class TeamA_Controller {
 		System.out.println("result page loaded");
 		
 		int testId = 1;
-		int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}
 		
 
 		List<commentDTO> comment = new ArrayList<commentDTO>();
@@ -129,7 +132,6 @@ public class TeamA_Controller {
 		
 		mv.addObject("comments",comment);
 		mv.addObject("count", count);
-		mv.addObject("userId", userId);
 		mv.setViewName("teamA/result");
 		
 		System.out.println(mv);
@@ -169,7 +171,13 @@ public class TeamA_Controller {
 		request.setCharacterEncoding("utf-8");
 		//HttpSession session = request.getSession();
 		//String userid = request.getSession().getAttribute("").toString();
-		int userId = 2;
+		commentDTO dto = new commentDTO();
+
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			dto.setUserId(userId);
+
+		}
 		int testId = 1;
 		
 		SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
@@ -177,10 +185,8 @@ public class TeamA_Controller {
 		
 		String comment = request.getParameter("comment");
 		
-		commentDTO dto = new commentDTO();
 		dto.setComment(comment);
 		dto.setRegDate(regDate);
-		dto.setUserId(userId);
 		dto.setTestId(testId);
 		
 		

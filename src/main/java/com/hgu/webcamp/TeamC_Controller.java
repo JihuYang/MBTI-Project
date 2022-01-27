@@ -21,6 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.hgu.webcamp.DTO.commentDTO;
 import com.hgu.webcamp.DTO.questionDTO;
+import com.hgu.webcamp.DTO.userDTO;
 import com.hgu.webcamp.Service.commentService;
 import com.hgu.webcamp.Service.questionService;
 import com.hgu.webcamp.Service.userService;
@@ -98,8 +99,8 @@ public class TeamC_Controller {
 		@RequestMapping(value ="/comment", method = RequestMethod.GET)
 		public String teamC_comment(Model model) {
 			System.out.println("comment page loaded");
-			int userId=1;
 			int testId=1;	
+			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
 
 			comment = commentService.getCommentList(testId);
@@ -130,20 +131,21 @@ public class TeamC_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/result/ESFJ", method = RequestMethod.GET)
-	public ModelAndView teamC_result(Model model) {
+	public ModelAndView teamC_result(Model model, HttpServletRequest request) {
 		
 		ModelAndView mv = new ModelAndView();
 		System.out.println("result page loaded");
 		
 		int testId = 3;
-		int userId = 2;
-		
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
 
 		comment = commentService.getCommentList(testId);
 		
 		mv.addObject("comments",comment);
-		mv.addObject("userId", userId);
 		mv.setViewName("teamC/result/ESFJ");
 		
 		System.out.println(mv);
@@ -157,18 +159,22 @@ public class TeamC_Controller {
 		request.setCharacterEncoding("utf-8");
 		//HttpSession session = request.getSession();
 		//String userid = request.getSession().getAttribute("").toString();
-		int userId = 2;
 		int testId = 3;
+		
+		commentDTO dto = new commentDTO();
+
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			dto.setUserId(userId);
+		}	
 		
 		SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
     	Date regDate=f.parse(f.format(new Date()));
 		
 		String comment = request.getParameter("comment");
 		
-		commentDTO dto = new commentDTO();
 		dto.setComment(comment);
 		dto.setRegDate(regDate);
-		dto.setUserId(userId);
 		dto.setTestId(testId);
 		
 		

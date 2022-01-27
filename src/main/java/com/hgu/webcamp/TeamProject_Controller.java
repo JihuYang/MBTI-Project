@@ -42,7 +42,9 @@ public class TeamProject_Controller {
 	public ModelAndView teamProject_myPage(HttpServletRequest request) {
 		
 		userDTO dto = new userDTO();
-		int id=1;
+		
+		int id = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+	
 		dto=userService.getUser(id);
 		
 		ModelAndView mv = new ModelAndView();
