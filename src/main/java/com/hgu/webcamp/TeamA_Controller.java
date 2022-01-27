@@ -132,7 +132,7 @@ public class TeamA_Controller {
 		
 		mv.addObject("comments",comment);
 		mv.addObject("count", count);
-		mv.setViewName("teamA/result");
+		mv.setViewName("teamA/result/ENTP");
 		
 		System.out.println(mv);
 
