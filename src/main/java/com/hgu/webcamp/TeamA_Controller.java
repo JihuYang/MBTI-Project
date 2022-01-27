@@ -62,26 +62,8 @@ public class TeamA_Controller {
 		int questionId = 1; // answer 테이블에서 문제 
 		int testId = 1; // 테스트이름
 
-		/*String temp = request.getParameter("questionNum");
-		System.out.println("ajax로 전달한 값 : " + temp);
-		if(temp != null) {
-			questionNum = Integer.parseInt(temp);
-			questionNum++;
-		}
-		System.out.println(questionNum);
-		
-		  
-		questionId = questionNum;
-		*/
-
-		//List<questionDTO> question = questionService.readQuestion(testId);
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
 
-		for (questionDTO q : question) {
-			
-			System.out.println(q.toString());
-		}
-		//mv.addObject("questionNum", questionNum);
 		mv.addObject("questions", question);		
 		mv.setViewName("teamA/question");
 		
@@ -141,25 +123,17 @@ public class TeamA_Controller {
 	// ajax로 값을 주고받는 Controller 
 	@RequestMapping(value = "/ajax", method = RequestMethod.POST)
 	public @ResponseBody List<questionDTO> ajax_question(@RequestParam("questionNum") int questionNum) {
-				
-		
-		System.out.println("ajax conveyed value to server");
-		
+						
 		int testId = 1;
 		int questionId = 1;
-		
+		// ajax로부터 받은 문제 번호를 1증가 시키고 questionId에도 해당 값 부여   
 		questionNum++;
-		
 		questionId = questionNum;
 		
-		//List<questionDTO> question = questionService.readQuestion(testId);
+		
+		// 데이터베이스에서 testId, questionNum, questionId 에 따른 값 가져오기   
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-		
-		
-		for (questionDTO q : question) {
-			System.out.println(q.toString());
-		}
-		
+		// ajax로 보내기 
 		return question;
 		}
 	

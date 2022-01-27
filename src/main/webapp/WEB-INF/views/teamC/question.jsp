@@ -5,6 +5,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script>
 	$(function() {
 		var progressbar = $("#progressbar"), progressLabel = $(".progress-label");
@@ -35,9 +37,12 @@
 <!--  Google font  -->
 <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Do Hyeon' rel='stylesheet'>
+<script src="../resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
+
 <title>teamCQuestion</title>
 </head>
 <body>
+
 	<div class="container-fluid">
 		<div class="row text-center">
 			<div class="col"></div>
@@ -52,7 +57,7 @@
 							aria-valuemax="100"></div>
 					</div>
 					
-					<div class="progress-label">Q1/12</div>
+					<div class="progress-label"><span id="Qnum">${questions[0].questionNum}</span>/12</div>
 
 
 				</div>
@@ -60,10 +65,8 @@
 				<div class="quiz-question">힘들게 공부한 시험 결과가 좋지 않다... 어떻게 하면 기분이 나아질까..</div>
 
 				<div id="quiz-button">
-					<button id="Button" class="btn1" onclick="moveTo()">사람들과 만나서
-						놀아야지!! 집에 혼자 있으면 괜히 울적해지기만 한다.</button>
-					<button id="Button" class="btn2" onclick="moveTo()">집에서 조용히 쉬어야지 이럴 때 나가봤자 더
-						힘들어...</button>
+					<button id="Button" class="btn1" onclick="saveType(${1}, '${questions[0].result}')">${questions[0].answer}</button>
+					<button id="Button" class="btn2" onclick="saveType(${2}, '${questions[1].result}')">${questions[1].answer}</button>
 				</div>
 			</div>
 			</div>

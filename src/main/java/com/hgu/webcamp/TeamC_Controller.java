@@ -50,13 +50,28 @@ public class TeamC_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/question", method = RequestMethod.GET)
-	public String teamC_question(Model model) {
+	public ModelAndView teamC_question(HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
 		
 		System.out.println("question page loaded");
 		
-		return "teamC/question";
+		
+		int questionNum= 1; // question 테이블에서 문제 
+		int questionId = 1 ; // answer 테이블에서 문제 
+		int testId = 3; // 테스트이름
+		int check = 1;
+		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
+
+		mv.addObject("questions", question);	
+		mv.addObject("check", check);
+		mv.setViewName("teamC/question");
+		
+		System.out.println(mv);
+		return mv;
 	}
-	
+
+
 	//로딩을 위한 mapping 
 	@RequestMapping(value ="/loading", method = RequestMethod.GET)
 	public String teamC_loading(Model model) {
@@ -64,6 +79,38 @@ public class TeamC_Controller {
 		
 		return "teamC/loading";
 	}
+
+	//comment
+		@RequestMapping(value ="/comment", method = RequestMethod.GET)
+		public String teamC_comment(Model model) {
+			System.out.println("comment page loaded");
+			int userId=1;
+			int testId=1;	
+			List<commentDTO> comment = new ArrayList<commentDTO>();
+
+			comment = commentService.getCommentList(testId);
+			
+			System.out.println(comment.toString());
+			
+			return "teamC/comment";
+		}
+		// ajax로 값을 주고받는 Controller 
+		@RequestMapping(value = "/ajax", method = RequestMethod.POST)
+		public @ResponseBody List<questionDTO> ajax_question(@RequestParam("questionNum") int questionNum) {
+							
+			int testId = 3;
+			int questionId = 1;
+			// ajax로부터 받은 문제 번호를 1증가 시키고 questionId에도 해당 값 부여   
+			questionNum++;
+			questionId = questionNum;
+			
+			
+			// 데이터베이스에서 testId, questionNum, questionId 에 따른 값 가져오기   
+			List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
+			// ajax로 보내기 
+			return question;
+			}	
+
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -155,5 +202,6 @@ public class TeamC_Controller {
 		return "redirect:../result";
 	}
 	
+
 	
 }

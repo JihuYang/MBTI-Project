@@ -11,22 +11,24 @@
 	<meta id="metaKeywords" name="keywords" content="MBTI로 나의 배우자 캐릭터 찾기">
 	<title>배우자 찾는 중..</title>
 	<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
+	<script src="../resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
    <div id="question-wrap">
       <div id="optadATF" style="min-height: 110px"></div>
       <div class= "qBox-wrap">
 			<div class="qBox">
-				<p class="q-count"><strong>1</strong><span> / 12</span></p>
-				<h2><span class="question">바쁜 일정을 끝내고 드디어 쉰다!<br> 무엇을 할까?</span></h2><br>
+				<p class="q-count"><strong id="Qnum">${questions[0].questionNum}</strong><span> / 12</span></p>
+				<h2><span class="question">${questions[0].question}</span></h2><br>
 				<div class="option-btn-div">
 					<button value="q1-1" name="q1" class="option-btn"
-						onclick="location.href='./loading'">
-						<h3>쉴 땐 혼자가 좋아!<br>집에서 혼자만의 시간을 지낸다.</h3>
+						onclick="saveType(${1}, '${questions[0].result}')">
+						<h3 class="btn1">${questions[0].answer}</h3>
 					</button>
 					<button value="q1-2" name="q1" class="option-btn"
-						onclick="location.href='./loading'">
-						<h3>함께가 재밌지! 친구들과 약속을 잡는다.</h3>
+						onclick="saveType(${2}, '${questions[1].result}')">
+						<h3 class="btn2">${questions[1].answer}</h3>
 					</button>
 				</div>
 				<div class="percentage">
