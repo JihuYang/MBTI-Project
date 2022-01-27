@@ -56,7 +56,7 @@ public class TeamProject_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/register", method = RequestMethod.GET)
-	public ModelAndView teamProject_register(ModelAndView model) {
+	public ModelAndView teamProject_register(Model model) {
 		
 		List<userDTO> mbtiList = userService.readAllMbti();
 //		for(userDTO mbti : mbtiList) {
@@ -64,13 +64,12 @@ public class TeamProject_Controller {
 //		}
 		System.out.println("register page loaded");
 		
+		ModelAndView mv = new ModelAndView();
 		
-		//ModelAndView mv = new ModelAndView();
-
-		model.addObject("mbtiList", mbtiList);
-		model.setViewName("register");
+		mv.addObject("mbtiList", mbtiList);
+		mv.setViewName("/register");
 		
-		return model;
+		return mv;
 	}
 	/**
 	 * Simply selects the home view to render by returning its name.

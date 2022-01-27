@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,20 +41,15 @@
 	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 	crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 <body class="registration">
 
-	<%-- <%
-		String nickname = request.getParameter("profile_nickname");
-	String email = request.getParameter("account_email");
-	%>
- --%>
 
 	<main class="form-signin">
-		<form name="information" onSubmit="return Confirm()">
-
+		<form method="post" action="<%=request.getContextPath()%>/loginPost">
 			<h1 class="font-weight-bold">회원가입</h1>
 			<div class="mb-2">
 				<!-- 이름 로그인 한 정보에서 가져오기   -->
@@ -62,8 +59,8 @@
 			</div>
 			<div class="form-floating mt-3">
 				<input name="nickname" type="text" class="form-control"
-					id="floatingInput" placeholder="닉네임 "> <label for="">닉네임
-				</label>
+					id="floatingInput" placeholder="닉네임 " required> <label
+					for="">닉네임 </label>
 			</div>
 			<!--  <div class="form-floating mt-3">
       <input type="text" class="form-control" id="floatingPassword" placeholder="MBTI ">
@@ -73,7 +70,8 @@
 			<div class="form-floating mt-3">
 				<select name="mbti" class="form-select"
 					aria-label="Default select example">
-					<option selected>내 MBTI</option>
+					<!-- 					<option selected>내 MBTI</option>
+ -->
 					<c:forEach items="${mbtiList}" var="mbti" varStatus="status">
 						<option value="${mbti.id}">${mbti.type}</option>
 					</c:forEach>
@@ -84,23 +82,10 @@
 
 			<button class="w-100 btn btn-lg btn-dark mt-3" type="submit">가입하기
 			</button>
-		</form>
+			</form>
 	</main>
 
 </body>
 <script src="resources/js/teamProject.js"></script>
-<script>
-	//닉네임을 입력하지 않았을 경우 alert창
-	function Confirm() {
-		if (information.nickname.value == "") {
-			information.nickname.focus();
-			alert("닉네임을 입력해 주세요");
-
-		}
-		else {
-    		location.href="loginPost" ; 
-    	}
-	}
-</script>
 
 </html>

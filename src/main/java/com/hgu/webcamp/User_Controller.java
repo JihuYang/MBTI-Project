@@ -1,5 +1,6 @@
 package com.hgu.webcamp;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ import com.hgu.webcamp.DAO.*;
 public class User_Controller {
 	
 	@Autowired
-	userServiceImpl userService;
+	userService userService;
 	
 //	@Autowired
 //	userDAO service;
@@ -75,8 +76,23 @@ public class User_Controller {
 		 return "redirect:/index";
 	 }
 	 
-	 @RequestMapping(value = "/loginPost", method = {RequestMethod.POST, RequestMethod.GET})
-     public String addUser(userDTO dto) { 
+	 @RequestMapping(value = "/loginPost", method=RequestMethod.POST)
+     public String addUser(userDTO dto, HttpServletRequest request) { 
+
+		String email  = ((userDTO)request.getSession().getAttribute("tempUser")).getEmail();
+		String name  = ((userDTO)request.getSession().getAttribute("tempUser")).getName();
+		String nickName = request.getParameter("nickname");
+		String mbtiTemp = request.getParameter("mbti");
+//		int mbti =  Integer.parseInt(mbtiTemp);
+		System.out.println("mbti Temp, mbti: " + mbtiTemp + email + name + nickName);
+		
+		dto.setEmail(email) ;
+		dto.setName(name);
+		dto.setMbti(1);
+		dto.setNickName(nickName);
+		dto.setRegistration(1);
+		dto.setAdmin(1);
+		
         int i = userService.insertUser(dto);
 
         if(i==0) {

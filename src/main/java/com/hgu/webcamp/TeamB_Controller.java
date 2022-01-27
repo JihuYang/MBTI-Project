@@ -187,26 +187,5 @@ public class TeamB_Controller {
 
 		return "redirect:result";
 	}
-	@RequestMapping(value = "/editok", method = RequestMethod.POST)
-	public String editPostOK(HttpServletRequest request) throws UnsupportedEncodingException {
-		request.setCharacterEncoding("utf-8");
-
-		String comment = request.getParameter("comment");
-		int id = Integer.parseInt(request.getParameter("id"));
-		
-		commentDTO dto = new commentDTO();
-		dto.setComment(comment);
-		dto.setId(id);
-		
-		int i = commentService.updateComment(dto);
-		if(i==0) {
-			System.out.println("데이터 수정 실패");
-			
-		}
-		else {
-			System.out.println("데이터 수정 성공 ");
-		}
-		return "redirect:result";
-	}
 
 }
