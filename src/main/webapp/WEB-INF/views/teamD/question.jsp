@@ -12,9 +12,15 @@
 	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
 	<script src="../resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	
+	<script>
+		function loadCall() {
+			window.onbeforeunload = function (e) {
+				return "refresh";	
+			}
+		}
+	</script>
 </head>
-<body>
+<body onload="loadCall()">
 	<div id="wrapper">
 		<h1>Q<span id="Qnum">1</span>. ${questions[0].question}</h1>
 		<div id="an1" onclick="saveType(${1}, '${questions[0].result}')">

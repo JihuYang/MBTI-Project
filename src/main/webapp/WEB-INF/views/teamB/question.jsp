@@ -29,11 +29,11 @@
 				<p class="q-count"><strong id="Qnum">${questions[0].questionNum}</strong><span> / 12</span></p>
 				<h2><span class="question">${questions[0].question}</span></h2><br>
 				<div class="option-btn-div">
-					<button value="q1-1" name="q1" class="option-btn"
+					<button value="q1-1" type ="button" name="q1" class="option-btn"
 						onclick="saveType(${1}, '${questions[0].result}')">
 						<h3 class="btn1">${questions[0].answer}</h3>
 					</button>
-					<button value="q1-2" name="q1" class="option-btn"
+					<button value="q1-2" type ="button" name="q1" class="option-btn"
 						onclick="saveType(${2}, '${questions[1].result}')">
 						<h3 class="btn2">${questions[1].answer}</h3>
 					</button>
@@ -41,7 +41,7 @@
 				<div class="percentage">
 					<div class="progress-wrap">
 						<span class="progress-bar" style="width: 10%"></span> <span
-							class="bar-text">8.33%</span>
+							class="bar-text">배우자 찾는 중...</span>
 					</div>
 				</div>
 			</div>

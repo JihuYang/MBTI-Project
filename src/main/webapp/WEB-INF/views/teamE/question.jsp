@@ -12,9 +12,15 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="../resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
-
+	<script>
+		function loadCall() {
+			window.onbeforeunload = function (e) {
+				return "refresh";	
+			}
+		}
+	</script>
 </head>
-<body>
+<body onload="loadCall()">
 
 <!-- 질문화면 -->
 <div class="question">
