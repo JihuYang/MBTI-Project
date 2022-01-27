@@ -50,7 +50,7 @@
 
 
 	<main class="form-signin">
-		<form name="information" onSubmit="return Confirm()">
+		<form name="information" enctype="multipart/form-data" action="<%=request.getContextPath()%>/loginPost" method="POST">
 
 			<h1 class="font-weight-bold">회원가입</h1>
 			<div class="mb-2">
@@ -61,7 +61,7 @@
 			</div>
 			<div class="form-floating mt-3">
 				<input name="nickname" type="text" class="form-control"
-					id="floatingInput" placeholder="닉네임 "> <label for="">닉네임
+					id="floatingInput" placeholder="닉네임 " required> <label for="">닉네임
 				</label>
 			</div>
 			<!--  <div class="form-floating mt-3">
@@ -88,18 +88,5 @@
 
 </body>
 <script src="resources/js/teamProject.js"></script>
-<script>
-	//닉네임을 입력하지 않았을 경우 alert창
-	function Confirm() {
-		if (information.nickname.value == "") {
-			information.nickname.focus();
-			alert("닉네임을 입력해 주세요");
-
-		}
-		else {
-    		location.href="loginPost" ; 
-    	}
-	}
-</script>
 
 </html>
