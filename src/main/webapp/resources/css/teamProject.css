@@ -13,6 +13,10 @@ body{
  
 }
 
+.navbar{
+	z-index:999;
+}
+
 .main-header::before {    
       content: "";
      background-image: url("../img/teamProject/main_background.png");
@@ -87,6 +91,9 @@ body{
     
     
     /* myPage */
+    .mypage{
+    	margin-right: 2rem!important;
+    }
     
     .myPage-header{
     	padding-top: 3rem !important;

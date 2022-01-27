@@ -3,6 +3,7 @@ package com.hgu.webcamp;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -94,6 +95,21 @@ public class TeamProject_Controller {
 		
 		model.setViewName("login");
 		return model;
+	}
+	
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+	@RequestMapping(value = "/alert", method = RequestMethod.GET)
+	public String teamProject_alert(ModelAndView model, HttpServletRequest request) {
+		
+//		String msg = (String)request.getAttribute("msg");
+//		String url = (String)request.getAttribute("url");
+//		
+		System.out.println("alert page loaded");
+
+		
+		return "/alert";
 	}
 
 }

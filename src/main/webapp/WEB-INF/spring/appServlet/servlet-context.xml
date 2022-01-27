@@ -43,5 +43,30 @@
 		<beans:constructor-arg index="0" ref="sqlSessionFactory"/>
 	</beans:bean>
 	
+	<beans:bean id="loginInterceptor"
+		class="com.hgu.webcamp.Interceptor.LoginInterceptor" />
+		
+	<beans:bean id="commonInterceptor"
+		class="com.hgu.webcamp.Interceptor.CommonInterceptor" />
+	
+	<interceptors>
+			<interceptor>
+				<mapping path="/register" />
+				<exclude-mapping path="/resources/**" />
+				<exclude-mapping path="/img/**" />
+				<beans:ref bean="loginInterceptor" />
+			</interceptor>
+			<interceptor>
+				<mapping path="/**/" />
+				<exclude-mapping path="/resources/**" />
+				<exclude-mapping path="/img/**" />
+				<exclude-mapping path="/login/**" />
+				<beans:ref bean="commonInterceptor" />
+			</interceptor>
+		</interceptors>
+	
+	
+	
+	
 	
 </beans:beans>
