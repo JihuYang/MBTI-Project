@@ -39,15 +39,16 @@
 	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 	crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body class="registration">
 
-	<%
+	<%-- <%
 		String nickname = request.getParameter("profile_nickname");
 	String email = request.getParameter("account_email");
 	%>
-
+ --%>
 
 	<main class="form-signin">
 		<form name="information" onSubmit="return Confirm()">
@@ -56,7 +57,7 @@
 			<div class="mb-2">
 				<!-- 이름 로그인 한 정보에서 가져오기   -->
 
-				<span class=" mb-3 fw-normal"><%=nickname%>님!</span> <br> <span
+				<span class=" mb-3 fw-normal">${tempUser.name}님!</span> <br> <span
 					class=" mb-3 fw-normal">몇가지 정보를 알려주세요 </span>
 			</div>
 			<div class="form-floating mt-3">
