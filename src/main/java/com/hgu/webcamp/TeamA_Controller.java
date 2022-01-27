@@ -21,6 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.hgu.webcamp.DTO.commentDTO;
 import com.hgu.webcamp.DTO.questionDTO;
+import com.hgu.webcamp.DTO.userDTO;
 import com.hgu.webcamp.Service.*;
 
 /**
@@ -112,13 +113,14 @@ public class TeamA_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/result", method = RequestMethod.GET)
-	public ModelAndView teamA_result(Model model) {
+	public ModelAndView teamA_result(Model model, HttpServletRequest request) {
 		ModelAndView mv = new ModelAndView();
 		System.out.println("result page loaded");
 		
 		int testId = 1;
-		int userId = 2;
+		int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
 		
+
 		List<commentDTO> comment = new ArrayList<commentDTO>();
 
 		comment = commentService.getCommentList(testId);

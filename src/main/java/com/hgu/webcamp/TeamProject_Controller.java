@@ -65,7 +65,7 @@ public class TeamProject_Controller {
 		System.out.println("register page loaded");
 		
 		ModelAndView mv = new ModelAndView();
-
+		
 		mv.addObject("mbtiList", mbtiList);
 		mv.setViewName("/register");
 		
@@ -75,11 +75,25 @@ public class TeamProject_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String teamProject_login(Model model) {
-		
+	public ModelAndView teamProject_login(ModelAndView model, HttpServletRequest request) {
+		if(request.getSession().getAttribute("tempUser") != null) {
+			userDTO u = new userDTO();
+			u = (userDTO) request.getSession().getAttribute("tempUser");
+			//회원 정보가 없는 경우
+			if(userService.readUserByEmail(u.getEmail())==0) {
+				model.setViewName("redirect:/register");
+				return model;
+			}
+			//회원 정보가 있는 경우
+			
+			model.setViewName("redirect:/index");
+			return model;
+		}
+		//System.out.println(userName);
 		System.out.println("login loaded");
 		
-		return "/login";
+		model.setViewName("login");
+		return model;
 	}
 
 }

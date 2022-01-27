@@ -1,6 +1,8 @@
 package com.hgu.webcamp.DAO;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +45,7 @@ public class userDAOImpl implements userDAO {
 		List<userDTO> mbtiList = sqlSession.selectList(namespace + ".readAllMbti");
 		return mbtiList;
 	}
+
 	public int updateViews(int id) {
 		int result = sqlSession.update("user.updateViews", id);
 		return result;
@@ -51,4 +54,18 @@ public class userDAOImpl implements userDAO {
 		int views = sqlSession.selectOne("user.readViews", id);
 		return views;
 	}
+
+	public int readUserByEmail(String email) {
+		//System.out.println("DAO email: " + email);
+		int userId = 0;
+		try {
+			userId = sqlSession.selectOne(namespace+".readUserByEmail", email);
+		}catch (NullPointerException e){
+			System.out.println(e);
+			userId = 0;
+		}
+		return userId;
+	}
+
+
 }

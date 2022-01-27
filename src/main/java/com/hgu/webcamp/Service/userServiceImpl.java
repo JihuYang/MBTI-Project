@@ -19,39 +19,35 @@ public class userServiceImpl implements userService {
 	userDAO dao;
 	
 	SqlSession sqlSession;
-
+	
+	@Override
 	public int deleteUser(int id) {
 		return dao.deleteUser(id);
 	}
-
+	
+	@Override
 	public int updateUser(userDTO dto) {
 		return dao.updateUser(dto);
 	}
-
+	
+	@Override
 	public userDTO getUser(int id) {
 		return dao.getUser(id);
 	}
 	
+	@Override
 	public List<userDTO> readAllMbti() {
 		return dao.readAllMbti();
 	}
-
+	
+	@Override
 	public int insertUser(userDTO dto) {
 		return dao.insertUser(dto);
 	}
 	
 	@Override
 	public int readUserByEmail(String email) {
-		Map<String, Object> userListParam = new HashMap<String, Object>();
-		userListParam.put("email", email);
-		int id = 0;
-		try {
-			id = sqlSession.selectOne("com.hgu.webcamp.DAO.userDAOInterface"+".readUserByEmail",userListParam);
-		} catch (NullPointerException e) {
-			System.out.println(e);
-			id = 0;
-		}
-		return id;
+		return dao.readUserByEmail(email);
 	};
 	
 	public int updateViews(int id) {

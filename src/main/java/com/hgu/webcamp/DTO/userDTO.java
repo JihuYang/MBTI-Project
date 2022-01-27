@@ -2,6 +2,7 @@ package com.hgu.webcamp.DTO;
 
 public class userDTO {
 	
+	
 	private int id;
 	private String name;
 	private String nickName;
@@ -9,6 +10,8 @@ public class userDTO {
 	private String email;
 	private String type;
 	private int mbti;
+	private int registration;
+	private int admin;
 	
 	public int getId() {
 		return id;
@@ -55,7 +58,21 @@ public class userDTO {
 	
 	@Override
 	public String toString() {
-		return "userDTO [id=" + id + ", nickName=" + nickName + ", profileImage=" + profileImage + ", email=" + email
-				+ ", type=" + type + ", mbti=" + mbti + "]";
+		return "userDTO [id=" + id + ", name=" + name + ", nickName=" + nickName + ", profileImage=" + profileImage
+				+ ", email=" + email + ", type=" + type + ", mbti=" + mbti + "]";
 	}
+	public int getRegistration() {
+		return registration;
+	}
+	public void setRegistration(int registration) {
+		this.registration = registration;
+	}
+	public int getAdmin() {
+		return admin;
+	}
+	public void setAdmin(int admin) {
+		this.admin = admin;
+	}
+	
+	
 }

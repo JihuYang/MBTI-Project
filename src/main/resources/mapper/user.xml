@@ -5,16 +5,16 @@
   <mapper namespace="user">
   
 	<insert id="insertUser">
-  		insert into camp1.user(name, email, nickname, mbti) 
+  		insert into camp1.user(name, email, nickName, mbti, registration, admin) 
   		values
-  		(#{name}, #{email}, #{nickname}, #{mbti})
+  		(#{name}, #{email}, #{nickName}, #{mbti}, #{registration}, #{admin})
   	</insert>
   	
   	<select id="getUser" resultType="com.hgu.webcamp.DTO.userDTO">
 		SELECT
 		name, email, nickName, mbti, type FROM camp1.user
 		LEFT JOIN camp1.mbti ON user.mbti = mbti.id
-		WHERE user.id = #{userId};
+		WHERE user.id = #{userId}
 	</select>
 	
 	 <select id="readAllMbti" resultType="com.hgu.webcamp.DTO.userDTO">
@@ -28,12 +28,15 @@
 	</delete>
 	
 	<update id="updateUser">
+		UPDATE
+		
 	</update>
 	
 	<select id="getMBTIlist">
   		select * from camp1.mbti
   	</select>
   	
+
   	<update id="updateViews">
   		UPDATE camp1.test SET views = views + 1 WHERE id = #{id};
   	</update>
@@ -41,5 +44,11 @@
   	<select id="readViews" resultType="int">
   		SELECT views FROM camp1.test WHERE id = #{id};
   	</select>
+
+  	<select id="readUserByEmail" resultType="int">
+  		SELECT id FROM camp1.user WHERE email = #{email}
+  	</select>
+  	
+
 	
   </mapper>
