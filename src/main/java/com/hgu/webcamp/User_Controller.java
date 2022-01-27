@@ -45,10 +45,10 @@ public class User_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login() {
-		return "login";
-	}
+//	@RequestMapping(value = "/login", method = RequestMethod.GET)
+//	public String login() {
+//		return "login";
+//	}
 	
 	 @RequestMapping(value="/loginOk", method=RequestMethod.POST)
 	   public String loginCheck(HttpSession session, userDTO dto) {

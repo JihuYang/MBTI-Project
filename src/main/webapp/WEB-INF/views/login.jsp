@@ -65,7 +65,7 @@
 					                  },
 					                  success: function(data){
 					                     console.log("카카오 로그인 성공");
-					                     //location.href="/register";
+					                     location.reload();
 					                  },
 					                  error:function(){  
 					                     console.log("카카오 데이터 가져오기 실패");
@@ -118,7 +118,7 @@
 					    },
 				    success: function (data) {
 				    	console.log("구글 로그인 가져오기 성공");
-				        //location.href="/register";
+				    	 location.reload();
 				        },
 		                  error:function(){  
 		                     console.log("구글 로그인 실패");

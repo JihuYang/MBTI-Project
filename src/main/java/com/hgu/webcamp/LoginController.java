@@ -34,9 +34,7 @@ public class LoginController {
 	
 	@RequestMapping(value="/snsLogin", method= {RequestMethod.POST})
 	@ResponseBody
-	public ModelAndView login_sns(@RequestParam Map<String,String> paramMap, HttpServletRequest request) throws SQLException, Exception{
-
-		ModelAndView model = new ModelAndView();
+	public String login_sns(@RequestParam Map<String,String> paramMap, HttpServletRequest request) throws SQLException, Exception{
 		
 		System.out.println("paramMap:" + paramMap);
 		System.out.println("name:" + paramMap.get("name"));
@@ -53,10 +51,11 @@ public class LoginController {
 			
 			session.setAttribute("tempUser", u);
 			session.setAttribute("token", paramMap.get("token"));
-			
+			ModelAndView model = new ModelAndView();
 			model.addObject("tempUser", u);
 			System.out.println("user:"+u.toString());
-			model.setViewName("redirect:/register");
+//			model.setViewName("redirect:/register");
+			return "login";
 			
 			
 		//회원정보가 있는 경우
@@ -64,16 +63,17 @@ public class LoginController {
 			request.getSession().setAttribute("user", u);
 			
 			int id = userService.readUserByEmail(paramMap.get("email"));
-			u.setId(userService.readUserByEmail(paramMap.get("email")));
+			u.setId(id);
 			
 			session.setAttribute("tempUser", u);
 			session.setAttribute("token", paramMap.get("token"));
-			
+			ModelAndView model = new ModelAndView();
+
 			model.addObject("tempUser", u);
-			model.setViewName("index");
+			//model.setViewName("index");
+			return "home";
 		
 		}
-		return model;
 	}
 	
 	@RequestMapping(value = "/logout", method = RequestMethod.POST)

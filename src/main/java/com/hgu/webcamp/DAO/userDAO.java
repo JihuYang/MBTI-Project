@@ -13,4 +13,6 @@ public interface userDAO {
 	public int updateUser(userDTO dto);
 	public userDTO getUser(int id);
 	public List<userDTO> readAllMbti();
+	public int readUserByEmail(String email);
+
 }

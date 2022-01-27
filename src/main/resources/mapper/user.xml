@@ -35,5 +35,10 @@
 	<select id="getMBTIlist">
   		select * from camp1.mbti
   	</select>
+  	
+  	<select id="readUserByEmail" resultType="int">
+  		SELECT id FROM camp1.user WHERE email = #{email}
+  	</select>
+  	
 	
   </mapper>
