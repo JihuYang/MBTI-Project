@@ -28,6 +28,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.hgu.webcamp.DTO.commentDTO;
 
 import com.hgu.webcamp.DTO.questionDTO;
+import com.hgu.webcamp.DTO.userDTO;
 import com.hgu.webcamp.Service.*;
 
 
@@ -141,19 +142,21 @@ public class TeamB_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/result", method = RequestMethod.GET)
-	public ModelAndView teamA_result(Model model) {
+	public ModelAndView teamA_result(Model model, HttpServletRequest request) {
 		ModelAndView mv = new ModelAndView();
 		System.out.println("result page loaded");
 		
 		int testId = 2;
-		int userId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}		
 		
 		List<commentDTO> comment = new ArrayList<commentDTO>();
 
 		comment = commentService.getCommentList(testId);
 		
 		mv.addObject("comments",comment);
-		mv.addObject("userId", userId);
 		mv.setViewName("teamB/result");
 		
 		System.out.println(mv);
@@ -176,19 +179,23 @@ public class TeamB_Controller {
 	public String addPostOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
 		request.setCharacterEncoding("utf-8");
 		//HttpSession session = request.getSession();
-		//String userid = request.getSession().getAttribute("").toString();
-		int userId = 2;
+		//String userid = request.getSession().getAttribute("").toString();		
 		int testId = 2;
+		
+		commentDTO dto = new commentDTO();
+		
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			dto.setUserId(userId);
+		}	
 		
 		SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
     	Date regDate=f.parse(f.format(new Date()));
 		
 		String comment = request.getParameter("comment");
 		
-		commentDTO dto = new commentDTO();
 		dto.setComment(comment);
 		dto.setRegDate(regDate);
-		dto.setUserId(userId);
 		dto.setTestId(testId);
 		
 		
