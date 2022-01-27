@@ -2,6 +2,7 @@ package com.hgu.webcamp.DTO;
 
 public class userDTO {
 	
+	
 	private int id;
 	private String name;
 	private String nickName;
@@ -55,7 +56,9 @@ public class userDTO {
 	
 	@Override
 	public String toString() {
-		return "userDTO [id=" + id + ", nickName=" + nickName + ", profileImage=" + profileImage + ", email=" + email
-				+ ", type=" + type + ", mbti=" + mbti + "]";
+		return "userDTO [id=" + id + ", name=" + name + ", nickName=" + nickName + ", profileImage=" + profileImage
+				+ ", email=" + email + ", type=" + type + ", mbti=" + mbti + "]";
 	}
+	
+	
 }

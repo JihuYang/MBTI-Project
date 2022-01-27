@@ -64,9 +64,8 @@
 					                     
 					                  },
 					                  success: function(data){
-					                     console.log("카카오 데이터 가져오기 성공");
-					                     alert("Kakao login success!");
-					                     //location.href="/webcamp/register";
+					                     console.log("카카오 로그인 성공");
+					                     //location.href="/register";
 					                  },
 					                  error:function(){  
 					                     console.log("카카오 데이터 가져오기 실패");
@@ -118,9 +117,13 @@
 						"email": profile.getEmail()
 					    },
 				    success: function (data) {
-				            alert("Google login success!");
-				            //location.href="/index";
-				        }
+				    	console.log("구글 로그인 가져오기 성공");
+				        //location.href="/register";
+				        },
+		                  error:function(){  
+		                     console.log("구글 로그인 실패");
+		                        //location.reload();
+		                  }
 				});
 			})
 	}, function(error) {
