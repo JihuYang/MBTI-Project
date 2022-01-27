@@ -14,7 +14,7 @@
 		SELECT
 		name, email, nickName, mbti, type FROM camp1.user
 		LEFT JOIN camp1.mbti ON user.mbti = mbti.id
-		WHERE user.id = #{userId};
+		WHERE user.id = #{userId}
 	</select>
 	
 	 <select id="readAllMbti" resultType="com.hgu.webcamp.DTO.userDTO">
@@ -28,6 +28,8 @@
 	</delete>
 	
 	<update id="updateUser">
+		UPDATE
+		
 	</update>
 	
 	<select id="getMBTIlist">
