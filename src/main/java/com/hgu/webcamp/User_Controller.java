@@ -21,7 +21,7 @@ import com.hgu.webcamp.DAO.*;
 public class User_Controller {
 	
 	@Autowired
-	userServiceImpl userService;
+	userService userService;
 	
 //	@Autowired
 //	userDAO service;
@@ -75,8 +75,14 @@ public class User_Controller {
 		 return "redirect:/index";
 	 }
 	 
-	 @RequestMapping(value = "/loginPost", method = {RequestMethod.POST, RequestMethod.GET})
+	 @RequestMapping(value = "/loginPost", method={RequestMethod.GET,RequestMethod.POST})
      public String addUser(userDTO dto) { 
+		String name = "yj" ;
+		String email = " dd" ;
+		dto.setEmail(email) ;
+		dto.setName(name);
+		dto.setRegistration(1);
+		dto.setAdmin(1);
         int i = userService.insertUser(dto);
 
         if(i==0) {
