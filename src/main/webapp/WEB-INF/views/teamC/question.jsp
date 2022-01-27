@@ -25,13 +25,6 @@
 		location.href="loading";
 	}
 </script>
-<script>
-		function loadCall() {
-			window.onbeforeunload = function (e) {
-				return "refresh";	
-			}
-		}
-</script>
 
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -48,7 +41,7 @@
 
 <title>teamCQuestion</title>
 </head>
-<body onload="loadCall()">
+<body>
 
 	<div class="container-fluid">
 		<div class="row text-center">

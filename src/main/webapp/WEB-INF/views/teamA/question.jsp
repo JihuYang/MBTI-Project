@@ -19,18 +19,9 @@
 	crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="../resources/css/teamA.css?ver=1">
 <script src="../resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
-<script>
-		function loadCall() {
-			window.onbeforeunload = function (e) {
-				return "refresh";	
-			}
-		}
-</script>	
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>teamA 질문</title>
 </head>
-<body onload="loadCall()">
 	<div class="container-fluid">
 		<div class="row text-center">
 			<div class="col d-none d-lg-block"></div>
