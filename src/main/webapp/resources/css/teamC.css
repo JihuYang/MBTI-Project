@@ -138,7 +138,12 @@ footer {
 	height: auto;
 	border-top: 4px solid black;
 }
-
+.line{
+	height: auto;
+	border-top: 1px solid black;
+	padding-top: 10px;
+	
+}
 
 .box4 {
 	height: auto;
@@ -198,43 +203,34 @@ footer {
 	margin: 20px 0 20px 20px;
 	font-size: 1.7em;
 }
-
+.col-box{
+	font-family: "Do Hyeon";
+}
 .smtitle {
-	width: 50%;
-	margin: 5px 25% 20px 25%;
+	width: fit-content;
+	margin: 10px 0 20px 0;
+	color: #FFC700;
+	
+
+
 	font-size: 1.7em;
-	font-weight: bold;
+
 	padding: 5px;
-	border: 3px solid black;
 	top: 5px;
-	box-shadow: 4px 4px 0 black;
-	border-radius: 10px;
-	
+	text-shadow: 3px 2px 0 black;
+
 }
 
-.method {
-	background-color: rgba(255, 255, 0, 1);
-	
-}
 
-.box4 ul {
-	text-align: left;
-}
 
 .mbtiPartner, .studyPlace {
 	font-weight: bold;
-	font-size: 1.7em;
-	margin-top: -10px;
+	font-size: 1.2em;
+
 	padding-bottom: 10px;
 }
 
-.study {
-	background-color: rgba(0, 255, 0, 1);
-}
 
-.place {
-	background-color: #FF333F;
-}
 
 .two_btn {
 	font-family: "Do Hyeon";
@@ -266,23 +262,17 @@ footer {
 .cmt_btn:hover{
 	background:#FFE58A;	
 }
-.shareBtn {
-	margin-top: 40px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
 
-.shareBtn img:first-child {
-	width: 40px;
-	height: 40px;
+.sharebtn1{
+	width: 60px;
+	height: 50px;
+	box-shadow: 4px 4px 0 black;
+	border-radius: 10px;
+	border: 3px solid black;
+	margin:10px;
 }
-
-.shareBtn img:nth-child(2) {
-	margin-top: 5px;
-	width: 30px;
-	height: 30px;
+.sharebtn1:hover{
+	background:#FFE58A;	
 }
 
 .wholeBox{
@@ -294,6 +284,12 @@ footer {
 	border: 5px solid black;
 	border-radius: 10px;	
 	box-shadow: 10px 10px 0px #000000;
+	background-color: #FFC700;
+}
+.group1{
+	border: 5px solid black;
+	border-radius: 10px;	
+	box-shadow: 5px 5px 0px black;
 	background-color: #FFC700;
 }
 
