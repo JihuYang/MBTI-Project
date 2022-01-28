@@ -130,7 +130,7 @@
     .text-b {
     	width: 270px;
     	top: 54%;
-    	left: 9%;
+    	left: 17%;
     	position: absolute;
         font-size: 18px;
 		-webkit-transform:rotate(9deg);        
@@ -257,7 +257,7 @@
     	width: 192px;
     	display: inline-block;		
     	margin-bottom: 40px;
-    	color: rgb(53, 255, 53);
+    	color: #78EFAD;
     }
     
     .badRelation {
@@ -265,7 +265,7 @@
     	width: 192px;
     	display: inline-block;	
     	margin-bottom: 40px;
-    	color: rgb(255, 102, 102);
+    	color: #FFB6C1;
     }
     
     .share {
@@ -309,6 +309,21 @@
     .setup-wrap a img{width:100%;}
     .setup-wrap p{text-align:center;margin-bottom:15px;font-size:20px;font-weight:bold;}
     
+    /* 로딩 */
+	.loading-tests {
+		width: 400px;
+		height: 270px;
+		margin-top:130px;
+	}    
+	
+	.text-l {
+    	width: 270px;
+    	top: 60%;
+    	left: 45%;
+    	position: absolute;
+        font-size: 18px;
+		-webkit-transform:rotate(9deg);        
+    }
     
     
     

@@ -5,4 +5,4 @@
 <%--  <c:forEach items="${questions}" var="q" varStatus="status">
 			<div class="main_question">${q.question}</div>
 		</c:forEach>--%>
-		<div class="main_question question">${questions[0].question}</div>
+		<div class="main_question question">${questions[0].answer}</div>
