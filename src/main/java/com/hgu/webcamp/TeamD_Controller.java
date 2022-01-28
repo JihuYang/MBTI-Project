@@ -273,7 +273,7 @@ public class TeamD_Controller {
 
 		String mbti = "ESFP";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ESFP");
+		mv.setViewName("teamD/result/ESFP");
 
 		System.out.println(mv);
 
