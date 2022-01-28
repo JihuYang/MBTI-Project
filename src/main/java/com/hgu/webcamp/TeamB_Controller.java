@@ -28,6 +28,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.hgu.webcamp.DTO.commentDTO;
 
 import com.hgu.webcamp.DTO.questionDTO;
+import com.hgu.webcamp.DTO.testDTO;
 import com.hgu.webcamp.DTO.userDTO;
 import com.hgu.webcamp.Service.*;
 
@@ -46,6 +47,9 @@ public class TeamB_Controller {
 	
 	@Autowired
 	userService userService;
+	
+	@Autowired
+	testService testService;
 
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -156,7 +160,11 @@ public class TeamB_Controller {
 
 		comment = commentService.getCommentList(testId);
 		
+		int count = comment.size();
+		
 		mv.addObject("comments",comment);
+		mv.addObject("count", count);
+
 		mv.setViewName("teamB/result");
 		
 		System.out.println(mv);
@@ -211,5 +219,32 @@ public class TeamB_Controller {
 
 		return "redirect:result";
 	}
+	@RequestMapping(value = "/saved", method = RequestMethod.POST)
+	public String savedOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
+		request.setCharacterEncoding("utf-8");
+		//HttpSession session = request.getSession();
+		//String userid = request.getSession().getAttribute("").toString();		
+		int testId = 2;
+		
+		testDTO dto = new testDTO();
+		
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			dto.setUserId(userId);
+		}	
+		
+		dto.setTestId(testId);
+		
+		int i = testService.insertTest(dto);
+		if(i==0) {
+			System.out.println("데이터 추가 실패 ");
+			
+		}
+		else {
+			System.out.println("데이터 추가 성공 ");
+		}
 
+
+		return "redirect:result";
+	}
 }

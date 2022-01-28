@@ -17,17 +17,17 @@
 <body>
 
 <!-- 질문화면 -->
-<div class="question">
+<div class="question-wrap">
     <!-- <div class="topbar-logo logo-none"></div> -->
     <div class = "box">
       <div class="text-b"><%@ include file="../ajaxContent/teamE/question.jsp"%></div>
-    <img src="../resources/img/teamE/bar.jpg" class="bar" />
+    <img src="../resources/img/teamE/bar.jpg" class="bar">
     </div>
     
     
     <!-- class="img-main-title block-90" -->
-    <button class="btn-question-1 btn1" onclick="saveType(${1}, '${questions[0].result}')"> ${questions[0].answer} </button><br>
-    <button class="btn-question-2 btn2" onclick="saveType(${2}, '${questions[1].result}')"> ${questions[1].answer} </button>
+    <button class="btn-question-1" onclick="saveType(${1}, '${questions[0].result}')"> <%@ include file="../ajaxContent/teamE/answer1.jsp"%> </button><br>
+    <button class="btn-question-2" onclick="saveType(${2}, '${questions[1].result}')"> <%@ include file="../ajaxContent/teamE/answer2.jsp"%> </button>
     
     <div class="number"><span id="Qnum">${questions[0].questionNum}</span>/12</div>
     <div class="share-wrap">
