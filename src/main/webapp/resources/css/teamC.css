@@ -1,15 +1,8 @@
 @charset "UTF-8";
 
-@media only screen and (max-width: 700px) {
-	.col{
-		width: 0%;
-		
-	}
-	.content{
-		width:100%;
-	}
-	
-}
+
+
+
 
 
 body {
@@ -20,7 +13,9 @@ body {
 
 
 .content {
+	width: 100%;
 	height:100vh;
+	/*position: relative;*/
 	
 }
 .col-box{
@@ -309,3 +304,5 @@ footer {
 	box-shadow: 10px 10px 0px #000000;
 	border-radius: 10px;
 }
+
+

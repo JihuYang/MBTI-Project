@@ -62,7 +62,7 @@
 
 				</div>
 
-				<div class="quiz-question">힘들게 공부한 시험 결과가 좋지 않다... 어떻게 하면 기분이 나아질까..</div>
+				<div class="quiz-question question ">힘들게 공부한 시험 결과가 좋지 않다... 어떻게 하면 기분이 나아질까..</div>
 
 				<div id="quiz-button">
 					<button id="Button" class="btn1" onclick="saveType(${1}, '${questions[0].result}')">${questions[0].answer}</button>
