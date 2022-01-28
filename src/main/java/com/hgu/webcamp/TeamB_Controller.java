@@ -146,7 +146,7 @@ public class TeamB_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/result", method = RequestMethod.GET)
-	public ModelAndView teamA_result(Model model, HttpServletRequest request) {
+	public ModelAndView teamB_result(Model model, HttpServletRequest request) {
 		ModelAndView mv = new ModelAndView();
 		System.out.println("result page loaded");
 		
@@ -162,9 +162,13 @@ public class TeamB_Controller {
 		
 		int count = comment.size();
 		String mbti = "ENFJ";
+		int count1 = comment.size();
+		
 		mv.addObject("comments",comment);
 		mv.addObject("count", count);
 		mv.addObject("mbti", mbti);
+		mv.addObject("count", count1);
+
 		mv.setViewName("teamB/result");
 		
 		System.out.println(mv);
@@ -222,8 +226,7 @@ public class TeamB_Controller {
 	@RequestMapping(value = "/saved", method = RequestMethod.POST)
 	public String savedOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
 		request.setCharacterEncoding("utf-8");
-		//HttpSession session = request.getSession();
-		//String userid = request.getSession().getAttribute("").toString();		
+
 		int testId = 2;
 		
 		testDTO dto = new testDTO();
