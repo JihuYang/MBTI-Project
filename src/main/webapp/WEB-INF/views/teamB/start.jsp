@@ -11,6 +11,7 @@
 	<meta id="metaKeywords" name="keywords" content="MBTI로 나의 배우자 캐릭터 찾기">
 	<title>나의 배우자는 누구?</title>
 	<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	
 </head>
 <body>
@@ -26,7 +27,7 @@
                 <span class="text"></span>
                 <span class="blink">|</span>
                 <script>
-				const content = "현재까지 총 14,312 명이 배우자를 찾았어요!";
+				const content = "현재까지 총 " + ${views} +"명이 배우자를 찾았어요!";
 				const text = document.querySelector(".text");
 				let i = 0;
 			

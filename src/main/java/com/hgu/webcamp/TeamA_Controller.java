@@ -1,6 +1,10 @@
 package com.hgu.webcamp;
 
+import java.io.UnsupportedEncodingException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.hgu.webcamp.DTO.commentDTO;
 import com.hgu.webcamp.DTO.questionDTO;
+import com.hgu.webcamp.DTO.userDTO;
 import com.hgu.webcamp.Service.*;
 
 /**
@@ -30,17 +35,28 @@ public class TeamA_Controller {
 	questionService questionService;
 	
 	@Autowired
+	userService userService;
+	
+	@Autowired
 	commentService commentService;
 
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/start", method = RequestMethod.GET)
-	public String teamA_start(Model model) {
+	public ModelAndView teamA_start(Model model) {
 
+		ModelAndView mv = new ModelAndView();
 		System.out.println("start page loaded");
+		
+		int testId = 1;
+		int views = 0;
+		
+		views = userService.readViews(testId);
 
-		return "teamA/start";
+		mv.addObject("views", views);
+		mv.setViewName("teamA/start");
+		return mv;
 	}
 
 	/**
@@ -57,27 +73,10 @@ public class TeamA_Controller {
 		int questionNum= 1; // question 테이블에서 문제 
 		int questionId = 1; // answer 테이블에서 문제 
 		int testId = 1; // 테스트이름
-
-		/*String temp = request.getParameter("questionNum");
-		System.out.println("ajax로 전달한 값 : " + temp);
-		if(temp != null) {
-			questionNum = Integer.parseInt(temp);
-			questionNum++;
-		}
-		System.out.println(questionNum);
 		
-		  
-		questionId = questionNum;
-		*/
-
-		//List<questionDTO> question = questionService.readQuestion(testId);
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-
-		for (questionDTO q : question) {
-			
-			System.out.println(q.toString());
-		}
-		//mv.addObject("questionNum", questionNum);
+		userService.updateViews(testId);
+		
 		mv.addObject("questions", question);		
 		mv.setViewName("teamA/question");
 		
@@ -92,7 +91,10 @@ public class TeamA_Controller {
 	public String teamA_question_1(Model model) {
 
 		System.out.println("question page loaded");
-
+		
+		int testId = 1;
+		userService.updateViews(testId);
+		
 		return "teamA/question/1";
 	}
 
@@ -111,18 +113,26 @@ public class TeamA_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/result", method = RequestMethod.GET)
-	public ModelAndView teamA_result(Model model) {
+	public ModelAndView teamA_result(Model model, HttpServletRequest request) {
 		ModelAndView mv = new ModelAndView();
 		System.out.println("result page loaded");
 		
 		int testId = 1;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}
 		
+
 		List<commentDTO> comment = new ArrayList<commentDTO>();
 
 		comment = commentService.getCommentList(testId);
 		
+		int count = comment.size();
+		
 		mv.addObject("comments",comment);
-		mv.setViewName("teamA/result");
+		mv.addObject("count", count);
+		mv.setViewName("teamA/result/ENTP");
 		
 		System.out.println(mv);
 
@@ -132,25 +142,17 @@ public class TeamA_Controller {
 	// ajax로 값을 주고받는 Controller 
 	@RequestMapping(value = "/ajax", method = RequestMethod.POST)
 	public @ResponseBody List<questionDTO> ajax_question(@RequestParam("questionNum") int questionNum) {
-				
-		
-		System.out.println("ajax conveyed value to server");
-		
+						
 		int testId = 1;
 		int questionId = 1;
-		
+		// ajax로부터 받은 문제 번호를 1증가 시키고 questionId에도 해당 값 부여   
 		questionNum++;
-		
 		questionId = questionNum;
 		
-		//List<questionDTO> question = questionService.readQuestion(testId);
+		
+		// 데이터베이스에서 testId, questionNum, questionId 에 따른 값 가져오기   
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-		
-		
-		for (questionDTO q : question) {
-			System.out.println(q.toString());
-		}
-		
+		// ajax로 보내기 
 		return question;
 		}
 	
@@ -163,4 +165,60 @@ public class TeamA_Controller {
 		
 		return "redirect:../result";
 	}
+	
+	@RequestMapping(value = "/addok", method = RequestMethod.POST)
+	public String addPostOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
+		request.setCharacterEncoding("utf-8");
+		//HttpSession session = request.getSession();
+		//String userid = request.getSession().getAttribute("").toString();
+		commentDTO dto = new commentDTO();
+
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			dto.setUserId(userId);
+
+		}
+		int testId = 1;
+		
+		SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
+    	Date regDate=f.parse(f.format(new Date()));
+		
+		String comment = request.getParameter("comment");
+		
+		dto.setComment(comment);
+		dto.setRegDate(regDate);
+		dto.setTestId(testId);
+		
+		
+		int i = commentService.insertComment(dto);
+		if(i==0) {
+			System.out.println("데이터 추가 실패 ");
+			
+		}
+		else {
+			System.out.println("데이터 추가 성공 ");
+		}
+
+
+		return "redirect:result";
+	}
+	/*
+	// ajax로 값을 주고받는 Controller 
+		@RequestMapping(value = "/resu", method = RequestMethod.POST)
+		public @ResponseBody String ajax_question(@RequestParam("mbtiType") String mbtiType) {
+							
+			int testId = 1;
+			int questionId = 1;
+			// ajax로부터 받은 문제 번호를 1증가 시키고 questionId에도 해당 값 부여   
+			//questionNum++;
+			//questionId = questionNum;
+			System.out.println(mbtiType);
+			
+			
+			// 데이터베이스에서 testId, questionNum, questionId 에 따른 값 가져오기   
+			//List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
+			// ajax로 보내기 
+			return mbtiType;
+			}
+			*/
 }

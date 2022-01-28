@@ -105,3 +105,10 @@ p {
 #an1,#an2:hover {
 	cursor : pointer ;
 }
+<<<<<<< HEAD
+=======
+#kakao-link-btn{
+	text-decoration : none ;
+	color : black ;
+}
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git

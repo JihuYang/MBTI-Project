@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page session="false"%>
 
@@ -16,6 +17,11 @@
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="../resources/css/teamA.css">
+
+<!-- 공유하기 -->
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script type="text/javascript" src="../resources/js/shareProject.js"></script>
+
 
 <script type="text/javascript">
 	function sendTo() {
@@ -169,13 +175,15 @@
 					</div>
 					<div class="row mt-5">
 						<div class="col">
+						<a id="kakao-link-btn" href="javascript:sendLink()"> 
 							<img src="../resources/img/teamA/kakaotalk.png"
-								class="img-share mx-auto d-block" alt="...">
+								class="img-share mx-auto d-block" alt="..."></a>
 							<p>카카오톡 공유</p>
 						</div>
 						<div class="col">
+						<a id="copy-link-btn" href="javascript:copyLink()"> 
 							<img src="../resources/img/teamA/link.png"
-								class="img-share mx-auto d-block" alt="...">
+								class="img-share mx-auto d-block" alt="..."></a>
 							<p>링크 복사</p>
 						</div>
 					</div>
@@ -183,7 +191,7 @@
 
 				<div id="comment" class="mt-5 mb-5 comment">
 					<div class="comment-container">
-<!-- 						<div class="p-3 comment-bubble">
+						<!-- 						<div class="p-3 comment-bubble">
 							<span class="text-white">댓글 [12]</span>
 							<div class="scroll-comment">
 								<div class="comment-block pt-2 pb-2">Comment</div>
@@ -192,7 +200,7 @@
 						</div>
 						<div class="p-3 comment-shadow"></div> -->
 						<div class="p-3 comment-bubble">
-							<span class="text-white">댓글 [12]</span>
+							<span class="text-white">댓글 [${count}]</span>
 							<div class="scroll-comment">
 
 								<div class="mb-3 mt-3">
@@ -204,15 +212,17 @@
 						</div>
 						<div class="p-3 comment-shadow"></div>
 					</div>
-					<div class="input-group mt-5 mb-5">
-						<input type="text" class="form-control p-3"
-							placeholder="댓글을 입력하세요. " aria-label="댓글 입력"
-							aria-describedby="basic-addon2">
-						<div class="input-group-append">
-							<button class="btn btn-outline-secondary p-3" type="button">등록
-							</button>
+					<form:form method="post" action="../teamA/addok">
+						<div class="input-group mt-5 mb-5">
+							<input type="text" name="comment" class="form-control p-3"
+								placeholder="댓글을 입력하세요. " aria-label="댓글 입력"
+								aria-describedby="basic-addon2">
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary p-3" type="submit">등록
+								</button>
+							</div>
 						</div>
-					</div>
+					</form:form>
 				</div>
 
 			</div>

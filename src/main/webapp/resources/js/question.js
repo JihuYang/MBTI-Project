@@ -1,45 +1,49 @@
-var questionNum=1;
-var	mbti1;
-var mbti2;
-var firstCheck=1;
-var typeAry = new Array();
-var resultAry = new Array();
+var questionNum=1; // 문제 순서를 나타내는 변수 
+var	mbti1;  // 첫번째 버튼에 해당하는 mbti 값 
+var mbti2;  // 두번째 버튼에 해당하는 mbti 값  
+var firstCheck=1; // 첫번째 문제인지 아닌지 판별해주는 변수 
+var typeAry = new Array(); // 사용자의 선택을 담는 배열 
+var resultAry = new Array(); // 최종 mbti 를 담는 배열 
 
 function saveType(answer, mbti) {
-	let resultUrl = "";
+	let resultUrl = "";  
 	// 첫번째 문제에 대한 mbti 값 체크용  	
 	if(firstCheck == 1) {
+	// 만약 첫번째 문제면 배열에 인자로 받은 mbti 값 저장! 
 		typeAry[questionNum-1] = mbti;
-		console.log("선택한 Mbti값 : "  + typeAry[questionNum-1]);
 	}
 	else {
-	/* 버튼 클릭시 해당 mbti 값이 typeAry[]에 저장됨 */
-	if(answer == 1) {
-		typeAry[questionNum-1] = mbti1;
-		console.log("선택한 Mbti값 : " + typeAry[questionNum-1]);
-	}
-	else {
-		typeAry[questionNum-1] = mbti2;
-		console.log("선택한 Mbti값 : "  + typeAry[questionNum-1]);
-	}
-	
-	
-	if(questionNum > 11) {
-		let countE = typeAry.filter(element => 'E' === element).length;
-		let countN = typeAry.filter(element => 'N' === element).length;
-		let countF = typeAry.filter(element => 'F' === element).length;
-		let countJ = typeAry.filter(element => 'J' === element).length;
-		if(countE >= 2) { resultAry[0] = 'E'; } else { resultAry[0] = 'I';}
-		if(countN >= 2) { resultAry[1] = 'N'; } else { resultAry[1] = 'S';}
-		if(countF >= 2) { resultAry[2] = 'F'; } else { resultAry[2] = 'T';}
-		if(countJ >= 2) { resultAry[3] = 'J'; } else { resultAry[3] = 'P';}
-		for (const item of resultAry) {
-			resultUrl += item;
+		/* 버튼 클릭시 해당 mbti 값이 typeAry[]에 저장됨 */
+		// 1번째 버튼 선택시 첫번째 버튼에 해당하는 mbti 값이 배열에 들어감 
+		if(answer == 1) {
+			typeAry[questionNum-1] = mbti1;
 		}
-		console.log(resultUrl);
-		window.location.href = "loading";
+		// 두번째 버튼 선택시 두번째 버튼에 해당하는 mbti 값이 배열에 들어감 
+		else {
+			typeAry[questionNum-1] = mbti2;
+		}
+		// 만약 12번째까지 문제가 다 출력되었을 때, 
+		if(questionNum > 11) {
+			// typeAry 에서 E, N, F, J 의 갯수를 세준다  
+			let countE = typeAry.filter(element => 'E' === element).length;
+			let countN = typeAry.filter(element => 'N' === element).length;
+			let countF = typeAry.filter(element => 'F' === element).length;
+			let countJ = typeAry.filter(element => 'J' === element).length;
+			// 2보다 크거나 같으면 결과 배열에 해당 mbti 값 넣기 
+			if(countE >= 2) { resultAry[0] = 'E'; } else { resultAry[0] = 'I';}
+			if(countN >= 2) { resultAry[1] = 'N'; } else { resultAry[1] = 'S';}
+			if(countF >= 2) { resultAry[2] = 'F'; } else { resultAry[2] = 'T';}
+			if(countJ >= 2) { resultAry[3] = 'J'; } else { resultAry[3] = 'P';}
+			// 최종 mbti를 문자열로 표현 
+			for (const item of resultAry) {
+				resultUrl += item;
+			}
+			/*conveyType();*/
+			window.location.href = "loading";
+			
+		}
 	}
-	}
+
 	firstCheck = 0;
 	
 	readQuestion();
@@ -57,20 +61,32 @@ function readQuestion() {
 		success : function(data) {
 			
 			console.log("read success");
-			questionNum = data[0].questionNum; 
+			//  해당 문제의 번호를 questionNum에 담는다 
+			questionNum = data[0].questionNum;
+			 
 			/* 이후에 클릭한 버튼에 해당하는 값을 넣기 위해 선택지에 따른 mbti 저장 */
 			mbti1 = data[0].result;
 			mbti2 = data[1].result;
-			console.log(questionNum);
-			console.log(mbti1);
-			console.log(mbti2);
-			/* ajax로 받은 문제와 답들을 출력 */
+			
+			/* TeamA ajax로 받은 문제와 답들을 출력 */
 			$(".question").empty();
 			$(".question").append(data[0].question);
 			
-			$(".btn").empty();
+			console.log(data[0].question);
+			console.log(data[0].answer);
+			console.log(data[1].answer);
+			console.log(data[0].questionNum);
+						
+			$(".btn1").empty();
+			$(".btn2").empty();
 			$(".btn1").append(data[0].answer);
-			$(".btn2").append(data[1].answer);		
+			$(".btn2").append(data[1].answer);	
+			$("#qNum").empty();
+			$("#qNum").append(data[0].questionNum);
+			$("#Qnum").empty();
+			$("#Qnum").append(data[0].questionNum);
+			
+	
 		},
 		error : function(request, status, error) {
 			console.log("code:" + request.status + "\n"
@@ -79,3 +95,29 @@ function readQuestion() {
 		}
 	});
 }
+
+/*
+function conveyType(mbtiType) {
+
+	$.ajax({
+			url: "resu",
+			type: "POST",
+			async: false,
+			data : {
+				mbtiType : mbtiType
+			},
+			success : function(data) {
+			
+				console.log("read conveyType");
+				
+				
+			},
+			
+			error : function(request, status, error) {
+			console.log("code:" + request.status + "\n"
+				+ "message:" + request.responseText + "\n"
+					+ "error:" + error);
+		}
+			});
+}
+*/

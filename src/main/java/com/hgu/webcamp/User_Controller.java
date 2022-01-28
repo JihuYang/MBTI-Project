@@ -1,5 +1,6 @@
 package com.hgu.webcamp;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +21,8 @@ import com.hgu.webcamp.DAO.*;
 @Controller
 public class User_Controller {
 	
-//	@Autowired
-//	UserServiceImpl service;
+	@Autowired
+	userService userService;
 	
 //	@Autowired
 //	userDAO service;
@@ -34,8 +35,8 @@ public class User_Controller {
     @RequestMapping(value = "/createUser", method = RequestMethod.POST)
     public String addUser(userDTO dto) { 
        int i = userDAO.insertUser(dto) ;
-       if(i==0) System.out.println("회원가입 실패!") ;
-       else System.out.println("회원가입 성공!") ;
+       if(i==0) System.out.println("�쉶�썝媛��엯 �떎�뙣!") ;
+       else System.out.println("�쉶�썝媛��엯 �꽦怨�!") ;
 
        return "redirect:index" ;
     }*/
@@ -45,10 +46,10 @@ public class User_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login() {
-		return "login";
-	}
+//	@RequestMapping(value = "/login", method = RequestMethod.GET)
+//	public String login() {
+//		return "login";
+//	}
 	
 	 @RequestMapping(value="/loginOk", method=RequestMethod.POST)
 	   public String loginCheck(HttpSession session, userDTO dto) {
@@ -59,11 +60,11 @@ public class User_Controller {
 	      
 //	      userDTO logindto = service.getUser(dto);
 //	      if ( logindto != null ) {
-//	         System.out.println("로그인 성공!");
+//	         System.out.println("濡쒓렇�씤 �꽦怨�!");
 //	         session.setAttribute("login", logindto);
 //	         returnURL = "redirect:/board/list";
 //	      } else {
-//	         System.out.println("로그인 실패!");
+//	         System.out.println("濡쒓렇�씤 �떎�뙣!");
 //	         returnURL = "redirect:/login/login";
 //	      }
 	      return returnURL;
@@ -74,5 +75,33 @@ public class User_Controller {
 		 session.invalidate();
 		 return "redirect:/index";
 	 }
+	 
+	 @RequestMapping(value = "/loginPost", method=RequestMethod.POST)
+     public String addUser(userDTO dto, HttpServletRequest request) { 
+
+		String email  = ((userDTO)request.getSession().getAttribute("tempUser")).getEmail();
+		String name  = ((userDTO)request.getSession().getAttribute("tempUser")).getName();
+		String nickName = request.getParameter("nickname");
+		String mbtiTemp = request.getParameter("mbti");
+//		int mbti =  Integer.parseInt(mbtiTemp);
+		System.out.println("mbti Temp, mbti: " + mbtiTemp + email + name + nickName);
+		
+		dto.setEmail(email) ;
+		dto.setName(name);
+		dto.setMbti(1);
+		dto.setNickName(nickName);
+		dto.setRegistration(1);
+		dto.setAdmin(1);
+		
+        int i = userService.insertUser(dto);
+
+        if(i==0) {
+        	return "redirect:index" ;
+        }
+        else {
+        	return "forward:index" ;
+        }
+     }
+	 
 
 }
