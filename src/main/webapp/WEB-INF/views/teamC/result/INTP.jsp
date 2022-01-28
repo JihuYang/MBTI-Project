@@ -73,8 +73,8 @@
 <body>
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col"></div>
-			<div class="col content">
+			<div class="col" id="sideCol"></div>
+			<div class="col content" id="mainCont">
 				<div class="bg-white p-4 col-box">
 					<div class="resultName">
 						"공부란 나만의 그림을 그리며 주체적으로 하는 것" <br> <span id="resultNick">적극적 몽상가형
@@ -229,7 +229,7 @@
 
 
 			</div>
-			<div class="col"></div>
+			<div class="col" id="sideCol"></div>
 		</div>
 	</div>
 
