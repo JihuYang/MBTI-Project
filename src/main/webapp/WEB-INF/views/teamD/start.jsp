@@ -18,6 +18,10 @@
 		h2 {
 			font-size : 2em ;
 		}
+		#img3 {
+			margin-left : 200px;
+			cursor : pointer;
+		}
 	</style>
 </head>
 <body>
@@ -38,6 +42,7 @@
 	</svg>
 	모든 성격 유형 보기
 </h2>
+<div onclick="location.href='../index'" id="img3"><img src="../resources/img/teamD/home.svg" alt="homeIcon" style="width:30px">Home</div>
 
 </div>
 </body>

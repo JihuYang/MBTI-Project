@@ -2,7 +2,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page session="false"%>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +9,9 @@
 	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 	<script type="text/javascript" src="../resources/js/shareProject.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>teamDResult</title>
+	<title>teamDResult-INTP</title>
 	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
-</head>
+</head> 
 
 <body style="background-attachment : fixed ;">
 	<div id="wrapper_version1">
@@ -21,21 +20,20 @@
 		<div id="result">
 		<table style="width:100%">
 			<tr>
-				<td><img src="../resources/img/teamD/흰둥이 투명 배경.png" style="width:230px; height:230px;">
-				<td><h2>활발한<br>귀염둥이 흰둥이 (ENFP)</h2>
-				<p>+ 상성 좋은 케미:<br>외유내강 차은주<br>
-				- 상성 않좋은 케미:<br>행동대장 신혼부부</p>
+				<td><img src="../resources/img/teamD/맹구 투명 배경.png" style="width:230px; height:230px;">
+				<td><h2>사려깊은 몽상가<br>맹구 (INTP)</h2>
+				<p>+ 상성 좋은 케미:<br>타고난 리더십 나미리<br>
+				- 상성 안 좋은 케미:<br>따뜻한 가상 신형만</p>
 				</td>
 		</table>
 		</div>
 		
 		<div id="result_more">
-			<p>당신은 흰둥이처럼 자유로운 아이디어 뱅크!<br>
-				표현력이 풍부한 당신, 대화를 즐기는 리액션쟁이에요. 자유로운 영혼이라 톡톡튀는 아이디어도 많지만 주의가 산만하다는 말도 자주 들어요. 친구들에게 돌아이라고 놀리는게 나한테는 극찬이에요.<br>
-				누가 나서지 않으면 답답해서 스스로 나서요. 지루하고 반복되는 일상은 싫어요. 하루하루가 즐겁고 재미있었으면 좋겠어요.<br>
-				싫고 좋은게 명확해요. 그래서 싫은 사람에게 아부하는 것은 나랑 다른 세계의 일이에요.<br>
-				나를 위해 돈을 쓰고 싶을 때에는 바로 FLEX해버려요. 한 번 사는 인생인데! 가만히 집콕하는게 싫어요. 코시국 너무 싫은것.<br><br>
-				한국인 중의 8.4%가 나랑 같은 유형이에요.</p>
+			<p>당신은 맹구처럼 게으른 천재!<br>
+				직설적이고 공감능력이 없는 당신, 자발적 아싸에요. 혼자인게 가장 행복해요. 정말 친한 친구 아니면 나를 이해하기 힘들 거에요. 평소에는 말 한마디 없다가 내 관심분야가 나오면 TMI로 변신해요. <br>
+				귀차니즘의 끝판왕, 연락두절은 기본이고 나보다 미루기를 잘하는 사람은 없어요. 그런데 한번 시작하면 결과를 보고야 마는 천재에요. 게으러서 시작을 잘 안 할 뿐!<br>
+				남이 내 욕을 하든 말든 신경을 안 써요. 관심이 없어요. 근데 내 앞에서 무논리를 펼치지 말아줘요. 거기에 목소리까지 크면 최악이에요.<br><br>
+				한국인 중의 4.3%가 나랑 같은 유형이에요.</p>
 		</div>
 		
 		<div id="end">
@@ -45,7 +43,7 @@
 				<div id="img1"><img id="back" style="float:none;width:40px;height:42px;" src="../resources/img/teamD/back.png" >다시하기</div></td>
 				<td>
 				<div id="img2"> <a id="kakao-link-btn" href="javascript:sendLink()"> <img id="share" style="float:none;width:40px;height:40px;" src="../resources/img/teamD/share.png">결과 공유하기</a></div></td>
-				
+				<td><div onclick="location.href='../index'" style="margin-left:0px">Home</div></td>
 			</tr>
 		</table>
 		</div>

@@ -33,11 +33,13 @@ img{vertical-align:top;}
 .qBox-wrap .qBox .question {padding-top:100px;box-shadow: inset 0 -11px 0 #FFD336;line-height: 21px;}
 .qBox-wrap .qBox .title img{width:95px;}
 .qBox-wrap .qBox .percentage{padding-top:26px;text-align:center;}
-.qBox-wrap .qBox .percentage .progress-wrap{position:relative;width:203px;height:6px;margin:0 auto;background:#fff;}
-.qBox-wrap .qBox .percentage .progress-wrap .progress-bar{display:inline-block;position:absolute;top:0;left:0;height:6px;background:#fad349;}
-.qBox-wrap .qBox .percentage .progress-wrap .bar-text{display:inline-block;width:146px;height:32px;margin-top:15px;padding-top:15px;font-size:8px;font-weight:500;background-size:100%;}
+.qBox-wrap .qBox .percentage .progress-wrap{position:relative;width:203px;height:6px;margin:0 auto;}
+.qBox-wrap .qBox .percentage .progress-wrap .bar-text{display:inline-block;width:146px;height:32px;margin-top:15px;padding-top:15px;font-size:15px;font-weight:500;background-size:100%;}
 .qBox-wrap .qBox .option-btn-div{position: relative;display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .qBox-wrap .qBox .option-btn-div .option-btn{height: 8em;width: 325px;margin: 20px 0;background: #CBCBCB;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 21px;border: none;}
+.qBox-wrap .qBox .setup-wrap{text-align:center;margin-top:28px;}
+.qBox-wrap .qBox .setup-wrap a{display:inline-block;width:46px;margin:0 15px;}
+.qBox-wrap .qBox .setup-wrap a img{width:100%;}
 .qBox-wrap .question{text-align:center;height:72px;margin-top:60px;line-height:36px;font-size:25px;padding:0 10px;font-weight:bold;}
 .qBox-wrap .loading{position:relative;width:305px;height:305px;margin:80px auto 0;}
 @-webkit-keyframes spin{
