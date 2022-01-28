@@ -1,5 +1,6 @@
 package com.hgu.webcamp;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.hgu.webcamp.DTO.commentDTO;
 import com.hgu.webcamp.DTO.questionDTO;
+import com.hgu.webcamp.DTO.userDTO;
 import com.hgu.webcamp.Service.questionService;
 import com.hgu.webcamp.Service.userService;
 
@@ -115,5 +118,313 @@ public class TeamE_Controller {
 			// ajax로 보내기 
 			return question;
 			}
-	
+		@RequestMapping(value = "/result/ENFJ", method = RequestMethod.GET)
+		public ModelAndView teamE_result_ENFJ(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+
+			String mbti = "ENFJ";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ENFJ");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/ENFP", method = RequestMethod.GET)
+		public ModelAndView teamE_result_ENFP(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			int testId = 3;
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+
+			String mbti = "ENFP";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ENFP");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/ENTJ", method = RequestMethod.GET)
+		public ModelAndView teamE_result_ENTJ(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+
+			String mbti = "ENTJ";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ENTJ");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/ENTP", method = RequestMethod.GET)
+		public ModelAndView teamE_result_ENTP(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			int testId = 3;
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+
+			String mbti = "ENTP";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ENTP");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/ESFJ", method = RequestMethod.GET)
+		public ModelAndView teamE_result_ESFJ(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			int testId = 3;
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+
+			String mbti = "ESFJ";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ESFJ");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/ESFP", method = RequestMethod.GET)
+		public ModelAndView teamE_result_ESFP(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+
+			String mbti = "ESFP";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ESFP");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/ESTJ", method = RequestMethod.GET)
+		public ModelAndView teamE_result_ESTJ(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+
+			String mbti = "ESTJ";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ESTJ");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/ESTP", method = RequestMethod.GET)
+		public ModelAndView teamDEresult_ESTP(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+			
+			String mbti = "ESTP";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ESTP");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/INFJ", method = RequestMethod.GET)
+		public ModelAndView teamE_result_INFJ(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+
+			String mbti = "INFJ";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/INFJ");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/INFP", method = RequestMethod.GET)
+		public ModelAndView teamE_result_INFP(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+			String mbti = "INFP";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/INFP");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/INTJ", method = RequestMethod.GET)
+		public ModelAndView teamE_result_INTJ(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			int testId = 3;
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+
+			String mbti = "INTJ";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/INTJ");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/INTP", method = RequestMethod.GET)
+		public ModelAndView teamE_result_INTP(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+			
+			String mbti = "INTP";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/INTP");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/ISFJ", method = RequestMethod.GET)
+		public ModelAndView teamE_result_ISFJ(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+
+			String mbti = "ISFJ";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ISFJ");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/ISFP", method = RequestMethod.GET)
+		public ModelAndView teamE_result_ISFP(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+			
+			String mbti = "ISFP";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ISFP");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/ISTJ", method = RequestMethod.GET)
+		public ModelAndView teamE_result_ISTJ(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+			
+			
+			String mbti = "ISTJ";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ISTJ");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
+		@RequestMapping(value = "/result/ISTP", method = RequestMethod.GET)
+		public ModelAndView teamE_result_ISTP(Model model, HttpServletRequest request) {
+			
+			ModelAndView mv = new ModelAndView();
+			System.out.println("result page loaded");
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				mv.addObject("userId", userId);
+			}			
+			
+			String mbti = "ISTP";
+			mv.addObject("mbti", mbti);
+			mv.setViewName("teamE/result/ISTP");
+			
+			System.out.println(mv);
+			
+			return mv;
+		}
 }
