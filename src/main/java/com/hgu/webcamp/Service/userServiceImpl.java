@@ -50,12 +50,20 @@ public class userServiceImpl implements userService {
 		return dao.readUserByEmail(email);
 	};
 	
+	@Override
 	public int updateViews(int id) {
 		return dao.updateViews(id);
 	}
 	
+	@Override
 	public int readViews(int id) {
 		return dao.readViews(id);
 	}
+	
+	@Override
+	public List<userDTO> readSavedTest(int userId) {
+		return dao.readSavedTest(userId);
+	}
+
 
 }

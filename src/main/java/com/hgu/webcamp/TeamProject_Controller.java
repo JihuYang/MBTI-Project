@@ -43,14 +43,20 @@ public class TeamProject_Controller {
 		
 		userDTO dto = new userDTO();
 		
+		
 		int id = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+		System.out.println("userId in controller: " + id);
 	
 		dto=userService.getUser(id);
-		
+		List<userDTO> savedTest = userService.readSavedTest(id);
+				
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("info", dto);
+		mv.addObject("savedTest", savedTest);
 		mv.setViewName("/myPage");
-		
+		for(userDTO test : savedTest) {
+			System.out.println(test.toString());
+		}
 		System.out.println("my page loaded");
 		
 		return mv;
