@@ -63,7 +63,7 @@
 		<div class="restarticon">
 			<input type="button" value="테스트 다시하기" class="btn btn-warning btn-yellow "
 				style="border-radius: 15px; font-size: 30px;"
-				onclick="location.href='./start'">
+				onclick="location.href='../start'">
 		</div>
 		<div id="other_test_link">
 			<img src="<%=request.getContextPath()%>/resources/img/teamB/check.png" alt="MBTI:결과"
