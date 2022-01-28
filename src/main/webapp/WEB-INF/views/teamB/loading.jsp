@@ -28,7 +28,7 @@
             <li><div id="layerFill9" class="bar"></div></li>
             <li><div id="layerFill10" class="bar"></div></li>
         </ul>
-        배우자 찾는 중...
+        배우자 분석 중...
     </div>
     <script>
         $(document).ready(function() {
