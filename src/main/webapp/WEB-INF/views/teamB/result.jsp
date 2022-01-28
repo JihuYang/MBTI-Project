@@ -55,7 +55,7 @@
 			<a id="copy-link-btn" href="javascript:copyLink()"> <img
 				src="../resources/img/teamB/link_icon.png" alt="linkicon"></a>
 			<form method="post" action="../teamB/saved" style="display:inline-block;width:46px;margin:0 15px;">
-				<input name="mbti"id = "mbti" value="ESTJ" style="display: none">
+				<input name="mbti"id = "mbti" value="ENFJ" style="display: none">
 				<button>
 					<img src="../resources/img/teamB/save_icon.png" alt="saveicon" style="width:100%">
 				</button>
