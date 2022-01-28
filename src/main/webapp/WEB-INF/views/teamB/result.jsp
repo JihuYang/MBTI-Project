@@ -21,10 +21,10 @@
 
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="../resources/js/shareProject.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
 
 <title>[결과]나의 배우자는 누구?</title>
-<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
+<link rel="stylesheet" type="text/css" href='<%=request.getContextPath()%>/resources/css/teamB.css' />
 <style>
 .comment-bubble {
 	text-align: left;
@@ -45,19 +45,19 @@
 	<div class="result-wrap">
 		<div id="optadATF" style="min-height: 110px"></div>
 		<div class="img-result">
-			<img src="../resources/img/teamB/ENFJ.png" alt="MBTI:결과 img">
+			<img src="<%=request.getContextPath()%>/resources/img/teamB/ENFJ.png" alt="MBTI:결과 img">
 		</div>
 		<br>
 		<div class="share-wrap">
 			<p>공유 및 저장하기</p>
 			<a id="kakao-link-btn" href="javascript:sendLink()"> <img
-				src="../resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
+				src="<%=request.getContextPath()%>/resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
 			<a id="copy-link-btn" href="javascript:copyLink()"> <img
-				src="../resources/img/teamB/link_icon.png" alt="linkicon"></a>
+				src="<%=request.getContextPath()%>/resources/img/teamB/link_icon.png" alt="linkicon"></a>
 			<form method="post" action="../teamB/saved" style="display:inline-block;width:46px;margin:0 15px;">
 				<input name="mbti"id = "mbti" value="ENFJ" style="display: none">
 				<button>
-					<img src="../resources/img/teamB/save_icon.png" alt="saveicon" style="width:100%">
+					<img src="<%=request.getContextPath()%>/resources/img/teamB/save_icon.png" alt="saveicon" style="width:100%">
 				</button>
 			</form>
 		</div>

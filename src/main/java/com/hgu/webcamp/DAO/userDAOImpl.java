@@ -66,6 +66,10 @@ public class userDAOImpl implements userDAO {
 		}
 		return userId;
 	}
+	public List<userDTO> readSavedTest(int userId) {
+		List<userDTO> user = sqlSession.selectList(namespace + ".readSavedTest", userId);
+		return user;
+	}
 
 
 }

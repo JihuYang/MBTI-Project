@@ -4,6 +4,7 @@ var mbti2;  // 두번째 버튼에 해당하는 mbti 값
 var firstCheck=1; // 첫번째 문제인지 아닌지 판별해주는 변수 
 var typeAry = new Array(); // 사용자의 선택을 담는 배열 
 var resultAry = new Array(); // 최종 mbti 를 담는 배열 
+let url = "result/";
 
 function saveType(answer, mbti) {
 	let resultUrl = "";  
@@ -42,6 +43,8 @@ function saveType(answer, mbti) {
 			
 			window.location.href = "loading"; 
 			
+			console.log(resultUrl);
+			conveyType(resultUrl);	
 		}
 	}
 
@@ -98,8 +101,14 @@ function readQuestion() {
 }
 
 
-function conveyType(resultURL) {
+function conveyType(resultURL) {	
+	url += resultURL 
+	window.location.href = url; 
 	
+
+	
+	
+	/*
 	$.ajax({
 			url: "result",
 			type: "GET",
@@ -112,7 +121,11 @@ function conveyType(resultURL) {
 				console.log("read conveyType");
 				console.log(data);
 				
-				window.location.href = data;
+				url += resultURL;
+				
+				console.log(url);
+				window.location.href = url;
+				
 			},
 			
 			error : function(request, status, error) {
@@ -121,4 +134,6 @@ function conveyType(resultURL) {
 					+ "error:" + error);
 		}
 			});
+*/
 }
+

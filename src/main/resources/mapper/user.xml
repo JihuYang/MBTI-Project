@@ -14,9 +14,7 @@
 
 	<select id="getUser" resultType="com.hgu.webcamp.DTO.userDTO">
 		SELECT user.id, name, email,
-		nickName, mbti, result, type FROM ((camp1.user
-		JOIN camp1.savedTest ON
-		user.id = savedTest.userId)
+		nickName, mbti, type FROM (camp1.user
 		JOIN camp1.mbti ON user.mbti = mbti.id)
 		WHERE user.id = #{userId}
 	</select>
@@ -58,11 +56,11 @@
 	</select>
 
 	<select id="readSavedTest" resultType="com.hgu.webcamp.DTO.userDTO">
-		SELECT user.id, savedTest.result, savedTest.testId, test.testName, mbti.type
+		SELECT user.id, savedTest.result, savedTest.testId, test.testName, mbti.type, savedTest.regDate
 		FROM (((camp1.user
 		JOIN camp1.savedTest ON user.id = savedTest.userId)
 		JOIN camp1.mbti ON savedTest.result = mbti.id)
-		JOIN camp1.test ON savedTest.testId = test.id);
+		JOIN camp1.test ON savedTest.testId = test.id) WHERE user.id = #{userId};
 	</select>
 
 
