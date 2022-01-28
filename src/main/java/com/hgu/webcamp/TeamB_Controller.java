@@ -235,6 +235,8 @@ public class TeamB_Controller {
 		
 		dto.setTestId(testId);
 		String type = request.getParameter("mbti");
+		
+		System.out.println(type);
 		int mbti = testService.readMbtiIdByType(type);
 		dto.setResult(mbti);
 		
