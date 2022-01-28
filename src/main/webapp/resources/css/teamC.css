@@ -15,7 +15,7 @@ body {
 .content {
 	width: 100%;
 	height:100vh;
-	/*position: relative;*/
+	position: absolute;
 	
 }
 .col-box{
@@ -305,4 +305,15 @@ footer {
 	border-radius: 10px;
 }
 
+
+@media screen and (max-width: 1024px) {
+ 		#sideCol {
+    display:none !important;
+	}
+	
+	#mainCont {
+		position: relative !important;
+		margin-right: 2rem !important;
+	}
+}
 
