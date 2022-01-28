@@ -21,6 +21,11 @@
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>teamAResult</title>
@@ -39,8 +44,13 @@
 							<div>
 								<h1>댕댕이 개발자</h1>
 								<img src="<%=request.getContextPath()%>/resources/img/teamA/ENFJ.png"
+<<<<<<< HEAD
 									class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
 								<div class="mt-3 text-muted">당신은 혹시<%=request.getContextPath()%> ENFJ?</div>
+=======
+									class="img-type mx-auto d-block" alt="...">
+								<div class="mt-3 text-muted">당신은 혹시.. ENFJ?</div>
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 							</div>
 						</div>
 						<div id="second-section" class="mt-5 border-top-black">
@@ -81,7 +91,11 @@
 											<div class="mt-3 fs-7">고집불통 퉁퉁이</div>
 											<h3>천재 개발자</h3>
 											<img src="<%=request.getContextPath()%>/resources/img/teamA/INTP.png"
+<<<<<<< HEAD
 												class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
+=======
+												class="img-type mx-auto d-block" alt="...">
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 										</button>
 									</div>
 								</div>
@@ -92,7 +106,11 @@
 											<div class="mt-3 fs-7">사람보다 사물이 더 좋은</div>
 											<h3>만능 개발자</h3>
 											<img src="<%=request.getContextPath()%>/resources/img/teamA/ISTP.png"
+<<<<<<< HEAD
 												class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
+=======
+												class="img-type mx-auto d-block" alt="...">
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 										</button>
 									</div>
 								</div>
@@ -108,20 +126,28 @@
 						</div>
 						<div class="col">
 							<button type="button" class="btn btn-light btn-save"
-								onclick="location.href='./start'">다시하기</button>
+								onclick="location.href='/start'">다시하기</button>
 						</div>
 					</div>
 					<div class="row mt-5">
 						<div class="col">
 							<a id="kakao-link-btn" href="javascript:sendLink()"> <img
 								src="<%=request.getContextPath()%>/resources/img/teamA/kakaotalk.png"
+<<<<<<< HEAD
 								class="img-share mx-auto d-block" alt="<%=request.getContextPath()%>."></a>
+=======
+								class="img-share mx-auto d-block" alt="..."></a>
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 							<p>카카오톡 공유</p>
 						</div>
 						<div class="col">
 							<a id="copy-link-btn" href="javascript:copyLink()"> <img
 								src="<%=request.getContextPath()%>/resources/img/teamA/link.png"
+<<<<<<< HEAD
 								class="img-share mx-auto d-block" alt="<%=request.getContextPath()%>."></a>
+=======
+								class="img-share mx-auto d-block" alt="..."></a>
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 							<p>링크 복사</p>
 						</div>
 					</div>
@@ -150,7 +176,11 @@
 						</div>
 						<div class="p-3 comment-shadow"></div>
 					</div>
+<<<<<<< HEAD
 					<form:form method="post" action="<%=request.getContextPath()%>/teamA/addok">
+=======
+					<form:form method="post" action="../addok">
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 						<div class="input-group mt-5 mb-5">
 							<input type="text" name="comment" class="form-control p-3"
 								placeholder="댓글을 입력하세요. " aria-label="댓글 입력"

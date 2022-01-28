@@ -21,6 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.hgu.webcamp.DTO.commentDTO;
 import com.hgu.webcamp.DTO.questionDTO;
+import com.hgu.webcamp.DTO.testDTO;
 import com.hgu.webcamp.DTO.userDTO;
 import com.hgu.webcamp.Service.*;
 
@@ -39,6 +40,9 @@ public class TeamA_Controller {
 	
 	@Autowired
 	commentService commentService;
+	
+	@Autowired
+	testService testService;
 
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -164,7 +168,11 @@ public class TeamA_Controller {
 		if(i == 0) System.out.println("Error! delete Failed");
 		else System.out.println("댓글 삭제 완료.");
 		
+<<<<<<< HEAD
 		return "redirect:<%=request.getContextPath()%>/result";
+=======
+		return "redirect:../start";
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 	}
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)
@@ -201,8 +209,41 @@ public class TeamA_Controller {
 		}
 
 
-		return "redirect:result";
+		return "redirect:/teamA/start";
 	}
+	
+	@RequestMapping(value = "/saved", method = RequestMethod.POST)
+    public String savedOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
+       request.setCharacterEncoding("utf-8");
+
+       int testId = 1;
+       
+       testDTO dto = new testDTO();
+       
+       if(request.getSession().getAttribute("tempUser") != null) {
+          int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+          dto.setUserId(userId);
+       }   
+       
+       dto.setTestId(testId);
+       String type = request.getParameter("mbti");
+       
+       System.out.println(type);
+       int mbti = testService.readMbtiIdByType(type);
+       dto.setResult(mbti);
+       
+       int i = testService.insertTest(dto);
+       if(i==0) {
+          System.out.println("데이터 추가 실패 ");
+          
+       }
+       else {
+          System.out.println("데이터 추가 성공 ");
+       }
+
+
+       return "redirect:/";
+    }
 	/*
 	// ajax로 값을 주고받는 Controller 
 		@RequestMapping(value = "/resu", method = RequestMethod.POST)

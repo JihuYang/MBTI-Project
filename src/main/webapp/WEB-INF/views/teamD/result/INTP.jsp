@@ -7,10 +7,10 @@
 <head>
 <!-- 공유하기 -->
 	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-	<script type="text/javascript" src="../resources/js/shareProject.js"></script>
+	<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamDResult-INTP</title>
-	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
+	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamD.css">
 </head> 
 
 <body style="background-attachment : fixed ;">
@@ -20,7 +20,7 @@
 		<div id="result">
 		<table style="width:100%">
 			<tr>
-				<td><img src="../resources/img/teamD/맹구 투명 배경.png" style="width:230px; height:230px;">
+				<td><img src="<%=request.getContextPath()%>/resources/img/teamD/맹구 투명 배경.png" style="width:230px; height:230px;">
 				<td><h2>사려깊은 몽상가<br>맹구 (INTP)</h2>
 				<p>+ 상성 좋은 케미:<br>타고난 리더십 나미리<br>
 				- 상성 안 좋은 케미:<br>따뜻한 가상 신형만</p>
@@ -39,13 +39,21 @@
 		<div id="end">
 		<table style="width: 100%" id="endbar">
 			<tr>
-				<td onclick="location.href='start'"><div id="img1"><img id="back" style="float:none;width:30px;height:30px;" src="../resources/img/teamD/back.png" >다시하기</div></td>
-				<td><div id="img2"> <a id="kakao-link-btn" href="javascript:sendLink()"> <img id="share" style="float:none;width:40px;height:40px;" src="../resources/img/teamD/share.png">결과 공유</a></div></td>
+				<td onclick="location.href='start'"><div id="img1"><img id="back" style="float:none;width:30px;height:30px;" src="<%=request.getContextPath()%>/resources/img/teamD/back.png" >다시하기</div></td>
+				<td><div id="img2"> <a id="kakao-link-btn" href="javascript:sendLink()"> <img id="share" style="float:none;width:40px;height:40px;" src="<%=request.getContextPath()%>/resources/img/teamD/share.png">결과 공유</a></div></td>
 			</tr>
 			<tr>
-				<td><div onclick="location.href='../index'" style="margin-left:0px"><img id="save" style="float:none;width:30px;height:30px;" src="../resources/img/teamD/home.jpg"> Home</div></td>
-				<td><div onclick="location.href='../index'" style="margin-left:0px"><img id="save" style="float:none;width:30px;height:30px;" src="../resources/img/teamD/save-file.png"> 저장하기</div></td>
-				
+				<td><div onclick="location.href='../index'" style="margin-left:0px"><img id="save" style="float:none;width:30px;height:30px;" src="<%=request.getContextPath()%>/resources/img/teamD/home.jpg"> Home</div></td>
+				<td>
+						<form method="post" action="../saved"
+							style="display: inline-block; width: 46px; margin: 0 15px;">
+							<input name="mbti" id="mbti" value="INTP" style="display: none">
+							<button>
+								<img style="float: none; width: 30px; height: 30px;"
+									src="<%=request.getContextPath()%>/resources/img/teamD/save-file.png">저장하기
+							</button>
+						</form>
+					</td>
 			</tr>
 		</table>
 		</div>
