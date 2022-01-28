@@ -1,17 +1,22 @@
 package com.hgu.webcamp.DTO;
 
+import java.sql.Date;
+
 public class userDTO {
-	
-	
+
 	private int id;
 	private String name;
 	private String nickName;
 	private String profileImage;
 	private String email;
 	private String type;
+	private String testName;
+	private int result;
+	private int testId;
 	private int mbti;
 	private int registration;
 	private int admin;
+	private Date regDate;
 	
 	public int getId() {
 		return id;
@@ -46,6 +51,24 @@ public class userDTO {
 	public String getType() {
 		return type;
 	}
+	public String getTestName() {
+		return testName;
+	}
+	public void setTestName(String testName) {
+		this.testName = testName;
+	}
+	public int getResult() {
+		return result;
+	}
+	public void setResult(int result) {
+		this.result = result;
+	}
+	public int getTestId() {
+		return testId;
+	}
+	public void setTestId(int testId) {
+		this.testId = testId;
+	}
 	public void setType(String type) {
 		this.type = type;
 	}
@@ -54,12 +77,6 @@ public class userDTO {
 	}
 	public void setMbti(int mbti) {
 		this.mbti = mbti;
-	}
-	
-	@Override
-	public String toString() {
-		return "userDTO [id=" + id + ", name=" + name + ", nickName=" + nickName + ", profileImage=" + profileImage
-				+ ", email=" + email + ", type=" + type + ", mbti=" + mbti + "]";
 	}
 	public int getRegistration() {
 		return registration;
@@ -73,6 +90,19 @@ public class userDTO {
 	public void setAdmin(int admin) {
 		this.admin = admin;
 	}
+	public Date getRegDate() {
+		return regDate;
+	}
+	public void setRegDate(Date regDate) {
+		this.regDate = regDate;
+	}
 	
+	@Override
+	public String toString() {
+		return "userDTO [id=" + id + ", name=" + name + ", nickName=" + nickName + ", profileImage=" + profileImage
+				+ ", email=" + email + ", type=" + type + ", testName=" + testName + ", result=" + result + ", testId="
+				+ testId + ", mbti=" + mbti + ", registration=" + registration + ", admin=" + admin + ", regDate="
+				+ regDate + "]";
+	}
 	
 }
