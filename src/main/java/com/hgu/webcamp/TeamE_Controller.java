@@ -49,6 +49,14 @@ public class TeamE_Controller {
 		return mv;
 	}
 	
+	@RequestMapping(value = "/loading", method = RequestMethod.GET)
+	public String teamE_loading(Model model) {
+		
+		System.out.println("loading page loaded");
+		
+		return "teamE/loading";
+	}
+	
 	@RequestMapping(value = "/who", method = RequestMethod.GET)
 	public String teamE_relation(Model model) {
 		
@@ -94,7 +102,7 @@ public class TeamE_Controller {
 	// ajax로 값을 주고받는 Controller 
 		@RequestMapping(value = "/ajax", method = RequestMethod.POST)
 		public @ResponseBody List<questionDTO> ajax_question(@RequestParam("questionNum") int questionNum) {
-							
+			
 			int testId = 5;
 			int questionId = 1;
 			// ajax로부터 받은 문제 번호를 1증가 시키고 questionId에도 해당 값 부여   
