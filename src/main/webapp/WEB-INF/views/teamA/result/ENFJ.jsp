@@ -16,11 +16,11 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../resources/css/teamA.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamA.css">
 
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="../resources/js/shareProject.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
 
 
 
@@ -40,7 +40,7 @@
 							<div class="mt-3">프레젠테이션은 내 담당!</div>
 							<div>
 								<h1>댕댕이 개발자</h1>
-								<img src="../resources/img/teamA/ENFJ.png"
+								<img src="<%=request.getContextPath()%>/resources/img/teamA/ENFJ.png"
 									class="img-type mx-auto d-block" alt="...">
 								<div class="mt-3 text-muted">당신은 혹시.. ENFJ?</div>
 							</div>
@@ -82,7 +82,7 @@
 											<div class="type font-ex ">함께하면 좋은</div>
 											<div class="mt-3 fs-7">고집불통 퉁퉁이</div>
 											<h3>천재 개발자</h3>
-											<img src="../resources/img/teamA/INTP.png"
+											<img src="<%=request.getContextPath()%>/resources/img/teamA/INTP.png"
 												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
@@ -93,7 +93,7 @@
 											<div class="type font-ex ">멀리하면 좋은</div>
 											<div class="mt-3 fs-7">사람보다 사물이 더 좋은</div>
 											<h3>만능 개발자</h3>
-											<img src="../resources/img/teamA/ISTP.png"
+											<img src="<%=request.getContextPath()%>/resources/img/teamA/ISTP.png"
 												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
@@ -110,19 +110,19 @@
 						</div>
 						<div class="col">
 							<button type="button" class="btn btn-light btn-save"
-								onclick="location.href='./start'">다시하기</button>
+								onclick="location.href='/start'">다시하기</button>
 						</div>
 					</div>
 					<div class="row mt-5">
 						<div class="col">
 							<a id="kakao-link-btn" href="javascript:sendLink()"> <img
-								src="../resources/img/teamA/kakaotalk.png"
+								src="<%=request.getContextPath()%>/resources/img/teamA/kakaotalk.png"
 								class="img-share mx-auto d-block" alt="..."></a>
 							<p>카카오톡 공유</p>
 						</div>
 						<div class="col">
 							<a id="copy-link-btn" href="javascript:copyLink()"> <img
-								src="../resources/img/teamA/link.png"
+								src="<%=request.getContextPath()%>/resources/img/teamA/link.png"
 								class="img-share mx-auto d-block" alt="..."></a>
 							<p>링크 복사</p>
 						</div>
@@ -152,7 +152,7 @@
 						</div>
 						<div class="p-3 comment-shadow"></div>
 					</div>
-					<form:form method="post" action="../teamA/addok">
+					<form:form method="post" action="../addok">
 						<div class="input-group mt-5 mb-5">
 							<input type="text" name="comment" class="form-control p-3"
 								placeholder="댓글을 입력하세요. " aria-label="댓글 입력"
