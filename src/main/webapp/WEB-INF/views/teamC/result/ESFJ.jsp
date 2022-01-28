@@ -73,8 +73,8 @@
 <body>
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col"></div>
-			<div class="col content">
+			<div class="col" id="sideCol"></div>
+			<div class="col content" id="mainCont">
 				<div class="bg-white p-4 col-box">
 					<div class="resultName">
 						"공부는 자고로 시끄러워야 하는 법" <br> <span id="resultNick">인싸형
@@ -157,7 +157,7 @@
 				<div class="bg-white p-4 col-box">
 
 					<div class="comment">
-						<div class="text-start comment-number">댓글 1</div>
+						<div class="text-start comment-number">댓글 ${count}</div>
 
 						<form:form method="post" action="../../teamC/addok">
 							<div class="d-flex p-2 comment-add">
@@ -229,7 +229,7 @@
 
 
 			</div>
-			<div class="col"></div>
+			<div class="col" id="sideCol"></div>
 		</div>
 	</div>
 

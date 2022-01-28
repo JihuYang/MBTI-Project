@@ -57,8 +57,8 @@ $(function(){
 <body>
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col"></div>
-			<div id="main" class="col content ">
+			<div class="col" id="sideCol"></div>
+			<div id="main" class="col content mainCont">
 				<div class="bg-white p-4 position-absolute top-50 start-50 translate-middle col-box">
 					<div class="loadingEx">나에게 맞는 공부법은...</div>
 					

@@ -28,7 +28,7 @@ public class HomeController {
 		System.out.println("WELCOME TO MBTI WEB SITE");
 		dto.toString();
 		
-		int[] views = 	{0,0,0,0,0};
+		int[] views = {0,0,0,0,0};
 		
 		for(int i=0; i<5; i++)
 			views[i] = userService.readViews(i+1);

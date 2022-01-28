@@ -77,7 +77,7 @@ public class TeamProject_Controller {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	@RequestMapping(value = "/login", method = {RequestMethod.GET, RequestMethod.POST})
 	public ModelAndView teamProject_login(ModelAndView model, HttpServletRequest request) {
 		if(request.getSession().getAttribute("tempUser") != null) {
 			userDTO u = new userDTO();
