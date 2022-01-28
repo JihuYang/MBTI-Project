@@ -223,7 +223,7 @@ public class TeamA_Controller {
 			}
 			*/
 	@RequestMapping(value = "/result", method = RequestMethod.GET)
-	public /*@ResponseBody*/ ModelAndView teamA_result(Model model, HttpServletRequest request, @RequestParam("resultURL") String resultURL) {
+	public ModelAndView teamA_result(Model model, HttpServletRequest request , @RequestParam("resultURL") String resultType) {
 		ModelAndView mv = new ModelAndView();
 		System.out.println("result page loaded");
 		
@@ -233,31 +233,47 @@ public class TeamA_Controller {
 			mv.addObject("userId", userId);
 		}
 		
-		System.out.println(resultURL);
+
 		List<commentDTO> comment = new ArrayList<commentDTO>();
 
 		comment = commentService.getCommentList(testId);
 		
 		int count = comment.size();
-		String URL="teamA/result/";
-		/*switch(resultURL) {
-		case("ENTP") : {
-			st = "teamA/result" + resultURL;
-			break;
-		}
-		}
-		*/
-		URL+=resultURL;
-		System.out.println(URL);
+		
 		mv.addObject("comments",comment);
 		mv.addObject("count", count);
 		mv.setViewName("teamA/result/ENTP");
-		
-		
-		
+		System.out.println(resultType);
 		System.out.println(mv);
 
 		return mv;
 	}
+	@RequestMapping(value = "/result/ENTP", method = RequestMethod.GET)
+	public ModelAndView teamC_result(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 1;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
 	
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		mv.setViewName("teamA/result/ENTP");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
 }
+

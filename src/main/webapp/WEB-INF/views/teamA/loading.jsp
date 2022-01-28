@@ -8,7 +8,7 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="3;url=./result">
+<!--<meta http-equiv="refresh" content="3;url=./result"> !-->
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
 
@@ -413,7 +413,7 @@ calc
 			</div>
 			<div class="col d-none d-lg-block"></div>
 		</div>
-
+		
 	</div>
 	<footer class="text-center">
 		<span class="align-middle">@2022 MBTI에 진심인 팀 All rights
