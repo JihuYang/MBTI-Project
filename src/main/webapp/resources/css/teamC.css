@@ -15,7 +15,8 @@ body {
 .content {
 	width: 100%;
 	height:100vh;
-	position: absolute;
+
+	/*position: relative;*/
 	
 }
 .col-box{
@@ -307,13 +308,27 @@ footer {
 
 
 @media screen and (max-width: 1024px) {
- 		#sideCol {
-    display:none !important;
+ 	#sideCol {
+    	display:none !important;
 	}
-	
+	#main {
+		margin-right: 1rem !important;
+		margin-left: 1rem !important;
+	}
 	#mainCont {
 		position: relative !important;
-		margin-right: 2rem !important;
+		
 	}
+}
+
+@media screen and (max-width: 850px) {
+	#sideCol {
+    	display:none !important;
+	}
+	#mainCont {
+		position: relative !important;
+		
+	}
+	
 }
 
