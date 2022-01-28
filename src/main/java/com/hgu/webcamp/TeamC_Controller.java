@@ -146,6 +146,7 @@ public class TeamC_Controller {
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
+		System.out.println(count2);
 		
 		mv.addObject("comments",comment);
 		mv.addObject("count", count2);
