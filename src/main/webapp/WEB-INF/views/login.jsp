@@ -10,6 +10,7 @@
         <meta name="google-signin-scope" content="profile email">
         <meta name="google-signin-client_id"content = "232515646152-u2s2cqpcj4cfehkdq65l4ee9tuld0pts.apps.googleusercontent.com">
         <script src="https://apis.google.com/js/api:client.js"></script>
+        <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async></script>
         <title>소크라테스 - 로그인  </title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="resources/img/favicon.ico" />
@@ -29,8 +30,8 @@
 		    <span class=" mb-3 fw-normal">소셜 로그인으로 시작하기 </span> 
 	    </div>
 		    <div class="mt-3 login-form">
-		    <div class="login-btn w-100 p-3 mb-3 rounded border-secondary"><img style="width: 20px;" src="resources/img/teamProject/kakao.png"/><a class="w-100" href="javascript:kakaoLogin();"  >카카오로 시작하기 </a></div>
-		    <div class="login-btn w-100 p-3 mb-3 rounded border-secondary"><img style="width: 20px;" src="resources/img/teamProject/google.png"/><a id="google_login" class="w-100" href="javascript:startApp();">구글로 시작하기</a></div>
+		    <div class="login-btn w-100 p-3 mb-3 rounded border-secondary"><img style="width: 20px;" src="resources/img/teamProject/kakao.png"/><a class="w-100" href="javascript:kakaoLogin();"  >카카오로 로그인하기  </a></div>
+		    <div class="login-btn w-100 p-3 mb-3 rounded border-secondary"><img style="width: 20px;" src="resources/img/teamProject/google.png"/><a id="google_login" class="w-100" href="javascript:startApp();">구글로 로그인하기 </a></div>
 		</div>
 	  </form>
 	</main>
