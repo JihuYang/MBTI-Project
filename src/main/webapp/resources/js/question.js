@@ -39,6 +39,10 @@ function saveType(answer, mbti) {
 			for (const item of resultAry) {
 				resultUrl += item;
 			}
+			/* conveyType(resultUrl); */
+			
+			window.location.href = "loading"; 
+			
 			console.log(resultUrl);
 			conveyType(resultUrl);	
 		}

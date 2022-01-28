@@ -53,12 +53,17 @@ public class TeamProject_Controller {
 		
 		
 		int id = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+//<<<<<<< HEAD
+		
+//=======
 		System.out.println("userId in controller: " + id);
+//>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 	
 		dto=userService.getUser(id);
 		List<userDTO> savedTest = userService.readSavedTest(id);
 				
 		ModelAndView mv = new ModelAndView();
+		//System.out.println("dto: " + dto);
 		mv.addObject("info", dto);
 		mv.addObject("savedTest", savedTest);
 		mv.setViewName("/myPage");

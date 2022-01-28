@@ -118,6 +118,7 @@ footer {
 }
 
 .wholeBox {
+	width: 901px;
 	border: 4px solid black;
 	margin-top: 50px;
 	box-shadow: 10px 10px 0px #000000;

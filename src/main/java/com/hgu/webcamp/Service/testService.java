@@ -7,4 +7,5 @@ public interface testService {
 	public int insertTest(testDTO dto);
 	public int readMbtiIdByType(String type);
 	
+	
 }

@@ -18,6 +18,7 @@ public class testServiceImpl implements testService{
 		return dao.insertTest(dto);
 	}
 	
+
 	@Override
 	public int readMbtiIdByType(String type) {
 		return dao.readMbtiIdByType(type);
