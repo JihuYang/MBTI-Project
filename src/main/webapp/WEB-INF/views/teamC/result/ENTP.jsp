@@ -77,14 +77,14 @@
 			<div class="col content">
 				<div class="bg-white p-4 col-box">
 					<div class="resultName">
-						"공부 하나도 안했다고 하는데 진짜 안함" <br> <span id="resultNick">미루기 빌런
+						"뜨거운 토론과 불꽃튀는 의견교환" <br> <span id="resultNick">끝없는 질문형
 						</span>
 					</div>
-					<img class="result-img" src="../../resources/img/teamC/INFP.png" />
+					<img class="result-img" src="../../resources/img/teamC/ENTP.png" />
 
 					<div class="box2">
 						<div class="resultDesc">
-							MBTI에 비유하자면, <span id="MBTI">INFP</span>에 가까운?
+							MBTI에 비유하자면, <span id="MBTI">ENTP</span>에 가까운?
 						</div>
 					</div>
 
@@ -97,9 +97,9 @@
 					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
-							<li>공동의 일에서 자신이 맡은 바에 최선을 다함</li>
-							<li>의미 있는 진로를 찾는 것에 의미를 </li>
-							<li>감정적으로 끌리는 공부에만 집중하는 편</li>
+							<li>뜨거운 논쟁을 즐기는 선의의 비판자 스타일</li>
+							<li>매우 솔직한 것이 장점이자 단점</li>
+							<li>자신의 신념에 대한 확신이 큼</li>
 						</ul>
 					</div>
 
@@ -108,9 +108,9 @@
 					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
-							<li>현실 감각이 둔해 평소 몽상을 많이 함</li>
-							<li>내면의 갈등이 심해 감정기복이 큼</li>
-							<li>아이디어는 넘쳐나지만 실행력이 부족</li>
+							<li>참을성이 부족하다</li>
+							<li>자기의 의견 주장이 강하다</li>
+							<li>매우 논쟁적이다</li>
 						</ul>
 					</div>
 
@@ -123,18 +123,17 @@
 				<div class="bg-white p-4 col-box">
 					<div class="smtitle method">찰떡 공부법!</div>
 					<ul>
-						<li>전체 그림과 주요 개념에서 세부적으로 들어가는 방식으로 공부한다</li>
-						<li>마인드 맵을 적극적으로 활용</li>
-						<li>벼락치기가 특히나 비효율적이므로.. 꾸준히 일정시간을 맞춰 공부하는 것 추천</li>
-						<li>작은 개념 부분을 조금 더 집중해 실수를 줄이는 게 필요!</li>
-						
+						<li>토론, 발표, 논재 위주의 공부 방식</li>
+						<li>개념을 먼저 파악하며 체계적 학습방식 선호</li>
+						<li>조금은 빠르게 진도를 잡는 것이 좋음</li>
+						<li>내용이 간단하면 오히려 능률 떨어지고 어려운 과제를 풀 때 큰 성취감을 즐김</li>
 					</ul>
 					<div class="box2">
 						<div class="smtitle study">찰떡 파트너!</div>
-						<div class="mbtiPartner">ISTP</div>
+						<div class="mbtiPartner">INTP</div>
 						<div class="box2">
 							<div class="smtitle place">찰떡 공부장소!</div>
-							<div class="studyPlace">독서실에서 하면 열공한 느낌 RGRG? 공부는 각 잡고! 독서실!</div>
+							<div class="studyPlace">개별적 학습을 할 수 있으면서도 친구와 같이 이야기 나누고 공부할 수 있는 스터디 카페나 도서관 추천~</div>
 						</div>
 					</div>
 				</div>

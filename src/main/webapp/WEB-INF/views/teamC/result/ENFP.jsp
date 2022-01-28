@@ -77,14 +77,14 @@
 			<div class="col content">
 				<div class="bg-white p-4 col-box">
 					<div class="resultName">
-						"공부 하나도 안했다고 하는데 진짜 안함" <br> <span id="resultNick">미루기 빌런
+						"무계획이 계획, 그 날 하고 싶은 공부하기" <br> <span id="resultNick">계획인 듯 계획 아닌 형
 						</span>
 					</div>
-					<img class="result-img" src="../../resources/img/teamC/INFP.png" />
+					<img class="result-img" src="../../resources/img/teamC/ENFP.png" />
 
 					<div class="box2">
 						<div class="resultDesc">
-							MBTI에 비유하자면, <span id="MBTI">INFP</span>에 가까운?
+							MBTI에 비유하자면, <span id="MBTI">ENFP</span>에 가까운?
 						</div>
 					</div>
 
@@ -97,9 +97,9 @@
 					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
-							<li>공동의 일에서 자신이 맡은 바에 최선을 다함</li>
-							<li>의미 있는 진로를 찾는 것에 의미를 </li>
-							<li>감정적으로 끌리는 공부에만 집중하는 편</li>
+							<li>분위기 메이커 역할, 뛰어난 대화 스킬을 가지고 있다</li>
+							<li>독립적인 성향을 가지고 있으며 창의적이고 자유로운 삶을 갈망함</li>
+							<li>미래를 상상하는 것을 즐기며, 모든 가능성을 상상함</li>
 						</ul>
 					</div>
 
@@ -108,9 +108,9 @@
 					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
-							<li>현실 감각이 둔해 평소 몽상을 많이 함</li>
-							<li>내면의 갈등이 심해 감정기복이 큼</li>
-							<li>아이디어는 넘쳐나지만 실행력이 부족</li>
+							<li>끈기가 없는 편..</li>
+							<li>끌리는 과목만 하는 스타일</li>
+							<li>생각이 많아 집중력 부족현상이 나타남</li>
 						</ul>
 					</div>
 
@@ -123,18 +123,16 @@
 				<div class="bg-white p-4 col-box">
 					<div class="smtitle method">찰떡 공부법!</div>
 					<ul>
-						<li>전체 그림과 주요 개념에서 세부적으로 들어가는 방식으로 공부한다</li>
-						<li>마인드 맵을 적극적으로 활용</li>
-						<li>벼락치기가 특히나 비효율적이므로.. 꾸준히 일정시간을 맞춰 공부하는 것 추천</li>
-						<li>작은 개념 부분을 조금 더 집중해 실수를 줄이는 게 필요!</li>
-						
+						<li>그룹 스터디 강추!! (이야기 나누며 공부할 수 있는 학습메이트가 있으면 좋음)</li>
+						<li>토론과 탐구식 학습 스타일이 효과적!</li>
+						<li>자신만의 자습시간을 가짐으로서 나만의 정리시간을 가져야함</li>
 					</ul>
 					<div class="box2">
 						<div class="smtitle study">찰떡 파트너!</div>
-						<div class="mbtiPartner">ISTP</div>
+						<div class="mbtiPartner">ENTJ</div>
 						<div class="box2">
 							<div class="smtitle place">찰떡 공부장소!</div>
-							<div class="studyPlace">독서실에서 하면 열공한 느낌 RGRG? 공부는 각 잡고! 독서실!</div>
+							<div class="studyPlace">딴 짓 할 확률이 높다! 감시자가 있는 공간을 적절히 찾아가자! 반오픈형 독서실 추천~</div>
 						</div>
 					</div>
 				</div>

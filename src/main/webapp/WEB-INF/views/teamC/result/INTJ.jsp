@@ -77,14 +77,14 @@
 			<div class="col content">
 				<div class="bg-white p-4 col-box">
 					<div class="resultName">
-						"공부 하나도 안했다고 하는데 진짜 안함" <br> <span id="resultNick">미루기 빌런
+						"비판적인 관점으로 목표 설정 후 RUN" <br> <span id="resultNick">본투비 전략가형
 						</span>
 					</div>
-					<img class="result-img" src="../../resources/img/teamC/INFP.png" />
+					<img class="result-img" src="../../resources/img/teamC/INTJ.png" />
 
 					<div class="box2">
 						<div class="resultDesc">
-							MBTI에 비유하자면, <span id="MBTI">INFP</span>에 가까운?
+							MBTI에 비유하자면, <span id="MBTI">INTJ</span>에 가까운?
 						</div>
 					</div>
 
@@ -97,9 +97,9 @@
 					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
-							<li>공동의 일에서 자신이 맡은 바에 최선을 다함</li>
-							<li>의미 있는 진로를 찾는 것에 의미를 </li>
-							<li>감정적으로 끌리는 공부에만 집중하는 편</li>
+							<li>굉장히 분석적이고 이성적인 유형</li>
+							<li>전략적 사고에 뛰어나고 응용력이 뛰어남</li>
+							<li>이론적인 학문에 학구열이 굉장히 높으며 흥미를 느낌</li>
 						</ul>
 					</div>
 
@@ -108,9 +108,9 @@
 					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
-							<li>현실 감각이 둔해 평소 몽상을 많이 함</li>
-							<li>내면의 갈등이 심해 감정기복이 큼</li>
-							<li>아이디어는 넘쳐나지만 실행력이 부족</li>
+							<li>과도한 자신감으로 모든 것을 안다고 생각하는 착각에 빠질 수 있음</li>
+							<li>대인관계에 외로움을 느낄 수 있음</li>
+							<li>진리나 깊이 있는 지식을 쫓는 스타일 이기에 쓸데없는 시간을 보내는걸 매우 아까워 함</li>
 						</ul>
 					</div>
 
@@ -123,18 +123,16 @@
 				<div class="bg-white p-4 col-box">
 					<div class="smtitle method">찰떡 공부법!</div>
 					<ul>
-						<li>전체 그림과 주요 개념에서 세부적으로 들어가는 방식으로 공부한다</li>
-						<li>마인드 맵을 적극적으로 활용</li>
-						<li>벼락치기가 특히나 비효율적이므로.. 꾸준히 일정시간을 맞춰 공부하는 것 추천</li>
-						<li>작은 개념 부분을 조금 더 집중해 실수를 줄이는 게 필요!</li>
-						
+						<li>큰 그림을 보며, 조직화된 구조로 노트 정리를 한다.</li>
+						<li>같은 내용을 여러 번 복습 추천!</li>
+						<li>맥락 있게 이해하면서 공부하면 좋음</li>
 					</ul>
 					<div class="box2">
 						<div class="smtitle study">찰떡 파트너!</div>
-						<div class="mbtiPartner">ISTP</div>
+						<div class="mbtiPartner">ISFJ, INFJ</div>
 						<div class="box2">
 							<div class="smtitle place">찰떡 공부장소!</div>
-							<div class="studyPlace">독서실에서 하면 열공한 느낌 RGRG? 공부는 각 잡고! 독서실!</div>
+							<div class="studyPlace">쓸데없이 에너지 낭비말고 완벽한 계획짜서 집에서 하자</div>
 						</div>
 					</div>
 				</div>
