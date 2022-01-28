@@ -59,7 +59,7 @@
 			<form method="post" action="../teamB/saved" style="display:inline-block;width:46px;margin:0 15px;">
 				<input name="mbti"id = "mbti" value="ENFJ" style="display: none">
 				<button>
-					<img src="../resources/img/teamB/save_icon.png" alt="saveicon" style="width:100%">
+					<img src="<%=request.getContextPath()%>/resources/img/teamB/save_icon.png" alt="saveicon" style="width:100%">
 				</button>
 			</form>
 		</div>
