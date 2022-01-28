@@ -255,4 +255,451 @@ public class TeamB_Controller {
 
 		return "redirect:result";
 	}
+	@RequestMapping(value = "/result/ENFJ", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ENFJ(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		String mbti = "ENFJ";
+		mv.addObject("mbti", mbti);
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		mv.setViewName("teamB/result/ENFJ");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/ENFP", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ENFP(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "ENFP";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/ENFP");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/ENTJ", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ENTJ(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "ENTJ";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/ENTJ");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/ENTP", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ENTP(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "ENTP";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/ENTP");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/ESFJ", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ESFJ(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "ESFJ";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/ESFJ");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/ESFP", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ESFP(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "ESFP";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/ESFP");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/ESTJ", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ESTJ(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "ESTJ";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/ESTJ");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/ESTP", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ESTP(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "ESTP";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/ESTP");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/INFJ", method = RequestMethod.GET)
+	public ModelAndView teamB_result_INFJ(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "INFJ";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/INFJ");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/INFP", method = RequestMethod.GET)
+	public ModelAndView teamB_result_INFP(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "INFP";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/INFP");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/INTJ", method = RequestMethod.GET)
+	public ModelAndView teamB_result_INTJ(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "INTJ";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/INTJ");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/INTP", method = RequestMethod.GET)
+	public ModelAndView teamB_result_INTP(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "INTP";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/INTP");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/ISFJ", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ISFJ(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "ISFJ";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/ISFJ");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/ISFP", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ISFP(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "ISFP";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/ISFP");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/ISTJ", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ISTJ(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "ISTJ";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/ISTJ");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
+	@RequestMapping(value = "/result/ISTP", method = RequestMethod.GET)
+	public ModelAndView teamB_result_ISTP(Model model, HttpServletRequest request) {
+		
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 2;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}			
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
+		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
+		String mbti = "ISTP";
+		mv.addObject("mbti", mbti);
+		mv.setViewName("teamB/result/ISTP");
+		
+		System.out.println(mv);
+		
+		return mv;
+	}
 }
