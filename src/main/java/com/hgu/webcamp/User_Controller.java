@@ -90,10 +90,10 @@ public class User_Controller {
 		
         int i = userService.insertUser(dto);
         if(i==0) {
-        	return "redirect:index" ;
+        	return "redirect:login" ;
         }
         else {
-        	return "forward:index" ;
+        	return "forward:login" ;
         }
      }
 	 
