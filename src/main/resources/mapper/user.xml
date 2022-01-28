@@ -2,53 +2,68 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-  <mapper namespace="user">
-  
+<mapper namespace="user">
+
 	<insert id="insertUser">
-  		insert into camp1.user(name, email, nickName, mbti, registration, admin) 
-  		values
-  		(#{name}, #{email}, #{nickName}, #{mbti}, #{registration}, #{admin})
-  	</insert>
-  	
-  	<select id="getUser" resultType="com.hgu.webcamp.DTO.userDTO">
-		SELECT
-		name, email, nickName, mbti, type FROM camp1.user
-		LEFT JOIN camp1.mbti ON user.mbti = mbti.id
+		insert into camp1.user(name, email, nickName, mbti,
+		registration, admin)
+		values
+		(#{name}, #{email}, #{nickName}, #{mbti},
+		#{registration}, #{admin})
+	</insert>
+
+	<select id="getUser" resultType="com.hgu.webcamp.DTO.userDTO">
+		SELECT user.id, name, email,
+		nickName, mbti, result, type FROM ((camp1.user
+		JOIN camp1.savedTest ON
+		user.id = savedTest.userId)
+		JOIN camp1.mbti ON user.mbti = mbti.id)
 		WHERE user.id = #{userId}
 	</select>
-	
-	 <select id="readAllMbti" resultType="com.hgu.webcamp.DTO.userDTO">
+
+	<select id="readAllMbti"
+		resultType="com.hgu.webcamp.DTO.userDTO">
 		SELECT * FROM camp1.mbti
 	</select>
-	
+
 	<delete id="deleteUser">
 		DELETE
 		from user
 		WHERE id = #{id};
 	</delete>
-	
+
 	<update id="updateUser">
 		UPDATE
-		
+
 	</update>
-	
+
 	<select id="getMBTIlist">
-  		select * from camp1.mbti
-  	</select>
-  	
+		select * from camp1.mbti
+	</select>
 
-  	<update id="updateViews">
-  		UPDATE camp1.test SET views = views + 1 WHERE id = #{id};
-  	</update>
-  	
-  	<select id="readViews" resultType="int">
-  		SELECT views FROM camp1.test WHERE id = #{id};
-  	</select>
 
-  	<select id="readUserByEmail" resultType="int">
-  		SELECT id FROM camp1.user WHERE email = #{email}
-  	</select>
-  	
+	<update id="updateViews">
+		UPDATE camp1.test SET views = views + 1 WHERE id =
+		#{id};
+	</update>
 
-	
-  </mapper>
+	<select id="readViews" resultType="int">
+		SELECT views FROM camp1.test
+		WHERE id = #{id};
+	</select>
+
+	<select id="readUserByEmail" resultType="int">
+		SELECT id FROM
+		camp1.user WHERE email = #{email}
+	</select>
+
+	<select id="readSavedTest" resultType="com.hgu.webcamp.DTO.userDTO">
+		SELECT user.id, savedTest.result, savedTest.testId, test.testName, mbti.type
+		FROM (((camp1.user
+		JOIN camp1.savedTest ON user.id = savedTest.userId)
+		JOIN camp1.mbti ON savedTest.result = mbti.id)
+		JOIN camp1.test ON savedTest.testId = test.id);
+	</select>
+
+
+</mapper>
