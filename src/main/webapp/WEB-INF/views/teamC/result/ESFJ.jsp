@@ -157,7 +157,7 @@
 				<div class="bg-white p-4 col-box">
 
 					<div class="comment">
-						<div class="text-start comment-number">댓글 1</div>
+						<div class="text-start comment-number">댓글 ${count}</div>
 
 						<form:form method="post" action="../../teamC/addok">
 							<div class="d-flex p-2 comment-add">

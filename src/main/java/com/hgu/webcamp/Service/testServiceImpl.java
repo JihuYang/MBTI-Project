@@ -8,6 +8,7 @@ import com.hgu.webcamp.DTO.testDTO;
 
 @Service
 public class testServiceImpl implements testService{
+	
 	@Autowired
 	testDAO dao;
 	
@@ -16,4 +17,10 @@ public class testServiceImpl implements testService{
 		// TODO Auto-generated method stub
 		return dao.insertTest(dto);
 	}
+	
+	@Override
+	public int readMbtiIdByType(String type) {
+		return dao.readMbtiIdByType(type);
+	}
+
 }

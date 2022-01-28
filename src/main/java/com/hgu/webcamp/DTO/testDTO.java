@@ -1,13 +1,12 @@
 package com.hgu.webcamp.DTO;
 
-import java.sql.Date;
-
 public class testDTO {
 
 	private int id;
 	private int testId;
 	private int userId;
-	private String result;
+	private int result;
+	private String type;
 	
 	public int getId() {
 		return id;
@@ -27,15 +26,23 @@ public class testDTO {
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
-	public String getResult() {
+	public int getResult() {
 		return result;
 	}
-	public void setResult(String result) {
+	public void setResult(int result) {
 		this.result = result;
 	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	
 	@Override
 	public String toString() {
-		return "testDTO [id=" + id + ", testId=" + testId + ", userId=" + userId + ", result=" + result + "]";
+		return "testDTO [id=" + id + ", testId=" + testId + ", userId=" + userId + ", result=" + result + ", type="
+				+ type + "]";
 	} 
 	
 
