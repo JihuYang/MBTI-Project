@@ -154,7 +154,7 @@ public class TeamD_Controller {
        }
 
 
-       return "redirect:result";
+       return "redirect:/";
     }
 
 	@RequestMapping(value = "/result/ENFJ", method = RequestMethod.GET)
