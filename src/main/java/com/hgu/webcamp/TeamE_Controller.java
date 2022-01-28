@@ -127,8 +127,7 @@ public class TeamE_Controller {
 		@RequestMapping(value = "/saved", method = RequestMethod.POST)
 		public String savedOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
 			request.setCharacterEncoding("utf-8");
-			//HttpSession session = request.getSession();
-			//String userid = request.getSession().getAttribute("").toString();		
+
 			int testId = 5;
 			
 			testDTO dto = new testDTO();
@@ -139,6 +138,11 @@ public class TeamE_Controller {
 			}	
 			
 			dto.setTestId(testId);
+			String type = request.getParameter("mbti");
+			
+			System.out.println(type);
+			int mbti = testService.readMbtiIdByType(type);
+			dto.setResult(mbti);
 			
 			int i = testService.insertTest(dto);
 			if(i==0) {

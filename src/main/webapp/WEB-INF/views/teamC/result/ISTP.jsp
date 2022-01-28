@@ -73,8 +73,8 @@
 <body>
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col"></div>
-			<div class="col content">
+			<div class="col" id="sideCol"></div>
+			<div class="col content" id="mainCont">
 				<div class="bg-white p-4 col-box">
 					<div class="resultName">
 						"듣고 읽고 쓰고 다 해야함" <br> <span id="resultNick">오감활용형
@@ -139,7 +139,9 @@
 				</div>
 
 				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
-				<div class="wholeBox two_btn sv_btn">저장하기</div>
+				<form method="post" action="../saved">
+				<input name="mbti"id = "mbti" value="ISTP" style="display: none">
+				<button class="wholeBox two_btn sv_btn">저장하기</button>
 
 				<div class="shareBtn">
 					<a id="kakao-link-btn" href="javascript:sendLink()"> <img
@@ -230,7 +232,7 @@
 
 
 			</div>
-			<div class="col"></div>
+			<div class="col" id="sideCol"></div>
 		</div>
 	</div>
 

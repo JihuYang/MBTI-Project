@@ -35,7 +35,7 @@
 					<div class="py-3 window-question bg-white">
 						<div id="first-section" class="text-center">
 							<div>내가 개발자라면?</div>
-							<div class="mt-3">대담한 통솔자 (갑질 가능성 99.9%)</div>
+							<div class="mt-3">갑질 가능성 99.9%</div>
 							<div>
 								<h1>타고난 리더 개발자</h1>
 								<img src="../resources/img/teamA/ENTJ.png"

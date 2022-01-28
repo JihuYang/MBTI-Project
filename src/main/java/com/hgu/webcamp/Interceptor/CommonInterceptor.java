@@ -25,7 +25,7 @@ public class CommonInterceptor extends HandlerInterceptorAdapter{
 		ModelAndView model = new ModelAndView();
 		// 로그인하지 않을 경우 접근 불가 
 		if(request.getSession().getAttribute("user") == null) {
-			if(request.getRequestURI().contains("myPage") || request.getRequestURI().contains("delete_ok") || request.getRequestURI().contains("addok") || request.getRequestURI().contains("editok")) {
+			if(request.getRequestURI().contains("myPage") || request.getRequestURI().contains("delete_ok") || request.getRequestURI().contains("addok") || request.getRequestURI().contains("editok") || request.getRequestURI().contains("saved")) {
 //				System.out.println(request.getRequestURI());
 //				PrintWriter out = response.getWriter();
 //				out.println("<script>alert('로그인이 필요한 항목입니다!');</script>");

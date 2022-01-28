@@ -45,9 +45,9 @@
 
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col"></div>
-			<div class="col content">
-				<div class="bg-white p-4 position-absolute top-50 start-50 translate-middle col-box">
+			<div class="col" id="sideCol"></div>
+			<div class="col content" id="main">
+				<div id="mainCont" class="bg-white p-4 position-absolute top-50 start-50 translate-middle col-box">
 					
 			
 				<div id="progressDiv">
@@ -76,7 +76,7 @@
 			</div>
 			
 			</div>
-			<div class="col"></div>
+			<div class="col" id="sideCol"></div>
 		
 
 	</div>

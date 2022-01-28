@@ -73,8 +73,8 @@
 <body>
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col"></div>
-			<div class="col content">
+			<div class="col" id="sideCol"></div>
+			<div class="col content" id="mainCont">
 				<div class="bg-white p-4 col-box">
 					<div class="resultName">
 						"공부는 자고로 시끄러워야 하는 법" <br> <span id="resultNick">인싸형
@@ -138,7 +138,9 @@
 				</div>
 
 				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
-				<div class="wholeBox two_btn sv_btn">저장하기</div>
+				<form method="post" action="../saved">
+				<input name="mbti"id = "mbti" value="ESFJ" style="display: none">
+				<button class="wholeBox two_btn sv_btn">저장하기</button>
 
 				<div class="shareBtn">
 					<a id="kakao-link-btn" href="javascript:sendLink()"> <img
@@ -157,7 +159,7 @@
 				<div class="bg-white p-4 col-box">
 
 					<div class="comment">
-						<div class="text-start comment-number">댓글 1</div>
+						<div class="text-start comment-number">댓글 ${count}</div>
 
 						<form:form method="post" action="../../teamC/addok">
 							<div class="d-flex p-2 comment-add">
@@ -229,7 +231,7 @@
 
 
 			</div>
-			<div class="col"></div>
+			<div class="col" id="sideCol"></div>
 		</div>
 	</div>
 

@@ -8,7 +8,7 @@
 
 <%@ page session="false"%>
 <div id="comment" class="mt-5 mb-3 p-3 comment">
-	<span class="text-black">댓글 [12]</span>
+	<span class="text-black">댓글 [${count}]</span>
 	<form:form method="post" action="../teamB/addok">
 	<div class="input-group mt-1 mb-1">
 		<input type="text" name="comment" class="form-control p-3" placeholder="댓글을 입력하세요. "

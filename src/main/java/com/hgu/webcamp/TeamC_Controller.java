@@ -21,9 +21,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.hgu.webcamp.DTO.commentDTO;
 import com.hgu.webcamp.DTO.questionDTO;
+import com.hgu.webcamp.DTO.testDTO;
 import com.hgu.webcamp.DTO.userDTO;
 import com.hgu.webcamp.Service.commentService;
 import com.hgu.webcamp.Service.questionService;
+import com.hgu.webcamp.Service.testService;
 import com.hgu.webcamp.Service.userService;
 
 /**
@@ -40,6 +42,9 @@ public class TeamC_Controller {
 	
 	@Autowired
 	userService userService;
+	
+	@Autowired
+	testService testService;
 
 	
 	/**
@@ -145,7 +150,11 @@ public class TeamC_Controller {
 
 		comment = commentService.getCommentList(testId);
 		
+		int count2 = comment.size();
+		System.out.println(count2);
+		
 		mv.addObject("comments",comment);
+		mv.addObject("count", count2);
 		mv.setViewName("teamC/result/ESFJ");
 		
 		System.out.println(mv);
@@ -222,6 +231,38 @@ public class TeamC_Controller {
 		return "redirect:../result/ESFJ";
 	}
 	
+	@RequestMapping(value = "/saved", method = RequestMethod.POST)
+	public String savedOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
+		request.setCharacterEncoding("utf-8");
+
+		int testId = 3;
+		
+		testDTO dto = new testDTO();
+		
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			dto.setUserId(userId);
+		}	
+		
+		dto.setTestId(testId);
+		String type = request.getParameter("mbti");
+		
+		System.out.println(type);
+		int mbti = testService.readMbtiIdByType(type);
+		dto.setResult(mbti);
+		
+		int i = testService.insertTest(dto);
+		if(i==0) {
+			System.out.println("데이터 추가 실패 ");
+			
+		}
+		else {
+			System.out.println("데이터 추가 성공 ");
+		}
+
+
+		return "redirect:result/ESFJ";
+	}
 
 	
 }

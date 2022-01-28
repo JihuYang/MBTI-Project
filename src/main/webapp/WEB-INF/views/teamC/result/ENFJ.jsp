@@ -73,8 +73,8 @@
 <body>
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col"></div>
-			<div class="col content">
+			<div class="col" id="sideCol"></div>
+			<div class="col content" id="mainCont">
 				<div class="bg-white p-4 col-box">
 					<div class="resultName">
 						"높은 확률로 지금 다이어리에 계획표 작성 중" <br> <span id="resultNick">인간 플래너형
@@ -139,7 +139,9 @@
 				</div>
 
 				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
-				<div class="wholeBox two_btn sv_btn">저장하기</div>
+				<form method="post" action="../saved">
+				<input name="mbti"id = "mbti" value="ENFJ" style="display: none">
+				<button class="wholeBox two_btn sv_btn">저장하기</button>
 
 				<div class="shareBtn">
 					<a id="kakao-link-btn" href="javascript:sendLink()"> <img
@@ -230,7 +232,7 @@
 
 
 			</div>
-			<div class="col"></div>
+			<div class="col" id="sideCol"></div>
 		</div>
 	</div>
 

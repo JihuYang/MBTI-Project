@@ -41,8 +41,8 @@
 
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col"></div>
-			<div class="col content">
+			<div class="col" id="sideCol"></div>
+			<div class="col content" id="mainCont">
 				<div class="bg-white p-4 position-absolute top-50 start-50 translate-middle col-box">
 					
 					<div class="startHeader">
@@ -77,7 +77,7 @@
 					</div>
 				</div>
 			
-			<div class="col"></div>
+			<div class="col" id="sideCol"></div>
 </div>
 		</div>
 		

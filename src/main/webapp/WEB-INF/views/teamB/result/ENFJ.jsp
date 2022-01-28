@@ -56,6 +56,12 @@
 				href="" onclick="GA_Event('MBTI_result', 'share_save', 'Click');">
 				<img src="../resources/img/teamB/save_icon.png" alt="saveicon">
 			</a>
+			<form method="post" action="../teamB/saved" style="display:inline-block;width:46px;margin:0 15px;">
+				<input name="mbti"id = "mbti" value="ENFJ" style="display: none">
+				<button>
+					<img src="../resources/img/teamB/save_icon.png" alt="saveicon" style="width:100%">
+				</button>
+			</form>
 		</div>
 		<div class="restarticon">
 			<input type="button" value="테스트 다시하기" class="btn btn-warning btn-yellow "

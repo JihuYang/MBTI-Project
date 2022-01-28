@@ -112,6 +112,7 @@ public class TeamA_Controller {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
+	/*
 	@RequestMapping(value = "/result", method = RequestMethod.GET)
 	public ModelAndView teamA_result(Model model, HttpServletRequest request) {
 		ModelAndView mv = new ModelAndView();
@@ -138,7 +139,7 @@ public class TeamA_Controller {
 
 		return mv;
 	}
-	
+	*/
 	// ajax로 값을 주고받는 Controller 
 	@RequestMapping(value = "/ajax", method = RequestMethod.POST)
 	public @ResponseBody List<questionDTO> ajax_question(@RequestParam("questionNum") int questionNum) {
@@ -221,4 +222,42 @@ public class TeamA_Controller {
 			return mbtiType;
 			}
 			*/
+	@RequestMapping(value = "/result", method = RequestMethod.GET)
+	public /*@ResponseBody*/ ModelAndView teamA_result(Model model, HttpServletRequest request, @RequestParam("resultURL") String resultURL) {
+		ModelAndView mv = new ModelAndView();
+		System.out.println("result page loaded");
+		
+		int testId = 1;
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			mv.addObject("userId", userId);
+		}
+		
+		System.out.println(resultURL);
+		List<commentDTO> comment = new ArrayList<commentDTO>();
+
+		comment = commentService.getCommentList(testId);
+		
+		int count = comment.size();
+		String URL="teamA/result/";
+		/*switch(resultURL) {
+		case("ENTP") : {
+			st = "teamA/result" + resultURL;
+			break;
+		}
+		}
+		*/
+		URL+=resultURL;
+		System.out.println(URL);
+		mv.addObject("comments",comment);
+		mv.addObject("count", count);
+		mv.setViewName("teamA/result/ENTP");
+		
+		
+		
+		System.out.println(mv);
+
+		return mv;
+	}
+	
 }

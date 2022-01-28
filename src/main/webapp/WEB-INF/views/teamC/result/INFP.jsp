@@ -73,8 +73,8 @@
 <body>
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col"></div>
-			<div class="col content">
+			<div class="col" id="sideCol"></div>
+			<div class="col content" id="mainCont">
 				<div class="bg-white p-4 col-box">
 					<div class="resultName">
 						"공부 하나도 안했다고 하는데 진짜 안함" <br> <span id="resultNick">미루기 빌런
@@ -140,7 +140,9 @@
 				</div>
 
 				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
-				<div class="wholeBox two_btn sv_btn">저장하기</div>
+				<form method="post" action="../saved">
+				<input name="mbti"id = "mbti" value="INFP" style="display: none">
+				<button class="wholeBox two_btn sv_btn">저장하기</button>
 
 				<div class="shareBtn">
 					<a id="kakao-link-btn" href="javascript:sendLink()"> <img
@@ -231,7 +233,7 @@
 
 
 			</div>
-			<div class="col"></div>
+			<div class="col" id="sideCol"></div>
 		</div>
 	</div>
 

@@ -42,7 +42,9 @@
     
     <br>
     <button class="btn-result" onclick="location.href='start'">다시하기</button><br>
-    <button class="btn-result">저장하기</button><br>
+    <form method="post" action="<%=request.getContextPath()%>/teamE/saved">
+				<input name="mbti"id = "mbti" value="ISTP" style="display: none">
+    <button class="btn-result">저장하기</button><br>s
     
     <a id="kakao-link-btn" href="javascript:sendLink()"> 
     <img src="../resources/img/teamE/카톡 마크.jpeg" class="kakao"/>
