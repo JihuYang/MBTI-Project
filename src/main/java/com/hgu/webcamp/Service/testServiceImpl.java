@@ -14,6 +14,6 @@ public class testServiceImpl implements testService{
 	@Override
 	public int insertTest(testDTO dto) {
 		// TODO Auto-generated method stub
-		return dao.insertComment(dto);
+		return dao.insertTest(dto);
 	}
 }
