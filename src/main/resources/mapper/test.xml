@@ -8,4 +8,9 @@
 		values
 		(#{testId}, #{userId}, #{result})
 	</insert>
+	
+	<select id="readMbtiIdByType" resultType="int">
+		SELECT id FROM camp1.mbti WHERE type=#{type};
+	</select>
+
 </mapper>

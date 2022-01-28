@@ -161,10 +161,10 @@ public class TeamB_Controller {
 		comment = commentService.getCommentList(testId);
 		
 		int count = comment.size();
-		
+		String mbti = "ENFJ";
 		mv.addObject("comments",comment);
 		mv.addObject("count", count);
-
+		mv.addObject("mbti", mbti);
 		mv.setViewName("teamB/result");
 		
 		System.out.println(mv);
@@ -234,6 +234,9 @@ public class TeamB_Controller {
 		}	
 		
 		dto.setTestId(testId);
+		String type = request.getParameter("mbti");
+		int mbti = testService.readMbtiIdByType(type);
+		dto.setResult(mbti);
 		
 		int i = testService.insertTest(dto);
 		if(i==0) {

@@ -15,8 +15,15 @@ public class testDAOImpl implements testDAO {
 	
 	private String namespace = "savedTest";
 	
+	@Override
 	public int insertTest(testDTO dto) {
-		int result = sqlSession.insert(namespace + "insertTest", dto);
+		int result = sqlSession.insert(namespace + ".insertTest", dto);
+		return result;
+	}
+	
+	@Override
+	public int readMbtiIdByType(String type) {
+		int result = sqlSession.selectOne(namespace + ".readMbtiIdByType", type);
 		return result;
 	}
 

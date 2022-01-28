@@ -17,4 +17,10 @@ public class testServiceImpl implements testService{
 		// TODO Auto-generated method stub
 		return dao.insertTest(dto);
 	}
+	
+	@Override
+	public int readMbtiIdByType(String type) {
+		return dao.readMbtiIdByType(type);
+	}
+
 }
