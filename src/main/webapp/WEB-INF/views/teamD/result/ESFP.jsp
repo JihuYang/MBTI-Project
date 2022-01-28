@@ -23,8 +23,8 @@
 			<tr>
 				<td><img src="../resources/img/teamD/봉미선.png" style="width:230px; height:230px;">
 				<td><h2>타고난 리더십 <br>봉미선 (ESFP)</h2>
-				<p>+ 상성 좋은 케미:<br>능 재주꾼 옆집아줌마<br>
-				- 상성 안 좋은 케미:<br>유내강 차은주</p>
+				<p>+ 상성 좋은 케미:<br>만능 재주꾼 옆집아줌마<br>
+				- 상성 안 좋은 케미:<br>외유내강 차은주</p>
 				</td>
 		</table>
 		</div>
