@@ -71,7 +71,7 @@ public class LoginController {
 
 			model.addObject("tempUser", u);
 			//model.setViewName("index");
-			return "index";
+			return "home";
 		
 		}
 	}
