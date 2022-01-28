@@ -43,9 +43,19 @@
 							onclick="saveType(${2}, '${questions[1].result}')">${questions[1].answer}</button>
 					</div>
 				<%-- </c:forEach> --%>
-				
+				<div class="row mt-5">
+					<div class="col">
+					<a id="home-btn" href="../index"><img src="../resources/img/teamA/home.svg" alt="homeIcon" style="width:50px"></a>
+						<p>Home</p>
+					</div>
+					<div class="col">
+					<a id="redo-btn" href="./start"><img src="../resources/img/teamA/redo.svg" alt="redoIcon"  style="width:50px"></a>
+						<p>Replay</p>
+					</div>
+					
+				</div>
 			</div>
-			<div class="col d-none d-lg-block"></div>
+				
 		</div>
 
 	</div>
