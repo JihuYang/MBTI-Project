@@ -217,7 +217,7 @@ public class TeamC_Controller {
 		mv.addObject("mbti", mbti);
 		mv.addObject("comments",comment);
 		mv.addObject("count", count2);
-		mv.setViewName("teamB/result/ENFJ");
+		mv.setViewName("teamC/result/ENFJ");
 		
 		System.out.println(mv);
 		
@@ -245,7 +245,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "ENFP";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ENFP");
+		mv.setViewName("teamC/result/ENFP");
 		
 		System.out.println(mv);
 		
@@ -273,7 +273,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "ENTJ";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ENTJ");
+		mv.setViewName("teamC/result/ENTJ");
 		
 		System.out.println(mv);
 		
@@ -301,7 +301,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "ENTP";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ENTP");
+		mv.setViewName("teamC/result/ENTP");
 		
 		System.out.println(mv);
 		
@@ -329,7 +329,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "ESFJ";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ESFJ");
+		mv.setViewName("teamC/result/ESFJ");
 		
 		System.out.println(mv);
 		
@@ -357,7 +357,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "ESFP";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ESFP");
+		mv.setViewName("teamC/result/ESFP");
 		
 		System.out.println(mv);
 		
@@ -385,7 +385,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "ESTJ";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ESTJ");
+		mv.setViewName("teamC/result/ESTJ");
 		
 		System.out.println(mv);
 		
@@ -413,7 +413,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "ESTP";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ESTP");
+		mv.setViewName("teamC/result/ESTP");
 		
 		System.out.println(mv);
 		
@@ -441,7 +441,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "INFJ";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/INFJ");
+		mv.setViewName("teamC/result/INFJ");
 		
 		System.out.println(mv);
 		
@@ -469,7 +469,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "INFP";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/INFP");
+		mv.setViewName("teamC/result/INFP");
 		
 		System.out.println(mv);
 		
@@ -497,7 +497,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "INTJ";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/INTJ");
+		mv.setViewName("teamC/result/INTJ");
 		
 		System.out.println(mv);
 		
@@ -525,7 +525,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "INTP";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/INTP");
+		mv.setViewName("teamC/result/INTP");
 		
 		System.out.println(mv);
 		
@@ -553,7 +553,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "ISFJ";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ISFJ");
+		mv.setViewName("teamC/result/ISFJ");
 		
 		System.out.println(mv);
 		
@@ -581,7 +581,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "ISFP";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ISFP");
+		mv.setViewName("teamC/result/ISFP");
 		
 		System.out.println(mv);
 		
@@ -609,7 +609,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "ISTJ";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ISTJ");
+		mv.setViewName("teamC/result/ISTJ");
 		
 		System.out.println(mv);
 		
@@ -637,7 +637,7 @@ public class TeamC_Controller {
 		mv.addObject("count", count2);
 		String mbti = "ISTP";
 		mv.addObject("mbti", mbti);
-		mv.setViewName("teamB/result/ISTP");
+		mv.setViewName("teamC/result/ISTP");
 		
 		System.out.println(mv);
 		
