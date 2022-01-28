@@ -29,11 +29,19 @@ public class TeamProject_Controller {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/index", method = {RequestMethod.GET, RequestMethod.POST})
-	public String teamProject_index(Model model) {
+	public ModelAndView teamProject_index(Model model) {
+		
+		ModelAndView mv = new ModelAndView();
 		
 		System.out.println("index page loaded");
+		int[] views = {0,0,0,0,0};
 		
-		return "/index";
+		for(int i=0; i<5; i++)
+			views[i] = userService.readViews(i+1);
+
+		mv.addObject("views", views);
+		mv.setViewName("index");
+		return mv;
 	}
 	/**
 	 * Simply selects the home view to render by returning its name.
