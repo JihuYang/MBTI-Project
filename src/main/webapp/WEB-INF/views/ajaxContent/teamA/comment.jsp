@@ -11,7 +11,7 @@
 		<div class="d-flex flex-start">
 			<img
 				class="rounded-circle shadow-1-strong me-3 border border-secondary"
-				src="../resources/img/teamA/${comment.type}.png" alt="avatar"
+				src="<%=request.getContextPath()%>/resources/img/teamA/${comment.type}.png" alt="avatar"
 				width="40" height="40" />
 			<div class="w-100">
 				<div class="d-flex justify-content-between align-items-center">
@@ -37,6 +37,6 @@
 	function delete_ok(id) {
 		var a = confirm("정말로 삭제하겠습니까?");
 		if (a)
-			location.href = 'delete_ok/' + id;
+			location.href = '/webcamp/teamA/delete_ok/' + id;
 	}
 </script>
