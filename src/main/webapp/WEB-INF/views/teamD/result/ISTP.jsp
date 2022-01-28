@@ -43,7 +43,7 @@
 				<div id="img1"><img id="back" style="float:none;width:40px;height:42px;" src="../resources/img/teamD/back.png" >다시하기</div></td>
 				<td>
 				<div id="img2"> <a id="kakao-link-btn" href="javascript:sendLink()"> <img id="share" style="float:none;width:40px;height:40px;" src="../resources/img/teamD/share.png">결과 공유하기</a></div></td>
-				
+				<td><div onclick="location.href='../index'" style="margin-left:0px">Home</div></td>
 			</tr>
 		</table>
 		</div>

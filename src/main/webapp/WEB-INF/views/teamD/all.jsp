@@ -320,6 +320,7 @@
 	<footer id="footer">
 	<h2 onclick ="location.href='start'" style="text-align : center ;">첫 화면으로 돌아가기</h2>
 	<h2 onclick ="location.href='question'" style="text-align : center ;">검사하러 가기</h2>
+	<h2 onclick="location.href='../index'">Home</h2>
 	</footer>
 </div>
 </body>
