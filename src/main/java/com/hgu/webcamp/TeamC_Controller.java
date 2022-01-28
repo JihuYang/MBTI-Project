@@ -145,10 +145,10 @@ public class TeamC_Controller {
 
 		comment = commentService.getCommentList(testId);
 		
-		int count = comment.size();
+		int count2 = comment.size();
 		
 		mv.addObject("comments",comment);
-		mv.addObject("count", count);
+		mv.addObject("count", count2);
 		mv.setViewName("teamC/result/ESFJ");
 		
 		System.out.println(mv);

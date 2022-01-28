@@ -18,7 +18,7 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-	
+
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script type="text/javascript" src="../resources/js/shareProject.js"></script>
@@ -33,7 +33,8 @@
 .scroll-comment {
 	overflow-y: scroll;
 }
-.share-wrap p{
+
+.share-wrap p {
 	margin-bottom: 18px;
 }
 </style>
@@ -49,16 +50,18 @@
 		<br>
 		<div class="share-wrap">
 			<p>공유 및 저장하기</p>
-			<a id="kakao-link-btn" href="javascript:sendLink()"> 
-				<img src="../resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
-			<a id="copy-link-btn" href="javascript:copyLink()">  <img
+			<a id="kakao-link-btn" href="javascript:sendLink()"> <img
+				src="../resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
+			<a id="copy-link-btn" href="javascript:copyLink()"> <img
 				src="../resources/img/teamB/link_icon.png" alt="linkicon"></a> <a
-				href="" onclick="GA_Event('MBTI_result', 'share_save', 'Click');">
+				href="" onclick="./saved">
 				<img src="../resources/img/teamB/save_icon.png" alt="saveicon">
 			</a>
+
 		</div>
 		<div class="restarticon">
-			<input type="button" value="테스트 다시하기" class="btn btn-warning btn-yellow "
+			<input type="button" value="테스트 다시하기"
+				class="btn btn-warning btn-yellow "
 				style="border-radius: 15px; font-size: 30px;"
 				onclick="location.href='./start'">
 		</div>
@@ -91,7 +94,7 @@
 				<h3 style="font-size: 20px;">인간관계 유형별 MBTI</h3>
 			</button>
 		</div>
-<%@ include file="../ajaxContent/teamB/comment.jsp"%>
+		<%@ include file="../ajaxContent/teamB/comment.jsp"%>
 	</div>
 	<div class="footer">
 		<p class=footer-text>@HGU 2022 Winter Camp</p>
