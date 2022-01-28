@@ -68,7 +68,13 @@
 					<button id="Button" class="btn1" onclick="saveType(${1}, '${questions[0].result}')">${questions[0].answer}</button>
 					<button id="Button" class="btn2" onclick="saveType(${2}, '${questions[1].result}')">${questions[1].answer}</button>
 				</div>
+				<div class="shareBtn">
+					<a id="home-btn" href="../index"><img src="../resources/img/teamC/home.svg" alt="homeIcon" style="width:50px"></a>
+					<a id="redo-btn" href="./start"><img src="../resources/img/teamC/redo.svg" alt="redoIcon"  style="width:50px"></a>
+
 			</div>
+			</div>
+			
 			</div>
 			<div class="col"></div>
 		

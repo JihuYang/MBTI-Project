@@ -34,8 +34,12 @@
 				<div class="percentage">
 					<div class="progress-wrap">
 						<span class="progress-bar" style="width: 10%"></span> <span
-							class="bar-text">8.33%</span>
+							class="bar-text">배우자 찾는 중...</span>
 					</div>
+				</div>
+				<div class="share-wrap" style="margin-top: 100px">
+					<a id="home-btn" href="../index"><img src="../resources/img/teamB/home.svg" alt="homeIcon" style="width:50px">Home</a>
+					<a id="redo-btn" href="./start"><img src="../resources/img/teamB/redo.svg" alt="redoIcon"  style="width:50px">Replay</a>
 				</div>
 			</div>
 		</div>
