@@ -160,7 +160,11 @@ public class TeamB_Controller {
 
 		comment = commentService.getCommentList(testId);
 		
+		int count = comment.size();
+		
 		mv.addObject("comments",comment);
+		mv.addObject("count", count);
+
 		mv.setViewName("teamB/result");
 		
 		System.out.println(mv);
