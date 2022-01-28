@@ -36,15 +36,15 @@
 				티를 내지는 않지만 상당히 예민하고 쉽게 상처를 받아요. 만약 사람들이 나를 비판하면 혼자서 속앓이를 엄청 심하게 해요. 낯은 잘 안 가리지만 내 속마음이 허락하기 전까지는 내 본모습을 절대 보여주지 않아요.<br><br>
 				한국인 중의 6.6%가 나랑 같은 유형이에요.</p>
 		</div>
-		
 		<div id="end">
 		<table style="width: 100%" id="endbar">
 			<tr>
-				<td onclick="location.href='start'">
-				<div id="img1"><img id="back" style="float:none;width:40px;height:42px;" src="../resources/img/teamD/back.png" >다시하기</div></td>
-				<td>
-				<div id="img2"> <a id="kakao-link-btn" href="javascript:sendLink()"> <img id="share" style="float:none;width:40px;height:40px;" src="../resources/img/teamD/share.png">결과 공유</a></div></td>
-				<td><div onclick="location.href='../index'" style="margin-left:0px">Home</div></td>
+				<td onclick="location.href='start'"><div id="img1"><img id="back" style="float:none;width:30px;height:30px;" src="../resources/img/teamD/back.png" >다시하기</div></td>
+				<td><div id="img2"> <a id="kakao-link-btn" href="javascript:sendLink()"> <img id="share" style="float:none;width:40px;height:40px;" src="../resources/img/teamD/share.png">결과 공유</a></div></td>
+			</tr>
+			<tr>
+				<td><div onclick="location.href='../index'" style="margin-left:0px"><img id="save" style="float:none;width:30px;height:30px;" src="../resources/img/teamD/home.jpg"> Home</div></td>
+				<td><div onclick="location.href='../index'" style="margin-left:0px"><img id="save" style="float:none;width:30px;height:30px;" src="../resources/img/teamD/save-file.png"> 저장하기</div></td>
 				
 			</tr>
 		</table>
