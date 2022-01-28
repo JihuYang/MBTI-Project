@@ -104,7 +104,7 @@
                                 </div>
                                    <!-- Product reviews-->
                                     <div class="d-flex justify-content-center my-2">
-                                        <div><i class="bi bi-caret-right"></i>3,680</div>
+                                        <div><i class="bi bi-caret-right"></i>${views[1]}</div>
                                     </div>
                             </div>
                             <!-- Product actions-->
@@ -127,7 +127,7 @@
                                 </div>
                                    <!-- Product reviews-->
                                     <div class="d-flex justify-content-center my-2">
-                                        <div><i class="bi bi-caret-right"></i>3,680</div>
+                                        <div><i class="bi bi-caret-right"></i>${views[2]}</div>
                                     </div>
                             </div>
                             <!-- Product actions-->
@@ -150,7 +150,7 @@
                                 </div>
                                    <!-- Product reviews-->
                                     <div class="d-flex justify-content-center my-2">
-                                        <div><i class="bi bi-caret-right"></i>3,680</div>
+                                        <div><i class="bi bi-caret-right"></i>${views[3]}</div>
                                     </div>
                             </div>
                             <!-- Product actions-->
@@ -173,7 +173,7 @@
                                 </div>
                                    <!-- Product reviews-->
                                     <div class="d-flex justify-content-center my-2">
-                                        <div><i class="bi bi-caret-right"></i>3,680</div>
+                                        <div><i class="bi bi-caret-right"></i>${views[4]}</div>
                                     </div>
                             </div>
                             <!-- Product actions-->
