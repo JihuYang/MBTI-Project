@@ -35,12 +35,12 @@
 					<div class="py-3 window-question bg-white">
 						<div id="first-section" class="text-center">
 							<div>내가 개발자라면?</div>
-							<div class="mt-3">갑질 가능성 99.9%</div>
+							<div class="mt-3">고집불통 퉁퉁이</div>
 							<div>
-								<h1>타고난 리더 개발자</h1>
-								<img src="../resources/img/teamA/ENTJ.png"
+								<h1>천재 개발자</h1>
+								<img src="../resources/img/teamA/INTP.png"
 									class="img-type mx-auto d-block" alt="...">
-								<div class="mt-3 text-muted">당신은 혹시.. ENTJ?</div>
+								<div class="mt-3 text-muted">당신은 혹시.. INTP?</div>
 							</div>
 						</div>
 						<div id="second-section" class="mt-5 border-top-black">
@@ -48,14 +48,11 @@
 								<div class="mt-3 ms-3">성격은?</div>
 								<div class="m-3 me-4 fs-6 font-ex">
 									<ul>
-										<li>당신은~리더가 되기 위해 태어난 사람~ 동료 개발자들을 채찍질해서 어떻게든 프로젝트 끝냄.</li>
-										<li>불도저 같은 성향으로 자칫하면 팀의 꼰대가 될 수 있으니 조심 또 조심!!</li>
-										<li>새로운 시도 컴온! 실패따위 두렵지 않아. 어짜피 분명한 목표를 세우고 노력하기 때문에 다 성공
-											할 수 있어.</li>
-										<li>프로젝트 관리는 나한테 맡겨만줘. 하지만 일상생활 관리는 아웃오브관심,,,우리 집 냉장고에 뭐가
-											들어있더라?</li>
-										<li>쉬는 시간 취미는 뉴스를 보거나 실시간 주식 거래 현황 시청하기,, 아아.. 쉴때조차 시간을
-											허투루 쓰지 않는 당신... 24시간이 모자라~</li>
+										<li>현직 개발자들 중 가장 많은 유형 - 당신은 찐 개발자의 머리를 타고났다. </li>
+										<li>지적 호기심으로 가득 가득. 책 읽는 건 좋아하지만 은근 게을러서 책을 살 정도는 아님. </li>
+										<li>타고난 논리력으로 글은 잘 쓰지만, 그걸 말로 표현하는 것은 어려워 함. 내 머릿속에서 흘러가는 사고는 말로 설명할 수 없을 만큼 빠르거든요.</li>
+										<li>꼰대들이 가장 싫어하는 유형. 엇, 그런데 저도 꼰대를 제일 싫어하는 걸요!? 피차 싫어하니 상관 없음.</li>
+										<li>계획을 철저하게 짤 수 있지만 즉흥적으로 행동할 가능성도 매우 높음. 계획이 전부가 아니라구!️</li>
 									</ul>
 								</div>
 							</div>
@@ -64,15 +61,13 @@
 							<div class="text-center">
 								<div class="mt-3">나에게 어울리는 개발 직무는?</div>
 								<div class="m-3 fs-6 font-ex">
-									<p class="text-muted">단순한 업무보다는 복잡한 문제를 해결하는 업무가 잘 어울리겠군요!
-										사람을 이끄는 능력이 탁월하기 때문에 관리자가 될 가능성이 높아보여요.</p>
+									<p class="text-muted">당신은 근본적인 문제를 파악하고, 불일치나 결함 등도 신속하게 파악할 수 있네요. 또한 문제를 해결하기 위해 장기적인 전략과 계획을 세우고 실현하는 사람이네요.</p>
 								</div>
 								<div id="job" class="text-center">
-									<button class="btn btn-light btn-job fs-5">네트워크 관리자</button>
+									<button class="btn btn-light btn-job fs-5">소프트웨어 엔지니어</button>
 								</div>
 								<div class="m-3 fs-6 font-ex">
-									<p>네트워크 관리자는 클라이언트, 서버, 인터넷 및 인트라넷 형태의 전산망 관련 하드웨어 및 소프트웨어
-										자원을 관리하고 운영한다. 지도력과 통솔력이 있는 당신에게 안성맞춤이랄까?</p>
+									<p>소프트웨어 엔지이어는 소프트웨어를 설계/분석하고 우수한 품질을 위해 테스트를 반복해요. 직접 코딩하기도 하지만 대부분 프로그래머들에게 지침을 제공합니다. 근본적인 문제를 파악하고 해결책을 세우는 당신과 딱 어울리는 직무네요!</p>
 								</div>
 							</div>
 						</div>
@@ -82,9 +77,9 @@
 									<div id="type-good" class="text-center">
 										<button class="btn btn-light btn-type ">
 											<div class="type font-ex ">함께하면 좋은</div>
-											<div class="mt-3 fs-7">혼자 웃고 있는 힉힉호무리</div>
-											<h3>개복치 개발자</h3>
-											<img src="../resources/img/teamA/INFP.png"
+											<div class="mt-3 fs-7">갑질 가능성 99.9%</div>
+											<h3>타고난 리더 개발자</h3>
+											<img src="../resources/img/teamA/ENTJ.png"
 												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
@@ -93,9 +88,9 @@
 									<div id="type-bad" class="text-center">
 										<button class="btn btn-light btn-type ">
 											<div class="type font-ex ">멀리하면 좋은</div>
-											<div class="mt-3 fs-7">나만 바라봐~</div>
-											<h3>관종 개발자</h3>
-											<img src="../resources/img/teamA/ESFP.png"
+											<div class="mt-3 fs-7">”삶은 거대한 체스와 같아”</div>
+											<h3>지식인 개발자</h3>
+											<img src="../resources/img/teamA/INTJ.png"
 												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
@@ -117,14 +112,14 @@
 					</div>
 					<div class="row mt-5">
 						<div class="col">
-						<a id="kakao-link-btn" href="javascript:sendLink()"> 
-							<img src="../resources/img/teamA/kakaotalk.png"
+							<a id="kakao-link-btn" href="javascript:sendLink()"> <img
+								src="../resources/img/teamA/kakaotalk.png"
 								class="img-share mx-auto d-block" alt="..."></a>
 							<p>카카오톡 공유</p>
 						</div>
 						<div class="col">
-						<a id="copy-link-btn" href="javascript:copyLink()"> 
-							<img src="../resources/img/teamA/link.png"
+							<a id="copy-link-btn" href="javascript:copyLink()"> <img
+								src="../resources/img/teamA/link.png"
 								class="img-share mx-auto d-block" alt="..."></a>
 							<p>링크 복사</p>
 						</div>
