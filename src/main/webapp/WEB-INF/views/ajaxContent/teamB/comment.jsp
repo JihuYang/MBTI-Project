@@ -29,7 +29,7 @@
 								<div class="d-flex flex-start">
 									<img
 										class="rounded-circle shadow-1-strong me-3 border border-secondary"
-										src="../resources/img/teamB/${comment.type}.png" alt="avatar"
+										src="<%=request.getContextPath()%>/resources/img/teamB/${comment.type}.png" alt="avatar"
 										width="40" height="40" />
 									<div class="w-100">
 										<div class="d-flex justify-content-between align-items-center">
