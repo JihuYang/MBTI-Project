@@ -16,11 +16,11 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../resources/css/teamA.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamA.css">
 
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="../resources/js/shareProject.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>teamAResult</title>
@@ -38,9 +38,9 @@
 							<div class="mt-3">말 잘 듣는 소심한 일꾼</div>
 							<div>
 								<h1>순둥이 개발자</h1>
-								<img src="../resources/img/teamA/ISFJ.png"
-									class="img-type mx-auto d-block" alt="...">
-								<div class="mt-3 text-muted">당신은 혹시.. ISFJ?</div>
+								<img src="<%=request.getContextPath()%>/resources/img/teamA/ISFJ.png"
+									class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
+								<div class="mt-3 text-muted">당신은 혹시<%=request.getContextPath()%> ISFJ?</div>
 							</div>
 						</div>
 						<div id="second-section" class="mt-5 border-top-black">
@@ -48,7 +48,7 @@
 								<div class="mt-3 ms-3">성격은?</div>
 								<div class="m-3 me-4 fs-6 font-ex">
 									<ul>
-										<li>저..는.. 순둥순둥 하답니다... 잘은 못하지만(사실은 잘함) 하라는 거 다 해요! </li>
+										<li>저<%=request.getContextPath()%>는<%=request.getContextPath()%> 순둥순둥 하답니다<%=request.getContextPath()%>. 잘은 못하지만(사실은 잘함) 하라는 거 다 해요! </li>
 										<li>개발자들이 가지지 못한 갬성을 소유하고 있다.</li>
 										<li>프로젝트 할때는 누구랑 할지 고민하는게 제일 어려워. 차라리 그냥 팀을 짜주세요.</li>
 										<li>완벽하지 않은 나의 결과물 → 스트레스!!! 귀찮아서 다 못한 나를 보면 → 스트레스!!!</li>
@@ -79,8 +79,8 @@
 											<div class="type font-ex ">함께하면 좋은</div>
 											<div class="mt-3 fs-7">개썅마이웨이 </div>
 											<h3>눈치백단 개발자 </h3>
-											<img src="../resources/img/teamA/ESTP.png"
-												class="img-type mx-auto d-block" alt="...">
+											<img src="<%=request.getContextPath()%>/resources/img/teamA/ESTP.png"
+												class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
 										</button>
 									</div>
 								</div>
@@ -90,8 +90,8 @@
 											<div class="type font-ex ">멀리하면 좋은</div>
 											<div class="mt-3 fs-7">자기애 맥스</div>
 											<h3>행복한 개발자</h3>
-											<img src="../resources/img/teamA/ENFP.png"
-												class="img-type mx-auto d-block" alt="...">
+											<img src="<%=request.getContextPath()%>/resources/img/teamA/ENFP.png"
+												class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
 										</button>
 									</div>
 								</div>
@@ -113,14 +113,14 @@
 					<div class="row mt-5">
 						<div class="col">
 							<a id="kakao-link-btn" href="javascript:sendLink()"> <img
-								src="../resources/img/teamA/kakaotalk.png"
-								class="img-share mx-auto d-block" alt="..."></a>
+								src="<%=request.getContextPath()%>/resources/img/teamA/kakaotalk.png"
+								class="img-share mx-auto d-block" alt="<%=request.getContextPath()%>."></a>
 							<p>카카오톡 공유</p>
 						</div>
 						<div class="col">
 							<a id="copy-link-btn" href="javascript:copyLink()"> <img
-								src="../resources/img/teamA/link.png"
-								class="img-share mx-auto d-block" alt="..."></a>
+								src="<%=request.getContextPath()%>/resources/img/teamA/link.png"
+								class="img-share mx-auto d-block" alt="<%=request.getContextPath()%>."></a>
 							<p>링크 복사</p>
 						</div>
 					</div>
@@ -142,14 +142,14 @@
 
 								<div class="mb-3 mt-3">
 									<div id="commentContent">
-										<%@ include file="../../ajaxContent/teamA/comment.jsp"%>
+										<%@ include file="<%=request.getContextPath()%>/<%=request.getContextPath()%>/ajaxContent/teamA/comment.jsp"%>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="p-3 comment-shadow"></div>
 					</div>
-					<form:form method="post" action="../teamA/addok">
+					<form:form method="post" action="<%=request.getContextPath()%>/teamA/addok">
 						<div class="input-group mt-5 mb-5">
 							<input type="text" name="comment" class="form-control p-3"
 								placeholder="댓글을 입력하세요. " aria-label="댓글 입력"

@@ -121,7 +121,7 @@
 								style="top: 0.5rem; right: 0.5rem">${savedTest.regDate}</div>
 							<!-- Product image-->
 							<img class="card-img-top"
-								src="resources/img/teamProject/team${test}_thumbnail.png" alt="..." />
+								src="resources/img/teamProject/team${test}_thumbnail.png" alt="<%=request.getContextPath()%>." />
 							<!-- Product details-->
 							<div class="card-body p-4">
 								<div class="text-center">

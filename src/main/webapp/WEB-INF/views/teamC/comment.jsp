@@ -22,7 +22,7 @@
 	crossorigin="anonymous">
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-<link rel="stylesheet" type="text/css" href="../resources/css/teamC.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamC.css">
 <link href='https://fonts.googleapis.com/css?family=Black Han Sans'
 	rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Song Myung'
@@ -66,7 +66,7 @@
 					<div class="comment">
 						<div class="text-start comment-number">댓글 ${count}</div>
 
-						<form:form method="post" action="../teamC/addok">
+						<form:form method="post" action="<%=request.getContextPath()%>/teamC/addok">
 							<div class="d-flex p-2 comment-add">
 								<input type="text" name="comment" class="comment-add-text"
 									style="border: none; border-radius: 10px; width: 90%"
@@ -83,7 +83,7 @@
 
 									<div class="comment-list">
 										<img class="rounded-circle border border-secondary"
-											src="../resources/img/teamC/${comment.type}.png" alt="avatar"
+											src="<%=request.getContextPath()%>/resources/img/teamC/${comment.type}.png" alt="avatar"
 											width="60" height="60" />
 									</div>
 
@@ -97,7 +97,7 @@
 									<div id="show-comment" class="comment-list-content w-100">
 										<p id="${comment.id}2" style="display:block;">${comment.comment}</p>
 										
-										<form:form method="post" action="../teamC/editok">
+										<form:form method="post" action="<%=request.getContextPath()%>/teamC/editok">
 											<div class="p-2 comment-add" id="${comment.id}" style="display:none;">
 											<textarea rows="3" name="comment" style="border: none; border-radius: 10px; width: 90%">${comment.comment}</textarea>
 												<input type="text" name="id" value="${comment.id}" style="display: none;">

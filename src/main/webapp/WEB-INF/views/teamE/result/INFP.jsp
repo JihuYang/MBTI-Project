@@ -21,8 +21,8 @@
 <div class="result">
 	<div class="box">
 	<h1 class="text-c">INFP <br> 이상주의자 친구</h1>
-    <img src="../resources/img/teamE/bar.jpg" class="bar"/>
-    <img src="../resources/img/teamE/water.jpg" class="main-animal"/>
+    <img src="<%=request.getContextPath()%>/resources/img/teamE/bar.jpg" class="bar"/>
+    <img src="<%=request.getContextPath()%>/resources/img/teamE/INFP.jpeg" class="main-animal"/>
 	</div>
     
     <div class="outer">
@@ -47,10 +47,10 @@
     <button class="btn-result">저장하기</button><br>
     
     <a id="kakao-link-btn" href="javascript:sendLink()"> 
-    <img src="../resources/img/teamE/카톡 마크.jpeg" class="kakao"/>
+    <img src="<%=request.getContextPath()%>/resources/img/teamE/카톡 마크.jpeg" class="kakao"/>
     카카오톡 공유</a>
     
-    <img src="../resources/img/teamE/comments.jpeg" class="comments"/><br>
+    <img src="<%=request.getContextPath()%>/resources/img/teamE/comments.jpeg" class="comments"/><br>
     <input type="text" name="comment" size="40" value="댓글을 입력하세요." class="texts">
     <button type="button" class="btn-comments">입력</button>
     

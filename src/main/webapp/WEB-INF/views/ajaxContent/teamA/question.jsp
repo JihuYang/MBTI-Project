@@ -3,7 +3,7 @@
 <%@ page session="false"%>
 
 <div id="top" class="top">
-	<div class="explanation text-white mb-3">나의 개발자 유형 찾는 중...</div>
+	<div class="explanation text-white mb-3">나의 개발자 유형 찾는 중<%=request.getContextPath()%>.</div>
 	<div class="speech-container mb-3">
 		<div class="p-3 speech-bubble">
 			<div class="number">

@@ -1,7 +1,7 @@
 @charset "UTF-8"; 
 @import url('https://fonts.googleapis.com/css?family=Gaegu:300,700') ;
 body {  
-	background-image : url("../img/teamD/teamD_background.jpg") ;
+	background-image : url("<%=request.getContextPath()%>/img/teamD/teamD_background.jpg") ;
 	background-repeat : no-repeat ;
 	background-size: cover;
 	height: 100vh;	
@@ -94,7 +94,7 @@ p {
 	height : 30% ;
 	margin : 0 auto ;
 	margin-bottom : 20px ;
-	background-image : url("../img/teamD/start img.png") ;
+	background-image : url("<%=request.getContextPath()%>/img/teamD/start img.png") ;
 }
 
 .name {

@@ -12,7 +12,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamEResult</title>
 	
-	<link rel="stylesheet" type="text/css" href="../resources/css/teamE.css">
+	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamE.css">
     
 </head>
 <body>
@@ -22,7 +22,7 @@
 	<div class="box">
 	<h1 class="text-c">ESTP <br> 즉흥적인 친구</h1>
     <img src="../resources/img/teamE/bar.jpg" class="bar"/>
-    <img src="../resources/img/teamE/water.jpg" class="main-animal"/>
+    <img src="../resources/img/teamE/ESTP.jpeg" class="main-animal"/>
 	</div>
     
     <div class="outer">
@@ -35,9 +35,9 @@
     </div>
     
 	
-	<p class="goodRelation">잘 맞는 유형 <br> ISTJ <br> <img src="../resources/img/teamE/ISTJ.jpeg" class="animals"/> </p>
+	<p class="goodRelation">잘 맞는 유형 <br> ISTJ <br> <img src="<%=request.getContextPath()%>/resources/img/teamE/ISTJ.jpeg" class="animals"/> </p>
   
-    <p class="badRelation">안 맞는 유형 <br> INFJ <br> <img src="../resources/img/teamE/INFJ.jpeg" class="animals"/> </p> 
+    <p class="badRelation">안 맞는 유형 <br> INFJ <br> <img src="<%=request.getContextPath()%>/resources/img/teamE/INFJ.jpeg" class="animals"/> </p> 
     	
     
     <br>
@@ -47,7 +47,7 @@
     <button class="btn-result">저장하기</button><br>
     
     <a id="kakao-link-btn" href="javascript:sendLink()"> 
-    <img src="../resources/img/teamE/카톡 마크.jpeg" class="kakao"/>
+    <img src="<%=request.getContextPath()%>/resources/img/teamE/카톡 마크.jpeg" class="kakao"/>
     카카오톡 공유</a>
     
     <img src="../resources/img/teamE/comments.jpeg" class="comments"/><br>

@@ -9,7 +9,7 @@
 <%@ page session="false"%>
 <div id="comment" class="mt-5 mb-3 p-3 comment">
 	<span class="text-black">댓글 [${count}]</span>
-	<form:form method="post" action="../teamB/addok">
+	<form:form method="post" action="<%=request.getContextPath()%>/teamB/addok">
 	<div class="input-group mt-1 mb-1">
 		<input type="text" name="comment" class="form-control p-3" placeholder="댓글을 입력하세요. "
 			aria-label="댓글 입력" aria-describedby="basic-addon2">
@@ -29,7 +29,7 @@
 								<div class="d-flex flex-start">
 									<img
 										class="rounded-circle shadow-1-strong me-3 border border-secondary"
-										src="../resources/img/teamB/${comment.type}.png" alt="avatar"
+										src="<%=request.getContextPath()%>/resources/img/teamB/${comment.type}.png" alt="avatar"
 										width="40" height="40" />
 									<div class="w-100">
 										<div class="d-flex justify-content-between align-items-center">

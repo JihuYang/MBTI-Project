@@ -14,7 +14,7 @@
 <meta name="author" content="" />
 <title>소크라테스 - 회원가입</title>
 <!-- Favicon-->
-<link rel="icon" type="image/x-icon" href="../resources/img/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/resources/img/favicon.ico" />
 <!-- Bootstrap icons-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"

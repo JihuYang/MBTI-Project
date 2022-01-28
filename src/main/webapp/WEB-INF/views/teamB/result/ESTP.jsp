@@ -21,10 +21,10 @@
 	
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="../resources/js/shareProject.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
 
 <title>[결과]나의 배우자는 누구?</title>
-<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
+<link rel="stylesheet" type="text/css" href='<%=request.getContextPath()%>/resources/css/teamB.css' />
 <style>
 .comment-bubble {
 	text-align: left;
@@ -44,16 +44,16 @@
 	<div class="result-wrap">
 		<div id="optadATF" style="min-height: 110px"></div>
 		<div class="img-result">
-			<img src="../resources/img/teamB/ESTP.png" alt="MBTI:결과 img">
+			<img src="<%=request.getContextPath()%>/resources/img/teamB/ESTP.png" alt="MBTI:결과 img">
 		</div>
 		<br>
 		<div class="share-wrap">
 			<p>공유 및 저장하기</p>
 			<a id="kakao-link-btn" href="javascript:sendLink()"> <img
-				src="../resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
+				src="<%=request.getContextPath()%>/resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
 			<a id="copy-link-btn" href="javascript:copyLink()"> <img
-				src="../resources/img/teamB/link_icon.png" alt="linkicon"></a>
-			<form method="post" action="../teamB/saved" style="display:inline-block;width:46px;margin:0 15px;">
+				src="<%=request.getContextPath()%>/resources/img/teamB/link_icon.png" alt="linkicon"></a>
+			<form method="post" action="<%=request.getContextPath()%>/teamB/saved" style="display:inline-block;width:46px;margin:0 15px;">
 				<input name="mbti"id = "mbti" value="ESTP" style="display: none">
 				<button>
 					<img src="<%=request.getContextPath()%>/resources/img/teamB/save_icon.png" alt="saveicon" style="width:100%">
@@ -66,7 +66,7 @@
 				onclick="location.href='./start'">
 		</div>
 		<div id="other_test_link">
-			<img src="../resources/img/teamB/check.png" alt="MBTI:결과"
+			<img src="<%=request.getContextPath()%>/resources/img/teamB/check.png" alt="MBTI:결과"
 				style="vertical-align: center; weight: auto; height: 20px;"> <span
 				class="other_test" style="font-size: 20px; font-weight: bold;">다른
 				테스트 하러가기</span>
@@ -75,26 +75,26 @@
 		<div class="btn-group-vertical" style="margin-bottom: 50px;">
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-				onclick="location.href='../teamA/start'">
+				onclick="location.href='<%=request.getContextPath()%>/teamA/start'">
 				<h3 style="font-size: 20px;">내가 개발자라면? 개발자 유형 테스트</h3>
 			</button>
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-				onclick="location.href='../teamC/start'">
+				onclick="location.href='<%=request.getContextPath()%>/teamC/start'">
 				<h3 style="font-size: 20px;">MBTI 유형에 맞는 찰떡 공부법</h3>
 			</button>
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-				onclick="location.href='../teamD/start'">
+				onclick="location.href='<%=request.getContextPath()%>/teamD/start'">
 				<h3 style="font-size: 20px;">짱구에서 나는 누굴까?</h3>
 			</button>
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-				onclick="location.href='../teamE/start'">
+				onclick="location.href='<%=request.getContextPath()%>/teamE/start'">
 				<h3 style="font-size: 20px;">인간관계 유형별 MBTI</h3>
 			</button>
 		</div>
-<%@ include file="../../ajaxContent/teamB/comment.jsp"%>
+<%@ include file="<%=request.getContextPath()%>/<%=request.getContextPath()%>/ajaxContent/teamB/comment.jsp"%>
 	</div>
 	<div class="footer">
 		<p class=footer-text>@HGU 2022 Winter Camp</p>

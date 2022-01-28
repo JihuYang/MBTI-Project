@@ -9,9 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<meta id="metaDescription" name="description" content="MBTI로 나의 배우자 캐릭터 찾기">
 	<meta id="metaKeywords" name="keywords" content="MBTI로 나의 배우자 캐릭터 찾기">
-	<title>배우자 찾는 중..</title>
-	<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
-	<script src="../resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
+	<title>배우자 찾는 중<%=request.getContextPath()%></title>
+	<link rel="stylesheet" type="text/css" href='<%=request.getContextPath()%>/resources/css/teamB.css' />
+	<script src="<%=request.getContextPath()%>/resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -33,12 +33,12 @@
 				</div>
 				<div class="percentage">
 					<div class="progress-wrap">
-						<span class="bar-text" style="font-size:15px">배우자 찾는 중...</span>
+						<span class="bar-text" style="font-size:15px">배우자 찾는 중<%=request.getContextPath()%>.</span>
 					</div>
 				</div>
 				<div class="share-wrap" style="margin-top: 100px">
-					<a id="home-btn" href="../index"><img src="../resources/img/teamB/home.svg" alt="homeIcon" style="width:40px">Home</a>
-					<a id="redo-btn" href="./start"><img src="../resources/img/teamB/redo.svg" alt="redoIcon"  style="width:40px">Replay</a>
+					<a id="home-btn" href="<%=request.getContextPath()%>/index"><img src="<%=request.getContextPath()%>/resources/img/teamB/home.svg" alt="homeIcon" style="width:40px">Home</a>
+					<a id="redo-btn" href="./start"><img src="<%=request.getContextPath()%>/resources/img/teamB/redo.svg" alt="redoIcon"  style="width:40px">Replay</a>
 				</div>
 			</div>
 		</div>

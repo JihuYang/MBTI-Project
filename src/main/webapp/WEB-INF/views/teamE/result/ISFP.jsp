@@ -4,7 +4,7 @@
 
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="../resources/js/shareProject.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamEResult</title>
 	
-	<link rel="stylesheet" type="text/css" href="../resources/css/teamE.css">
+	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamE.css">
     
 </head>
 <body>
@@ -21,8 +21,8 @@
 <div class="result">
 	<div class="box">
 	<h1 class="text-c">ISFP <br> 예술가같은 친구</h1>
-    <img src="../resources/img/teamE/bar.jpg" class="bar"/>
-    <img src="../resources/img/teamE/water.jpg" class="main-animal"/>
+    <img src="<%=request.getContextPath()%>/resources/img/teamE/bar.jpg" class="bar"/>
+    <img src="<%=request.getContextPath()%>/resources/img/teamE/ISFP.jpeg" class="main-animal"/>
 	</div>
     
     <div class="outer">
@@ -35,9 +35,9 @@
     </div>
     
 	
-	<p class="goodRelation">잘 맞는 유형 <br> ENFJ <br> <img src="../resources/img/teamE/ENFJ.jpeg" class="animals"/> </p>
+	<p class="goodRelation">잘 맞는 유형 <br> ENFJ <br> <img src="<%=request.getContextPath()%>/resources/img/teamE/ENFJ.jpeg" class="animals"/> </p>
   
-    <p class="badRelation">안 맞는 유형 <br> INFP <br> <img src="../resources/img/teamE/INFP.jpeg" class="animals"/> </p> 
+    <p class="badRelation">안 맞는 유형 <br> INFP <br> <img src="<%=request.getContextPath()%>/resources/img/teamE/INFP.jpeg" class="animals"/> </p> 
     	
     
     <br>
@@ -47,10 +47,10 @@
     <button class="btn-result">저장하기</button><br>
     
     <a id="kakao-link-btn" href="javascript:sendLink()"> 
-    <img src="../resources/img/teamE/카톡 마크.jpeg" class="kakao"/>
+    <img src="<%=request.getContextPath()%>/resources/img/teamE/카톡 마크.jpeg" class="kakao"/>
     카카오톡 공유</a>
     
-    <img src="../resources/img/teamE/comments.jpeg" class="comments"/><br>
+    <img src="<%=request.getContextPath()%>/resources/img/teamE/comments.jpeg" class="comments"/><br>
     <input type="text" name="comment" size="40" value="댓글을 입력하세요." class="texts">
     <button type="button" class="btn-comments">입력</button>
     

@@ -18,7 +18,7 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../resources/css/teamA.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamA.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>teamA 질문</title>
 </head>
@@ -346,7 +346,7 @@ calc
 			<div class="col d-none d-lg-block"></div>
 			<div id="main" class="col content ">
 				<div id="top" class="top">
-					<div class="explanation text-white mb-3">나의 개발자 유형 찾는 중...</div>
+					<div class="explanation text-white mb-3">나의 개발자 유형 찾는 중<%=request.getContextPath()%>.</div>
 					<!-- 					<div class="speech-container mb-3">
 						<div class="p-3 speech-bubble">
 							<div class="number">

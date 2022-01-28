@@ -164,7 +164,7 @@ public class TeamA_Controller {
 		if(i == 0) System.out.println("Error! delete Failed");
 		else System.out.println("댓글 삭제 완료.");
 		
-		return "redirect:../result";
+		return "redirect:<%=request.getContextPath()%>/result";
 	}
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)

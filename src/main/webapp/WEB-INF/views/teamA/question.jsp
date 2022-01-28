@@ -17,8 +17,8 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../resources/css/teamA.css?ver=1">
-<script src="../resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamA.css?ver=1">
+<script src="<%=request.getContextPath()%>/resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
 	
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -30,7 +30,7 @@
 			<div class="col d-none d-lg-block"></div>
 			<div id="main" class="col content ">
 				<div id="questionContent">
-					<%@ include file="../ajaxContent/teamA/question.jsp"%>
+					<%@ include file="<%=request.getContextPath()%>/ajaxContent/teamA/question.jsp"%>
 					
 				</div>
 				<%-- <c:forEach items="${questions}" var="q" varStatus="status">--%>
@@ -45,11 +45,11 @@
 				<%-- </c:forEach> --%>
 				<div class="row mt-5">
 					<div class="col">
-					<a id="home-btn" href="../index"><img src="../resources/img/teamA/home.svg" alt="homeIcon" style="width:50px"></a>
+					<a id="home-btn" href="<%=request.getContextPath()%>/index"><img src="<%=request.getContextPath()%>/resources/img/teamA/home.svg" alt="homeIcon" style="width:50px"></a>
 						<p>Home</p>
 					</div>
 					<div class="col">
-					<a id="redo-btn" href="./start"><img src="../resources/img/teamA/redo.svg" alt="redoIcon"  style="width:50px"></a>
+					<a id="redo-btn" href="./start"><img src="<%=request.getContextPath()%>/resources/img/teamA/redo.svg" alt="redoIcon"  style="width:50px"></a>
 						<p>Replay</p>
 					</div>
 					

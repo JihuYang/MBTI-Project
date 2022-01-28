@@ -11,7 +11,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="../resources/css/teamA.css">
+	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamA.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamAStart</title>
 </head>
@@ -24,7 +24,7 @@
     <div id = "main" class="col content ">
 	    <div id="top" class="top">
 		    <div class="explanation text-white mb-3">
-		    	내 안의 개발자를 찾아서...
+		    	내 안의 개발자를 찾아서<%=request.getContextPath()%>.
 		    </div>
 		    <div class="speech-container mb-3">
 		    <div class="p-3 speech-bubble">
@@ -43,7 +43,7 @@
 	    	</div> 
 	    	<div class="window bg-white">
 	    		<span>개발자<br>유형 테스트</span>
-	    		<img id = "front_img" src="../resources/img/teamA/Front.png" class="mx-auto d-block" alt="...">	 
+	    		<img id = "front_img" src="<%=request.getContextPath()%>/resources/img/teamA/Front.png" class="mx-auto d-block" alt="<%=request.getContextPath()%>.">	 
 	    	</div>
 	    </div>
 	    <div id="bottom" class="bottom front">

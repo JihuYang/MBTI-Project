@@ -19,7 +19,7 @@ body{
 
 .main-header::before {    
       content: "";
-     background-image: url("../img/teamProject/main_background.png");
+     background-image: url("<%=request.getContextPath()%>/img/teamProject/main_background.png");
      	
 	 background-position: center; /* Center the image */
 	  background-repeat: no-repeat; /* Do not repeat the image */
@@ -103,7 +103,7 @@ body{
     
     .myPage-header::before {    
       content: "";
-     background-image: url("../img/teamProject/main_background.png");
+     background-image: url("<%=request.getContextPath()%>/img/teamProject/main_background.png");
      	
 	 background-position: center; /* Center the image */
 	  background-repeat: no-repeat; /* Do not repeat the image */

@@ -9,13 +9,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<meta id="metaDescription" name="description" content="MBTI로 나의 배우자 캐릭터 찾기">
 	<meta id="metaKeywords" name="keywords" content="MBTI로 나의 배우자 캐릭터 찾기">
-	<title>배우자 분석 중..</title>
-	<link rel="stylesheet" type="text/css" href='../resources/css/teamB.css' />
+	<title>배우자 분석 중<%=request.getContextPath()%></title>
+	<link rel="stylesheet" type="text/css" href='<%=request.getContextPath()%>/resources/css/teamB.css' />
 	<meta http-equiv="refresh" content="5 result">
 </head>
 <body>
     <div class="loading-wrap">
-    	<img src = "../resources/img/teamB/imo.gif" alt="MBTI:배우자 캐릭터 찾기" class="loading-imo">
+    	<img src = "<%=request.getContextPath()%>/resources/img/teamB/imo.gif" alt="MBTI:배우자 캐릭터 찾기" class="loading-imo">
         <ul id="loadbar">
             <li><div id="layerFill1" class="bar"></div></li>
             <li><div id="layerFill2" class="bar"></div></li>
@@ -28,7 +28,7 @@
             <li><div id="layerFill9" class="bar"></div></li>
             <li><div id="layerFill10" class="bar"></div></li>
         </ul>
-        배우자 분석 중...
+        배우자 분석 중<%=request.getContextPath()%>.
     </div>
     <script>
         $(document).ready(function() {
