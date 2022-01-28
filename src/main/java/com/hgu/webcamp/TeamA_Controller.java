@@ -168,7 +168,7 @@ public class TeamA_Controller {
 		if(i == 0) System.out.println("Error! delete Failed");
 		else System.out.println("댓글 삭제 완료.");
 		
-		return "redirect:../result";
+		return "redirect:../start";
 	}
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)
@@ -205,7 +205,7 @@ public class TeamA_Controller {
 		}
 
 
-		return "redirect:result";
+		return "redirect:/teamA/start";
 	}
 	
 	@RequestMapping(value = "/saved", method = RequestMethod.POST)
@@ -238,7 +238,7 @@ public class TeamA_Controller {
        }
 
 
-       return "redirect:result";
+       return "redirect:/";
     }
 	/*
 	// ajax로 값을 주고받는 Controller 
