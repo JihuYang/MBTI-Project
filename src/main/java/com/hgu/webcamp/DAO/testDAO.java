@@ -9,11 +9,10 @@ import com.hgu.webcamp.DTO.testDTO;
 @Repository("testDAO")
 public class testDAO {
 	@Autowired
-	SqlSession sqlSession;
+	SqlSession sqlSession;	
 	
-	
-	public int insertComment(testDTO dto) {
-		int result = sqlSession.insert("comment.insertComment", dto);
+	public int insertTest(testDTO dto) {
+		int result = sqlSession.insert("savedTest.insertTest", dto);
 		return result;
 	}
 }
