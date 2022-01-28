@@ -1,5 +1,7 @@
 package com.hgu.webcamp;
 
+import java.io.UnsupportedEncodingException;
+import java.text.ParseException;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +16,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.hgu.webcamp.DTO.questionDTO;
+import com.hgu.webcamp.DTO.testDTO;
+import com.hgu.webcamp.DTO.userDTO;
 import com.hgu.webcamp.Service.questionService;
+import com.hgu.webcamp.Service.testService;
 import com.hgu.webcamp.Service.userService;
 
 /**
@@ -29,6 +34,9 @@ public class TeamE_Controller {
 	
 	@Autowired
 	userService userService;
+	
+	@Autowired
+	testService testService;
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -115,5 +123,34 @@ public class TeamE_Controller {
 			// ajax로 보내기 
 			return question;
 			}
+		
+		@RequestMapping(value = "/saved", method = RequestMethod.POST)
+		public String savedOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
+			request.setCharacterEncoding("utf-8");
+			//HttpSession session = request.getSession();
+			//String userid = request.getSession().getAttribute("").toString();		
+			int testId = 5;
+			
+			testDTO dto = new testDTO();
+			
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				dto.setUserId(userId);
+			}	
+			
+			dto.setTestId(testId);
+			
+			int i = testService.insertTest(dto);
+			if(i==0) {
+				System.out.println("데이터 추가 실패 ");
+				
+			}
+			else {
+				System.out.println("데이터 추가 성공 ");
+			}
+
+
+			return "redirect:result";
+		}
 	
 }

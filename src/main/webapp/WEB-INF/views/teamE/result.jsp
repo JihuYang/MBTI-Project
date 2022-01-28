@@ -42,7 +42,7 @@
     
     <br>
     <button class="btn-result" onclick="location.href='start'">다시하기</button><br>
-    <button class="btn-result">저장하기</button><br>
+    <button class="btn-result" onclick="GA_Event('MBTI_result', 'share_save', 'Click');">저장하기</button><br>
     
     <a id="kakao-link-btn" href="javascript:sendLink()"> 
     <img src="../resources/img/teamE/카톡 마크.jpeg" class="kakao"/>

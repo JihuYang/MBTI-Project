@@ -44,10 +44,12 @@ public class TeamProject_Controller {
 		userDTO dto = new userDTO();
 		
 		int id = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+		
 	
 		dto=userService.getUser(id);
 		
 		ModelAndView mv = new ModelAndView();
+		//System.out.println("dto: " + dto);
 		mv.addObject("info", dto);
 		mv.setViewName("/myPage");
 		
