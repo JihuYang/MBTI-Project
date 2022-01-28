@@ -127,35 +127,6 @@ public class TeamC_Controller {
 			}	
 
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
-	@RequestMapping(value = "/result/ESFJ", method = RequestMethod.GET)
-	public ModelAndView teamC_result(Model model, HttpServletRequest request) {
-		
-		ModelAndView mv = new ModelAndView();
-		System.out.println("result page loaded");
-		
-		int testId = 3;
-		if(request.getSession().getAttribute("tempUser") != null) {
-			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
-			mv.addObject("userId", userId);
-		}			
-		List<commentDTO> comment = new ArrayList<commentDTO>();
-
-		comment = commentService.getCommentList(testId);
-		
-		int count2 = comment.size();
-		System.out.println(count2);
-		
-		mv.addObject("comments",comment);
-		mv.addObject("count", count2);
-		mv.setViewName("teamC/result/ESFJ");
-		
-		System.out.println(mv);
-		
-		return mv;
-	}
 	
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)
