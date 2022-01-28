@@ -55,7 +55,7 @@
 					
 				</div>
 			</div>
-				
+			<div class="col d-none d-lg-block"></div>	
 		</div>
 
 	</div>
