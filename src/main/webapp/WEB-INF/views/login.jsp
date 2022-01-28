@@ -10,6 +10,7 @@
         <meta name="google-signin-scope" content="profile email">
         <meta name="google-signin-client_id"content = "232515646152-u2s2cqpcj4cfehkdq65l4ee9tuld0pts.apps.googleusercontent.com">
         <script src="https://apis.google.com/js/api:client.js"></script>
+        <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async></script>
         <title>소크라테스 - 로그인  </title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="resources/img/favicon.ico" />
