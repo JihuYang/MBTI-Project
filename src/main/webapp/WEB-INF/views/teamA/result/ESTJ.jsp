@@ -35,12 +35,12 @@
 					<div class="py-3 window-question bg-white">
 						<div id="first-section" class="text-center">
 							<div>내가 개발자라면?</div>
-							<div class="mt-3">갑질 가능성 99.9%</div>
+							<div class="mt-3">한 우물만 파는</div>
 							<div>
-								<h1>타고난 리더 개발자</h1>
-								<img src="../resources/img/teamA/ENTJ.png"
+								<h1>꼰대 개발자</h1>
+								<img src="../resources/img/teamA/ESTJ.png"
 									class="img-type mx-auto d-block" alt="...">
-								<div class="mt-3 text-muted">당신은 혹시.. ENTJ?</div>
+								<div class="mt-3 text-muted">당신은 혹시.. ESTJ?</div>
 							</div>
 						</div>
 						<div id="second-section" class="mt-5 border-top-black">
@@ -48,14 +48,11 @@
 								<div class="mt-3 ms-3">성격은?</div>
 								<div class="m-3 me-4 fs-6 font-ex">
 									<ul>
-										<li>당신은~리더가 되기 위해 태어난 사람~ 동료 개발자들을 채찍질해서 어떻게든 프로젝트 끝냄.</li>
-										<li>불도저 같은 성향으로 자칫하면 팀의 꼰대가 될 수 있으니 조심 또 조심!!</li>
-										<li>새로운 시도 컴온! 실패따위 두렵지 않아. 어짜피 분명한 목표를 세우고 노력하기 때문에 다 성공
-											할 수 있어.</li>
-										<li>프로젝트 관리는 나한테 맡겨만줘. 하지만 일상생활 관리는 아웃오브관심,,,우리 집 냉장고에 뭐가
-											들어있더라?</li>
-										<li>쉬는 시간 취미는 뉴스를 보거나 실시간 주식 거래 현황 시청하기,, 아아.. 쉴때조차 시간을
-											허투루 쓰지 않는 당신... 24시간이 모자라~</li>
+										<li>삶의 모토: 모든 것은 계획대로, 가장 효율적이게. 극한의 효율충.</li>
+										<li>나 자신을 엄격하게 관리한다. 근데 내 주변의 사람도 같이 관리한다.</li>
+										<li>업무시간에 내 옆 사람 모니터에 카톡창이 떠 있다..? 한마디 해줘야지! 결국 팀의 효율이 올라간다.</li>
+										<li>내가 하는 말은 모두 팩트 기반. 대신 들을 때도 팩트가 아니면 절대 믿지 않으니 나를 설득하려면 증거 오조오억개 들고 오셈. (사실 오조오억개도 부족함)</li>
+										<li>잔소리도 다 애정이 있어서 하는거야~ 너가 원하든 원하지 않든 내가 너를 올바른 길로 이끌어 줄게.</li>
 									</ul>
 								</div>
 							</div>
@@ -64,15 +61,13 @@
 							<div class="text-center">
 								<div class="mt-3">나에게 어울리는 개발 직무는?</div>
 								<div class="m-3 fs-6 font-ex">
-									<p class="text-muted">단순한 업무보다는 복잡한 문제를 해결하는 업무가 잘 어울리겠군요!
-										사람을 이끄는 능력이 탁월하기 때문에 관리자가 될 가능성이 높아보여요.</p>
+									<p class="text-muted">당신은 과거나 미래보다 오늘 하루를 중요히 여기며 오늘 해야 할 일을 해결하는군요. 성과를 효율적으로 올릴 수 있는 당신, 당신의 야망을 채워줄 직무를 찾아보세요.</p>
 								</div>
 								<div id="job" class="text-center">
-									<button class="btn btn-light btn-job fs-5">네트워크 관리자</button>
+									<button class="btn btn-light btn-job fs-5">백앤드 개발자</button>
 								</div>
 								<div class="m-3 fs-6 font-ex">
-									<p>네트워크 관리자는 클라이언트, 서버, 인터넷 및 인트라넷 형태의 전산망 관련 하드웨어 및 소프트웨어
-										자원을 관리하고 운영한다. 지도력과 통솔력이 있는 당신에게 안성맞춤이랄까?</p>
+									<p>백앤드 개발자는 백엔드의 DB와 API 서버 개발을 맡는다. 백엔드에서는 데이터를 저장하고 관리하며, 웹사이트의 클라이언트 측(Client-side)에서 모든 것이 매끄럽게 작동할 수 있게 해줍니다. </p>
 								</div>
 							</div>
 						</div>
@@ -82,9 +77,9 @@
 									<div id="type-good" class="text-center">
 										<button class="btn btn-light btn-type ">
 											<div class="type font-ex ">함께하면 좋은</div>
-											<div class="mt-3 fs-7">혼자 웃고 있는 힉힉호무리</div>
-											<h3>개복치 개발자</h3>
-											<img src="../resources/img/teamA/INFP.png"
+											<div class="mt-3 fs-7">대충해도 일은 잘하는</div>
+											<h3>베짱이 개발자</h3>
+											<img src="../resources/img/teamA/ISFP.png"
 												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
@@ -93,9 +88,9 @@
 									<div id="type-bad" class="text-center">
 										<button class="btn btn-light btn-type ">
 											<div class="type font-ex ">멀리하면 좋은</div>
-											<div class="mt-3 fs-7">나만 바라봐~</div>
-											<h3>관종 개발자</h3>
-											<img src="../resources/img/teamA/ESFP.png"
+											<div class="mt-3 fs-7">시키기도 전에 일 끝내는</div>
+											<h3>친절한 개발자</h3>
+											<img src="../resources/img/teamA/INFJ.png"
 												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>

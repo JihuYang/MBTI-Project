@@ -35,12 +35,12 @@
 					<div class="py-3 window-question bg-white">
 						<div id="first-section" class="text-center">
 							<div>내가 개발자라면?</div>
-							<div class="mt-3">갑질 가능성 99.9%</div>
+							<div class="mt-3">”삶은 거대한 체스와 같아”</div>
 							<div>
-								<h1>타고난 리더 개발자</h1>
-								<img src="../resources/img/teamA/ENTJ.png"
+								<h1>지식인 개발자</h1>
+								<img src="../resources/img/teamA/INTJ.png"
 									class="img-type mx-auto d-block" alt="...">
-								<div class="mt-3 text-muted">당신은 혹시.. ENTJ?</div>
+								<div class="mt-3 text-muted">당신은 혹시.. INTJ?</div>
 							</div>
 						</div>
 						<div id="second-section" class="mt-5 border-top-black">
@@ -48,14 +48,11 @@
 								<div class="mt-3 ms-3">성격은?</div>
 								<div class="m-3 me-4 fs-6 font-ex">
 									<ul>
-										<li>당신은~리더가 되기 위해 태어난 사람~ 동료 개발자들을 채찍질해서 어떻게든 프로젝트 끝냄.</li>
-										<li>불도저 같은 성향으로 자칫하면 팀의 꼰대가 될 수 있으니 조심 또 조심!!</li>
-										<li>새로운 시도 컴온! 실패따위 두렵지 않아. 어짜피 분명한 목표를 세우고 노력하기 때문에 다 성공
-											할 수 있어.</li>
-										<li>프로젝트 관리는 나한테 맡겨만줘. 하지만 일상생활 관리는 아웃오브관심,,,우리 집 냉장고에 뭐가
-											들어있더라?</li>
-										<li>쉬는 시간 취미는 뉴스를 보거나 실시간 주식 거래 현황 시청하기,, 아아.. 쉴때조차 시간을
-											허투루 쓰지 않는 당신... 24시간이 모자라~</li>
+										<li>삶은 거대한 체스..어쩌구.. 운보다는 실력으로, 통찰과 논리로 삶을 살아간다. </li>
+										<li>철두철미한 목표 지향러. Github에 잔디 심어지는 모습을 보면서 큰 행복감을 느낌.</li>
+										<li>목표가 없는 건 견딜 수 없어. 나에게 목표를 심어주세요.</li>
+										<li>현실에서는 보기 힘들지만, 지식 공유형 인터넷 커뮤니티 Wiki, Stackoverflow 등에서는 단연 1위</li>
+										<li>누군가 나를 제한하지 않았으면 좋겠어. 혼자 있고 싶어!️</li>
 									</ul>
 								</div>
 							</div>
@@ -64,15 +61,13 @@
 							<div class="text-center">
 								<div class="mt-3">나에게 어울리는 개발 직무는?</div>
 								<div class="m-3 fs-6 font-ex">
-									<p class="text-muted">단순한 업무보다는 복잡한 문제를 해결하는 업무가 잘 어울리겠군요!
-										사람을 이끄는 능력이 탁월하기 때문에 관리자가 될 가능성이 높아보여요.</p>
+									<p class="text-muted">당신은 논리 체계를 이해하려고 논리적인 과정을 통해 결과를 도출해내네요. 또 어려운 학문을 즐기는 경향이 있고 예측하는 것에 흥미를 느끼는군요!</p>
 								</div>
 								<div id="job" class="text-center">
-									<button class="btn btn-light btn-job fs-5">네트워크 관리자</button>
+									<button class="btn btn-light btn-job fs-5">시스템 엔지니어</button>
 								</div>
 								<div class="m-3 fs-6 font-ex">
-									<p>네트워크 관리자는 클라이언트, 서버, 인터넷 및 인트라넷 형태의 전산망 관련 하드웨어 및 소프트웨어
-										자원을 관리하고 운영한다. 지도력과 통솔력이 있는 당신에게 안성맞춤이랄까?</p>
+									<p>시스템 엔지니어는 컴퓨터 시스템, OS를 운용하고 관리해요. 또한 서비스에 대한 서버, 네트워크, DB 등의 장비를 구축하고 유지보수 및 관리하는 작업을 하며 시스템 설계, 구축, 운영을 담당합니다.</p>
 								</div>
 							</div>
 						</div>
@@ -82,9 +77,9 @@
 									<div id="type-good" class="text-center">
 										<button class="btn btn-light btn-type ">
 											<div class="type font-ex ">함께하면 좋은</div>
-											<div class="mt-3 fs-7">혼자 웃고 있는 힉힉호무리</div>
-											<h3>개복치 개발자</h3>
-											<img src="../resources/img/teamA/INFP.png"
+											<div class="mt-3 fs-7">재잘대다가 제일 힘든 일 하는</div>
+											<h3>아이디어뱅크 개발자</h3>
+											<img src="../resources/img/teamA/ENTP.png"
 												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
@@ -93,9 +88,9 @@
 									<div id="type-bad" class="text-center">
 										<button class="btn btn-light btn-type ">
 											<div class="type font-ex ">멀리하면 좋은</div>
-											<div class="mt-3 fs-7">나만 바라봐~</div>
-											<h3>관종 개발자</h3>
-											<img src="../resources/img/teamA/ESFP.png"
+											<div class="mt-3 fs-7">대충하는 것 같아도 일은 잘하는</div>
+											<h3>베짱이 개발자</h3>
+											<img src="../resources/img/teamA/ISFP.png"
 												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
@@ -117,14 +112,14 @@
 					</div>
 					<div class="row mt-5">
 						<div class="col">
-						<a id="kakao-link-btn" href="javascript:sendLink()"> 
-							<img src="../resources/img/teamA/kakaotalk.png"
+							<a id="kakao-link-btn" href="javascript:sendLink()"> <img
+								src="../resources/img/teamA/kakaotalk.png"
 								class="img-share mx-auto d-block" alt="..."></a>
 							<p>카카오톡 공유</p>
 						</div>
 						<div class="col">
-						<a id="copy-link-btn" href="javascript:copyLink()"> 
-							<img src="../resources/img/teamA/link.png"
+							<a id="copy-link-btn" href="javascript:copyLink()"> <img
+								src="../resources/img/teamA/link.png"
 								class="img-share mx-auto d-block" alt="..."></a>
 							<p>링크 복사</p>
 						</div>
