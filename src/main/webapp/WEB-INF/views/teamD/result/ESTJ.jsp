@@ -45,8 +45,16 @@
 			</tr>
 			<tr>
 				<td><div onclick="location.href='../index'" style="margin-left:0px"><img id="save" style="float:none;width:30px;height:30px;" src="../resources/img/teamD/home.jpg"> Home</div></td>
-				<td><div onclick="location.href='../index'" style="margin-left:0px"><img id="save" style="float:none;width:30px;height:30px;" src="../resources/img/teamD/save-file.png"> 저장하기</div></td>
-				
+				<td>
+						<form method="post" action="../saved"
+							style="display: inline-block; width: 46px; margin: 0 15px;">
+							<input name="mbti" id="mbti" value="ESTJ" style="display: none">
+							<button>
+								<img style="float: none; width: 30px; height: 30px;"
+									src="<%=request.getContextPath()%>/resources/img/teamD/save-file.png">저장하기
+							</button>
+						</form>
+					</td>
 			</tr>
 		</table>
 		</div>
