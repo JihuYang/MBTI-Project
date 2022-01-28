@@ -90,8 +90,10 @@ ul#loadbar li:first-child {margin-left:0;}
 .share-wrap p{text-align:center;margin-bottom:15px;font-size:20px;font-weight:bold;}
 .share-wrap a{display:inline-block;width:46px;margin:0 15px;}
 .share-wrap a img{width:100%;}
+.share-wrap form{display:inline-block;width:46px;margin:0 15px;}
+.share-wrap button{display:inline-block;width:46px;margin:0 15px;}
 .restarticon{margin-top:70px;margin-bottom:70px;text-align:center;}
-.restarticon button {width:100px;background-color: #f8585b;border: none;color:#fff;padding: 15px 0;text-align: center;text-decoration: none;display: inline-block;font-size: 15px;margin: 4px;cursor: pointer;}
+.restarticon button img {width:100px;background-color: #f8585b;border: none;color:#fff;padding: 15px 0;text-align: center;text-decoration: none;display: inline-block;font-size: 15px;margin: 4px;cursor: pointer;}
 .restarticon button:hover{background-color: blue;}
 .other_test_list{background-color: C4C4C4; border-radius: 35px;}
 

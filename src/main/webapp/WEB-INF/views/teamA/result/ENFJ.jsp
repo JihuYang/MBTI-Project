@@ -35,12 +35,12 @@
 					<div class="py-3 window-question bg-white">
 						<div id="first-section" class="text-center">
 							<div>내가 개발자라면?</div>
-							<div class="mt-3">재잘대다가 얼떨결에 제일 힘든 일 하는</div>
+							<div class="mt-3">프레젠테이션은 내 담당!</div>
 							<div>
-								<h1>아이디어뱅크 개발자</h1>
-								<img src="../resources/img/teamA/ENTP.png"
+								<h1>댕댕이 개발자</h1>
+								<img src="../resources/img/teamA/ENFJ.png"
 									class="img-type mx-auto d-block" alt="...">
-								<div class="mt-3 text-muted">당신은 혹시.. ENTP?</div>
+								<div class="mt-3 text-muted">당신은 혹시.. ENFJ?</div>
 							</div>
 						</div>
 						<div id="second-section" class="mt-5 border-top-black">
@@ -48,13 +48,11 @@
 								<div class="mt-3 ms-3">성격은?</div>
 								<div class="m-3 me-4 fs-6 font-ex">
 									<ul>
-										<li>나는야 아이언맨 토니 스타크-(별) 반짝반짝한 아이디어가 많다. 내가 좋아하는 분야는
-											1등이라구. 하지만 싫어하는 분야는 꼴찌~</li>
-										<li>일~단 저지르는 편. 그러나 뒷심이 부족하다.</li>
-										<li>프로젝트 할 때 도메인부터 구입하고 보지만 진행이 안되서 결국 안씀.</li>
-										<li>프로 입담러. 그러나 자발적 아싸. 자신이 관심있는 분야나 사람에 대해서는 이야기를 흥미진진하게
-											하지만 관심이 없다면 침묵.</li>
-										<li>개발자가 되어도 한가지 분야에만 종사하지는 않는다. 지루해? 옮기면 되지!</li>
+										<li>우리의 인생이 따뜻했으면 좋겠어.. </li>
+										<li>진심으로 사람을 믿고 이끄는 리더. 너의 성장에 내가 함께할게!</li>
+										<li>계획 세우는 걸 매우 매우 좋아한다. 하지만 그걸 지키는지는 잘 모르겠다..</li>
+										<li>컴공을 전공하고 나서 이걸로 어떻게 사람들을 도울 수 있을지 고민하는 사람.</li>
+										<li>비판에 당황하고 상처를 잘 받는 당신을 위해 좋은 말만 해 줄게요 ❣️</li>
 									</ul>
 								</div>
 							</div>
@@ -63,16 +61,14 @@
 							<div class="text-center">
 								<div class="mt-3">나에게 어울리는 개발 직무는?</div>
 								<div class="m-3 fs-6 font-ex">
-									<p class="text-muted">지루하고 따분한 일보다 창의력을 발휘할 수 있는 일을 좋아하는
-										당신, 사람들과 함께 다양한 상황을 경험할 때 기쁨을 느끼는군요.</p>
+									<p class="text-muted">당신은 다른 사람의 성장을 옆에서 돕고 영향을 미칠 때 보람을 느끼는 군요. 사람들과 함께 협업하는 것에 흥미를 느끼기 때문에, 의견을 많이 나눌 수 있는 직무가 어울리네요.</p>
 								</div>
 								<div id="job" class="text-center">
-									<button class="btn btn-light btn-job fs-5">데이터 엔지니어</button>
+									<button class="btn btn-light btn-job fs-5">프런트엔드 개발자</button>
 								</div>
 								<div class="m-3 fs-6 font-ex">
-									<p>데이터 엔지니어는 데이터를 전문으로 담당하는 소프트웨어 엔지니어이다. 데이터의 수집 및 관리를
-										담당하며 다양한 데이터를 다루는 역할이 다양한 정보를 접하고 분석하는 것에 흥미를 느끼는 당신에게 눈을 반짝이게
-										하지 않을까요?</p>
+									<p>사용자가 웹사이트를 이용할 때, 사이트와 직접적으로 상호작용하여 접촉 하는 부분을 프론트 엔드라고 합니다. 
+									프론트엔드 개발자는 웹사이트에서 보여지는 글꼴, 생각, 메뉴 등 사용자에게 시각적으로 보여지는 부분을 구축하고 배치하는 역할을 합니다. 다른 사람의 시선에서 최선을 파악할 줄 아는 당신에게 딱 적합하지 않을까요?</p>
 								</div>
 							</div>
 						</div>
@@ -82,9 +78,9 @@
 									<div id="type-good" class="text-center">
 										<button class="btn btn-light btn-type ">
 											<div class="type font-ex ">함께하면 좋은</div>
-											<div class="mt-3 fs-7">시키기도 전에 일 끝내는</div>
-											<h3>친절한 개발자</h3>
-											<img src="../resources/img/teamA/INFJ.png"
+											<div class="mt-3 fs-7">고집불통 퉁퉁이</div>
+											<h3>천재 개발자</h3>
+											<img src="../resources/img/teamA/INTP.png"
 												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
@@ -93,9 +89,9 @@
 									<div id="type-bad" class="text-center">
 										<button class="btn btn-light btn-type ">
 											<div class="type font-ex ">멀리하면 좋은</div>
-											<div class="mt-3 fs-7">분단위로 계획적이게</div>
-											<h3>로보트 개발자</h3>
-											<img src="../resources/img/teamA/ISTJ.png"
+											<div class="mt-3 fs-7">사람보다 사물이 더 좋은</div>
+											<h3>만능 개발자</h3>
+											<img src="../resources/img/teamA/ISTP.png"
 												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
