@@ -44,15 +44,18 @@
 	<div class="result-wrap">
 		<div id="optadATF" style="min-height: 110px"></div>
 		<div class="img-result">
-			<img src="../resources/img/teamB/ENFJ.png" alt="MBTI:결과 img">
+			<img src="<%=request.getContextPath()%>/resources/img/teamB/ENFJ.png" alt="MBTI:결과 img">
 		</div>
 		<br>
 		<div class="share-wrap">
 			<p>공유 및 저장하기</p>
-			<a id="kakao-link-btn" href="javascript:sendLink()"> <img
-				src="../resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
-			<a id="copy-link-btn" href="javascript:copyLink()"> <img
-				src="../resources/img/teamB/link_icon.png" alt="linkicon"></a>
+			<a id="kakao-link-btn" href="javascript:sendLink()"> 
+				<img src="../resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
+			<a id="copy-link-btn" href="javascript:copyLink()">  <img
+				src="../resources/img/teamB/link_icon.png" alt="linkicon"></a> <a
+				href="" onclick="GA_Event('MBTI_result', 'share_save', 'Click');">
+				<img src="<%=request.getContextPath()%>/resources/img/teamB/save_icon.png" alt="saveicon">
+			</a>
 			<form method="post" action="../teamB/saved" style="display:inline-block;width:46px;margin:0 15px;">
 				<input name="mbti"id = "mbti" value="ENFJ" style="display: none">
 				<button>

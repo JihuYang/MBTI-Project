@@ -84,8 +84,8 @@
 						</div>
 					</div>
 
-					<button id="myPage-btn" class="w-50 btn btn-lg btn-dark mt-2"
-						type="submit" onclick="change()" value="수정">수정</button>
+<!-- 					<button id="myPage-btn" class="w-50 btn btn-lg btn-dark mt-2"
+						type="submit" onclick="change()" value="수정">수정</button> -->
 				</form>
 			</div>
 
