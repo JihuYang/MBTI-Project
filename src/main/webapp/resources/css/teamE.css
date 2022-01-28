@@ -302,6 +302,12 @@
     	color: white;
     	margin-bottom: 50px;
     }
+    .setup-wrap {
+    	text-align:center;margin-top:100px;
+    }
+    .setup-wrap a{display:inline-block;width:46px;margin:0 15px;}
+    .setup-wrap a img{width:100%;}
+    .setup-wrap p{text-align:center;margin-bottom:15px;font-size:20px;font-weight:bold;}
     
     
     

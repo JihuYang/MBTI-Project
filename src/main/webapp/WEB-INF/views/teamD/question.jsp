@@ -23,6 +23,14 @@
 		<div id="an2" onclick="saveType(${2}, '${questions[1].result}')">
 			<h2 class="btn2" >${questions[1].answer}</h2>
 		</div>
+		<table style="width: 100%" id="endbar">
+			<tr>
+				<td onclick="location.href='../index'">
+				<div id="img3"><img src="../resources/img/teamD/home.svg" alt="homeIcon" style="width:30px">Home</div></td>
+				<td onclick="location.href='start'">
+				<div id="img4"><img src="../resources/img/teamD/redo.svg" alt="redoIcon"  style="width:30px">Replay</div></td>
+			</tr>
+		</table>
 	</div>
 </body>
 </html>
