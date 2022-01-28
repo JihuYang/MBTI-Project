@@ -1,7 +1,5 @@
 package com.hgu.webcamp.DTO;
 
-import java.sql.Date;
-
 public class testDTO {
 
 	private int id;

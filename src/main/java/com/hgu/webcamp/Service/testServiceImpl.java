@@ -8,6 +8,7 @@ import com.hgu.webcamp.DTO.testDTO;
 
 @Service
 public class testServiceImpl implements testService{
+	
 	@Autowired
 	testDAO dao;
 	

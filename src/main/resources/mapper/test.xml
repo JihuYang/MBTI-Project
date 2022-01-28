@@ -4,8 +4,8 @@
 
 <mapper namespace="savedTest">
 	<insert id="insertTest">
-		insert into savedTest (id, testId, userId, result)
+		insert into savedTest (testId, userId, result)
 		values
-		(#{id}, #{testId}, #{userId}, #{result})
+		(#{testId}, #{userId}, #{result})
 	</insert>
 </mapper>
