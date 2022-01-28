@@ -28,7 +28,7 @@ public class TeamProject_Controller {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	@RequestMapping(value = "/index", method = {RequestMethod.GET, RequestMethod.POST})
 	public String teamProject_index(Model model) {
 		
 		System.out.println("index page loaded");
@@ -82,12 +82,12 @@ public class TeamProject_Controller {
 		if(request.getSession().getAttribute("tempUser") != null) {
 			userDTO u = new userDTO();
 			u = (userDTO) request.getSession().getAttribute("tempUser");
-			//회원 정보가 없는 경우
+			//�쉶�썝 �젙蹂닿� �뾾�뒗 寃쎌슦
 			if(userService.readUserByEmail(u.getEmail())==0) {
 				model.setViewName("redirect:/register");
 				return model;
 			}
-			//회원 정보가 있는 경우
+			//�쉶�썝 �젙蹂닿� �엳�뒗 寃쎌슦
 			
 			model.setViewName("redirect:/index");
 			return model;
