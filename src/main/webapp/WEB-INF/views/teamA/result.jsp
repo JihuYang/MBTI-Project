@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page session="false"%>
@@ -205,6 +205,7 @@
 
 								<div class="mb-3 mt-3">
 									<div id="commentContent">
+									<jsp:include page="../../../ajaxContent/teamA/comment.jsp" flush="false" />
 										<%@ include file="<%=request.getContextPath()%>/ajaxContent/teamA/comment.jsp"%>
 									</div>
 								</div>
@@ -235,4 +236,4 @@
 			reserved.</span>
 	</footer>
 </body>
-</html>
+</html> --%>
