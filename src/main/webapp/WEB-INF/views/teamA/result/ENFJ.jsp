@@ -21,11 +21,6 @@
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
-<<<<<<< HEAD
-=======
-
-
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>teamAResult</title>
@@ -43,14 +38,9 @@
 							<div class="mt-3">프레젠테이션은 내 담당!</div>
 							<div>
 								<h1>댕댕이 개발자</h1>
-								<img src="<%=request.getContextPath()%>/resources/img/teamA/ENFJ.png"
-<<<<<<< HEAD
-									class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
-								<div class="mt-3 text-muted">당신은 혹시<%=request.getContextPath()%> ENFJ?</div>
-=======
+								<img src="<%=request.getContextPath()%>/resources/img/teamA/ENFJ.png" 
 									class="img-type mx-auto d-block" alt="...">
 								<div class="mt-3 text-muted">당신은 혹시.. ENFJ?</div>
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 							</div>
 						</div>
 						<div id="second-section" class="mt-5 border-top-black">
@@ -58,9 +48,9 @@
 								<div class="mt-3 ms-3">성격은?</div>
 								<div class="m-3 me-4 fs-6 font-ex">
 									<ul>
-										<li>우리의 인생이 따뜻했으면 좋겠어<%=request.getContextPath()%> </li>
+										<li>우리의 인생이 따뜻했으면 좋겠어.. </li>
 										<li>진심으로 사람을 믿고 이끄는 리더. 너의 성장에 내가 함께할게!</li>
-										<li>계획 세우는 걸 매우 매우 좋아한다. 하지만 그걸 지키는지는 잘 모르겠다<%=request.getContextPath()%></li>
+										<li>계획 세우는 걸 매우 매우 좋아한다. 하지만 그걸 지키는지는 잘 모르겠다..</li>
 										<li>컴공을 전공하고 나서 이걸로 어떻게 사람들을 도울 수 있을지 고민하는 사람.</li>
 										<li>비판에 당황하고 상처를 잘 받는 당신을 위해 좋은 말만 해 줄게요 ❣️</li>
 									</ul>
@@ -91,11 +81,7 @@
 											<div class="mt-3 fs-7">고집불통 퉁퉁이</div>
 											<h3>천재 개발자</h3>
 											<img src="<%=request.getContextPath()%>/resources/img/teamA/INTP.png"
-<<<<<<< HEAD
-												class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
-=======
 												class="img-type mx-auto d-block" alt="...">
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 										</button>
 									</div>
 								</div>
@@ -106,11 +92,7 @@
 											<div class="mt-3 fs-7">사람보다 사물이 더 좋은</div>
 											<h3>만능 개발자</h3>
 											<img src="<%=request.getContextPath()%>/resources/img/teamA/ISTP.png"
-<<<<<<< HEAD
-												class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
-=======
 												class="img-type mx-auto d-block" alt="...">
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 										</button>
 									</div>
 								</div>
@@ -133,21 +115,13 @@
 						<div class="col">
 							<a id="kakao-link-btn" href="javascript:sendLink()"> <img
 								src="<%=request.getContextPath()%>/resources/img/teamA/kakaotalk.png"
-<<<<<<< HEAD
-								class="img-share mx-auto d-block" alt="<%=request.getContextPath()%>."></a>
-=======
 								class="img-share mx-auto d-block" alt="..."></a>
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 							<p>카카오톡 공유</p>
 						</div>
 						<div class="col">
 							<a id="copy-link-btn" href="javascript:copyLink()"> <img
 								src="<%=request.getContextPath()%>/resources/img/teamA/link.png"
-<<<<<<< HEAD
-								class="img-share mx-auto d-block" alt="<%=request.getContextPath()%>."></a>
-=======
 								class="img-share mx-auto d-block" alt="..."></a>
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 							<p>링크 복사</p>
 						</div>
 					</div>
@@ -169,18 +143,15 @@
 
 								<div class="mb-3 mt-3">
 									<div id="commentContent">
-										<%@ include file="<%=request.getContextPath()%>/<%=request.getContextPath()%>/ajaxContent/teamA/comment.jsp"%>
+										<jsp:include page="../../ajaxContent/teamA/comment.jsp" flush="false" />
+										<%-- <%@ include file="<%=request.getContextPath()%>/<%=request.getContextPath()%>/ajaxContent/teamA/comment.jsp"%> --%>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="p-3 comment-shadow"></div>
 					</div>
-<<<<<<< HEAD
-					<form:form method="post" action="<%=request.getContextPath()%>/teamA/addok">
-=======
-					<form:form method="post" action="../addok">
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
+					<form:form method="post" action="../teamA/addok">
 						<div class="input-group mt-5 mb-5">
 							<input type="text" name="comment" class="form-control p-3"
 								placeholder="댓글을 입력하세요. " aria-label="댓글 입력"
