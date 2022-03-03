@@ -168,11 +168,8 @@ public class TeamA_Controller {
 		if(i == 0) System.out.println("Error! delete Failed");
 		else System.out.println("댓글 삭제 완료.");
 		
-<<<<<<< HEAD
-		return "redirect:<%=request.getContextPath()%>/result";
-=======
-		return "redirect:../start";
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
+
+		return "redirect:/teamA/start";
 	}
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)
@@ -210,6 +207,7 @@ public class TeamA_Controller {
 
 
 		return "redirect:/teamA/start";
+		
 	}
 	
 	@RequestMapping(value = "/saved", method = RequestMethod.POST)
