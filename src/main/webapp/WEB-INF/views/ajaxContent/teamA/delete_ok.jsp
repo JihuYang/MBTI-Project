@@ -12,5 +12,5 @@
 		commentDAO DAO = new commentDAO();
 		DAO.deleteComment(id);
 	}
-	response.sendRedirect("<%=request.getContextPath()%>/result");
+	response.sendRedirect("/result");
 %>

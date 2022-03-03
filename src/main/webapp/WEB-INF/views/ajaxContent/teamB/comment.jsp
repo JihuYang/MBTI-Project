@@ -19,15 +19,6 @@
 <%@ page session="false"%>
 <div id="comment" class="mt-5 mb-3 p-3 comment">
 	<span class="text-black">댓글 [${count}]</span>
-<<<<<<< HEAD
-	<form:form method="post" action="<%=request.getContextPath()%>/teamB/addok">
-	<div class="input-group mt-1 mb-1">
-		<input type="text" name="comment" class="form-control p-3" placeholder="댓글을 입력하세요. "
-			aria-label="댓글 입력" aria-describedby="basic-addon2">
-		<div class="input-group-append">
-			<button class="btn btn-outline-secondary p-3" type="submit">등록
-			</button>
-=======
 	<form:form method="post" action="../addok">
 		<div class="input-group mt-1 mb-1">
 			<input type="text" name="comment" class="form-control p-3"
@@ -37,7 +28,6 @@
 				<button class="btn btn-outline-secondary p-3" type="submit">등록
 				</button>
 			</div>
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 		</div>
 	</form:form>
 	<div class="comment-container">
@@ -103,6 +93,6 @@
 	function delete_ok(id) {
 		var a = confirm("정말로 삭제하겠습니까?");
 		if (a)
-			location.href = 'delete_ok/' + id;
+			location.href = '/webcamp/teamB/delete_ok/' + id;
 	}
 </script>
