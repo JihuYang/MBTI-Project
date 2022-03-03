@@ -25,7 +25,8 @@
 /* start page */
 
 body{
-	 background-image: url("<%=request.getContextPath()%>/img/teamA/background.png");
+	 /* background-image: url("<%=request.getContextPath()%>/img/teamA/background.png"); */
+	 background-image: url("../img/teamA/background.png");
 	 background-size: cover;
      height: 100vh;
      min-width: 375px;
@@ -126,7 +127,7 @@ body{
 	/* padding: 10px; */
 	height: 5vh;
 	/* background-image: url("<%=request.getContextPath()%>/img/teamA/bar.png"); */
-	background-image: url("<%=request.getContextPath()%>/img/teamA/window_bar.png");
+	background-image: url("../img/teamA/window_bar.png");
     background-size: cover;
     display:flex;
     align-items:center;
@@ -239,7 +240,8 @@ body{
 }
 
 li {
-    background: url("<%=request.getContextPath()%>/img/teamA/listicon.png") no-repeat 0px 1px;
+    /*background: url("<%=request.getContextPath()%>/img/teamA/listicon.png") no-repeat 0px 1px;*/
+    background: url("../img/teamA/listicon.png") no-repeat 0px 1px;
    	list-style-type: none;
     padding: 0px 0px 8px 30px;
 }

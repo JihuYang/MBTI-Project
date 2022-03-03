@@ -30,7 +30,7 @@
 			<div class="col d-none d-lg-block"></div>
 			<div id="main" class="col content ">
 				<div id="questionContent">
-					<%@ include file="<%=request.getContextPath()%>/ajaxContent/teamA/question.jsp"%>
+					<jsp:include page="../ajaxContent/teamA/question.jsp" flush="false"/>
 					
 				</div>
 				<%-- <c:forEach items="${questions}" var="q" varStatus="status">--%>
