@@ -184,11 +184,8 @@ public class TeamB_Controller {
 		if(i == 0) System.out.println("Error! delete Failed");
 		else System.out.println("댓글 삭제 완료.");
 		
-<<<<<<< HEAD
-		return "redirect:<%=request.getContextPath()%>/result";
-=======
+//		return "redirect:<%=request.getContextPath()%>/result";
 		return "redirect:/teamB/start";
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 	}
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)
