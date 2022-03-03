@@ -41,11 +41,7 @@
                     <a href="./teamA/start">
                         <div class="card h-100">
                             <!-- Product image-->
-<<<<<<< HEAD
                             <img class="card-img-top" src="resources/img/teamProject/teamA_thumbnail.jpg" alt="<%=request.getContextPath()%>." />
-=======
-                            <img class="card-img-top" src="resources/img/teamProject/teamA_thumbnail.png" alt="..." />
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -143,11 +139,7 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-<<<<<<< HEAD
                             <img class="card-img-top" src="resources/img/teamProject/teamD_thumbnail.jpeg" alt="<%=request.getContextPath()%>." />
-=======
-                            <img class="card-img-top" src="resources/img/teamProject/teamD_thumbnail.png" alt="..." />
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
