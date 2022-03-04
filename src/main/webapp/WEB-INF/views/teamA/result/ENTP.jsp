@@ -39,8 +39,8 @@
 							<div>
 								<h1>아이디어뱅크 개발자</h1>
 								<img src="<%=request.getContextPath()%>/resources/img/teamA/ENTP.png"
-									class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
-								<div class="mt-3 text-muted">당신은 혹시<%=request.getContextPath()%> ENTP?</div>
+									class="img-type mx-auto d-block" alt="...">
+								<div class="mt-3 text-muted">당신은 혹시.. ENTP?</div>
 							</div>
 						</div>
 						<div id="second-section" class="mt-5 border-top-black">
@@ -85,7 +85,7 @@
 											<div class="mt-3 fs-7">시키기도 전에 일 끝내는</div>
 											<h3>친절한 개발자</h3>
 											<img src="<%=request.getContextPath()%>/resources/img/teamA/INFJ.png"
-												class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
+												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
 								</div>
@@ -96,7 +96,7 @@
 											<div class="mt-3 fs-7">분단위로 계획적이게</div>
 											<h3>로보트 개발자</h3>
 											<img src="<%=request.getContextPath()%>/resources/img/teamA/ISTJ.png"
-												class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
+												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
 								</div>
@@ -119,13 +119,13 @@
 						<div class="col">
 							<a id="kakao-link-btn" href="javascript:sendLink()"> <img
 								src="<%=request.getContextPath()%>/resources/img/teamA/kakaotalk.png"
-								class="img-share mx-auto d-block" alt="<%=request.getContextPath()%>."></a>
+								class="img-share mx-auto d-block" alt="..."></a>
 							<p>카카오톡 공유</p>
 						</div>
 						<div class="col">
 							<a id="copy-link-btn" href="javascript:copyLink()"> <img
 								src="<%=request.getContextPath()%>/resources/img/teamA/link.png"
-								class="img-share mx-auto d-block" alt="<%=request.getContextPath()%>."></a>
+								class="img-share mx-auto d-block" alt="..."></a>
 							<p>링크 복사</p>
 						</div>
 					</div>
@@ -147,14 +147,14 @@
 
 								<div class="mb-3 mt-3">
 									<div id="commentContent">
-										<%@ include file="<%=request.getContextPath()%>/<%=request.getContextPath()%>/ajaxContent/teamA/comment.jsp"%>
+										<jsp:include page="../../ajaxContent/teamA/comment.jsp" flush="false" />
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="p-3 comment-shadow"></div>
 					</div>
-					<form:form method="post" action="<%=request.getContextPath()%>/teamA/addok">
+					<form:form method="post" action="../addok">
 						<div class="input-group mt-5 mb-5">
 							<input type="text" name="comment" class="form-control p-3"
 								placeholder="댓글을 입력하세요. " aria-label="댓글 입력"

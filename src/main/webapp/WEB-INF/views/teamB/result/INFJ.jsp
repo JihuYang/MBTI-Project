@@ -49,15 +49,9 @@
 		<br>
 		<div class="share-wrap">
 			<p>공유 및 저장하기</p>
-<<<<<<< HEAD
-			<a id="kakao-link-btn" href="javascript:sendLink()"> <img
-				src="<%=request.getContextPath()%>/resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
-			<a id="copy-link-btn" href="javascript:copyLink()"> <img
-=======
 			<a id="kakao-link-btn" href="javascript:sendLink()"> 
 				<img src="<%=request.getContextPath()%>/resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
 			<a id="copy-link-btn" href="javascript:copyLink()">  <img
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 				src="<%=request.getContextPath()%>/resources/img/teamB/link_icon.png" alt="linkicon"></a>
 			<form method="post" action="<%=request.getContextPath()%>/teamB/saved" style="display:inline-block;width:46px;margin:0 15px;">
 				<input name="mbti"id = "mbti" value="INFJ" style="display: none">
@@ -81,42 +75,26 @@
 		<div class="btn-group-vertical" style="margin-bottom: 50px;">
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-<<<<<<< HEAD
-				onclick="location.href='<%=request.getContextPath()%>/teamA/start'">
-=======
 				onclick="location.href='../../teamA/start'">
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 				<h3 style="font-size: 20px;">내가 개발자라면? 개발자 유형 테스트</h3>
 			</button>
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-<<<<<<< HEAD
-				onclick="location.href='<%=request.getContextPath()%>/teamC/start'">
-=======
 				onclick="location.href='../../teamC/start'">
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 				<h3 style="font-size: 20px;">MBTI 유형에 맞는 찰떡 공부법</h3>
 			</button>
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-<<<<<<< HEAD
-				onclick="location.href='<%=request.getContextPath()%>/teamD/start'">
-=======
 				onclick="location.href='../../teamD/start'">
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 				<h3 style="font-size: 20px;">짱구에서 나는 누굴까?</h3>
 			</button>
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-<<<<<<< HEAD
-				onclick="location.href='<%=request.getContextPath()%>/teamE/start'">
-=======
 				onclick="location.href='../../teamE/start'">
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 				<h3 style="font-size: 20px;">인간관계 유형별 MBTI</h3>
 			</button>
 		</div>
-<%@ include file="<%=request.getContextPath()%>/<%=request.getContextPath()%>/ajaxContent/teamB/comment.jsp"%>
+		<jsp:include page="../../ajaxContent/teamB/comment.jsp" flush="false" />
 	</div>
 	<div class="footer">
 		<p class=footer-text>@HGU 2022 Winter Camp</p>

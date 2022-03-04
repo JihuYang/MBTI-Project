@@ -39,8 +39,8 @@
 							<div>
 								<h1>만능 개발자</h1>
 								<img src="<%=request.getContextPath()%>/resources/img/teamA/ISTP.png"
-									class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
-								<div class="mt-3 text-muted">당신은 혹시<%=request.getContextPath()%> ISTP?</div>
+									class="img-type mx-auto d-block" alt="...">
+								<div class="mt-3 text-muted">당신은 혹시.. ISTP?</div>
 							</div>
 						</div>
 						<div id="second-section" class="mt-5 border-top-black">
@@ -48,10 +48,10 @@
 								<div class="mt-3 ms-3">성격은?</div>
 								<div class="m-3 me-4 fs-6 font-ex">
 									<ul>
-										<li>나는야 차도녀. 시니컬하고 차가운 이미지<%=request.getContextPath()%> 이지만 필요하다면 사교적이 될 수도 있지.</li>
+										<li>나는야 차도녀. 시니컬하고 차가운 이미지 이지만 필요하다면 사교적이 될 수도 있지.</li>
 										<li>굳이 긴 말이 필요한가요? 관찰하면 되죠. 냉철한 이성주의적 성향과 왕성한 호기심을 가진 만능 재주꾼.</li>
 										<li>자질구레한 것들을 취미 삼아 만드는 걸 좋아한다. 그러나 많은 에너지를 소비하는 것은 NO!</li>
-										<li>사람들과 팀플을 하다보면<%=request.getContextPath()%> 그런 생각이 들어요<%=request.getContextPath()%> "세상엔 왜 이렇게 멍청한 사람이 많을까" or "나는 정말 똑똑한 사람이네<%=request.getContextPath()%>". </li>
+										<li>사람들과 팀플을 하다보면 그런 생각이 들어요 "세상엔 왜 이렇게 멍청한 사람이 많을까" or "나는 정말 똑똑한 사람이네". </li>
 										<li>답답해서 혼자해버리고 싶지만 자기자랑 하는것 같으니까 그렇게 하지는 않아요. ️</li>
 									</ul>
 								</div>
@@ -80,7 +80,7 @@
 											<div class="mt-3 fs-7">말 걸고 싶어서 드릉드릉</div>
 											<h3>인류애맥스 개발자</h3>
 											<img src="<%=request.getContextPath()%>/resources/img/teamA/ESFJ.png"
-												class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
+												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
 								</div>
@@ -91,7 +91,7 @@
 											<div class="mt-3 fs-7">혼자 웃고 있는 힉힉호무리</div>
 											<h3>개복치 개발자</h3>
 											<img src="<%=request.getContextPath()%>/resources/img/teamA/INFP.png"
-												class="img-type mx-auto d-block" alt="<%=request.getContextPath()%>.">
+												class="img-type mx-auto d-block" alt="...">
 										</button>
 									</div>
 								</div>
@@ -114,13 +114,13 @@
 						<div class="col">
 							<a id="kakao-link-btn" href="javascript:sendLink()"> <img
 								src="<%=request.getContextPath()%>/resources/img/teamA/kakaotalk.png"
-								class="img-share mx-auto d-block" alt="<%=request.getContextPath()%>."></a>
+								class="img-share mx-auto d-block" alt="..."></a>
 							<p>카카오톡 공유</p>
 						</div>
 						<div class="col">
 							<a id="copy-link-btn" href="javascript:copyLink()"> <img
 								src="<%=request.getContextPath()%>/resources/img/teamA/link.png"
-								class="img-share mx-auto d-block" alt="<%=request.getContextPath()%>."></a>
+								class="img-share mx-auto d-block" alt="..."></a>
 							<p>링크 복사</p>
 						</div>
 					</div>
@@ -142,14 +142,14 @@
 
 								<div class="mb-3 mt-3">
 									<div id="commentContent">
-										<%@ include file="<%=request.getContextPath()%>/<%=request.getContextPath()%>/ajaxContent/teamA/comment.jsp"%>
+										<jsp:include page="../../ajaxContent/teamA/comment.jsp" flush="false" />
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="p-3 comment-shadow"></div>
 					</div>
-					<form:form method="post" action="<%=request.getContextPath()%>/teamA/addok">
+					<form:form method="post" action="../addok">
 						<div class="input-group mt-5 mb-5">
 							<input type="text" name="comment" class="form-control p-3"
 								placeholder="댓글을 입력하세요. " aria-label="댓글 입력"
