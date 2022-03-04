@@ -100,20 +100,6 @@ public class TeamC_Controller {
 		return "teamC/loading";
 	}
 
-	//comment
-		@RequestMapping(value ="/comment", method = RequestMethod.GET)
-		public String teamC_comment(Model model) {
-			System.out.println("comment page loaded");
-			int testId=1;	
-			
-			List<commentDTO> comment = new ArrayList<commentDTO>();
-
-			comment = commentService.getCommentList(testId);
-			
-			System.out.println(comment.toString());
-			
-			return "teamC/comment";
-		}
 		// ajax로 값을 주고받는 Controller 
 		@RequestMapping(value = "/ajax", method = RequestMethod.POST)
 		public @ResponseBody List<questionDTO> ajax_question(@RequestParam("questionNum") int questionNum) {
@@ -133,43 +119,42 @@ public class TeamC_Controller {
 
 	
 	
-	
-	@RequestMapping(value = "/addok", method = RequestMethod.POST)
-	public String addPostOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
-		request.setCharacterEncoding("utf-8");
-		//HttpSession session = request.getSession();
-		//String userid = request.getSession().getAttribute("").toString();
-		int testId = 3;
-		
-		commentDTO dto = new commentDTO();
+		@RequestMapping(value = "/addok", method = RequestMethod.POST)
+		public String addPostOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
+			request.setCharacterEncoding("utf-8");
+			commentDTO dto = new commentDTO();
 
-		if(request.getSession().getAttribute("tempUser") != null) {
-			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
-			dto.setUserId(userId);
-		}	
-		
-		SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
-    	Date regDate=f.parse(f.format(new Date()));
-		
-		String comment = request.getParameter("comment");
-		
-		dto.setComment(comment);
-		dto.setRegDate(regDate);
-		dto.setTestId(testId);
-		
-		
-		int i = commentService.insertComment(dto);
-		if(i==0) {
-			System.out.println("데이터 추가 실패 ");
+			if(request.getSession().getAttribute("tempUser") != null) {
+				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+				dto.setUserId(userId);
+
+			}
+			int testId = 3;
+			
+			SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss");
+	    	Date regDate=f.parse(f.format(new Date()));
+			
+			String comment = request.getParameter("comment");
+			String path = request.getParameter("path");
+			
+			dto.setComment(comment);
+			dto.setRegDate(regDate);
+			dto.setTestId(testId);
+			
+			
+			int i = commentService.insertComment(dto);
+			if(i==0) {
+				System.out.println("데이터 추가 실패 ");
+				
+			}
+			else {
+				System.out.println("데이터 추가 성공 ");
+			}
+
+
+			return "redirect:/teamC/result"+path;
 			
 		}
-		else {
-			System.out.println("데이터 추가 성공 ");
-		}
-
-
-		return "redirect:result/ESFJ";
-	}
 	
 	@RequestMapping(value = "/editok", method = RequestMethod.POST)
 	public String editPostOK(HttpServletRequest request) throws UnsupportedEncodingException {
@@ -177,6 +162,7 @@ public class TeamC_Controller {
 
 		String comment = request.getParameter("comment");
 		int id = Integer.parseInt(request.getParameter("id"));
+		String path = request.getParameter("path");
 		
 		commentDTO dto = new commentDTO();
 		dto.setComment(comment);
@@ -190,16 +176,20 @@ public class TeamC_Controller {
 		else {
 			System.out.println("데이터 수정 성공 ");
 		}
-		return "redirect:result/ESFJ";
+		return "redirect:/teamC/result"+path;
 	}
-	@RequestMapping(value = "/deleteok/{id}", method = RequestMethod.GET)
-	public String deletePostOK(@PathVariable("id") int id) {
+	@RequestMapping(value = "/delete_ok/{id}/{mbti}", method = RequestMethod.GET)
+	public String deletePostOK(@PathVariable("id") int id,@PathVariable("mbti") String mbti) {
 		int i = commentService.deleteComment(id);
 		
 		if(i == 0) System.out.println("Error! delete Failed");
 		else System.out.println("댓글 삭제 완료.");
 		
-		return "redirect:../result/ESFJ";
+		
+		//String path = mbti.split("/")[6].substring(0,4);
+		
+
+		return "redirect:/teamC/result/"+mbti;
 	}
 	@RequestMapping(value = "/result/ENFJ", method = RequestMethod.GET)
 	public ModelAndView teamC_result_ENFJ(Model model, HttpServletRequest request) {
@@ -649,38 +639,6 @@ public class TeamC_Controller {
 		return mv;
 	}
 	
-	@RequestMapping(value = "/saved", method = RequestMethod.POST)
-	public String savedOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
-		request.setCharacterEncoding("utf-8");
-
-		int testId = 3;
-		
-		testDTO dto = new testDTO();
-		
-		if(request.getSession().getAttribute("tempUser") != null) {
-			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
-			dto.setUserId(userId);
-		}	
-		
-		dto.setTestId(testId);
-		String type = request.getParameter("mbti");
-		
-		System.out.println(type);
-		int mbti = testService.readMbtiIdByType(type);
-		dto.setResult(mbti);
-		
-		int i = testService.insertTest(dto);
-		if(i==0) {
-			System.out.println("데이터 추가 실패 ");
-			
-		}
-		else {
-			System.out.println("데이터 추가 성공 ");
-		}
-
-
-		return "redirect:result/ESFJ";
-	}
 
 	
 }

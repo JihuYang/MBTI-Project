@@ -47,27 +47,7 @@
 	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 	crossorigin="anonymous"></script>
-<!-- comment 수정 부분 -->
-<script type="text/javascript">
-	function doDisplay(id) {
-		$("#" + id + "2").toggle();
-		var con = document.getElementById(id);
-		if (con.style.display == 'none') {
-			con.style.display = 'flex';
-		} else {
-			con.style.display = 'none';
-		}
-	}
 
-	function moveTo() {
-		location.href = "../start";
-	}
-	function delete_ok(id) {
-		var a = confirm("정말로 삭제하겠습니까?");
-		if (a)
-			location.href = '../../teamC/deleteok/' + id;
-	}
-</script>
 
 </head>
 <body>
@@ -139,7 +119,6 @@
 				</div>
 
 				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
-				<form method="post" action="../saved">
 				<input name="mbti"id = "mbti" value="ENTP" style="display: none">
 				<button class="wholeBox two_btn sv_btn">저장하기</button>
 
@@ -157,78 +136,7 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box">
-
-					<div class="comment">
-						<div class="text-start comment-number">댓글 1</div>
-
-						<form:form method="post" action="../../teamC/addok">
-							<div class="d-flex p-2 comment-add">
-								<input type="text" name="comment" class="comment-add-text"
-									style="border: none; border-radius: 10px; width: 90%"
-									placeholder=" 너의 이야기를 들려줘">
-								<button class="btn" type="submit">
-									<i class="bi bi-arrow-up-circle-fill"
-										style="color: black; font-size: 1.5rem"></i>
-								</button>
-							</div>
-						</form:form>
-						<c:forEach items="${comments}" var="comment" varStatus="status">
-							<div class="comment-set">
-								<div class="d-flex flex-start">
-
-									<div class="comment-list">
-										<img class="rounded-circle border border-secondary"
-											src="../../resources/img/teamC/${comment.type}.png" alt="avatar"
-											width="60" height="60" />
-									</div>
-
-									<div class="comment-list-name" style="width: 200px;">
-										<p class="fw-bold fs-3 " style="line-height: 0%">${comment.nickname}</p>
-										<p class="text-muted fs-8">
-											<fmt:formatDate value="${comment.regDate}"
-												var="formattedDate" type="date" pattern="yyyy-MM-dd" />${formattedDate}</p>
-
-									</div>
-									<div id="show-comment" class="comment-list-content w-100">
-										<p id="${comment.id}2" style="display: block;">${comment.comment}</p>
-
-										<form:form method="post" action="../../teamC/editok">
-											<div class="p-2 comment-add" id="${comment.id}"
-												style="display: none;">
-												<textarea rows="3" name="comment"
-													style="border: none; border-radius: 10px; width: 90%">${comment.comment}</textarea>
-												<input type="text" name="id" value="${comment.id}"
-													style="display: none;">
-												<button class="btn" type="submit">
-													<i class="bi bi-arrow-up-circle-fill"
-														style="color: black; font-size: 1.5rem"></i>
-												</button>
-											</div>
-										</form:form>
-
-									</div>
-
-									<c:if test="${userId == comment.userId}">
-										<div class="dropdown comment-menu">
-											<button class="btn" id="menu1" type="button"
-												data-toggle="dropdown">
-												<i class="bi bi-three-dots-vertical"></i><span class="caret"></span>
-											</button>
-											<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-												<li role="presentation"><a role="menuitem"
-													tabindex="-1" href="javascript:delete_ok('${comment.id}')">삭제</a></li>
-												<li role="presentation"><a role="menuitem"
-													tabindex="-1" href="javascript:doDisplay(${comment.id});">수정</a></li>
-											</ul>
-										</div>
-									</c:if>
-								</div>
-
-							</div>
-						</c:forEach>
-					</div>
-				</div>
+			<jsp:include page="../../ajaxContent/teamC/comment.jsp" flush="false" />
 
 
 			</div>
