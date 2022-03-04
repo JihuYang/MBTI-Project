@@ -19,7 +19,7 @@
 <%@ page session="false"%>
 <div id="comment" class="mt-5 mb-3 p-3 comment">
 	<span class="text-black">댓글 [${count}]</span>
-	<form:form method="post" action="../addok">
+	<form:form method="post" action="/webcamp/teamB/addok">
 		<div class="input-group mt-1 mb-1">
 			<input type="text" name="comment" class="form-control p-3"
 				placeholder="댓글을 입력하세요. " aria-label="댓글 입력"
@@ -29,6 +29,8 @@
 				</button>
 			</div>
 		</div>
+		<%String path = "/"+request.getRequestURI().split("/")[6].substring(0,4);%>
+						<input type="hidden" name="path" value="<%=path%>">
 	</form:form>
 	<div class="comment-container">
 		<div class="p-3 comment-bubble">
@@ -56,7 +58,7 @@
 												</div>
 											</c:if>
 										</div>
-										<form:form method="post" action="../editok">
+										<form:form method="post" action="/webcamp/teamB/editok">
 											<p id="${comment.id}2" class="text-dark"
 												style="display: block;">${comment.comment}</p>
 											<div class="p-2" id="${comment.id}" style="display: none;">
@@ -69,6 +71,8 @@
 														style="font-size: 1.5rem"></i>
 												</button>
 											</div>
+											<%String path = "/"+request.getRequestURI().split("/")[6].substring(0,4);%>
+											<input type="hidden" name="path" value="<%=path%>">
 										</form:form>
 										<div>
 											<p class="text-muted fs-6">
@@ -90,9 +94,21 @@
 </div>
 
 <script>
-	function delete_ok(id) {
-		var a = confirm("정말로 삭제하겠습니까?");
-		if (a)
-			location.href = '/webcamp/teamB/delete_ok/' + id;
+function delete_ok(id) {
+	var a = confirm("정말로 삭제하겠습니까?");
+	<%
+	String mbti = "/"+request.getRequestURI().split("/")[6].substring(0,4);		
+	%>
+	if (a)
+		location.href = '/webcamp/teamB/delete_ok/' + id +"<%=mbti%>";
+}
+function doDisplay(id) {
+	$("#" + id + "2").toggle();
+	var con = document.getElementById(id);
+	if (con.style.display == 'none') {
+		con.style.display = 'flex';
+	} else {
+		con.style.display = 'none';
 	}
+}
 </script>
