@@ -160,6 +160,8 @@
 								</button>
 							</div>
 						</div>
+						<%String path = "/"+request.getRequestURI().split("/")[6].substring(0,4);%>
+						<input type="hidden" name="path" value="<%=path%>">
 					</form:form>
 				</div>
 

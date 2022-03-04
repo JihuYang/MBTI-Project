@@ -161,15 +161,18 @@ public class TeamA_Controller {
 		return question;
 		}
 	
-	@RequestMapping(value = "/delete_ok/{id}", method = RequestMethod.GET)
-	public String deletePostOK(@PathVariable("id") int id) {
+	@RequestMapping(value = "/delete_ok/{id}/{mbti}", method = RequestMethod.GET)
+	public String deletePostOK(@PathVariable("id") int id,@PathVariable("mbti") String mbti) {
 		int i = commentService.deleteComment(id);
 		
 		if(i == 0) System.out.println("Error! delete Failed");
 		else System.out.println("댓글 삭제 완료.");
 		
+		
+		//String path = mbti.split("/")[6].substring(0,4);
+		
 
-		return "redirect:/teamA/start";
+		return "redirect:/teamA/result/"+mbti;
 	}
 	
 	@RequestMapping(value = "/addok", method = RequestMethod.POST)
@@ -190,6 +193,7 @@ public class TeamA_Controller {
     	Date regDate=f.parse(f.format(new Date()));
 		
 		String comment = request.getParameter("comment");
+		String path = request.getParameter("path");
 		
 		dto.setComment(comment);
 		dto.setRegDate(regDate);
@@ -206,8 +210,31 @@ public class TeamA_Controller {
 		}
 
 
-		return "redirect:/teamA/start";
+		return "redirect:/teamA/result"+path;
 		
+	}
+	
+	@RequestMapping(value = "/editok", method = RequestMethod.POST)
+	public String editPostOK(HttpServletRequest request) throws UnsupportedEncodingException {
+		request.setCharacterEncoding("utf-8");
+
+		String comment = request.getParameter("comment");
+		int id = Integer.parseInt(request.getParameter("id"));
+		String path = request.getParameter("path");
+		
+		commentDTO dto = new commentDTO();
+		dto.setComment(comment);
+		dto.setId(id);
+		
+		int i = commentService.updateComment(dto);
+		if(i==0) {
+			System.out.println("데이터 수정 실패");
+			
+		}
+		else {
+			System.out.println("데이터 수정 성공 ");
+		}
+		return "redirect:/teamA/result"+path;
 	}
 	
 	@RequestMapping(value = "/saved", method = RequestMethod.POST)
