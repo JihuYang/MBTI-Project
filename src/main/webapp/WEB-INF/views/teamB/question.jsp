@@ -33,7 +33,7 @@
 				</div>
 				<div class="percentage">
 					<div class="progress-wrap">
-						<span class="bar-text" style="font-size:15px">배우자 찾는 중<%=request.getContextPath()%>.</span>
+						<span class="bar-text" style="font-size:15px">배우자 찾는 중...</span>
 					</div>
 				</div>
 				<div class="share-wrap" style="margin-top: 100px">
