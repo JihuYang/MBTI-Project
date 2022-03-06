@@ -72,9 +72,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box">
+				<div class="bg-white p-4 col-box text-center">
 
-					<div class="feature">
+					<div class="feature text-center">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>한번 시작한 일은 철저하게 마무리</li>
@@ -85,7 +85,7 @@
 
 
 
-					<div class="weakness">
+					<div class="weakness text-center">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>자신의 주장이 강하다보니 다른 사람의 조언을 무시하는 경우가 있음</li>
@@ -101,40 +101,50 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle method">찰떡 공부법!</div>
+					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i></div>
 					<ul>
 						<li>단계별로 서서히 난이도를 올리는게 좋음. 갑자기 난이도가 높아지면 흥미를 잃음</li>
 						<li>도표나 그래프를 통해 다른 것과 비교해보고 비슷한 것과 차이점을 파악하며 공부</li>
 						<li>주제별, 페이지수, 목표 등 디테일한 계획을 세운다</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle study">찰떡 파트너!</div>
-						<div class="mbtiPartner">ENFJ, ESFJ, ISTJ</div>
+						<div class="smtitle">찰떡 파트너!<i class="bi bi-people-fill"></i></div>
+						<div class="mt-3 d-flex align-items-center justify-content-center group1">
+							<a class="text-dark" style="font-size: 1.5em;" href="ENFJ">인간플래너형 [ENFJ]</a>
+							<img src="../../resources/img/teamC/ENFJ.png" style="width: 100px;">
+						</div>
+						<div class="mt-3 d-flex align-items-center justify-content-center group1">
+							<a class="text-dark" style="font-size: 1.5em;" href="ESFJ">인싸형 공부러 [ESFJ]</a>
+							<img src="../../resources/img/teamC/ESFJ.png" style="width: 100px;">
+						</div>
+						<div class="mt-3 d-flex align-items-center justify-content-center group1">
+							<a class="text-dark" style="font-size: 1.5em;" href="ISTJ">현실주의형 [ISTJ]</a>
+							<img src="../../resources/img/teamC/ISTJ.png" style="width: 100px;">
+						</div>
+						
 						<div class="box2">
-							<div class="smtitle place">찰떡 공부장소!</div>
+							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
 							<div class="studyPlace">공부는 각 잡고! 독서실! 공부 분위기가 제대로 잡혀있는 공간!</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
-				<input name="mbti"id = "mbti" value="ESTJ" style="display: none">
-				<button class="wholeBox two_btn sv_btn">저장하기</button>
+				<div class="wholeBox text-center two_btn re_btn" onclick="moveTo()">다시하기</div>
+				<div class="wholeBox text-center two_btn sv_btn">저장하기</div>
+				
 
-				<div class="shareBtn">
-					<a id="kakao-link-btn" href="javascript:sendLink()"> <img
-						src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
-					</a>
+				<div class="d-flex mt-5 mb-5 justify-content-around">
 
-					<button class="sharebtn-kakao" type="button" onclick="sendLink();">
-						<img src="../../resources/img/teamC/kakaoLogo.png" />
+					<button class="sharebtn1" type="button" onclick="sendLink();">
+						<img src="../../resources/img/teamC/kakaoLogo.png"
+							style="width: 40px;" />
 					</button>
-					<button class="sharebtn-link" type="button" onclick="copyLink();">
-						<img src="../../resources/img/teamC/copyLink.png" />
+					<button class="sharebtn1" type="button" onclick="copyLink();">
+						<img src="../../resources/img/teamC/copyLink.png"
+							style="width: 30px;" />
 					</button>
 
 				</div>
-
 				<jsp:include page="../../ajaxContent/teamC/comment.jsp" flush="false" />
 
 

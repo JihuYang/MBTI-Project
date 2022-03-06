@@ -71,9 +71,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box">
+				<div class="bg-white p-4 col-box text-center">
 
-					<div class="feature">
+					<div class="feature text-center">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>관심 받는 것을 싫어하는 관종</li>
@@ -84,7 +84,7 @@
 
 
 
-					<div class="weakness">
+					<div class="weakness text-center">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>본인이 좋아하는 과목만 파는 스타일</li>
@@ -100,36 +100,45 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle method">찰떡 공부법!</div>
+					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i></div>
 					<ul>
 						<li>단순 암기에 매우 강하기에 규칙적인 복습을 이용해 장기기억으로 만든다</li>
 						<li>상상력이 뛰어나기에 배경지식과 스토리를 먼저 알고 공부하면 이해가 쉽다</li>
 						<li>시각적 자료를 활용한 학습 추천!!</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle study">찰떡 파트너!</div>
-						<div class="mbtiPartner">INFJ, INTJ</div>
+						<div class="smtitle">찰떡 파트너!<i class="bi bi-people-fill"></i></div>
+						<div
+							class="mt-3 d-flex align-items-center justify-content-center group1">
+							<a class="text-dark" style="font-size: 1.5em;" href="INFJ">숲 속 선비형 [INFJ]</a>
+							<img src="../../resources/img/teamC/INFJ.png" style="width: 100px;">
+						</div>
+						<div
+							class="mt-3 d-flex align-items-center justify-content-center group1">
+							<a class="text-dark" style="font-size: 1.5em;" href="INTJ">본투비 전략가형 [INTJ]</a>
+							<img src="../../resources/img/teamC/INTJ.png" style="width: 100px;">
+						</div>
+						
 						<div class="box2">
-							<div class="smtitle place">찰떡 공부장소!</div>
+							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
 							<div class="studyPlace">그룹 스터디를 할 때 학습 효과가 좋은 나는, 스터디 카페에서!</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
-				<input name="mbti"id = "mbti" value="ISFP" style="display: none">
-				<button class="wholeBox two_btn sv_btn">저장하기</button>
+				<div class="wholeBox text-center two_btn re_btn" onclick="moveTo()">다시하기</div>
+				<div class="wholeBox text-center two_btn sv_btn">저장하기</div>
+				
 
-				<div class="shareBtn">
-					<a id="kakao-link-btn" href="javascript:sendLink()"> <img
-						src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
-					</a>
+				<div class="d-flex mt-5 mb-5 justify-content-around">
 
-					<button class="sharebtn-kakao" type="button" onclick="sendLink();">
-						<img src="../../resources/img/teamC/kakaoLogo.png" />
+					<button class="sharebtn1" type="button" onclick="sendLink();">
+						<img src="../../resources/img/teamC/kakaoLogo.png"
+							style="width: 40px;" />
 					</button>
-					<button class="sharebtn-link" type="button" onclick="copyLink();">
-						<img src="../../resources/img/teamC/copyLink.png" />
+					<button class="sharebtn1" type="button" onclick="copyLink();">
+						<img src="../../resources/img/teamC/copyLink.png"
+							style="width: 30px;" />
 					</button>
 
 				</div>

@@ -52,6 +52,7 @@
 </head>
 <body>
 <div class="container-fluid mt-5">
+	<div class="text-center">
 		<div class="row">
 			<div class="col"></div>
 			<div class="col content">
@@ -71,10 +72,10 @@
 
 
 				</div>
+		
+				<div class="bg-white p-4 col-box text-center">
 
-				<div class="bg-white p-4 col-box">
-
-					<div class="feature">
+					<div class="feature text-center">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>계획 세우는 것이 취미</li>
@@ -85,7 +86,7 @@
 
 
 
-					<div class="weakness">
+					<div class="weakness text-center">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>거절하는 것을 어려워함</li>
@@ -110,6 +111,7 @@
 						<li>피드백을 주고받을 수 있는 멘토를 찾는다</li>
 						<li>수업 후 질문을 따로 하거나, Q&A 게시판을 잘 활용한다</li>
 					</ul>
+				
 					<div class="box2">
 						<div class="smtitle">
 							찰떡 파트너 <i class="bi bi-people-fill"></i>
@@ -145,8 +147,9 @@
 
 				<div class="wholeBox text-center two_btn re_btn" onclick="moveTo()">다시하기</div>
 				<div class="wholeBox text-center two_btn sv_btn">저장하기</div>
+				
 
-				<div class="d-flex mt-5 mb-5 justify-content-center">
+				<div class="d-flex mt-5 mb-5 justify-content-around">
 
 					<button class="sharebtn1" type="button" onclick="sendLink();">
 						<img src="../../resources/img/teamC/kakaoLogo.png"
@@ -168,7 +171,7 @@
 			<div class="col" id="sideCol"></div>
 		</div>
 	</div>
-
+	</div>
 	<footer class="text-center">
 		<span>@2022 MBTI에 진심인 팀 All rights reserved.</span>
 	</footer>
