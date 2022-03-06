@@ -263,24 +263,19 @@ footer {
 .cmt_btn:hover{
 	background:#FFE58A;	
 }
-.shareBtn {
-	margin-top: 40px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+
+.sharebtn1{
+	width: 60px;
+	height: 50px;
+	box-shadow: 4px 4px 0 black;
+	border-radius: 10px;
+	border: 3px solid black;
+	margin:10px;
+}
+.sharebtn1:hover{
+	background:#FFE58A;	
 }
 
-.shareBtn img:first-child {
-	width: 40px;
-	height: 40px;
-}
-
-.shareBtn img:nth-child(2) {
-	margin-top: 5px;
-	width: 30px;
-	height: 30px;
-}
 
 .wholeBox{
 	border-radius: 10px;

@@ -51,16 +51,16 @@
 
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row text-center">
-			<div class="col" id="sideCol"></div>
-			<div class="col content" id="mainCont">
-				<div class="bg-white p-4 col-box">
+<div class="container-fluid mt-5">
+		<div class="row">
+			<div class="col"></div>
+			<div class="col content">
+				<div class="bg-white p-4 col-box text-center">
 					<div class="resultName">
 						"높은 확률로 지금 다이어리에 계획표 작성 중" <br> <span id="resultNick">인간 플래너형
 						</span>
 					</div>
-					<img class="result-img" src="../../resources/img/teamC/ENFJ.png" />
+					<img class="result-img" src="../../resources/img/teamC/ESFJ.png" />
 
 					<div class="box2">
 						<div class="resultDesc">
@@ -101,7 +101,9 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle method">찰떡 공부법!</div>
+					<div class="smtitle">
+						찰떡 공부법 <i class="bi bi-book"></i>
+					</div>
 					<ul>
 						<li>수업 할때 앞자리에 앉아 능동적인 참여 추천!</li>
 						<li>시간을 맞춰놓고 스스로 보채며 공부하는 게 효과적!</li>
@@ -109,32 +111,55 @@
 						<li>수업 후 질문을 따로 하거나, Q&A 게시판을 잘 활용한다</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle study">찰떡 파트너!</div>
-						<div class="mbtiPartner">ESTJ, ESFJ, ISTJ</div>
+						<div class="smtitle">
+							찰떡 파트너 <i class="bi bi-people-fill"></i>
+						</div>
+
+						<div
+						
+							class="mt-3 d-flex align-items-center justify-content-center group1">
+							<a class="text-dark" style="font-size: 1.5em;" href="ESTJ">추진부스터 [ESTJ]</a>
+							<img src="../../resources/img/teamC/ESTJ.png" style="width: 100px;">
+						</div>
+						
+						<div
+							class="mt-3 d-flex align-items-center justify-content-center group1">
+							<a class="text-dark" style="font-size: 1.5em;" href="ESFJ">인싸형 공부러 [ESFJ]</a>
+							<img src="../../resources/img/teamC/ESFJ.png" style="width: 100px;">
+						</div>
+		
+						<div
+							class="mt-3 d-flex align-items-center justify-content-center group1">
+							<a class="text-dark" style="font-size: 1.5em;" href="ISTJ">현실주의형 [ISTJ]</a>
+							<img src="../../resources/img/teamC/ISTJ.png" style="width: 100px;">
+						</div>
+
 						<div class="box2">
-							<div class="smtitle place">찰떡 공부장소!</div>
-							<div class="studyPlace">어디서 하든 열심히 하는게 중요하지. 이번 시험도 파이팅하자! 환경에 구애 받지 않는다구~</div>
+							<div class="smtitle">
+								찰떡 공부장소 <i class="bi bi-shop-window"></i>
+							</div>
+							<p class="studyPlace">같이하자! 스터디 카페</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
-				<input name="mbti"id = "mbti" value="ENFJ" style="display: none">
-				<button class="wholeBox two_btn sv_btn">저장하기</button>
+				<div class="wholeBox text-center two_btn re_btn" onclick="moveTo()">다시하기</div>
+				<div class="wholeBox text-center two_btn sv_btn">저장하기</div>
 
-				<div class="shareBtn">
-					<a id="kakao-link-btn" href="javascript:sendLink()"> <img
-						src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
-					</a>
+				<div class="d-flex mt-5 mb-5 justify-content-center">
 
-					<button class="sharebtn-kakao" type="button" onclick="sendLink();">
-						<img src="../../resources/img/teamC/kakaoLogo.png" />
+					<button class="sharebtn1" type="button" onclick="sendLink();">
+						<img src="../../resources/img/teamC/kakaoLogo.png"
+							style="width: 40px;" />
 					</button>
-					<button class="sharebtn-link" type="button" onclick="copyLink();">
-						<img src="../../resources/img/teamC/copyLink.png" />
+					<button class="sharebtn1" type="button" onclick="copyLink();">
+						<img src="../../resources/img/teamC/copyLink.png"
+							style="width: 30px;" />
 					</button>
 
 				</div>
+				
+	
 
 						<jsp:include page="../../ajaxContent/teamC/comment.jsp" flush="false" />
 
