@@ -45,11 +45,11 @@
 				<%-- </c:forEach> --%>
 				<div class="row mt-5">
 					<div class="col">
-					<a id="home-btn" href="<%=request.getContextPath()%>/index"><img src="<%=request.getContextPath()%>/resources/img/teamA/home.svg" alt="homeIcon" style="width:50px"></a>
+					<a id="home-btn" href="<%=request.getContextPath()%>/index"><img src="<%=request.getContextPath()%>/resources/img/teamA/home.svg" alt="homeIcon" style="width:30px; color: white;"></a>
 						<p>Home</p>
 					</div>
 					<div class="col">
-					<a id="redo-btn" href="./start"><img src="<%=request.getContextPath()%>/resources/img/teamA/redo.svg" alt="redoIcon"  style="width:50px"></a>
+					<a id="redo-btn" href="./start"><img src="<%=request.getContextPath()%>/resources/img/teamA/redo.svg" alt="redoIcon"  style="width:30px; color: white;"></a>
 						<p>Replay</p>
 					</div>
 					
