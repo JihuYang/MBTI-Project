@@ -72,9 +72,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box">
+				<div class="bg-white p-4 col-box text-center">
 
-					<div class="feature">
+					<div class="feature text-center">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>몸으로 겪는 경험보다는 책을 통해 배우는 부분이 많음</li>
@@ -85,7 +85,7 @@
 
 
 
-					<div class="weakness">
+					<div class="weakness text-center">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>완벽주의 성향이 강해 미루는 경향이 있음</li>
@@ -101,40 +101,38 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle method">찰떡 공부법!</div>
+					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i></div>
 					<ul>
 						<li>지식을 이해하며 확장시키는 심화적 학습 방법이 효과적</li>
 						<li>개념과 논리 이해도가 높아 체계적인 공부법이 효과적</li>
 						<li>밀리지 않게 매일 해야할 것들을 정해 꾸준히 공부하는 습관 기르는 것이 중요</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle study">찰떡 파트너!</div>
+						<div class="smtitle">찰떡 파트너! <i class="bi bi-people-fill"></i></div>
 						<div class="mbtiPartner">ENTP</div>
 						<div class="box2">
-							<div class="smtitle place">찰떡 공부장소!</div>
+							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
 							<div class="studyPlace">혼자 공부하는게 효과적인 나는, 독서실에!</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
-				<input name="mbti"id = "mbti" value="INTP" style="display: none">
-				<button class="wholeBox two_btn sv_btn">저장하기</button>
+				<div class="wholeBox text-center two_btn re_btn" onclick="moveTo()">다시하기</div>
+				<div class="wholeBox text-center two_btn sv_btn">저장하기</div>
+				
 
-				<div class="shareBtn">
-					<a id="kakao-link-btn" href="javascript:sendLink()"> <img
-						src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
-					</a>
+				<div class="d-flex mt-5 mb-5 justify-content-around">
 
-					<button class="sharebtn-kakao" type="button" onclick="sendLink();">
-						<img src="../../resources/img/teamC/kakaoLogo.png" />
+					<button class="sharebtn1" type="button" onclick="sendLink();">
+						<img src="../../resources/img/teamC/kakaoLogo.png"
+							style="width: 40px;" />
 					</button>
-					<button class="sharebtn-link" type="button" onclick="copyLink();">
-						<img src="../../resources/img/teamC/copyLink.png" />
+					<button class="sharebtn1" type="button" onclick="copyLink();">
+						<img src="../../resources/img/teamC/copyLink.png"
+							style="width: 30px;" />
 					</button>
 
 				</div>
-
 				<jsp:include page="../../ajaxContent/teamC/comment.jsp" flush="false" />
 
 

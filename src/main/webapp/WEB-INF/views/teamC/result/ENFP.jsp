@@ -71,9 +71,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box">
+				<div class="bg-white p-4 col-box text-center">
 
-					<div class="feature">
+					<div class="feature text-center">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>분위기 메이커 역할, 뛰어난 대화 스킬을 가지고 있다</li>
@@ -84,7 +84,7 @@
 
 
 
-					<div class="weakness">
+					<div class="weakness text-center">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>끈기가 없는 편..</li>
@@ -100,36 +100,43 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle method">찰떡 공부법!</div>
+					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i>
+					</div>
 					<ul>
 						<li>그룹 스터디 강추!! (이야기 나누며 공부할 수 있는 학습메이트가 있으면 좋음)</li>
 						<li>토론과 탐구식 학습 스타일이 효과적!</li>
 						<li>자신만의 자습시간을 가짐으로서 나만의 정리시간을 가져야함</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle study">찰떡 파트너!</div>
-						<div class="mbtiPartner">ENTJ</div>
+						<div class="smtitle">
+							찰떡 파트너! <i class="bi bi-people-fill"></i>
+						</div>
+						<div class="mt-3 d-flex align-items-center justify-content-center group1">
+							<a class="text-dark" style="font-size: 1.5em;" href="ENTJ">문제해결형 [ENTJ]</a>
+							<img src="../../resources/img/teamC/ENTJ.png" style="width: 100px;">
+						</div>
+					
 						<div class="box2">
-							<div class="smtitle place">찰떡 공부장소!</div>
+							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i>
+							</div>
 							<div class="studyPlace">딴 짓 할 확률이 높다! 감시자가 있는 공간을 적절히 찾아가자! 반오픈형 독서실 추천~</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="wholeBox two_btn re_btn" onclick="moveTo()">다시하기</div>
-				<input name="mbti"id = "mbti" value="ENFP" style="display: none">
+				<!-- <input name="mbti"id = "mbti" value="ENFP" style="display: none"> -->
 				<button class="wholeBox two_btn sv_btn">저장하기</button>
 
-				<div class="shareBtn">
-					<a id="kakao-link-btn" href="javascript:sendLink()"> <img
-						src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
-					</a>
+				<div class="d-flex mt-5 mb-5 justify-content-around">
 
-					<button class="sharebtn-kakao" type="button" onclick="sendLink();">
-						<img src="../../resources/img/teamC/kakaoLogo.png" />
+					<button class="sharebtn1" type="button" onclick="sendLink();">
+						<img src="../../resources/img/teamC/kakaoLogo.png"
+							style="width: 40px;" />
 					</button>
-					<button class="sharebtn-link" type="button" onclick="copyLink();">
-						<img src="../../resources/img/teamC/copyLink.png" />
+					<button class="sharebtn1" type="button" onclick="copyLink();">
+						<img src="../../resources/img/teamC/copyLink.png"
+							style="width: 30px;" />
 					</button>
 
 				</div>
