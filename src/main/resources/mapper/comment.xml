@@ -24,6 +24,7 @@
 		FROM ((camp1.comment 
         JOIN camp1.user ON comment.userId = user.id)
         JOIN camp1.mbti ON user.mbti = mbti.id)
-		WHERE camp1.comment.testId =  #{testId};
+		WHERE camp1.comment.testId =  #{testId}
+		ORDER BY regdate DESC;
 	</select>
 </mapper>
