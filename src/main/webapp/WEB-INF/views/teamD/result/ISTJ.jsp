@@ -11,6 +11,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamDResult-ISTJ</title>
 	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamD.css">
+<style>
+	body {  
+		background-image : url("<%=request.getContextPath()%>/resources/img/teamD/teamD_background.jpg") ;
+		background-repeat : no-repeat ;
+		background-size: cover;
+		height: 100vh;	
+		font-family : 'Gaegu' ;
+	} 
+</style>
 </head> 
 
 <body style="background-attachment : fixed ;">

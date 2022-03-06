@@ -7,8 +7,15 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamDStart</title>
-	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
+	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamD.css">
 	<style>
+		body {  
+			background-image : url("<%=request.getContextPath()%>/resources/img/teamD/teamD_background.jpg") ;
+			background-repeat : no-repeat ;
+			background-size: cover;
+			height: 100vh;	
+			font-family : 'Gaegu' ;
+		} 
 		h2:hover {
 			cursor : pointer ;
 		}
@@ -22,12 +29,20 @@
 			margin-left : 200px;
 			cursor : pointer;
 		}
+		#img {
+			width : 90% ;
+			height : 30% ;
+			margin : 0 auto ;
+			margin-bottom : 20px ;
+			background-image : url("<%=request.getContextPath()%>/resources/img/teamD/start img.png") ;
+		}
 	</style>
 </head>
 <body>
 <div id="wrapper">
 <h1 style="margin-bottom:30px ;">짱구로<br>나의 성격 유형 알아보기</h1>
 <div id="img">
+	
 </div>
 <h2 onclick ="location.href='question'">
 	<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
@@ -42,7 +57,7 @@
 	</svg>
 	모든 성격 유형 보기
 </h2>
-<div onclick="location.href='../index'" id="img3"><img src="../resources/img/teamD/home.svg" alt="homeIcon" style="width:30px">Home</div>
+<div onclick="location.href='../index'" id="img3"><img src="<%=request.getContextPath()%>/resources/img/teamD/home.svg" alt="homeIcon" style="width:30px">Home</div>
 
 </div>
 </body>

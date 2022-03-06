@@ -12,6 +12,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamDResult-ENFP</title>
 	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamD.css">
+<style>
+	body {  
+		background-image : url("<%=request.getContextPath()%>/resources/img/teamD/teamD_background.jpg") ;
+		background-repeat : no-repeat ;
+		background-size: cover;
+		height: 100vh;	
+		font-family : 'Gaegu' ;
+	} 
+</style>
 </head>
 
 <body style="background-attachment : fixed ;">
@@ -41,13 +50,13 @@
 		<div id="end">
 		<table style="width: 100%" id="endbar">
 			<tr>
-				<td onclick="location.href='start'"><div id="img1"><img id="back" style="float:none;width:30px;height:30px;" src="<%=request.getContextPath()%>/resources/img/teamD/back.png" >다시하기</div></td>
+				<td onclick="location.href='../start'"><div id="img1"><img id="back" style="float:none;width:30px;height:30px;" src="<%=request.getContextPath()%>/resources/img/teamD/back.png" >다시하기</div></td>
 				<td><div id="img2"> <a id="kakao-link-btn" href="javascript:sendLink()"> <img id="share" style="float:none;width:40px;height:40px;" src="<%=request.getContextPath()%>/resources/img/teamD/share.png">결과 공유</a></div></td>
 			</tr>
 			<tr>
-				<td><div onclick="location.href='../index'" style="margin-left:0px"><img id="save" style="float:none;width:30px;height:30px;" src="<%=request.getContextPath()%>/resources/img/teamD/home.jpg"> Home</div></td>
+				<td><div onclick="location.href='../../index'" style="margin-left:0px"><img id="save" style="float:none;width:30px;height:30px;" src="<%=request.getContextPath()%>/resources/img/teamD/home.jpg"> Home</div></td>
 				<td>
-						<form method="post" action="../saved"
+						<form method="post" action="<%=request.getContextPath()%>/teamD/saved"
 							style="display: inline-block; width: 46px; margin: 0 15px;">
 							<input name="mbti" id="mbti" value="ENFP" style="display: none">
 							<button>

@@ -18,13 +18,15 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-	
+
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
 
 <title>[결과]나의 배우자는 누구?</title>
-<link rel="stylesheet" type="text/css" href='<%=request.getContextPath()%>/resources/css/teamB.css' />
+<link rel="stylesheet" type="text/css"
+	href='<%=request.getContextPath()%>/resources/css/teamB.css' />
 <style>
 .comment-bubble {
 	text-align: left;
@@ -33,7 +35,8 @@
 .scroll-comment {
 	overflow-y: scroll;
 }
-.share-wrap p{
+
+.share-wrap p {
 	margin-bottom: 18px;
 }
 </style>
@@ -44,29 +47,41 @@
 	<div class="result-wrap">
 		<div id="optadATF" style="min-height: 110px"></div>
 		<div class="img-result">
-			<img src="<%=request.getContextPath()%>/resources/img/teamB/ENFJ.png" alt="MBTI:결과 img">
+			<img src="<%=request.getContextPath()%>/resources/img/teamB/ENFJ.png"
+				alt="MBTI:결과 img">
 		</div>
 		<br>
 		<div class="share-wrap">
-			<p>공유 및 저장하기</p>
-			<a id="kakao-link-btn" href="javascript:sendLink()"> 
-				<img src="<%=request.getContextPath()%>/resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
-			<a id="copy-link-btn" href="javascript:copyLink()">  <img
-				src="<%=request.getContextPath()%>/resources/img/teamB/link_icon.png" alt="linkicon"></a>
-			<form method="post" action="<%=request.getContextPath()%>/teamB/saved" style="display:inline-block;width:46px;margin:0 15px;">
-				<input name="mbti"id = "mbti" value="ENFJ" style="display: none">
+			<p>공유하기</p>
+			<a id="kakao-link-btn" href="javascript:sendLink()"> <img
+				src="<%=request.getContextPath()%>/resources/img/teamB/kakaotalk_icon.png"
+				alt="kakaoicon"></a> <a id="copy-link-btn"
+				href="javascript:copyLink()"> <img
+				src="<%=request.getContextPath()%>/resources/img/teamB/link_icon.png"
+				alt="linkicon"></a>
+		</div>
+		<div class="restarticon">
+			<a id="home-btn" href="<%=request.getContextPath()%>/index"> <input
+				type="button" value="홈가기" class="btn btn-warning btn-yellow"
+				style="border-radius: 15px; margin: 10px; font-size: 25px;"></a>
+			<input type="button" value="다시하기" class="btn btn-warning btn-yellow "
+				style="border-radius: 15px; margin: 10px; font-size: 25px;"
+				onclick="location.href='../start'">
+			<form method="post"
+				action="<%=request.getContextPath()%>/teamB/saved"
+				style="display: inline-block;">
+				<input name="mbti" id="mbti" value="ENFJ" style="display: none">
 				<button>
-					<img src="<%=request.getContextPath()%>/resources/img/teamB/save_icon.png" alt="saveicon" style="width:100%">
+					<input type="button" value="저장하기"
+						class="btn btn-warning btn-yellow"
+						style="border-radius: 15px; pointer-events: none; margin: 10px; font-size: 25px;">
 				</button>
 			</form>
 		</div>
-		<div class="restarticon">
-			<input type="button" value="테스트 다시하기" class="btn btn-warning btn-yellow "
-				style="border-radius: 15px; font-size: 30px;"
-				onclick="location.href='../start'">
-		</div>
 		<div id="other_test_link">
-			<img src="<%=request.getContextPath()%>/resources/img/teamB/check.png" alt="MBTI:결과"
+			<img
+				src="<%=request.getContextPath()%>/resources/img/teamB/check.png"
+				alt="MBTI:결과"
 				style="vertical-align: center; weight: auto; height: 20px;"> <span
 				class="other_test" style="font-size: 20px; font-weight: bold;">다른
 				테스트 하러가기</span>
@@ -95,7 +110,7 @@
 			</button>
 		</div>
 		<jsp:include page="../../ajaxContent/teamB/comment.jsp" flush="false" />
-<%-- <%@ include file="<%=request.getContextPath()%>/<%=request.getContextPath()%>/ajaxContent/teamB/comment.jsp"%> --%>
+		<%-- <%@ include file="<%=request.getContextPath()%>/<%=request.getContextPath()%>/ajaxContent/teamB/comment.jsp"%> --%>
 	</div>
 	<div class="footer">
 		<p class=footer-text>@HGU 2022 Winter Camp</p>
