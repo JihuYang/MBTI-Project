@@ -107,7 +107,11 @@
 						</div>
 						<div class="col">
 							<button type="button" class="btn btn-light btn-save"
-								onclick="location.href='./start'">다시하기</button>
+								onclick="location.href='<%=request.getContextPath()%>/teamA/start'">다시하기</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-light btn-save"
+								onclick="location.href='<%=request.getContextPath()%>/'">홈으로</button>
 						</div>
 					</div>
 					<div class="row mt-5">
