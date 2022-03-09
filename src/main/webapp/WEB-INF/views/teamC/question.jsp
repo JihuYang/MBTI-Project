@@ -9,33 +9,40 @@
 <script src="<%=request.getContextPath()%>/resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
 
 <script>
-	$(function() {
-		var progressbar = $("#progressbar"), progressLabel = $(".progress-label");
-
-		progressbar.progressbar({
-			value : 100,
-			change : function() {
-				progressLabel.text("Current Progress: "
-						+ progressbar.progressbar("value") + "%");
-			}
-		});
-
-	});
 	
 	function moveTo() {
 		location.href="loading";
 	}
-	function nextButton1(){
+	function nextButton(num){
 		var value = document.getElementById('progress').value;
-		document.getElementById('progress').value = value+8.3;
-		saveType(${1}, '${questions[0].result}');
+		document.getElementById('progress').value = value+8.333;
+		if(num==1){
+			saveType(${1}, '${questions[0].result}');
+		}
+		else{
+			saveType(${2}, '${questions[1].result}');
+		}
 	}
-	function nextButton2(){
-		var value = document.getElementById('progress').value;
-		document.getElementById('progress').value = value+8.3;
-		saveType(${2}, '${questions[1].result}');
-	}
+	
 </script>
+<style>
+progress {
+	width: 100%;
+	height: 5px;
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+  background-color: #F0F0F0;
+  border-radius: 50px;
+}
+
+::-webkit-progress-value {
+  background-color: #FFC700;
+  border-radius: 50px;
+}
+
+</style>
 
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -61,7 +68,7 @@
 			
 				<div id="progressDiv">
 					
-					<progress value="8.3" max="100" id="progress" style="width: 100%;"></progress>
+					<progress value="8.333" max="100" id="progress"></progress>
 					
 					<div class="progress-label"><span id="Qnum">${questions[0].questionNum}</span>/12</div>
 
@@ -71,8 +78,8 @@
 				<div class="quiz-question question ">힘들게 공부한 시험 결과가 좋지 않다<%=request.getContextPath()%>. 어떻게 하면 기분이 나아질까<%=request.getContextPath()%></div>
 
 				<div id="quiz-button">
-					<button id="Button" class="btn1" onclick="nextButton1()">${questions[0].answer}</button>
-					<button id="Button" class="btn2" onclick="nextButton2()">${questions[1].answer}</button>
+					<button id="Button" class="btn1" onclick="nextButton(1)">${questions[0].answer}</button>
+					<button id="Button" class="btn2" onclick="nextButton(2)">${questions[1].answer}</button>
 				</div>
 				<div class="shareBtn">
 					<a id="home-btn" href="<%=request.getContextPath()%>/index"><img src="<%=request.getContextPath()%>/resources/img/teamC/home.svg" alt="homeIcon" style="width:50px"></a>
