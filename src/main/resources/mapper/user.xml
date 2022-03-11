@@ -60,7 +60,8 @@
 		FROM (((camp1.user
 		JOIN camp1.savedTest ON user.id = savedTest.userId)
 		JOIN camp1.mbti ON savedTest.result = mbti.id)
-		JOIN camp1.test ON savedTest.testId = test.id) WHERE user.id = #{userId};
+		JOIN camp1.test ON savedTest.testId = test.id) WHERE user.id = #{userId}
+		ORDER BY savedTest.regDate DESC;
 	</select>
 
 
