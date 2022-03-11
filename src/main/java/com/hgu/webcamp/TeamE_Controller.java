@@ -89,9 +89,9 @@ public class TeamE_Controller {
 		System.out.println("question page loaded");
 		
 		
-		int questionNum= 1; // question 테이블에서 문제 
-		int questionId = 1; // answer 테이블에서 문제 
-		int testId = 5; // 테스트이름
+		int questionNum= 1; // question �뀒�씠釉붿뿉�꽌 臾몄젣 
+		int questionId = 1; // answer �뀒�씠釉붿뿉�꽌 臾몄젣 
+		int testId = 5; // �뀒�뒪�듃�씠由�
 
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
 		userService.updateViews(testId);
@@ -113,20 +113,20 @@ public class TeamE_Controller {
 		return "teamE/result";
 	}
 	
-	// ajax로 값을 주고받는 Controller 
+	// ajax濡� 媛믪쓣 二쇨퀬諛쏅뒗 Controller 
 		@RequestMapping(value = "/ajax", method = RequestMethod.POST)
 		public @ResponseBody List<questionDTO> ajax_question(@RequestParam("questionNum") int questionNum) {
 			
 			int testId = 5;
 			int questionId = 1;
-			// ajax로부터 받은 문제 번호를 1증가 시키고 questionId에도 해당 값 부여   
+			// ajax濡쒕��꽣 諛쏆� 臾몄젣 踰덊샇瑜� 1利앷� �떆�궎怨� questionId�뿉�룄 �빐�떦 媛� 遺��뿬   
 			questionNum++;
 			questionId = questionNum;
 			
 			
-			// 데이터베이스에서 testId, questionNum, questionId 에 따른 값 가져오기   
+			// �뜲�씠�꽣踰좎씠�뒪�뿉�꽌 testId, questionNum, questionId �뿉 �뵲瑜� 媛� 媛��졇�삤湲�   
 			List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-			// ajax로 보내기 
+			// ajax濡� 蹂대궡湲� 
 			return question;
 			}
 		@RequestMapping(value = "/result/ENFJ", method = RequestMethod.GET)
@@ -572,6 +572,38 @@ public class TeamE_Controller {
 
 			return mv;
 		}
+		@RequestMapping(value = "/saved", method = RequestMethod.POST)
+	    public String savedOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
+	       request.setCharacterEncoding("utf-8");
+
+	       int testId = 5;
+	       
+	       testDTO dto = new testDTO();
+	       
+	       if(request.getSession().getAttribute("tempUser") != null) {
+	          int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+	          dto.setUserId(userId);
+	       }   
+	       
+	       dto.setTestId(testId);
+	       String type = request.getParameter("mbti");
+	       
+	       System.out.println(type);
+	       int mbti = testService.readMbtiIdByType(type);
+	       dto.setResult(mbti);
+	       
+	       int i = testService.insertTest(dto);
+	       if(i==0) {
+	          System.out.println("�뜲�씠�꽣 異붽� �떎�뙣 ");
+	          
+	       }
+	       else {
+	          System.out.println("�뜲�씠�꽣 異붽� �꽦怨� ");
+	       }
+
+
+	       return "redirect:/";
+	    }
 		
 }
 		
