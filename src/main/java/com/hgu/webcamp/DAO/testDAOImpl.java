@@ -27,4 +27,10 @@ public class testDAOImpl implements testDAO {
 		return result;
 	}
 
+	@Override
+	public int deleteTestResult(int id) {
+		int result = sqlSession.delete(namespace + ".deleteTestResult", id);
+		return result;
+	}
+
 }

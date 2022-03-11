@@ -24,5 +24,11 @@ public class testServiceImpl implements testService{
 		return dao.readMbtiIdByType(type);
 	}
 
+
+	@Override
+	public int deleteTestResult(int id) {
+		return dao.deleteTestResult(id);
+	}
+
 }
  

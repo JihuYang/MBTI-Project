@@ -164,7 +164,7 @@
 				
 	
 
-						<jsp:include page="../../ajaxContent/teamC/comment.jsp" flush="false" />
+						<jsp:include page="../comment.jsp" flush="false" />
 
 
 			</div>

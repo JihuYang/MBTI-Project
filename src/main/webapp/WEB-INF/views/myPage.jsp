@@ -10,6 +10,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
+
 <title>소크라테스 - 마이페이지</title>
 <!-- Favicon-->
 <link rel="icon" type="image/x-icon" href="resources/img/favicon.ico" />
@@ -17,6 +18,12 @@
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
 	rel="stylesheet" />
+	
+<!-- icon -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+
 <!-- Bootstrap CSS -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -45,6 +52,14 @@
 	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 	crossorigin="anonymous"></script>
 
+<script>
+function delete_ok(id) {
+	var a = confirm("정말로 삭제하겠습니까?");
+	
+	if (a)
+		location.href = '/webcamp/myPage/delete_ok/' + id;
+}
+</script>
 
 </head>
 <body>
@@ -118,7 +133,9 @@
 					<div class="col my-3">
 						<div class="card h-100">
 							<div class="badge bg-dark text-white position-absolute"
-								style="top: 0.5rem; right: 0.5rem">${savedTest.regDate}</div>
+								style="top: 0.5rem; right: 0.5rem">${savedTest.regDate}  <a class="mb-0 text-white p-1"
+														id="delbtn" href="javascript:delete_ok('${savedTest.id}')"><i
+														class="bi bi-x-lg"></i></a></div>
 							<!-- Product image-->
 							<img class="card-img-top"
 								src="resources/img/teamProject/team${test}_thumbnail.png" alt="<%=request.getContextPath()%>." />

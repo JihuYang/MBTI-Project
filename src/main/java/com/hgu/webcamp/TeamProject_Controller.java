@@ -8,12 +8,15 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.hgu.webcamp.DTO.testDTO;
 import com.hgu.webcamp.DTO.userDTO;
 import com.hgu.webcamp.Service.userService;
+import com.hgu.webcamp.Service.testService;
 /**
  * Handles requests for the application home page.
  */
@@ -24,6 +27,9 @@ public class TeamProject_Controller {
 
 	@Autowired
 	userService userService;
+	
+	@Autowired
+	testService testService;
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -53,14 +59,12 @@ public class TeamProject_Controller {
 		
 		
 		int id = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
-//<<<<<<< HEAD
-		
-//=======
+
 		System.out.println("userId in controller: " + id);
-//>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 	
 		dto=userService.getUser(id);
 		List<userDTO> savedTest = userService.readSavedTest(id);
+		
 				
 		ModelAndView mv = new ModelAndView();
 		//System.out.println("dto: " + dto);
@@ -74,6 +78,17 @@ public class TeamProject_Controller {
 		
 		return mv;
 	}
+	
+	@RequestMapping(value = "/myPage/delete_ok/{id}", method = RequestMethod.GET)
+	public String deletePostOK(@PathVariable("id") int id) {
+		int i = testService.deleteTestResult(id);
+		
+		if(i == 0) System.out.println(id+"Error! delete Failed");
+		else System.out.println("테스트 결과 삭제 완료.");
+		
+		return "redirect:/myPage";
+	}
+	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
