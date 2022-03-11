@@ -75,7 +75,7 @@
 							<div class="row mt-3">
 								<div class="col pe-0">
 									<div id="type-good" class="text-center">
-										<button class="btn btn-light btn-type ">
+										<button class="btn btn-light btn-type " onclick="location.href='INTP'">
 											<div class="type font-ex ">함께하면 좋은</div>
 											<div class="mt-3 fs-7">고집불통 퉁퉁이</div>
 											<h3>천재 개발자</h3>
@@ -86,7 +86,7 @@
 								</div>
 								<div class="col ps-0">
 									<div id="type-bad" class="text-center">
-										<button class="btn btn-light btn-type ">
+										<button class="btn btn-light btn-type " onclick="location.href='ENFP'">
 											<div class="type font-ex ">멀리하면 좋은</div>
 											<div class="mt-3 fs-7">자기애 맥스</div>
 											<h3>행복한 개발자</h3>
