@@ -49,8 +49,6 @@
       <div id="optadATF" style="min-height: 110px"></div>
       <div class= "qBox-wrap">
 			<div class="qBox">
-			<progress value="8.333" max="100" id="progress"></progress>
-			<p> 배우자 찾는 중...</p>
 				<p class="q-count"><strong id="Qnum">${questions[0].questionNum}</strong><span> / 12</span></p>
 				<h2><span class="question">${questions[0].question}</span></h2><br>
 				<div class="option-btn-div">
@@ -65,6 +63,7 @@
 				</div>
 				<div class="percentage">
 					<div class="progress-wrap">
+						<progress value="8.333" max="100" id="progress"></progress>
 						<span class="bar-text" style="font-size:15px">배우자 찾는 중...</span>
 					</div>
 				</div>
