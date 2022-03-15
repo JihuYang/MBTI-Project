@@ -83,19 +83,28 @@ function delete_ok(id) {
 					<div class="mb-3 row">
 						<label for="staticNickname"
 							class="col-sm-2 col-form-label mypage-label">닉네임 </label>
-						<div class="col-sm-10">
-							<input type="text" readonly
-								class="form-control-plaintext border border-secondary rounded p-3"
-								id="staticNickname" value="${info.nickName}" disabled>
+						<div class="col-sm-10 ">
+							<div class="d-flex justify-content-between form-control-plaintext border border-secondary rounded p-3" id="staticNickname">${info.nickName}" 
+								<div id="btnBox">
+									<a class="mb-0 text-muted p-1" id="editbtn" href="javascript:doDisplay('')">
+										<i class="bi bi-pen"></i></a>
+									<a class="mb-0 text-black p-1" id="delbtn" href="javascript:delete_ok('')">
+										<i class="bi bi-x-lg"></i></a>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="mb-3 row">
 						<label for="staticMBTI"
 							class="col-sm-2 col-form-label mypage-label">MBTI </label>
 						<div class="col-sm-10">
-							<input type="text" readonly
-								class="form-control-plaintext border border-secondary rounded p-3"
-								id="staticMBTI" value="${info.type}" disabled>
+						<div class="d-flex justify-content-between form-control-plaintext border border-secondary rounded p-3" id="staticMBTI">${info.type}"
+							<div id="btnBox">
+								<a class="mb-0 text-muted p-1" id="editbtn" href="javascript:doDisplay('')">
+										<i class="bi bi-pen"></i></a>
+									<a class="mb-0 text-black p-1" id="delbtn" href="javascript:delete_ok('')">
+										<i class="bi bi-x-lg"></i></a>
+								</div>
 						</div>
 					</div>
 
