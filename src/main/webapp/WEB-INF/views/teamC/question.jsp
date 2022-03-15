@@ -81,7 +81,7 @@ progress {
 					<button id="Button" class="btn1" onclick="nextButton(1)">${questions[0].answer}</button>
 					<button id="Button" class="btn2" onclick="nextButton(2)">${questions[1].answer}</button>
 				</div>
-				<div class="shareBtn">
+				<div class="shareBtn mt-5">
 					<a id="home-btn" href="<%=request.getContextPath()%>/index"><img src="<%=request.getContextPath()%>/resources/img/teamC/home.svg" alt="homeIcon" style="width:50px"></a>
 					<a id="redo-btn" href="./start"><img src="<%=request.getContextPath()%>/resources/img/teamC/redo.svg" alt="redoIcon"  style="width:50px"></a>
 
