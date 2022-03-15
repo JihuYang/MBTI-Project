@@ -80,13 +80,15 @@ body {
 								src="<%=request.getContextPath()%>/resources/img/teamD/home.jpg">
 							Home
 						</div></td>
-					<td><div
-							onclick="location.href='<%=request.getContextPath()%>/teamD/saved'"
-							style="margin-left: 0px">
-							<img id="save" style="float: none; width: 30px; height: 30px;"
-								src="<%=request.getContextPath()%>/resources/img/teamD/save-file.png">
-							저장하기
-						</div></td>
+					<td>
+					<form method="post" action="<%=request.getContextPath()%>/teamD/saved"
+							style="display: inline-block; margin: 0 15px;">
+							<input name="mbti" id="mbti" value="ENFJ" style="display: none">
+							<button id="savebtn">
+								<img style="float: none; width: 30px; height: 30px; margin-right: 10px"
+									src="<%=request.getContextPath()%>/resources/img/teamD/save-file.png">저장하기
+							</button>
+						</form>
 
 				</tr>
 			</table>

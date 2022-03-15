@@ -110,3 +110,14 @@ p {
 	color : black ;
 }
 
+
+#savebtn{
+	background-color: transparent;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+

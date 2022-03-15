@@ -56,11 +56,11 @@
 			<tr>
 				<td><div onclick="location.href='../index'" style="margin-left:0px"><img id="save" style="float:none;width:30px;height:30px;" src="<%=request.getContextPath()%>/resources/img/teamD/home.jpg"> Home</div></td>
 				<td>
-						<form method="post" action="../saved"
-							style="display: inline-block; width: 46px; margin: 0 15px;">
+						<form method="post" action="<%=request.getContextPath()%>/teamD/saved"
+							style="display: inline-block; margin: 0 15px;">
 							<input name="mbti" id="mbti" value="ESTP" style="display: none">
-							<button>
-								<img style="float: none; width: 30px; height: 30px;"
+							<button id="savebtn">
+								<img style="float: none; width: 30px; height: 30px; margin-right: 10px"
 									src="<%=request.getContextPath()%>/resources/img/teamD/save-file.png">저장하기
 							</button>
 						</form>
