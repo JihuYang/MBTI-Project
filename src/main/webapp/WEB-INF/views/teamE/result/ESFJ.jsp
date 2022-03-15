@@ -59,7 +59,6 @@
 			</form>
 	</div>
 		<div class="share-wrap" style="margin-bottom: 40px;">
-			<p>공유하기</p>
 			<a id="kakao-link-btn" href="javascript:sendLink()"> <img
 				src="<%=request.getContextPath()%>/resources/img/teamB/kakaotalk_icon.png"
 				alt="kakaoicon"></a> <a id="copy-link-btn"
