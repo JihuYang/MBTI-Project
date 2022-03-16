@@ -18,10 +18,12 @@ function saveType(answer, mbti) {
 		// 1번째 버튼 선택시 첫번째 버튼에 해당하는 mbti 값이 배열에 들어감 
 		if(answer == 1) {
 			typeAry[questionNum-1] = mbti1;
+			console.log(typeAry[questionNum-1]);
 		}
 		// 두번째 버튼 선택시 두번째 버튼에 해당하는 mbti 값이 배열에 들어감 
 		else {
 			typeAry[questionNum-1] = mbti2;
+			console.log(typeAry[questionNum-1]);
 		}
 		// 만약 12번째까지 문제가 다 출력되었을 때, 
 		if(questionNum > 11) {
@@ -41,7 +43,7 @@ function saveType(answer, mbti) {
 			}
 			/* conveyType(resultUrl); */
 			
-			window.location.href = "loading"; 
+			/*window.location.href = "loading";*/ 
 			
 			console.log(resultUrl);
 			conveyType(resultUrl);	
@@ -67,7 +69,7 @@ function readQuestion() {
 			console.log("read success");
 			//  해당 문제의 번호를 questionNum에 담는다 
 			questionNum = data[0].questionNum;
-			 
+			
 			/* 이후에 클릭한 버튼에 해당하는 값을 넣기 위해 선택지에 따른 mbti 저장 */
 			mbti1 = data[0].result;
 			mbti2 = data[1].result;
@@ -80,6 +82,7 @@ function readQuestion() {
 			console.log(data[0].answer);
 			console.log(data[1].answer);
 			console.log(data[0].questionNum);
+
 						
 			$(".btn1").empty();
 			$(".btn2").empty();
@@ -99,14 +102,13 @@ function readQuestion() {
 		}
 	});
 }
+/* 컨트롤러로 url 값 전달 
+컨트롤러에서 컨트롤러 값 전달 ..? */  
 
-
-function conveyType(resultURL) {	
-	url += resultURL 
-	window.location.href = url; 
-	
-
-	
+function conveyType(resultURL) {
+	url += resultURL;
+	window.location.href = url;
+	 
 	
 	/*
 	$.ajax({
@@ -124,8 +126,8 @@ function conveyType(resultURL) {
 				url += resultURL;
 				
 				console.log(url);
-				window.location.href = url;
-				
+*/				/*window.location.href = url;*/
+/*				
 			},
 			
 			error : function(request, status, error) {

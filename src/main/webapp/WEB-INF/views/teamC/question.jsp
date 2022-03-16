@@ -37,7 +37,7 @@
 <!--  Google font  -->
 <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Do Hyeon' rel='stylesheet'>
-<script src="<%=request.getContextPath()%>/resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
+<script src="<%=request.getContextPath()%>/resources/js/question.js?ver=112" ></script>
 
 <title>teamCQuestion</title>
 </head>
@@ -62,7 +62,7 @@
 
 				</div>
 
-				<div class="quiz-question question ">힘들게 공부한 시험 결과가 좋지 않다<%=request.getContextPath()%>. 어떻게 하면 기분이 나아질까<%=request.getContextPath()%></div>
+				<div class="quiz-question question ">힘들게 공부한 시험 결과가 좋지 않다.어떻게 하면 기분이 나아질까<%=request.getContextPath()%></div>
 
 				<div id="quiz-button">
 					<button id="Button" class="btn1" onclick="saveType(${1}, '${questions[0].result}')">${questions[0].answer}</button>

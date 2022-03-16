@@ -72,7 +72,7 @@ public class TeamD_Controller {
 		int testId = 4; // 테스트이름
 
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-		userService.updateViews(testId);
+		
 
 		mv.addObject("questions", question);
 		mv.setViewName("teamD/question");
@@ -167,7 +167,8 @@ public class TeamD_Controller {
 			int userId = ((userDTO) request.getSession().getAttribute("tempUser")).getId();
 			mv.addObject("userId", userId);
 		}
-
+		
+		userService.updateViews(4);
 		String mbti = "ENFJ";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/ENFJ");
@@ -188,7 +189,8 @@ public class TeamD_Controller {
 			int userId = ((userDTO) request.getSession().getAttribute("tempUser")).getId();
 			mv.addObject("userId", userId);
 		}
-
+		
+		userService.updateViews(4);
 		String mbti = "ENFP";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/ENFP");
@@ -209,6 +211,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "ENTJ";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/ENTJ");
@@ -230,6 +233,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "ENTP";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/ENTP");
@@ -251,6 +255,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "ESFJ";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/ESFJ");
@@ -271,6 +276,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "ESFP";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/ESFP");
@@ -291,6 +297,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "ESTJ";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/ESTJ");
@@ -311,6 +318,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "ESTP";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/ESTP");
@@ -331,6 +339,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "INFJ";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/INFJ");
@@ -350,6 +359,8 @@ public class TeamD_Controller {
 			int userId = ((userDTO) request.getSession().getAttribute("tempUser")).getId();
 			mv.addObject("userId", userId);
 		}
+		
+		userService.updateViews(4);
 		String mbti = "INFP";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/INFP");
@@ -371,6 +382,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "INTJ";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/INTJ");
@@ -391,6 +403,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "INTP";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/INTP");
@@ -411,6 +424,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "ISFJ";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/ISFJ");
@@ -431,6 +445,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "ISFP";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/ISFP");
@@ -451,6 +466,7 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 
+		userService.updateViews(4);
 		String mbti = "ISTJ";
 		mv.addObject("mbti", mbti);
 		mv.setViewName("teamD/result/ISTJ");
@@ -471,7 +487,8 @@ public class TeamD_Controller {
 			mv.addObject("userId", userId);
 		}
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(4);
+		
 		mv.addObject("comments", comment);
 		String mbti = "ISTP";
 		mv.addObject("mbti", mbti);

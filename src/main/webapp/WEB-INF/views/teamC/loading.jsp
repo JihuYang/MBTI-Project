@@ -60,7 +60,7 @@ $(function(){
 			<div class="col" id="sideCol"></div>
 			<div id="main" class="col content mainCont">
 				<div class="bg-white p-4 position-absolute top-50 start-50 translate-middle col-box">
-					<div class="loadingEx">나에게 맞는 공부법은<%=request.getContextPath()%>.</div>
+					<div class="loadingEx">나에게 맞는 공부법은.</div>
 					
 				<div class="fade-slide">
 								<img src="<%=request.getContextPath()%>/resources/img/teamC/ENFJ.png" style="width: 200px;" />

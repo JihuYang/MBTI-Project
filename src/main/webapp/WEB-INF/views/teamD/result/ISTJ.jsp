@@ -8,12 +8,18 @@
 <!-- 공유하기 -->
 	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 	<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
+	<!-- loading -->
+<script type="text/javascript" src="../../resources/js/loading.js"></script>
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<title>teamDResult-ISTJ</title>
 	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamD.css">
 </head> 
 
 <body style="background-attachment : fixed ;">
+<div id="loader"></div>
+<div id="a_loader" style="display:none;">
+
 	<div id="wrapper_version1">
 		<h1>나랑 꼭 닮은<br>짱구 속 등장인물은?</h1>
 		
@@ -61,6 +67,7 @@
 			</tr>
 		</table>
 		</div>
+	</div>
 	</div>
 </body>
 </html>

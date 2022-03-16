@@ -81,7 +81,7 @@ public class TeamC_Controller {
 		int testId = 3; // 테스트이름
 		int check = 1;
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-		userService.updateViews(testId);
+		
 		
 		mv.addObject("questions", question);	
 		mv.addObject("check", check);
@@ -203,7 +203,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -230,7 +230,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -258,7 +258,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -286,7 +286,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -314,7 +314,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -342,7 +342,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -370,7 +370,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -398,7 +398,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -426,7 +426,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -454,7 +454,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -482,7 +482,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -510,7 +510,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -538,7 +538,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -566,7 +566,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -594,7 +594,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();
@@ -622,7 +622,7 @@ public class TeamC_Controller {
 			mv.addObject("userId", userId);
 		}			
 		List<commentDTO> comment = new ArrayList<commentDTO>();
-
+		userService.updateViews(testId);
 		comment = commentService.getCommentList(testId);
 		
 		int count2 = comment.size();

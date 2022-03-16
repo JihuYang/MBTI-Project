@@ -22,6 +22,8 @@
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
+<!-- loading -->
+<script type="text/javascript" src="../../resources/js/loading.js"></script>
 
 <title>[결과]나의 배우자는 누구?</title>
 <link rel="stylesheet" type="text/css" href='<%=request.getContextPath()%>/resources/css/teamB.css' />
@@ -40,6 +42,8 @@
 </head>
 <body>
 
+<div id="loader"></div>
+<div id="a_loader" style="display:none;">
 
 	<div class="result-wrap">
 		<div id="optadATF" style="min-height: 110px"></div>
@@ -99,6 +103,7 @@
 	</div>
 	<div class="footer">
 		<p class=footer-text>@HGU 2022 Winter Camp</p>
+	</div>
 	</div>
 	<script type="text/javascript">
 		function share_link() {

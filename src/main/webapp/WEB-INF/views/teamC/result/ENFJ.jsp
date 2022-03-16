@@ -24,7 +24,7 @@
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
 <!-- teamC css -->
-<link rel="stylesheet" type="text/css" href="../../resources/css/teamC.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/teamC.css?after">
 <!-- google font -->
 <link href='https://fonts.googleapis.com/css?family=Black Han Sans'
 	rel='stylesheet'>
@@ -34,11 +34,13 @@
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 <title>teamC Result</title>
+<!-- loading -->
+<script type="text/javascript" src="../../resources/js/loading.js"></script>
 
 <!-- menu를 위한 -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	crossorigin="anonymous"></script>
+	crossorigin="anonymous"></script> 
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -51,6 +53,8 @@
 
 </head>
 <body>
+<div id="loader"></div>
+<div id="a_loader" style="display:none;">
 <div class="container-fluid mt-5">
 	<div class="text-center">
 		<div class="row">
@@ -175,6 +179,7 @@
 	<footer class="text-center">
 		<span>@2022 MBTI에 진심인 팀 All rights reserved.</span>
 	</footer>
+</div>
 
 </body>
 

@@ -94,7 +94,7 @@ public class TeamE_Controller {
 		int testId = 5; // 테스트이름
 
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-		userService.updateViews(testId);
+		
 		
 		mv.addObject("questions", question);		
 		mv.setViewName("teamE/question");
@@ -140,7 +140,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}			
 
-
+			userService.updateViews(5);
 			String mbti = "ENFJ";
 			mv.addObject("mbti", mbti);
 			mv.setViewName("teamE/result/ENFJ");
@@ -163,6 +163,7 @@ public class TeamE_Controller {
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
 
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -192,6 +193,7 @@ public class TeamE_Controller {
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
 
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -218,7 +220,8 @@ public class TeamE_Controller {
 			if(request.getSession().getAttribute("tempUser") != null) {
 				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
 				mv.addObject("userId", userId);
-			}			
+			}	
+			userService.updateViews(testId);
 			List<commentDTO> comment = new ArrayList<commentDTO>();
 
 			comment = commentService.getCommentList(testId);
@@ -247,7 +250,8 @@ public class TeamE_Controller {
 			if(request.getSession().getAttribute("tempUser") != null) {
 				int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
 				mv.addObject("userId", userId);
-			}			
+			}		
+			userService.updateViews(testId);
 			List<commentDTO> comment = new ArrayList<commentDTO>();
 
 			comment = commentService.getCommentList(testId);
@@ -278,7 +282,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
-
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -307,7 +311,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
-
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -336,7 +340,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
-
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -365,7 +369,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
-
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -394,7 +398,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
-
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -423,7 +427,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
-
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -451,7 +455,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
-
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -479,7 +483,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
-
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -507,7 +511,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
-
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -536,7 +540,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}			
 			List<commentDTO> comment = new ArrayList<commentDTO>();
-
+			userService.updateViews(testId);
 			comment = commentService.getCommentList(testId);
 			
 			int count2 = comment.size();
@@ -563,7 +567,7 @@ public class TeamE_Controller {
 				mv.addObject("userId", userId);
 			}
 			List<commentDTO> comment = new ArrayList<commentDTO>();
-
+			userService.updateViews(5);
 			String mbti = "ISTP";
 			mv.addObject("mbti", mbti);
 			mv.setViewName("teamE/result/ISTP");

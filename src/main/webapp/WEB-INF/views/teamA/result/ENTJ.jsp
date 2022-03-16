@@ -21,11 +21,16 @@
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
+<!-- loading -->
+<script type="text/javascript" src="../../resources/js/loading.js"></script>
+
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>teamAResult</title>
 </head>
 <body>
+<div id="loader"></div>
+<div id="a_loader" style="display:none;">
 	<div class="container-fluid">
 		<div class="row text-center">
 			<div class="col d-none d-lg-block"></div>
@@ -178,6 +183,7 @@
 
 		</div>
 	</div>
+</div>
 	<footer class="mt-5 text-center">
 		<span class="align-middle">@2022 MBTI에 진심인 팀 All rights
 			reserved.</span>
