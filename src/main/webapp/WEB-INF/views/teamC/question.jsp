@@ -55,11 +55,9 @@ progress {
 <!--  Google font  -->
 <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Do Hyeon' rel='stylesheet'>
-<<<<<<< HEAD
+
 <script src="<%=request.getContextPath()%>/resources/js/question.js?ver=112" ></script>
 
-=======
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 <title>teamCQuestion</title>
 </head>
 <body>

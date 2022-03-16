@@ -21,14 +21,10 @@
 
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<<<<<<< HEAD
+
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
 <!-- loading -->
 <script type="text/javascript" src="../../resources/js/loading.js"></script>
-=======
-<script type="text/javascript"
-	src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 
 <title>[결과]나의 배우자는 누구?</title>
 <link rel="stylesheet" type="text/css"

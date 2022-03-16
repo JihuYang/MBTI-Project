@@ -95,13 +95,10 @@ public class TeamB_Controller {
 		
 
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-<<<<<<< HEAD
-=======
+
 		/* 臾몄젣 議고쉶�닔 �뾽�뜲�씠�듃 */
 		userService.updateViews(testId);
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
-		
-		
+	
 		
 		mv.addObject("questions", question);
 		mv.setViewName("teamB/question");
