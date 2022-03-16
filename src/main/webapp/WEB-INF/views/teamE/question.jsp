@@ -30,11 +30,13 @@
     <button class="btn-question-2" onclick="saveType(${2}, '${questions[1].result}')"> <%@ include file="../ajaxContent/teamE/answer2.jsp"%> </button>
     
     <div class="number"><span id="Qnum">${questions[0].questionNum}</span>/12</div>
-    <div class="share-wrap">
-	    <a id="home-link-btn" href="../index"> 
-	    <img src="../resources/img/teamE/home.svg" alt="homeIcon" style="width:40px">Home</a>
-	    <a id="replay-link-btn" href="./start"> 
-	    <img src="../resources/img/teamE/redo.svg" alt="redoIcon"  style="width:40px">Replay</a>
+    <div class="share-wrap" style="margin-top: 20px">
+		
+    		<a id="home-link-btn" class="btn-wrap" href="<%=request.getContextPath()%>/index"> 
+		    <img src="<%=request.getContextPath()%>/resources/img/teamE/home.svg" alt="homeIcon"></a>
+		    <a id="replay-link-btn" class="btn-wrap" href="./start"> 
+		    <img src="<%=request.getContextPath()%>/resources/img/teamE/redo.svg" alt="redoIcon"></a>
+		
     </div>
     
 

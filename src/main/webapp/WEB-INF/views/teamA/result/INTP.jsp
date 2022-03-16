@@ -79,7 +79,7 @@
 							<div class="row mt-3">
 								<div class="col pe-0">
 									<div id="type-good" class="text-center">
-										<button class="btn btn-light btn-type ">
+										<button class="btn btn-light btn-type " onclick="location.href='ENTJ'">
 											<div class="type font-ex ">함께하면 좋은</div>
 											<div class="mt-3 fs-7">갑질 가능성 99.9%</div>
 											<h3>타고난 리더 개발자</h3>
@@ -90,7 +90,7 @@
 								</div>
 								<div class="col ps-0">
 									<div id="type-bad" class="text-center">
-										<button class="btn btn-light btn-type ">
+										<button class="btn btn-light btn-type " onclick="location.href='INTJ'">
 											<div class="type font-ex ">멀리하면 좋은</div>
 											<div class="mt-3 fs-7">”삶은 거대한 체스와 같아”</div>
 											<h3>지식인 개발자</h3>

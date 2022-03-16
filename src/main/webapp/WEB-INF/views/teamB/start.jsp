@@ -48,7 +48,7 @@
 				<div class="imgreference">
 					<ul class="tab">
 						<li>
-							<a href="https://csee.handong.edu/sw-slab/" target="_blank" onclick="GA_Event('MBTI_intro', 'about', 'Click');">
+							<a href="#" target="_blank" onclick="GA_Event('MBTI_intro', 'about', 'Click');">
 								<span>WALAB</span>
 							</a>
 						</li>

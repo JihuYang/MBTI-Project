@@ -52,22 +52,33 @@
 		</div>
 		<br>
 		<div class="share-wrap">
-			<p>공유 및 저장하기</p>
-			<a id="kakao-link-btn" href="javascript:sendLink()"> 
-				<img src="<%=request.getContextPath()%>/resources/img/teamB/kakaotalk_icon.png" alt="kakaoicon"></a>
-			<a id="copy-link-btn" href="javascript:copyLink()">  <img
-				src="<%=request.getContextPath()%>/resources/img/teamB/link_icon.png" alt="linkicon"></a>
-			<form method="post" action="<%=request.getContextPath()%>/teamB/saved" style="display:inline-block;width:46px;margin:0 15px;">
-				<input name="mbti"id = "mbti" value="ISTP" style="display: none">
-				<button>
-					<img src="<%=request.getContextPath()%>/resources/img/teamB/save_icon.png" alt="saveicon" style="width:100%">
-				</button>
-			</form>
+			<p>공유하기</p>
+			<a id="kakao-link-btn" href="javascript:sendLink()"> <img
+				src="<%=request.getContextPath()%>/resources/img/teamB/kakaotalk_icon.png"
+				alt="kakaoicon"></a> <a id="copy-link-btn"
+				href="javascript:copyLink()"> <img
+				src="<%=request.getContextPath()%>/resources/img/teamB/link_icon.png"
+				alt="linkicon"></a>
 		</div>
 		<div class="restarticon">
-			<input type="button" value="테스트 다시하기" class="btn btn-warning btn-yellow "
-				style="border-radius: 15px; font-size: 30px;"
-				onclick="location.href='../start'">
+			<a id="home-btn" href="<%=request.getContextPath()%>/index"> <input
+				type="button" value="홈가기" class="btn btn-warning btn-yellow"
+				style="border-radius: 15px; margin: 10px; font-size: 25px;"></a>
+			
+			<input type="button" value="다시하기"
+				class="btn btn-warning btn-yellow "
+				style="border-radius: 15px; margin: 10px; font-size: 25px;"
+				onclick="location.href='<%=request.getContextPath()%>/start'">
+			<form method="post"
+				action="<%=request.getContextPath()%>/teamB/saved"
+				style="display: inline-block;">
+				<input name="mbti" id="mbti" value="ISTP" style="display: none">
+				<button>
+					<input type="button" value="저장하기"
+						class="btn btn-warning btn-yellow"
+						style="border-radius: 15px; pointer-events: none; margin: 10px; font-size: 25px;">
+				</button>
+			</form>
 		</div>
 		<div id="other_test_link">
 			<img src="<%=request.getContextPath()%>/resources/img/teamB/check.png" alt="MBTI:결과"

@@ -150,8 +150,14 @@
 				</div>
 
 				<div class="wholeBox text-center two_btn re_btn" onclick="moveTo()">다시하기</div>
-				<div class="wholeBox text-center two_btn sv_btn">저장하기</div>
-				
+				<div class="wholeBox text-center two_btn sv_btn">
+				<form method="post" action="<%=request.getContextPath()%>/teamC/saved">
+					<input name="mbti" id="mbti" value="ENFJ" style="display: none">
+					<button class="btn" type="submit">
+					저장하기
+					</button>
+				</form>
+				</div>
 
 				<div class="d-flex mt-5 mb-5 justify-content-around">
 
@@ -168,7 +174,7 @@
 				
 	
 
-						<jsp:include page="../../ajaxContent/teamC/comment.jsp" flush="false" />
+						<jsp:include page="../comment.jsp" flush="false" />
 
 
 			</div>

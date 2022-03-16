@@ -99,6 +99,38 @@ public class TeamC_Controller {
 		
 		return "teamC/loading";
 	}
+	@RequestMapping(value = "/saved", method = RequestMethod.POST)
+	public String savedOK(HttpServletRequest request) throws ParseException, UnsupportedEncodingException {
+		request.setCharacterEncoding("utf-8");
+
+		int testId = 3;
+		
+		testDTO dto = new testDTO();
+		
+		if(request.getSession().getAttribute("tempUser") != null) {
+			int userId = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+			dto.setUserId(userId);
+		}	
+		
+		dto.setTestId(testId);
+		String type = request.getParameter("mbti");
+		
+		System.out.println(type);
+		int mbti = testService.readMbtiIdByType(type);
+		dto.setResult(mbti);
+		
+		int i = testService.insertTest(dto);
+		if(i==0) {
+			System.out.println("테스트 저장 실패 ");
+			
+		}
+		else {
+			System.out.println("테스트 저장 성공");
+		}
+
+
+		return "redirect:/myPage";
+	}
 
 		// ajax로 값을 주고받는 Controller 
 		@RequestMapping(value = "/ajax", method = RequestMethod.POST)

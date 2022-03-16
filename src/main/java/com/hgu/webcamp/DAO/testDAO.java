@@ -6,5 +6,9 @@ public interface testDAO {
 	
 	public int insertTest(testDTO dto);
 	public int readMbtiIdByType(String type);
+	
+	public int deleteTestResult(int id);
+	
+	
 
 }

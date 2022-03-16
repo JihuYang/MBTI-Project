@@ -12,5 +12,8 @@
 	<select id="readMbtiIdByType" resultType="int">
 		SELECT id FROM camp1.mbti WHERE type=#{type};
 	</select>
+	<delete id="deleteTestResult">
+		delete from savedTest where id=#{id};
+	</delete>
 
 </mapper>

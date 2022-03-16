@@ -6,25 +6,43 @@
 <html lang="en">
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
 
 <script>
-	$(function() {
-		var progressbar = $("#progressbar"), progressLabel = $(".progress-label");
-
-		progressbar.progressbar({
-			value : 25,
-			change : function() {
-				progressLabel.text("Current Progress: "
-						+ progressbar.progressbar("value") + "%");
-			}
-		});
-
-	});
 	
 	function moveTo() {
 		location.href="loading";
 	}
+	function nextButton(num){
+		var value = document.getElementById('progress').value;
+		document.getElementById('progress').value = value+8.333;
+		if(num==1){
+			saveType(${1}, '${questions[0].result}');
+		}
+		else{
+			saveType(${2}, '${questions[1].result}');
+		}
+	}
+	
 </script>
+<style>
+progress {
+	width: 100%;
+	height: 5px;
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+  background-color: #F0F0F0;
+  border-radius: 50px;
+}
+
+::-webkit-progress-value {
+  background-color: #FFC700;
+  border-radius: 50px;
+}
+
+</style>
 
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -37,8 +55,11 @@
 <!--  Google font  -->
 <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Do Hyeon' rel='stylesheet'>
+<<<<<<< HEAD
 <script src="<%=request.getContextPath()%>/resources/js/question.js?ver=112" ></script>
 
+=======
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 <title>teamCQuestion</title>
 </head>
 <body>
@@ -51,11 +72,8 @@
 					
 			
 				<div id="progressDiv">
-					<div class="progress">
-						<div class="progress-bar bg-warning" role="progressbar"
-							style="width: 10%" aria-valuenow="10" aria-valuemin="0"
-							aria-valuemax="100"></div>
-					</div>
+					
+					<progress value="8.333" max="100" id="progress"></progress>
 					
 					<div class="progress-label"><span id="Qnum">${questions[0].questionNum}</span>/12</div>
 
@@ -65,10 +83,10 @@
 				<div class="quiz-question question ">힘들게 공부한 시험 결과가 좋지 않다.어떻게 하면 기분이 나아질까<%=request.getContextPath()%></div>
 
 				<div id="quiz-button">
-					<button id="Button" class="btn1" onclick="saveType(${1}, '${questions[0].result}')">${questions[0].answer}</button>
-					<button id="Button" class="btn2" onclick="saveType(${2}, '${questions[1].result}')">${questions[1].answer}</button>
+					<button id="Button" class="btn1" onclick="nextButton(1)">${questions[0].answer}</button>
+					<button id="Button" class="btn2" onclick="nextButton(2)">${questions[1].answer}</button>
 				</div>
-				<div class="shareBtn">
+				<div class="shareBtn mt-5">
 					<a id="home-btn" href="<%=request.getContextPath()%>/index"><img src="<%=request.getContextPath()%>/resources/img/teamC/home.svg" alt="homeIcon" style="width:50px"></a>
 					<a id="redo-btn" href="./start"><img src="<%=request.getContextPath()%>/resources/img/teamC/redo.svg" alt="redoIcon"  style="width:50px"></a>
 

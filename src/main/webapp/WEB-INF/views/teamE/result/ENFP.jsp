@@ -41,22 +41,31 @@
     	
     
     <br>
-    <button class="btn-result" onclick="location.href='start'">다시하기</button><br>
-    <form method="post" action="<%=request.getContextPath()%>/teamE/saved">
-				<input name="mbti"id = "mbti" value="ENFP" style="display: none">
-    <button class="btn-result">저장하기</button><br>
-    
-    <a id="kakao-link-btn" href="javascript:sendLink()"> 
-    <img src="<%=request.getContextPath()%>/resources/img/teamE/카톡 마크.jpeg" class="kakao"/>
-    카카오톡 공유</a>
-    
-    <img src="<%=request.getContextPath()%>/resources/img/teamE/comments.jpeg" class="comments"/><br>
-    <input type="text" name="comment" size="40" value="댓글을 입력하세요." class="texts">
-    <button type="button" class="btn-comments">입력</button>
-    
-    
-
-
+    <div class="restarticon">
+			<a id="home-btn" href="<%=request.getContextPath()%>/index"> <input
+				type="button" value="홈가기" class="btn-result"></a>
+			
+			<input type="button" value="다시하기"
+				class="btn-result"
+				onclick="location.href='<%=request.getContextPath()%>/teamE/start'">
+			
+			<form method="post"
+				action="<%=request.getContextPath()%>/teamE/saved"
+				style="display: inline-block;">
+				<input name="mbti" id="mbti" value="ENFP" style="display: none">
+				<button class="btn-result">
+					<input type="button" value="저장하기" style="border: none; background: none; padding-left: 166px; padding-right: 166px;">
+				</button>
+			</form>
+	</div>
+		<div class="share-wrap" style="margin-bottom: 40px;">
+			<a id="kakao-link-btn" href="javascript:sendLink()"> <img
+				src="<%=request.getContextPath()%>/resources/img/teamB/kakaotalk_icon.png"
+				alt="kakaoicon"></a> <a id="copy-link-btn"
+				href="javascript:copyLink()"> <img
+				src="<%=request.getContextPath()%>/resources/img/teamB/link_icon.png"
+				alt="linkicon"></a>
+		</div>
 </div>
 
 </body>

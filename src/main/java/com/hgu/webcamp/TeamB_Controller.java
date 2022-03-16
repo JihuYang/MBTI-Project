@@ -59,7 +59,7 @@ public class TeamB_Controller {
 		
 		ModelAndView mv = new ModelAndView();
 		
-		int views = 0; // 테스트 한 횟수 
+		int views = 0; // �뀒�뒪�듃 �븳 �슏�닔 
 		int testId=2;
 		System.out.println("start page loaded");
 		
@@ -89,12 +89,17 @@ public class TeamB_Controller {
 		System.out.println("question page loaded");
 		
 		
-		int questionNum= 1; // question 테이블에서 문제 
-		int questionId = 1; // answer 테이블에서 문제 
-		int testId = 2; // 테스트이름
+		int questionNum= 1; // question �뀒�씠釉붿뿉�꽌 臾몄젣 
+		int questionId = 1; // answer �뀒�씠釉붿뿉�꽌 臾몄젣 
+		int testId = 2; // �뀒�뒪�듃�씠由�
 		
 
 		List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
+<<<<<<< HEAD
+=======
+		/* 臾몄젣 議고쉶�닔 �뾽�뜲�씠�듃 */
+		userService.updateViews(testId);
+>>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 		
 		
 		
@@ -122,20 +127,20 @@ public class TeamB_Controller {
 		return "teamB/loading";
 	}
 
-	// ajax로 값을 주고받는 Controller 
+	// ajax濡� 媛믪쓣 二쇨퀬諛쏅뒗 Controller 
 		@RequestMapping(value = "/ajax", method = RequestMethod.POST)
 		public @ResponseBody List<questionDTO> ajax_question(@RequestParam("questionNum") int questionNum) {
 							
 			int testId = 2;
 			int questionId = 1;
-			// ajax로부터 받은 문제 번호를 1증가 시키고 questionId에도 해당 값 부여   
+			// ajax濡쒕��꽣 諛쏆� 臾몄젣 踰덊샇瑜� 1利앷� �떆�궎怨� questionId�뿉�룄 �빐�떦 媛� 遺��뿬   
 			questionNum++;
 			questionId = questionNum;
 			
 			
-			// 데이터베이스에서 testId, questionNum, questionId 에 따른 값 가져오기   
+			// �뜲�씠�꽣踰좎씠�뒪�뿉�꽌 testId, questionNum, questionId �뿉 �뵲瑜� 媛� 媛��졇�삤湲�   
 			List<questionDTO> question = questionService.readQuestionAndAnswer(testId, questionNum, questionId);
-			// ajax로 보내기 
+			// ajax濡� 蹂대궡湲� 
 			return question;
 			}
 
@@ -180,7 +185,7 @@ public class TeamB_Controller {
 		int i = commentService.deleteComment(id);
 		
 		if(i == 0) System.out.println("Error! delete Failed");
-		else System.out.println("댓글 삭제 완료.");
+		else System.out.println("�뙎湲� �궘�젣 �셿猷�.");
 		
 		
 		//String path = mbti.split("/")[6].substring(0,4);
@@ -216,11 +221,11 @@ public class TeamB_Controller {
 		
 		int i = commentService.insertComment(dto);
 		if(i==0) {
-			System.out.println("데이터 추가 실패 ");
+			System.out.println("�뜲�씠�꽣 異붽� �떎�뙣 ");
 			
 		}
 		else {
-			System.out.println("데이터 추가 성공 ");
+			System.out.println("�뜲�씠�꽣 異붽� �꽦怨� ");
 		}
 
 
@@ -242,11 +247,11 @@ public class TeamB_Controller {
 		
 		int i = commentService.updateComment(dto);
 		if(i==0) {
-			System.out.println("데이터 수정 실패");
+			System.out.println("�뜲�씠�꽣 �닔�젙 �떎�뙣");
 			
 		}
 		else {
-			System.out.println("데이터 수정 성공 ");
+			System.out.println("�뜲�씠�꽣 �닔�젙 �꽦怨� ");
 		}
 		return "redirect:/teamB/result"+path;
 	}
@@ -272,11 +277,11 @@ public class TeamB_Controller {
 		
 		int i = testService.insertTest(dto);
 		if(i==0) {
-			System.out.println("데이터 추가 실패 ");
+			System.out.println("�뜲�씠�꽣 異붽� �떎�뙣 ");
 			
 		}
 		else {
-			System.out.println("데이터 추가 성공 ");
+			System.out.println("�뜲�씠�꽣 異붽� �꽦怨� ");
 		}
 
 

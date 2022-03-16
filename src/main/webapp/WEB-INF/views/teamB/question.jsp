@@ -13,6 +13,36 @@
 	<link rel="stylesheet" type="text/css" href='<%=request.getContextPath()%>/resources/css/teamB.css' />
 	<script src="<%=request.getContextPath()%>/resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		function nextButton(num){
+			var value = document.getElementById('progress').value;
+			document.getElementById('progress').value = value+8.333;
+			if(num==1){
+				saveType(${1}, '${questions[0].result}');
+			}
+			else{
+				saveType(${2}, '${questions[1].result}');
+			}
+		}
+	</script>
+	<style>
+		progress {
+			width: 80%;
+			height: 5px;
+		  -webkit-appearance: none;
+		}
+		
+		::-webkit-progress-bar {
+		  background-color: #F4D686;
+		  border-radius: 50px;
+		}
+		
+		::-webkit-progress-value {
+		  background-color: #D89B00;
+		  border-radius: 50px;
+		}
+
+</style>
 </head>
 <body>
    <div id="question-wrap">
@@ -23,16 +53,17 @@
 				<h2><span class="question">${questions[0].question}</span></h2><br>
 				<div class="option-btn-div">
 					<button value="q1-1" name="q1" class="option-btn"
-						onclick="saveType(${1}, '${questions[0].result}')">
+						onclick="nextButton(1)">
 						<h3 class="btn1">${questions[0].answer}</h3>
 					</button>
 					<button value="q1-2" name="q1" class="option-btn"
-						onclick="saveType(${2}, '${questions[1].result}')">
+						onclick="nextButton(2)">
 						<h3 class="btn2">${questions[1].answer}</h3>
 					</button>
 				</div>
 				<div class="percentage">
 					<div class="progress-wrap">
+						<progress value="8.333" max="100" id="progress"></progress>
 						<span class="bar-text" style="font-size:15px">배우자 찾는 중...</span>
 					</div>
 				</div>
