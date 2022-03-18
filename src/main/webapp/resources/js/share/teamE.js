@@ -1,19 +1,19 @@
 var link = document.location.href;
+var again = 'http://localhost:8080/webcamp/teamE/start';
 
 //카카오톡 공유하기 
 	Kakao.init("1841f627e245ac59ac935b451f4720e1"); //어플의 Javascript Key 값 
   function sendLink() {
-	var again = 'http://localhost:8080/webcamp/teamA/start';
 	Kakao.Link.createDefaultButton({
   container: '#kakao-link-btn',
   objectType: 'feed',
   content: {
-    title: '개발자 유형 찾기',
-    description: '나의 개발자 유형은 무엇일까?',
-    imageUrl: 'https://user-images.githubusercontent.com/82192923/158604555-9c0620aa-a3c5-4e66-842a-e6856cd715d8.png',
+    title: '인간관계 유형별 MBTI',
+    description: '나는 어떤 사람일까?',
+    imageUrl: 'https://user-images.githubusercontent.com/82192923/158604593-fdb3c4a7-d83b-443d-ad68-b9057c4c2438.png',
     link: {
-          mobileWebUrl: 'http://localhost:8080/webcamp/',
-          webUrl: 'http://localhost:8080/webcamp/',
+          mobileWebUrl: again,
+          webUrl: again,
         },
   },
   buttons: [

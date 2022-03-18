@@ -7,18 +7,9 @@
 <html lang="en">
 <head>
 <!-- 공유하기 -->
-<<<<<<< HEAD
-	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-	<script type="text/javascript" src="../resources/js/shareProject.js"></script>
-		
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>teamDResult-ENFJ</title>
-	<link rel="stylesheet" type="text/css" href="../resources/css/teamD.css">
-	
-=======
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script type="text/javascript"
-	src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
+	src="<%=request.getContextPath()%>/resources/js/share/teamD.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>teamDResult-ENFJ</title>
 <link rel="stylesheet" type="text/css"
@@ -33,15 +24,11 @@ body {
 	font-family: 'Gaegu';
 }
 </style>
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 </head>
 
-<<<<<<< HEAD
+
 <body style="background-attachment : fixed ;">
 
-=======
-<body style="background-attachment: fixed;">
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 	<div id="wrapper_version1">
 		<h1>
 			나랑 꼭 닮은<br>짱구 속 등장인물은?

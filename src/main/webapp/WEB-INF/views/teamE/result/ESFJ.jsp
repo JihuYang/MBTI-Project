@@ -4,7 +4,8 @@
 
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="../resources/js/shareProject.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/share/teamE.js"></script>
+
 
 <!DOCTYPE html>
 <html lang="en">

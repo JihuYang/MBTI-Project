@@ -1,9 +1,9 @@
 var link = document.location.href;
+var again = 'http://localhost:8080/webcamp/teamA/start';
 
 //카카오톡 공유하기 
 	Kakao.init("1841f627e245ac59ac935b451f4720e1"); //어플의 Javascript Key 값 
   function sendLink() {
-	var again = 'http://localhost:8080/webcamp/teamA/start';
 	Kakao.Link.createDefaultButton({
   container: '#kakao-link-btn',
   objectType: 'feed',
@@ -12,8 +12,8 @@ var link = document.location.href;
     description: '나의 개발자 유형은 무엇일까?',
     imageUrl: 'https://user-images.githubusercontent.com/82192923/158604555-9c0620aa-a3c5-4e66-842a-e6856cd715d8.png',
     link: {
-          mobileWebUrl: 'http://localhost:8080/webcamp/',
-          webUrl: 'http://localhost:8080/webcamp/',
+          mobileWebUrl: again,
+          webUrl: again,
         },
   },
   buttons: [

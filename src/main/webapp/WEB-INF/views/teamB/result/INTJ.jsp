@@ -21,7 +21,7 @@
 	
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/share/teamB.js"></script>
 <!-- loading -->
 <script type="text/javascript" src="../../resources/js/loading.js"></script>
 
@@ -115,19 +115,6 @@
 		<p class=footer-text>@HGU 2022 Winter Camp</p>
 	</div>
 	</div>
-	<script type="text/javascript">
-		function share_link() {
-
-			var url = '';
-			var textarea = document.createElement("textarea");
-			document.body.appendChild(textarea);
-			url = "http://localhost:8080/webcamp/teamB/start";
-			textarea.value = url;
-			textarea.select();
-			document.execCommand("copy");
-			document.body.removeChild(textarea);
-			alert("URL이 복사되었습니다.")
-		}
-	</script>
+	
 </body>
 </html>

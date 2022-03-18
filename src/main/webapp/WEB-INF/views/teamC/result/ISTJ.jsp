@@ -15,8 +15,8 @@
 
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="../../resources/js/shareProject.js"></script>
 
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/share/teamC.js"></script>
 <!-- Bootstrap CSS -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -152,10 +152,10 @@
 
 				<div class="d-flex mt-5 mb-5 justify-content-around">
 
-					<button class="sharebtn1" type="button" onclick="sendLink();">
-						<img src="../../resources/img/teamC/kakaoLogo.png"
+					<a class="sharebtn1" id="kakao-link-btn" href="javascript:sendLink()">
+						<img src="<%=request.getContextPath()%>/resources/img/teamC/kakaoLogo.png"
 							style="width: 40px;" />
-					</button>
+					</a>
 					<button class="sharebtn1" type="button" onclick="copyLink();">
 						<img src="../../resources/img/teamC/copyLink.png"
 							style="width: 30px;" />

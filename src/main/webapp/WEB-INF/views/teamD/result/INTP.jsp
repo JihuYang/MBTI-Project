@@ -7,7 +7,7 @@
 <head>
 <!-- 공유하기 -->
 	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-	<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/shareProject.js"></script>
+	<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/share/teamD.js"></script>
 	<!-- loading -->
 <script type="text/javascript" src="../../resources/js/loading.js"></script>
 	
