@@ -407,6 +407,10 @@ footer {
  .bar-q{
   height:11vh!important;
   }
+  .row{
+      padding-top: 80px;
+    padding-bottom: 80px;
+   }
 }
 @media screen and (max-width: 991px) {
   /* .content {
@@ -415,6 +419,10 @@ footer {
   .bar{
   height:9vh;
   }
+   .row{
+      padding-top: 70px;
+    padding-bottom: 70px;
+   }
 }
 
 
@@ -428,6 +436,12 @@ footer {
   .bar-q{
   height:9vh!important;
   }
+}
+@media screen and (max-width: 700px) {
+ .row{
+      padding-top: 0;
+    padding-bottom: 0;
+   }
 }
 
 @media screen and (max-width: 320px) {
