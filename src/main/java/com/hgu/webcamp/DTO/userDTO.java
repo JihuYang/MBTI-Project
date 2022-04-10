@@ -18,6 +18,7 @@ public class userDTO {
 	private int admin;
 	private Date regDate;
 	
+	
 	public int getId() {
 		return id;
 	}

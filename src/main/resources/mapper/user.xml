@@ -34,6 +34,12 @@
 		UPDATE
 
 	</update>
+	
+	<update id="updateProfile">
+		UPDATE camp1.user
+		set nickName = '#{nickName}', mbti= #{mbti}
+		where id = #{id};
+	</update> 
 
 	<select id="getMBTIlist">
 		select * from camp1.mbti
