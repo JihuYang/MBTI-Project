@@ -310,6 +310,7 @@ footer {
 		position: relative !important;
 		width: 100%;	
 	}
+	
 }
 
 @media screen and (max-width: 850px) {
@@ -338,8 +339,10 @@ footer {
 	}
 	#mainCont {
 		width: 100%;
-			
+		padding-left:0;
+		padding-right:0;
 	}
+	
 }
 
 
