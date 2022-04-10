@@ -76,9 +76,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box text-center">
+				<div class="bg-white p-4 col-box">
 
-					<div class="feature text-center">
+					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>굉장히 분석적이고 이성적인 유형</li>
@@ -89,7 +89,7 @@
 
 
 
-					<div class="weakness text-center">
+					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>과도한 자신감으로 모든 것을 안다고 생각하는 착각에 빠질 수 있음</li>
@@ -105,29 +105,36 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i></div>
+				<div class="feature">
+					<div class="featureText">찰떡 공부법 <i class="bi bi-book"></i></div>
 					<ul>
 						<li>큰 그림을 보며, 조직화된 구조로 노트 정리를 한다.</li>
 						<li>같은 내용을 여러 번 복습 추천!</li>
 						<li>맥락 있게 이해하면서 공부하면 좋음</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle">찰떡 파트너!<i class="bi bi-people-fill"></i></div>
+						<div class="featureText">찰떡 파트너 <i class="bi bi-people-fill"></i></div>
 						<div
-							class="mt-3 d-flex align-items-center justify-content-center group1">
-							<a class="text-dark" style="font-size: 1.5em;" href="ISFJ">공부의 정석 [ISFJ]</a>
+							class="mt-3 d-flex align-items-center group1">
 							<img src="../../resources/img/teamC/ISFJ.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="ISFJ">공부의 정석 [ISFJ]</a>
+							
 						</div>
 						<div
-							class="mt-3 d-flex align-items-center justify-content-center group1">
-							<a class="text-dark" style="font-size: 1.5em;" href="INFJ">숲 속 선비형 [INFJ]</a>
+							class="mt-3 d-flex align-items-center group1">
 							<img src="../../resources/img/teamC/INFJ.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="INFJ">숲 속 선비형 [INFJ]</a>
+							
 						</div>
 						
 						<div class="box2">
-							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
-							<div class="studyPlace">쓸데없이 에너지 낭비말고 완벽한 계획짜서 집에서 하자</div>
+							<div class="featureText">찰떡 공부장소 <i class="bi bi-shop-window"></i></div>
+							<ul style="list-style:none;">
+							<li>쓸데없이 에너지 낭비말고 완벽한 계획짜서 집에서 하자!</li>
+							</ul>
+							
 						</div>
+					</div>
 					</div>
 				</div>
 

@@ -76,25 +76,26 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box text-center">
+				<div class="bg-white p-4 col-box">
 
-					<div class="feature text-center">
+					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
-							<li>분위기 메이커 역할, 뛰어난 대화 스킬을 가지고 있다</li>
-							<li>독립적인 성향을 가지고 있으며 창의적이고 자유로운 삶을 갈망함</li>
-							<li>미래를 상상하는 것을 즐기며, 모든 가능성을 상상함</li>
+							<li>분위기 메이커 역할,</li>
+							<li>뛰어난 대화 스킬을 가지고 있다.</li>
+							<li>독립적인 성향을 가지고 있으며 창의적이고 자유로운 삶을 갈망함.</li>
+							<li>미래를 상상하는 것을 즐기며, 모든 가능성을 상상함.</li>
 						</ul>
 					</div>
 
 
 
-					<div class="weakness text-center">
+					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
-							<li>끈기가 없는 편..</li>
-							<li>끌리는 과목만 하는 스타일</li>
-							<li>생각이 많아 집중력 부족현상이 나타남</li>
+							<li>끈기가 없는 편...</li>
+							<li>끌리는 과목만 하는 스타일.</li>
+							<li>생각이 많아 집중력 부족현상이 나타남.</li>
 						</ul>
 					</div>
 
@@ -105,27 +106,32 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i>
+				<div class="feature">
+					<div class="featureText">찰떡 공부법 <i class="bi bi-book"></i>
 					</div>
 					<ul>
-						<li>그룹 스터디 강추!! (이야기 나누며 공부할 수 있는 학습메이트가 있으면 좋음)</li>
+						<li>그룹 스터디 강추!!</li>
+						<li>(이야기 나누며 공부할 수 있는 학습메이트가 있으면 좋음)</li>
 						<li>토론과 탐구식 학습 스타일이 효과적!</li>
-						<li>자신만의 자습시간을 가짐으로서 나만의 정리시간을 가져야함</li>
+						<li>자신만의 자습시간을 가짐으로서 나만의 정리시간을 가져야함.</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle">
-							찰떡 파트너! <i class="bi bi-people-fill"></i>
+						<div class="featureText">찰떡 파트너 <i class="bi bi-people-fill"></i>
 						</div>
-						<div class="mt-3 d-flex align-items-center justify-content-center group1">
+						<div class="mt-3 d-flex align-items-center group1">
+						<img src="../../resources/img/teamC/ENTJ.png" style="width: 100px;">
 							<a class="text-dark" style="font-size: 1.5em;" href="ENTJ">문제해결형 [ENTJ]</a>
-							<img src="../../resources/img/teamC/ENTJ.png" style="width: 100px;">
+							
 						</div>
 					
 						<div class="box2">
-							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i>
+							<div class="featureText">찰떡 공부장소 <i class="bi bi-shop-window"></i>
 							</div>
-							<div class="studyPlace">딴 짓 할 확률이 높다! 감시자가 있는 공간을 적절히 찾아가자! 반오픈형 독서실 추천~</div>
+							<ul style="list-style: none; ">
+								<li>딴 짓 할 확률이 높다! 감시자가 있는 공간을 적절히 찾아가자! 반오픈형 독서실 추천~</li>
+							</ul>
 						</div>
+					</div>
 					</div>
 				</div>
 

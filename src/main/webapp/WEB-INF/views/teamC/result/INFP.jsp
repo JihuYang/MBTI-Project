@@ -75,9 +75,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box text-center">
+				<div class="bg-white p-4 col-box">
 
-					<div class="feature text-center">
+					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>공동의 일에서 자신이 맡은 바에 최선을 다함</li>
@@ -88,7 +88,7 @@
 
 
 
-					<div class="weakness text-center">
+					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>현실 감각이 둔해 평소 몽상을 많이 함</li>
@@ -104,7 +104,8 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i></div>
+				<div class="feature">
+					<div class="featureText">찰떡 공부법 <i class="bi bi-book"></i></div>
 					<ul>
 						<li>전체 그림과 주요 개념에서 세부적으로 들어가는 방식으로 공부한다</li>
 						<li>마인드 맵을 적극적으로 활용</li>
@@ -113,18 +114,23 @@
 						
 					</ul>
 					<div class="box2">
-						<div class="smtitle">찰떡 파트너!<i class="bi bi-people-fill"></i></div>
+						<div class="featureText">찰떡 파트너 <i class="bi bi-people-fill"></i></div>
 						<div
 						
-							class="mt-3 d-flex align-items-center justify-content-center group1">
-							<a class="text-dark" style="font-size: 1.5em;" href="ISTP">오감활용형 [ISTP]</a>
+							class="mt-3 d-flex align-items-center  group1">
 							<img src="../../resources/img/teamC/ISTP.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="ISTP">오감활용형 [ISTP]</a>
+							
 						</div>
 						
 						<div class="box2">
-							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
-							<div class="studyPlace">독서실에서 하면 열공한 느낌 RGRG? 공부는 각 잡고! 독서실!</div>
+							<div class="featureText">찰떡 공부장소 <i class="bi bi-shop-window"></i></div>
+							<ul style="list-style:none;">
+							<li>독서실에서 하면 열공한 느낌 RGRG? 공부는 각 잡고! 독서실!</li>
+							</ul>
+							
 						</div>
+					</div>
 					</div>
 				</div>
 

@@ -76,9 +76,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box text-center">
+				<div class="bg-white p-4 col-box">
 
-					<div class="feature text-center">
+					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>주변을 객관적으로 분석하고 사실에 입각하여 현실적인 계획을 세우려 함</li>
@@ -89,7 +89,7 @@
 
 
 
-					<div class="weakness text-center">
+					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>보수적이고 전통적인 성향으로 새로운 것을 받아들이는데 시간이 오래걸린다</li>
@@ -104,7 +104,8 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i></div>
+				<div class="feature">
+					<div class="featureText">찰떡 공부법!<i class="bi bi-book"></i></div>
 					<ul>
 						<li>공부를 시작하기전 전체적인 흐름을 파악하고 나의 목표 학습량을 정해둔다</li>
 						<li>시청각 자료와 체험학습을 잘 활용한다</li>
@@ -112,30 +113,36 @@
 						<li>수업의 목표와 계획이 확실한 수업을 듣는 것을 추천!</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle">찰떡 파트너!<i class="bi bi-people-fill"></i></div>
+						<div class="featureText">찰떡 파트너!<i class="bi bi-people-fill"></i></div>
 						<div
 						
-							class="mt-3 d-flex align-items-center justify-content-center group1">
-							<a class="text-dark" style="font-size: 1.5em;" href="ESTJ">추진부스터 [ESTJ]</a>
+							class="mt-3 d-flex align-items-center group1">
 							<img src="../../resources/img/teamC/ESTJ.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="ESTJ">추진부스터 [ESTJ]</a>
+							
 						</div>
 						<div
 						
-							class="mt-3 d-flex align-items-center justify-content-center group1">
-							<a class="text-dark" style="font-size: 1.5em;" href="ENFJ">인간플래너형 [ENFJ]</a>
+							class="mt-3 d-flex align-items-center group1">
 							<img src="../../resources/img/teamC/ENFJ.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="ENFJ">인간플래너형 [ENFJ]</a>
+							
 						</div>
 						<div
 						
-							class="mt-3 d-flex align-items-center justify-content-center group1">
-							<a class="text-dark" style="font-size: 1.5em;" href="ESFJ">인싸형 공부러 [ESFJ]</a>
+							class="mt-3 d-flex align-items-center group1">
 							<img src="../../resources/img/teamC/ESFJ.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="ESFJ">인싸형 공부러 [ESFJ]</a>
+							
 						</div>
 						
 						<div class="box2">
-							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
-							<div class="studyPlace">여러명에서 공부하는 것보다는 혼자 자기주도 학습에 더 집중이 잘 되는 나는 독서실에서!</div>
+							<div class="featureText">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
+							<ul style="list-style:none;">
+							<li>여러명에서 공부하는 것보다는 혼자 자기주도 학습에 더 집중이 잘 되는 나는 독서실에서!</li>
+							</ul>
 						</div>
+					</div>
 					</div>
 				</div>
 

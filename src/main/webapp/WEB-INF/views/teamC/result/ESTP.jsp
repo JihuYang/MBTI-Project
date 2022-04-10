@@ -75,9 +75,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box text-center">
+				<div class="bg-white p-4 col-box">
 
-					<div class="feature text-center">
+					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>현실적인 문제 해결에 능하고, 적응력이 뛰어남</li>
@@ -88,7 +88,7 @@
 
 
 
-					<div class="weakness text-center">
+					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>즉흥적인 스타일이라 일의 마무리를 짓지 못하고 흐지부지한 경우가 많음</li>
@@ -104,29 +104,36 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i></div>
+				<div class="feature">
+					<div class="featureText">찰떡 공부법 <i class="bi bi-book"></i></div>
 					<ul>
 						<li>감각적이고 활동적인 학습: 시청각 자료, 실험을 활용, 토론, 대회 추천</li>
 						<li>순간 암기력이 좋기에 시험직전 나만의 노트로 빠르게 복습하는 것이 필수</li>
 						<li>그룹 스터디도 효과적!</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle">찰떡 파트너!<i class="bi bi-people-fill"></i></div>
+						<div class="featureText">찰떡 파트너 <i class="bi bi-people-fill"></i></div>
 						<div
-							class="mt-3 d-flex align-items-center justify-content-center group1">
-							<a class="text-dark" style="font-size: 1.5em;" href="ESFP">자유로운 영혼형 [ESFP]</a>
+							class="mt-3 d-flex align-items-center group1">
 							<img src="../../resources/img/teamC/ESFP.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="ESFP">자유로운 영혼형 [ESFP]</a>
+							
 						</div>
 						<div
-							class="mt-3 d-flex align-items-center justify-content-center group1">
-							<a class="text-dark" style="font-size: 1.5em;" href="ISFP">미적탐구형 [ISFP]</a>
+							class="mt-3 d-flex align-items-center group1">
 							<img src="../../resources/img/teamC/ISFP.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="ISFP">미적탐구형 [ISFP]</a>
+							
 						</div>
 						
 						<div class="box2">
-							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
-							<div class="studyPlace">다수와 학습할 때 더 좋은 효과가! 스터디 카페 추천!</div>
+							<div class="featureText">찰떡 공부장소 <i class="bi bi-shop-window"></i></div>
+							<ul style="list-style: none;">
+							<li>다수와 학습할 때 더 좋은 효과가! 스터디 카페 추천!</li>
+							</ul>
+							
 						</div>
+					</div>
 					</div>
 				</div>
 

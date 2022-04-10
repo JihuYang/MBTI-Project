@@ -76,9 +76,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box text-center">
+				<div class="bg-white p-4 col-box">
 
-					<div class="feature text-center">
+					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>몸으로 겪는 경험보다는 책을 통해 배우는 부분이 많음</li>
@@ -89,7 +89,7 @@
 
 
 
-					<div class="weakness text-center">
+					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>완벽주의 성향이 강해 미루는 경향이 있음</li>
@@ -105,19 +105,27 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i></div>
+				<div class="feature">
+					<div class="featureText">찰떡 공부법 <i class="bi bi-book"></i></div>
 					<ul>
 						<li>지식을 이해하며 확장시키는 심화적 학습 방법이 효과적</li>
 						<li>개념과 논리 이해도가 높아 체계적인 공부법이 효과적</li>
 						<li>밀리지 않게 매일 해야할 것들을 정해 꾸준히 공부하는 습관 기르는 것이 중요</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle">찰떡 파트너! <i class="bi bi-people-fill"></i></div>
-						<div class="mbtiPartner">ENTP</div>
-						<div class="box2">
-							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
-							<div class="studyPlace">혼자 공부하는게 효과적인 나는, 독서실에!</div>
+						<div class="featureText">찰떡 파트너 <i class="bi bi-people-fill"></i></div>
+						<div
+							class="mt-3 d-flex align-items-center group1">
+							<img src="../../resources/img/teamC/ENTP.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="INFJ">끝없는 질문형 [ENTP]</a>
 						</div>
+						<div class="box2">
+							<div class="featureText">찰떡 공부장소 <i class="bi bi-shop-window"></i></div>
+							<ul style="list-style:none;">
+							<li>혼자 공부하는게 효과적인 나는, 독서실에!</li>
+							</ul>
+						</div>
+					</div>
 					</div>
 				</div>
 

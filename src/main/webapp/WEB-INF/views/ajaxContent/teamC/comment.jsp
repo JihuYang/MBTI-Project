@@ -35,7 +35,7 @@
 						<input type="hidden" name="path" value="<%=path%>">
 						</form:form>
 						<c:forEach items="${comments}" var="comment" varStatus="status">
-							<div class="comment-set">
+							<div class="comment-set mt-2">
 								<div class="d-flex flex-start">
 
 									<div class="comment-list">

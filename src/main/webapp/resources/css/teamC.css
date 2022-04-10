@@ -196,19 +196,6 @@ footer {
 	font-size: 1.7em;
 }
 
-.smtitle {
-	width: 50%;
-	margin: 5px 25% 20px 25%;
-	font-size: 1.7em;
-	font-weight: bold;
-	padding: 5px;
-	border: 3px solid black;
-	top: 5px;
-	box-shadow: 4px 4px 0 black;
-	border-radius: 10px;
-	
-}
-
 .method {
 	background-color: rgba(255, 255, 0, 1);
 	
@@ -324,7 +311,6 @@ footer {
 	}
 	
 }
-
 #loader {
 	position : absolute;
 	left: 50%;

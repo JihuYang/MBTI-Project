@@ -75,9 +75,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box text-center">
+				<div class="bg-white p-4 col-box">
 
-					<div class="feature text-center">
+					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>매우 논리적이고 상황 적응력이 빠름</li>
@@ -88,7 +88,7 @@
 
 
 
-					<div class="weakness text-center">
+					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>지루함을 빨리 느껴 한가지를 오래하는 것에 어려움을 느낌</li>
@@ -104,7 +104,8 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i></div>
+				<div class="feature">
+					<div class="featureText">찰떡 공부법 <i class="bi bi-book"></i></div>
 					<ul>
 						<li>하루에 다양한 과목을 조금씩 나눠서 공부한다</li>
 						<li>혼자서 차근차근 여유 있게 공부해야 효과적!!</li>
@@ -112,17 +113,21 @@
 						<li>가장 쉬운 기본서 혹은 강의(구체적인 학습 자료)로 기초를 다진다</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle">찰떡 파트너!<i class="bi bi-people-fill"></i></div>
+						<div class="featureText">찰떡 파트너 <i class="bi bi-people-fill"></i></div>
 						<div
-							class="mt-3 d-flex align-items-center justify-content-center group1">
-							<a class="text-dark" style="font-size: 1.5em;" href="INFP">미루기 빌런형 [INFP]</a>
+							class="mt-3 d-flex align-items-center group1">
 							<img src="../../resources/img/teamC/INFP.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="INFP">미루기 빌런형 [INFP]</a>
+							
 						</div>
 						
 						<div class="box2">
-							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
-							<div class="studyPlace">시험장 가는 길에 요약정리나 봐야겠다. 어디서나! 환경에 구애받지 않는다구~</div>
+							<div class="featureText">찰떡 공부장소 <i class="bi bi-shop-window"></i></div>
+							<ul style="list-style:none;">
+							<li>시험장 가는 길에 요약정리나 봐야겠다. 어디서나! 환경에 구애받지 않는다구~</li>
+							</ul>
 						</div>
+					</div>
 					</div>
 				</div>
 

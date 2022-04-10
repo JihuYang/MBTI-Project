@@ -76,9 +76,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box text-center">
+				<div class="bg-white p-4 col-box">
 
-					<div class="feature text-center">
+					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>뜨거운 논쟁을 즐기는 선의의 비판자 스타일</li>
@@ -89,7 +89,7 @@
 
 
 
-					<div class="weakness text-center">
+					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>참을성이 부족하다</li>
@@ -105,7 +105,8 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i>
+				<div class="feature">
+					<div class="featureText">찰떡 공부법 <i class="bi bi-book"></i>
 					</div>
 					<ul>
 						<li>토론, 발표, 논재 위주의 공부 방식</li>
@@ -114,17 +115,22 @@
 						<li>내용이 간단하면 오히려 능률 떨어지고 어려운 과제를 풀 때 큰 성취감을 즐김</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle">찰떡 파트너!<i class="bi bi-people-fill"></i>
+						<div class="featureText">찰떡 파트너 <i class="bi bi-people-fill"></i>
 						</div>
-						<div class="mt-3 d-flex align-items-center justify-content-center group1">
+						<div class="mt-3 d-flex align-items-center group1">
+						<img src="../../resources/img/teamC/INTP.png" style="width: 100px;">
 							<a class="text-dark" style="font-size: 1.5em;" href="INTP">적극적 몽상가형 [INTP]</a>
-							<img src="../../resources/img/teamC/INTP.png" style="width: 100px;">
+							
 						</div>
 						<div class="box2">
-							<div class="smtitle">찰떡 공부장소! <i class="bi bi-shop-window"></i>
+							<div class="featureText">찰떡 공부장소 <i class="bi bi-shop-window"></i>
 							</div>
-							<div class="studyPlace">개별적 학습을 할 수 있으면서도 친구와 같이 이야기 나누고 공부할 수 있는 스터디 카페나 도서관 추천~</div>
+							<ul style="list-style: none; ">
+								<li>개별적 학습을 할 수 있으면서도 친구와 같이 이야기 나누고 공부할 수 있는 스터디 카페나 도서관 추천~</li>
+							</ul>
+				
 						</div>
+					</div>
 					</div>
 				</div>
 

@@ -77,9 +77,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box text-center">
+				<div class="bg-white p-4 col-box">
 
-					<div class="feature text-center">
+					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>매우 사교적인 성향</li>
@@ -90,7 +90,7 @@
 
 
 
-					<div class="weakness text-center">
+					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>사교적이라 겉으로 볼때는 아무 걱정없어 보이지만, 비난과 갈등을 잘 받아들이기 어려워함</li>
@@ -105,27 +105,34 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i></div>
+				<div class="feature">
+					<div class="featureText">찰떡 공부법 <i class="bi bi-book"></i></div>
 					<ul>
 						<li>관찰력과 기억력이 좋으므로 이를 활용하여 공부하는 것 추천!</li>
 						<li>그룹 스터디에 최적화 된 유형</li>
 						<li>공부를 자꾸 미루지만 않으면 됨!!</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle">찰떡 파트너!<i class="bi bi-people-fill"></i></div>
-						<div class="mt-3 d-flex align-items-center justify-content-center group1">
+						<div class="featureText">찰떡 파트너 <i class="bi bi-people-fill"></i></div>
+						<div class="mt-3 d-flex align-items-center group1">
+						<img src="../../resources/img/teamC/ESTP.png" style="width: 100px;">
 							<a class="text-dark" style="font-size: 1.5em;" href="ESTP">즉흥모험가형 [ESTP]</a>
-							<img src="../../resources/img/teamC/ESTP.png" style="width: 100px;">
+							
 						</div>
-						<div class="mt-3 d-flex align-items-center justify-content-center group1">
+						<div class="mt-3 d-flex align-items-center group1">
+						<img src="../../resources/img/teamC/ISFP.png" style="width: 100px;">
 							<a class="text-dark" style="font-size: 1.5em;" href="ISFP">미적탐구형 [ISFP]</a>
-							<img src="../../resources/img/teamC/ISFP.png" style="width: 100px;">
+							
 						</div>
 						
 						<div class="box2">
-							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
-							<div class="studyPlace">같이하자! 스터디카페! 대화, 토론 등 사람들과의 소통과 관계를 통해 공부하는 것이 효과적!</div>
+							<div class="featureText">찰떡 공부장소 <i class="bi bi-shop-window"></i></div>
+							<ul style="list-style: none;">
+								<li>같이하자! 스터디카페! 대화, 토론 등 사람들과의 소통과 관계를 통해 공부하는 것이 효과적!</li>
+							</ul>
+							
 						</div>
+					</div>
 					</div>
 				</div>
 

@@ -76,9 +76,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box text-center">
+				<div class="bg-white p-4 col-box">
 
-					<div class="feature text-center">
+					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>상상력이 풍부하고 강한 의지를 가지고 있어 다양한 방법을 모색하는 재능이 있음</li>
@@ -89,7 +89,7 @@
 
 
 
-					<div class="weakness text-center">
+					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>참을성이 부족해 하나를 꾸준히 해나가는데, 어려움을 느낌</li>
@@ -105,7 +105,8 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i>
+				<div class="feature">
+					<div class="featureText">찰떡 공부법 <i class="bi bi-book"></i>
 					</div>
 					<ul>
 						<li>공부하기 전 하루 목표를 세우고 공부를 끝낸 후 오늘 하루를 평가하는 시간을 가짐</li>
@@ -114,18 +115,23 @@
 						<li>타인의 칭찬이 가장 큰 원동력!</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle">
-							찰떡 파트너! <i class="bi bi-people-fill"></i>
+						<div class="featureText">
+							찰떡 파트너 <i class="bi bi-people-fill"></i>
 						</div>
-						<div class="mt-3 d-flex align-items-center justify-content-center group1">
+						<div class="mt-3 d-flex align-items-center group1">
+						<img src="../../resources/img/teamC/ENFP.png" style="width: 100px;">
 							<a class="text-dark" style="font-size: 1.5em;" href="ENFP">계획인듯 계획아닌 형 [ENFP]</a>
-							<img src="../../resources/img/teamC/ENFP.png" style="width: 100px;">
+							
 						</div>
 						<div class="box2">
-							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i>
+							<div class="featureText">찰떡 공부장소 <i class="bi bi-shop-window"></i>
 							</div>
-							<div class="studyPlace">대화, 토론 등 사람들과 소통하며 공부하는 것이 효과적인 나는, 같이하자! 스터디카페!</div>
+							<ul style="list-style: none; ">
+								<li>대화, 토론 등 사람들과 소통하며 공부하는 것이 효과적인 나는, 같이하자! 스터디카페!</li>
+							</ul>
+
 						</div>
+					</div>
 					</div>
 				</div>
 

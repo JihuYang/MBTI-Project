@@ -76,9 +76,9 @@
 
 				</div>
 
-				<div class="bg-white p-4 col-box text-center">
+				<div class="bg-white p-4 col-box">
 
-					<div class="feature text-center">
+					<div class="feature">
 						<div class="featureText">특징</div>
 						<ul>
 							<li>남에게 민폐끼치는 거 못함</li>
@@ -89,7 +89,7 @@
 
 
 
-					<div class="weakness text-center">
+					<div class="weakness">
 						<div class="weaknessText">약점</div>
 						<ul>
 							<li>게으르지만 완벽을 추구하는 성향으로 한번 진도가 밀려버리면 엄청난 스트레스를 받음</li>
@@ -105,7 +105,8 @@
 				</div>
 
 				<div class="bg-white p-4 col-box">
-					<div class="smtitle">찰떡 공부법!<i class="bi bi-book"></i></div>
+				<div class="feature">
+					<div class="featureText">찰떡 공부법 <i class="bi bi-book"></i></div>
 					<ul>
 						<li>무리한 계획을 세우지 않고 차츰차츰 늘려가도록 유도</li>
 						<li>나에게 맞는 학습 속도 찾기 중요</li>
@@ -113,22 +114,27 @@
 						<li>동일한 자료로 반복 학습 추천!</li>
 					</ul>
 					<div class="box2">
-						<div class="smtitle">찰떡 파트너!<i class="bi bi-people-fill"></i></div>
+						<div class="featureText">찰떡 파트너 <i class="bi bi-people-fill"></i></div>
 						<div
-							class="mt-3 d-flex align-items-center justify-content-center group1">
-							<a class="text-dark" style="font-size: 1.5em;" href="INFJ">숲 속 선비형 [INFJ]</a>
+							class="mt-3 d-flex align-items-center group1">
 							<img src="../../resources/img/teamC/INFJ.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="INFJ">숲 속 선비형 [INFJ]</a>
+							
 						</div>
 						<div
-							class="mt-3 d-flex align-items-center justify-content-center group1">
-							<a class="text-dark" style="font-size: 1.5em;" href="INTJ">본투비 전략가형 [INTJ]</a>
+							class="mt-3 d-flex align-items-center group1">
 							<img src="../../resources/img/teamC/INTJ.png" style="width: 100px;">
+							<a class="text-dark" style="font-size: 1.5em;" href="INTJ">본투비 전략가형 [INTJ]</a>
+							
 						</div>
 						
 						<div class="box2">
-							<div class="smtitle">찰떡 공부장소!<i class="bi bi-shop-window"></i></div>
-							<div class="studyPlace">난 익숙해야 공부가 잘 되거든~ 편한게 최고! 집이다!</div>
+							<div class="featureText">찰떡 공부장소 <i class="bi bi-shop-window"></i></div>
+							<ul style="list-style:none;">
+							<li>난 익숙해야 공부가 잘 되거든~ 편한게 최고! 집이다!</li>
+							</ul>
 						</div>
+					</div>
 					</div>
 				</div>
 
