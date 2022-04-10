@@ -22,8 +22,10 @@
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/share/teamA.js"></script>
 
+
 <!-- loading -->
-<script type="text/javascript" src="../../resources/js/loading.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/resources/js/loading.js"></script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>teamAResult</title>
@@ -108,10 +110,14 @@
 
 				<div id="bottom" class="bottom">
 					<div class="row">
-						<div class="col">
-							<button type="button" class="btn btn-light btn-save">저장하기</button>
-						</div>
-						<div class="col">
+							<div class="col">
+								<form method="post"
+									action="<%=request.getContextPath()%>/teamA/saved">
+									<input name="mbti" id="mbti" value="ENFJ" style="display: none">
+									<button type="submit" class="btn btn-light btn-save">저장하기</button>
+								</form>
+							</div>
+							<div class="col">
 							<button type="button" class="btn btn-light btn-save"
 								onclick="location.href='<%=request.getContextPath()%>/teamA/start'">다시하기</button>
 						</div>
@@ -170,7 +176,10 @@
 								</button>
 							</div>
 						</div>
-						<%String path = "/"+request.getRequestURI().split("/")[6].substring(0,4);%>
+						<%
+								String path = "/" + request.getRequestURI().substring(request.getRequestURI().indexOf("result") + 7,
+									request.getRequestURI().indexOf("result") + 11);
+							%>
 						<input type="hidden" name="path" value="<%=path%>">
 					</form:form>
 				</div>
@@ -182,7 +191,7 @@
 	</div>
 </div>
 	<footer class="mt-5 text-center">
-		<span class="align-middle">@2022 MBTI에 진심인 팀 All rights
+		<span class="align-middle">@2022 MBTI에 진심인 팀 정수산나, 양지후 All rights
 			reserved.</span>
 	</footer>
 </body>
