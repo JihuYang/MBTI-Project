@@ -387,12 +387,12 @@ footer {
   left:0;
   z-index: 99999;
 }
-.type-good {
-	min-height: 300px;
+#type-good > button {
+	min-height: 275px;
 }
-.type-bad {
-	min-height: 300px;
-} 
+#type-bad > button {
+	min-height: 275px;
+}
 .btn > h3 {
 	word-break: keep-all;
  }
