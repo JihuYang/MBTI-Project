@@ -17,7 +17,6 @@
 <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Do Hyeon' rel='stylesheet'>
 <!-- jquery -->
-<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/jquery-3.6.0.min.js"></script>
 <title>teamCStart</title>
 
