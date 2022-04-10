@@ -212,6 +212,7 @@ public class TeamA_Controller {
 
 		return "redirect:/teamA/result"+path;
 		
+		
 	}
 	
 	@RequestMapping(value = "/editok", method = RequestMethod.POST)

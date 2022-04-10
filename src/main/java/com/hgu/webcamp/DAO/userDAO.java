@@ -17,5 +17,6 @@ public interface userDAO {
 	public int readViews(int id);
 	public int readUserByEmail(String email);
 	public List<userDTO> readSavedTest(int userId);
+	public int upadateProfile(userDTO dto);
 
 }

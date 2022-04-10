@@ -64,6 +64,11 @@ public class userServiceImpl implements userService {
 	public List<userDTO> readSavedTest(int userId) {
 		return dao.readSavedTest(userId);
 	}
+	
+	@Override
+	public int updateProfile(userDTO dto) {
+		return dao.upadateProfile(dto);
+	}
 
 
 }
