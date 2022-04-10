@@ -1,4 +1,4 @@
-package com.hgu.webcamp.Interceptor;
+ package com.hgu.webcamp.Interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

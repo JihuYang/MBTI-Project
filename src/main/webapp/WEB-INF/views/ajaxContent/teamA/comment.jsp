@@ -49,8 +49,8 @@
 						<button class="btn" type="submit">
 							<i class="bi bi-arrow-up-circle-fill" style="font-size: 1.5rem"></i>
 						</button>
-					</div>
-					<%String path = "/"+request.getRequestURI().split("/")[6].substring(0,4);%>
+					</div>					
+					<% String path = "/"+request.getRequestURI().substring(request.getRequestURI().indexOf("result")+7, request.getRequestURI().indexOf("result")+11); %> 
 					<input type="hidden" name="path" value="<%=path%>">
 				</form:form>
 				<div>
@@ -67,7 +67,7 @@
 	function delete_ok(id) {
 		var a = confirm("정말로 삭제하겠습니까?");
 		<%
-		String mbti = "/"+request.getRequestURI().split("/")[6].substring(0,4);		
+			String mbti = "/"+request.getRequestURI().substring(request.getRequestURI().indexOf("result")+7, request.getRequestURI().indexOf("result")+11); 
 		%>
 		if (a)
 			location.href = '/webcamp/teamA/delete_ok/' + id +"<%=mbti%>";
