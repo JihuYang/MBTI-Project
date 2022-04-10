@@ -163,7 +163,7 @@
 
 									<div class="mb-3 mt-3">
 										<div id="commentContent">
-											<jsp:include page="/WEB-INF/views/ajaxContent/teamA/comment.jsp" flush="false" />
+											<jsp:include page="../../ajaxContent/teamA/comment.jsp" flush="false" />
 										</div>
 									</div>
 								</div>

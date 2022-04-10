@@ -14,26 +14,15 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	crossorigin="anonymous"></script>
-<script>
-	function delete_ok(id) {
-		var a = confirm("정말로 삭제하겠습니까?");
-		<%String mbti = "/" + request.getRequestURI().substring(request.getRequestURI().indexOf("result") + 7,
-		request.getRequestURI().indexOf("result") + 11);%> 
-		if (a)
-			location.href = '/teamA/delete_ok/' + id +"<%=mbti%>
-	";
-	}
-	function doDisplay(id) {
-		$("#" + id + "2").toggle();
-		var con = document.getElementById(id);
-		if (con.style.display == 'none') {
-			con.style.display = 'flex';
-		} else {
-			con.style.display = 'none';
-		}
-	}
-</script>
+	
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/share/teamA.js"></script>
+	
+
 <%@ page session="false"%>
+						<%
+							String path = "/" + request.getRequestURI().substring(request.getRequestURI().indexOf("result") + 7,
+								request.getRequestURI().indexOf("result") + 11);
+						%>
 <c:forEach items="${comments}" var="comment" varStatus="status">
 	<div class="comment-block pt-2 pb-2">
 		<div class="d-flex flex-start">
@@ -49,9 +38,8 @@
 							<a class="mb-0 text-muted p-1" id="editbtn"
 								href="javascript:doDisplay('${comment.id}')"><i
 								class="bi bi-pen"></i></a> <a class="mb-0 text-muted p-1"
-								id="delbtn" href="javascript:delete_ok('${comment.id}')"><i
+								id="delbtn" href="javascript:delete_ok('${comment.id}','<%=path%>' )"><i
 								class="bi bi-x-lg"></i></a>
-
 						</div>
 					</c:if>
 				</div>
@@ -65,10 +53,7 @@
 						<button class="btn" type="submit">
 							<i class="bi bi-arrow-up-circle-fill" style="font-size: 1.5rem"></i>
 						</button>
-						<%
-							String path = "/" + request.getRequestURI().substring(request.getRequestURI().indexOf("result") + 7,
-								request.getRequestURI().indexOf("result") + 11);
-						%>
+
 						<input type="hidden" name="path" value="<%=path%>">
 					</div>
 				</form:form> 
@@ -84,3 +69,19 @@
 </c:forEach>
 
 
+<script>
+	function delete_ok(id, path) {
+		var a = confirm("정말로 삭제하겠습니까?");
+		if (a)
+			location.href = '/teamA/delete_ok/' + id +path;
+	}
+	function doDisplay(id) {
+		$("#" + id + "2").toggle();
+		var con = document.getElementById(id);
+		if (con.style.display == 'none') {
+			con.style.display = 'flex';
+		} else {
+			con.style.display = 'none';
+		}
+	}
+</script>
