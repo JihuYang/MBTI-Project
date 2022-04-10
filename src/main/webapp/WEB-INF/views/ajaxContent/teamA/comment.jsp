@@ -1,4 +1,3 @@
-
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <fmt:formatDate value="${now}" pattern="yyyy-MM-dd" var="nowDate" />
@@ -83,6 +82,5 @@
 		</div>
 	</div>
 </c:forEach>
-
 
 
