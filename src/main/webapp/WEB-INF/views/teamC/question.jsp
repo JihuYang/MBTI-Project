@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="<%=request.getContextPath()%>/resources/js/question.js?ver=<%System.currentTimeMillis();%> %>" ></script>
+<script src="<%=request.getContextPath()%>/resources/js/question.js?ver=2" ></script>
 
 <script>
 	
