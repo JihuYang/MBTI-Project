@@ -24,7 +24,7 @@
 
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/share/teamB.js"></script>
 <!-- loading -->
-<script type="text/javascript" src="../../resources/js/loading.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/loading.js"></script>
 
 <title>[결과]나의 배우자는 누구?</title>
 <link rel="stylesheet" type="text/css"
@@ -93,26 +93,26 @@
 		<div class="btn-group-vertical" style="margin-bottom: 50px;">
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-				onclick="location.href='../../teamA/start'">
+				onclick="location.href='<%=request.getContextPath()%>/teamA/start'">
 				<h3 style="font-size: 20px;">내가 개발자라면? 개발자 유형 테스트</h3>
 			</button>
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-				onclick="location.href='../../teamC/start'">
+				onclick="location.href='<%=request.getContextPath()%>/teamC/start'">
 				<h3 style="font-size: 20px;">MBTI 유형에 맞는 찰떡 공부법</h3>
 			</button>
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-				onclick="location.href='../../teamD/start'">
+				onclick="location.href='<%=request.getContextPath()%>/teamD/start'">
 				<h3 style="font-size: 20px;">짱구에서 나는 누굴까?</h3>
 			</button>
 			<button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
-				onclick="location.href='../../teamE/start'">
+				onclick="location.href='<%=request.getContextPath()%>/teamE/start'">
 				<h3 style="font-size: 20px;">인간관계 유형별 MBTI</h3>
 			</button>
 		</div>
-		<jsp:include page="../../ajaxContent/teamB/comment.jsp" flush="false" />
+		<jsp:include page="<%=request.getContextPath()%>/ajaxContent/teamB/comment.jsp" flush="false" />
 		<%-- <%@ include file="<%=request.getContextPath()%>/<%=request.getContextPath()%>/ajaxContent/teamB/comment.jsp"%> --%>
 	</div>
 	<div class="footer">
