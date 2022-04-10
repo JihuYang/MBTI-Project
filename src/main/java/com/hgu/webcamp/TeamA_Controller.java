@@ -264,11 +264,10 @@ public class TeamA_Controller {
           
        }
        else {
-          System.out.println("데이터 추가 성공 ");
+          System.out.println("데이터 추가 성공 sisi");
        }
 
-
-       return "redirect:/";
+		return "redirect:/myPage";
     }
 	/*
 	// ajax로 값을 주고받는 Controller 

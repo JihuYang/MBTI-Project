@@ -21,9 +21,11 @@
 
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/share/teamA.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/resources/js/share/teamA.js"></script>
 <!-- loading -->
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/loading.js"></script>
+<script type="text/javascript"
+	src="<%=request.getContextPath()%>/resources/js/loading.js"></script>
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -119,8 +121,15 @@
 
 					<div id="bottom" class="bottom">
 						<div class="row">
-							<div class="col">
+							<!-- 							<div class="col">
 								<button type="button" class="btn btn-light btn-save">저장하기</button>
+							</div> -->
+							<div class="col">
+								<form method="post"
+									action="<%=request.getContextPath()%>/teamA/saved">
+									<input name="mbti" id="mbti" value="ISFP" style="display: none">
+									<button type="submit" class="btn btn-light btn-save">저장하기</button>
+								</form>
 							</div>
 							<div class="col">
 								<button type="button" class="btn btn-light btn-save"
@@ -163,7 +172,8 @@
 
 									<div class="mb-3 mt-3">
 										<div id="commentContent">
-											<jsp:include page="../../ajaxContent/teamA/comment.jsp" flush="false" />
+											<jsp:include page="../../ajaxContent/teamA/comment.jsp"
+												flush="false" />
 										</div>
 									</div>
 								</div>
@@ -180,9 +190,12 @@
 									</button>
 								</div>
 							</div>
-								<% String path = "/"+request.getRequestURI().substring(request.getRequestURI().indexOf("result")+7, request.getRequestURI().indexOf("result")+11); %> 
+							<%
+								String path = "/" + request.getRequestURI().substring(request.getRequestURI().indexOf("result") + 7,
+									request.getRequestURI().indexOf("result") + 11);
+							%>
 
-							<input type="hidden" name="path" value=<%=path%>/>
+							<input type="hidden" name="path" value=<%=path%> />
 						</form:form>
 					</div>
 
