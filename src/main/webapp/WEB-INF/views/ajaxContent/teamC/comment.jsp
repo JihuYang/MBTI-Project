@@ -1,4 +1,4 @@
-   
+    
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
@@ -31,12 +31,12 @@
 										style="color: black; font-size: 1.5rem"></i>
 								</button>
 							</div>
-							<%String path = "/"+request.getRequestURI().split("/")[6].substring(0,4);%>
+							<% String path = "/"+request.getRequestURI().substring(request.getRequestURI().indexOf("result")+7, request.getRequestURI().indexOf("result")+11); %> 
 						<input type="hidden" name="path" value="<%=path%>">
 						</form:form>
 						<c:forEach items="${comments}" var="comment" varStatus="status">
-							<div class="comment-set mt-2">
-								<div class="d-flex flex-start">
+							<div class="comment-set">
+								<div class="d-flex flex-start mt-2">
 
 									<div class="comment-list">
 										<img class="rounded-circle border border-secondary"
@@ -44,14 +44,14 @@
 											width="60" height="60" />
 									</div>
 
-									<div class="comment-list-name" style="width: 200px;">
+									<div class="comment-list-name p-3 text-start" style="width: 200px;">
 										<p class="fw-bold fs-3 " style="line-height: 0%">${comment.nickname}</p>
 										<p class="text-muted fs-8">
 											<fmt:formatDate value="${comment.regDate}"
 												var="formattedDate" type="date" pattern="yyyy-MM-dd" />${formattedDate}</p>
 
 									</div>
-									<div id="show-comment" class="comment-list-content w-100">
+									<div id="show-comment" class="comment-list-content">
 										<p id="${comment.id}2" style="display: block;">${comment.comment}</p>
 
 										<form:form method="post" action="/webcamp/teamC/editok">
@@ -66,7 +66,7 @@
 														style="color: black; font-size: 1.5rem"></i>
 												</button>
 											</div>
-											<%String path = "/"+request.getRequestURI().split("/")[6].substring(0,4);%>
+											<% String path = "/"+request.getRequestURI().substring(request.getRequestURI().indexOf("result")+7, request.getRequestURI().indexOf("result")+11); %> 
 											<input type="hidden" name="path" value="<%=path%>">
 										</form:form>
 
@@ -109,9 +109,7 @@
 	}
 	function delete_ok(id) {
 		var a = confirm("정말로 삭제하겠습니까?");
-		<%
-		String mbti = "/"+request.getRequestURI().split("/")[6].substring(0,4);		
-		%>
+		<% String mbti = "/"+request.getRequestURI().substring(request.getRequestURI().indexOf("result")+7, request.getRequestURI().indexOf("result")+11); %> 
 		if (a)
 			location.href = '/webcamp/teamC/delete_ok/' + id +"<%=mbti%>";
 	}

@@ -1,5 +1,5 @@
 var link = document.location.href;
-var again = 'http://localhost:8080/webcamp/teamB/start';
+var again = location.origin+'/teamB/start';
 
 //카카오톡 공유하기 
 	Kakao.init("1841f627e245ac59ac935b451f4720e1"); //어플의 Javascript Key 값 
