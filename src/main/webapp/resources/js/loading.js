@@ -6,4 +6,4 @@
 	var container =  document.getElementById('a_loader');
 	loading.style.display = 'none';
 	container.style.display = 'block';
-}, 3000);
+}, 1000);
