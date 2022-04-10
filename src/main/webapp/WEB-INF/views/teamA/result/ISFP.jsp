@@ -194,7 +194,6 @@
 								String path = "/" + request.getRequestURI().substring(request.getRequestURI().indexOf("result") + 7,
 									request.getRequestURI().indexOf("result") + 11);
 							%>
-
 							<input type="hidden" name="path" value=<%=path%> />
 						</form:form>
 					</div>
@@ -206,7 +205,7 @@
 		</div>
 	</div>
 	<footer class="mt-5 text-center">
-		<span class="align-middle">@2022 MBTI에 진심인 팀 All rights
+		<span class="align-middle">@2022 MBTI에 진심인 팀 정수산나, 양지후 All rights
 			reserved.</span>
 	</footer>
 </body>
