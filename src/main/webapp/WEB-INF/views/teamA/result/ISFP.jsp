@@ -21,8 +21,7 @@
 
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script type="text/javascript"
-	src="<%=request.getContextPath()%>/resources/js/share/teamA.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/share/teamA.js"></script>
 <!-- loading -->
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/loading.js"></script>
 
@@ -164,10 +163,8 @@
 
 									<div class="mb-3 mt-3">
 										<div id="commentContent">
-<%--   										    <jsp:include page= "<%=\"./inc/\".concat(((String)request.getAttribute(\"header\")))%>" />
- --%>											<jsp:include page="/WEB-INF/views/ajaxContent/teamA/comment.jsp" flush="false" />
-<%-- 											<jsp:include page="<%=request.getContextPath()%>/WEB-INF/view/ajaxContent/teamA/comment.jsp" flush="false" />
- --%>										</div>
+											<jsp:include page="/WEB-INF/views/ajaxContent/teamA/comment.jsp" flush="false" />
+										</div>
 									</div>
 								</div>
 							</div>
@@ -185,7 +182,7 @@
 							</div>
 								<% String path = "/"+request.getRequestURI().substring(request.getRequestURI().indexOf("result")+7, request.getRequestURI().indexOf("result")+11); %> 
 
-							<input type="hidden" name="path" value=<%=path%>>
+							<input type="hidden" name="path" value=<%=path%>/>
 						</form:form>
 					</div>
 

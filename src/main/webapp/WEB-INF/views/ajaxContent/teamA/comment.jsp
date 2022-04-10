@@ -15,7 +15,25 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	crossorigin="anonymous"></script>
-
+<script>
+	function delete_ok(id) {
+		var a = confirm("정말로 삭제하겠습니까?");
+		<%String mbti = "/" + request.getRequestURI().substring(request.getRequestURI().indexOf("result") + 7,
+		request.getRequestURI().indexOf("result") + 11);%> 
+		if (a)
+			location.href = '/teamA/delete_ok/' + id +"<%=mbti%>
+	";
+	}
+	function doDisplay(id) {
+		$("#" + id + "2").toggle();
+		var con = document.getElementById(id);
+		if (con.style.display == 'none') {
+			con.style.display = 'flex';
+		} else {
+			con.style.display = 'none';
+		}
+	}
+</script>
 <%@ page session="false"%>
 <c:forEach items="${comments}" var="comment" varStatus="status">
 	<div class="comment-block pt-2 pb-2">
@@ -38,7 +56,7 @@
 						</div>
 					</c:if>
 				</div>
-				<form:form method="post" action="<%=request.getContextPath()%>/teamA/editok">
+ 				<form:form method="post" action="/teamA/editok">
 					<p id="${comment.id}2" class="text-dark" style="display: block;">${comment.comment}</p>
 					<div class="p-2" id="${comment.id}" style="display: none;">
 						<textarea rows="3" name="comment"
@@ -54,7 +72,7 @@
 						%>
 						<input type="hidden" name="path" value="<%=path%>">
 					</div>
-				</form:form>
+				</form:form> 
 				<div>
 					<p class="text-muted fs-6">
 						<fmt:formatDate value="${comment.regDate}" var="formattedDate"
@@ -65,24 +83,6 @@
 		</div>
 	</div>
 </c:forEach>
-<script>
-	function delete_ok(id) {
-		var a = confirm("정말로 삭제하겠습니까?");
-		<%String mbti = "/" + request.getRequestURI().substring(request.getRequestURI().indexOf("result") + 7,
-		request.getRequestURI().indexOf("result") + 11);%> 
-		if (a)
-			location.href = location.origin+'/teamA/delete_ok/' + id +"<%=mbti%>
-	";
-	}
-	function doDisplay(id) {
-		$("#" + id + "2").toggle();
-		var con = document.getElementById(id);
-		if (con.style.display == 'none') {
-			con.style.display = 'flex';
-		} else {
-			con.style.display = 'none';
-		}
-	}
-</script>
+
 
 

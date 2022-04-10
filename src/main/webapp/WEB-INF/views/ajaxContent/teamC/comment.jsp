@@ -21,7 +21,7 @@
 					<div class="comment">
 						<div class="text-start comment-number">댓글 [${count}]</div>
 
-						<form:form method="post" action="/webcamp/teamC/addok">
+						<form:form method="post" action="/teamC/addok">
 							<div class="d-flex p-2 comment-add">
 								<input type="text" name="comment" class="comment-add-text"
 									style="border: none; border-radius: 10px; width: 90%"
@@ -54,7 +54,7 @@
 									<div id="show-comment" class="comment-list-content">
 										<p id="${comment.id}2" style="display: block;">${comment.comment}</p>
 
-										<form:form method="post" action="/webcamp/teamC/editok">
+										<form:form method="post" action="/teamC/editok">
 											<div class="p-2 comment-add" id="${comment.id}"
 												style="display: none;">
 												<textarea rows="3" name="comment"
@@ -111,6 +111,6 @@
 		var a = confirm("정말로 삭제하겠습니까?");
 		<% String mbti = "/"+request.getRequestURI().substring(request.getRequestURI().indexOf("result")+7, request.getRequestURI().indexOf("result")+11); %> 
 		if (a)
-			location.href = '/webcamp/teamC/delete_ok/' + id +"<%=mbti%>";
+			location.href = '/teamC/delete_ok/' + id +"<%=mbti%>";
 	}
 </script>
