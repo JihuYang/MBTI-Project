@@ -23,4 +23,6 @@ public interface userService {
 	public int readViews(int id);
 	
 	public List<userDTO> readSavedTest(int userId);
+	
+	public int updateProfile(userDTO dto);
 }

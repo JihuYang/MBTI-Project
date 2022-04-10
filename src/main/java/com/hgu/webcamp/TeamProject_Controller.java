@@ -1,5 +1,6 @@
 package com.hgu.webcamp;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -8,11 +9,14 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.hgu.webcamp.DTO.commentDTO;
 import com.hgu.webcamp.DTO.testDTO;
 import com.hgu.webcamp.DTO.userDTO;
 import com.hgu.webcamp.Service.userService;
@@ -57,6 +61,12 @@ public class TeamProject_Controller {
 		
 		userDTO dto = new userDTO();
 		
+		List<userDTO> mbtiList = userService.readAllMbti();
+	
+		
+		
+		
+		
 		
 		int id = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
 
@@ -70,6 +80,7 @@ public class TeamProject_Controller {
 		//System.out.println("dto: " + dto);
 		mv.addObject("info", dto);
 		mv.addObject("savedTest", savedTest);
+		mv.addObject("mbtiList", mbtiList);
 		mv.setViewName("/myPage");
 		for(userDTO test : savedTest) {
 			System.out.println(test.toString());
@@ -78,6 +89,48 @@ public class TeamProject_Controller {
 		
 		return mv;
 	}
+	
+//	@RequestMapping(value = "/profile", method = RequestMethod.POST)
+//	public String profile(HttpServletRequest request) throws UnsupportedEncodingException {
+//	
+//			request.setCharacterEncoding("utf-8");
+//			userDTO dto = new userDTO();
+//			
+//			dto = (userDTO) request.getSession().getAttribute("tempUser");
+//
+////			String nickname = request.getParameter("nickName");
+////			String mbtiTemp = request.getParameter("mbti");
+////			String idTemp = request.getParameter("id");
+////			
+////			System.out.println("왜안돼 ");
+////			
+////			System.out.println(mbtiTemp);
+////			System.out.println(nickname);
+////			System.out.println(idTemp);
+////	
+//			//int mbti =  Integer.parseInt(mbtiTemp);
+////			int id = ((userDTO)request.getSession().getAttribute("tempUser")).getId();
+////			System.out.println(id);
+//			
+////			dto.setNickName("sanna");
+////			dto.setMbti(1);
+////			dto.setId(id);
+//			
+//			int i = userService.updateProfile(dto);
+//			
+//			if(i==0) {
+//				System.out.println("데이터 수정 실패");
+//				
+//			}
+//			else {
+//				System.out.println("데이터 수정 성공 ");
+//			}
+//			
+//			
+//			return "redirect:/myPage";
+//		}
+//		
+
 	
 	@RequestMapping(value = "/myPage/delete_ok/{id}", method = RequestMethod.GET)
 	public String deletePostOK(@PathVariable("id") int id) {

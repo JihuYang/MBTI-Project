@@ -59,7 +59,36 @@ function delete_ok(id) {
 	if (a)
 		location.href = '/webcamp/myPage/delete_ok/' + id;
 }
+
+function saveProfile(){
+	
+}
+
+$(document).ready(function(){
+	$('.js-edit, .js-save').on('click', function(){
+  	var $form = $(this).closest('form');
+  	$form.toggleClass('is-readonly is-editing');
+    var isReadonly  = $form.hasClass('is-readonly');
+    $form.find('input,select').prop('disabled', isReadonly);
+  });
+});
 </script>
+
+<style>
+
+form.is-readonly .btn-save {
+  display: none;
+}
+form.is-readonly input[disabled], form.is-readonly select[disabled], {
+  cursor: text;
+  background-color: #f5f5f5;
+  box-shadow: none;
+}
+form.is-editing .btn-edit {
+  display: none;
+}
+
+</style>
 
 </head>
 <body>
@@ -75,45 +104,67 @@ function delete_ok(id) {
 	<section class="my-content py-5">
 		<div class="container px-4 px-lg-5 mt-5 text-center">
 			<div class="form-signin">
-				<form>
+			<div class="container">
+
+				<form class="is-readonly" >
 					<img class="mb-4 rounded-circle border border-dark"
 						src="resources/img/teamA/${info.type}.png" alt="" style="background:white"
 						width="150" height="150">
+						<input name="id" value="${info.id}" hidden>
 
-					<div class="mb-3 row">
+					 <div class="mb-3 row">
 						<label for="staticNickname"
 							class="col-sm-2 col-form-label mypage-label">닉네임 </label>
 						<div class="col-sm-10 ">
-							<div class="d-flex justify-content-between form-control-plaintext border border-secondary rounded p-3" id="staticNickname">${info.nickName}" 
-								<div id="btnBox">
+							<div class="d-flex justify-content-between form-control-plaintext border border-secondary rounded p-3" id="staticNickname">${info.nickName} 
+								<!-- <div id="btnBox">
 									<a class="mb-0 text-muted p-1" id="editbtn" href="javascript:doDisplay('')">
 										<i class="bi bi-pen"></i></a>
 									<a class="mb-0 text-black p-1" id="delbtn" href="javascript:delete_ok('')">
 										<i class="bi bi-x-lg"></i></a>
-								</div>
+								</div> -->
 							</div>
 						</div>
-					</div>
+					</div> 
+					 <%-- <div class="form-group row">
+					    <label for="staticNickname" class="col-2 col-form-label mypage-label">닉네임</label>
+					    <input type="text" name="nickName" class="form-control is-disabled col-10 p-3" id="nickName" placeholder="닉네임" value="${info.nickName}"  disabled>
+					  </div> --%>
+					
 					<div class="mb-3 row">
 						<label for="staticMBTI"
 							class="col-sm-2 col-form-label mypage-label">MBTI </label>
 						<div class="col-sm-10">
-						<div class="d-flex justify-content-between form-control-plaintext border border-secondary rounded p-3" id="staticMBTI">${info.type}"
-							<div id="btnBox">
+						<div class="d-flex justify-content-between form-control-plaintext border border-secondary rounded p-3" id="staticMBTI">${info.type}
+							<!-- <div id="btnBox">
 								<a class="mb-0 text-muted p-1" id="editbtn" href="javascript:doDisplay('')">
 										<i class="bi bi-pen"></i></a>
 									<a class="mb-0 text-black p-1" id="delbtn" href="javascript:delete_ok('')">
 										<i class="bi bi-x-lg"></i></a>
-								</div>
+								</div> -->
 						</div>
 					</div>
-
-<!-- 					<button id="myPage-btn" class="w-50 btn btn-lg btn-dark mt-2"
-						type="submit" onclick="change()" value="수정">수정</button> -->
+					</div>
+						<%-- <div class="form-group row mb-4">
+					    <label for="staticMBTI" class="col-sm-2 col-form-label mypage-label">MBTI</label>
+					     <input type="text" name="nickName" class=" form-control is-disabled col-10 p-3" id="staticNickname" placeholder="닉네임" value="${info.type}"  disabled> --%>
+					   <%--  <select name="mbti" id="mbti" class="is-disabled form-select p-3"
+					aria-label="Default select example" disabled>
+					<option value="${info.mbti}"selected>${info.type}</option>
+					<c:forEach items="${mbtiList}" var="mbti" varStatus="status">
+						<option value="${mbti.id}">${mbti.type}</option>
+					</c:forEach>
+				</select> --%>
+					  </div>
+				
+				<!-- 
+					 <button type="button" class="btn btn-secondary btn-edit js-edit">수정</button>
+					  <button type="submit" class="btn btn-secondary btn-save js-save" value = "Submit">저장</button>
+ -->
 				</form>
 			</div>
 
-
+		</div>
 		</div>
 
 
