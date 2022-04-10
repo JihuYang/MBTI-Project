@@ -106,7 +106,7 @@ label {display: flex;}
 
 
 /* intro footer */
-.footer-wrap{margin-top:180px; height:100%;background:#c9c9c9;}
+.footer-wrap{margin-top:180px; height:100%; background:#c9c9c9;}
 .footer-wrap .wrap{padding:12px 30px 20px 30px;}
 .footer-hgulogo{margin-top:30px; text-align:left;}
 .footer-hgulogo a{display:inline-block;}
