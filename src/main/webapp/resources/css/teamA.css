@@ -442,6 +442,10 @@ footer {
       padding-top: 0;
     padding-bottom: 0;
    }
+   .col .btn .btn-light {
+   	font-size: 10px;
+   }
+   
 }
 
 @media screen and (max-width: 320px) {
@@ -454,6 +458,15 @@ footer {
   .scroll-comment{
   height: 30vh;
   }
+  .type-good {
+    min-height: 300px;
+    word-break: break-all;
+  }
+    .type-bad {
+    min-height: 300px;
+        word-break: break-all;
+  }
+  
 
 }
 #loader {
