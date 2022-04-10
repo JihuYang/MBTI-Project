@@ -52,22 +52,22 @@
 
 
 						<div class="fade-slide">
-							<img src="../resources/img/teamC/ENFJ.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/ENFP.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/ENTJ.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/ENTP.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/ESFJ.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/ESFP.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/ESTJ.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/ESTP.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/INTJ.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/INFP.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/INTJ.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/INTP.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/ISFJ.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/ISFP.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/ISTJ.png" style="width: 200px;" />
-							<img src="../resources/img/teamC/ISTP.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ENFJ.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ENFP.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ENTJ.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ENTP.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ESFJ.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ESFP.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ESTJ.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ESTP.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/INTJ.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/INFP.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/INTJ.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/INTP.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ISFJ.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ISFP.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ISTJ.png" style="width: 200px;" />
+							<img src="<%=request.getContextPath()%>/resources/img/teamC/ISTP.png" style="width: 200px;" />
 						</div>
 
 						<button class="startButton" onclick="moveToQ()">
