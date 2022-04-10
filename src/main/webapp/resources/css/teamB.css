@@ -106,7 +106,7 @@ label {display: flex;}
 
 
 /* intro footer */
-.footer-wrap{margin-top:180px; height:100%;background:#c9c9c9;}
+.footer-wrap{margin-top:180px; height:100%; background:#c9c9c9;}
 .footer-wrap .wrap{padding:12px 30px 20px 30px;}
 .footer-hgulogo{margin-top:30px; text-align:left;}
 .footer-hgulogo a{display:inline-block;}
@@ -139,7 +139,7 @@ label {display: flex;}
 	margin: -75px 0 0 -75px;
 	border: 16px solid #f3f3f3;
 	border-radius: 50%;
-	border-top: 16px solid #9b111e;
+	border-top: 16px solid rgb(206, 170, 57);
 	width: 120px;
 	height: 120px;
 	-webkit-animation: spin 2s linear infinite;

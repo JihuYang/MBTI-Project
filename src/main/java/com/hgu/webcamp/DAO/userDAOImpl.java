@@ -70,6 +70,14 @@ public class userDAOImpl implements userDAO {
 		List<userDTO> user = sqlSession.selectList(namespace + ".readSavedTest", userId);
 		return user;
 	}
+	
+
+	@Override
+	public int upadateProfile(userDTO dto) {
+		int result = sqlSession.update("user.updateProfile", dto);
+		return result;
+	}
+	
 
 
 }
