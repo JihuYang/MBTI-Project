@@ -74,7 +74,7 @@
 			</div>
 		</div>
       	<div class="footer">
-			<p class=footer-text>@HGU 2022 Winter Camp</p>
+			<p class=footer-text>ⓒ 2022 HGU 이선경, 김주은 All Rights Reserved.</p>
 		</div>
    </div>
 </body>

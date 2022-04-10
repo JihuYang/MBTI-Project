@@ -46,3 +46,22 @@ var copyLink = function() {
 			alert('URL 복사가 완료되었습니다.' + link)
 		})
 };
+
+	function doDisplay(id) {
+		$("#" + id + "2").toggle();
+		var con = document.getElementById(id);
+		if (con.style.display == 'none') {
+			con.style.display = 'flex';
+		} else {
+			con.style.display = 'none';
+		}
+	}
+
+	function moveTo() {
+		location.href = "../start";
+	}
+	function delete_ok(id, path) {
+		var a = confirm("정말로 삭제하겠습니까?");
+		if (a)
+			location.href = '/teamA/delete_ok/' + id +path;
+	}

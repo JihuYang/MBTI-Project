@@ -63,7 +63,7 @@
 					<a href="https://www.handong.edu/" target="_blank" onclick="GA_Event('MBTI_intro', 'footer_logo', 'Click');">
 					<img src="<%=request.getContextPath()%>/resources/img/teamB/hgu-logo.png" alt="HGU"></a>
 				</div>
-				<div class="footer-copy">ⓒ 2022 HGU Winter Camp. All Rights Reserved.</div>
+				<div class="footer-copy">ⓒ 2022 HGU 이선경, 김주은 All Rights Reserved.</div>
 			</div>
 			
 		</div>
