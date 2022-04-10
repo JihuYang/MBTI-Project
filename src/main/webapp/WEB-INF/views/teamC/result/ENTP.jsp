@@ -16,7 +16,7 @@
 <!-- 공유하기 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
-<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/share/teamC.js"></script>
+<script type="text/javascript" src="../../resources/js/share/teamC.js"></script>
 <!-- Bootstrap CSS -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -136,7 +136,7 @@
 
 				<div class="wholeBox text-center two_btn re_btn" onclick="moveTo()">다시하기</div>
 				<div class="wholeBox text-center two_btn sv_btn">
-				<form method="post" action="<%=request.getContextPath()%>/teamC/saved">
+				<form method="post" action="/teamC/saved">
 					<input name="mbti" id="mbti" value="ENTP" style="display: none">
 					<button class="btn" type="submit">
 					저장하기
@@ -147,7 +147,7 @@
 				<div class="d-flex mt-5 mb-5 justify-content-around">
 
 					<a class="sharebtn1" id="kakao-link-btn" href="javascript:sendLink()">
-						<img src="<%=request.getContextPath()%>/resources/img/teamC/kakaoLogo.png"
+						<img src="../../resources/img/teamC/kakaoLogo.png"
 							style="width: 40px;" />
 					</a>
 					<button class="sharebtn1" type="button" onclick="copyLink();">
