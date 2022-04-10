@@ -49,11 +49,6 @@
 						<button class="btn" type="submit">
 							<i class="bi bi-arrow-up-circle-fill" style="font-size: 1.5rem"></i>
 						</button>
-<<<<<<< HEAD
-					</div>					
-=======
-					</div>
->>>>>>> branch 'master' of https://github.com/JihuYang/MBTI-Project.git
 					<% String path = "/"+request.getRequestURI().substring(request.getRequestURI().indexOf("result")+7, request.getRequestURI().indexOf("result")+11); %> 
 					<input type="hidden" name="path" value="<%=path%>">
 				</form:form>
