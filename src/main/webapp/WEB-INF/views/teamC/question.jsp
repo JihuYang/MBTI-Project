@@ -93,8 +93,6 @@ progress {
 			
 			</div>
 			<div class="col" id="sideCol"></div>
-		
-
 	</div>
 	</div>
 	<footer class="text-center">
