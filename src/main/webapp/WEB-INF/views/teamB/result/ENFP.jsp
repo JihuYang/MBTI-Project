@@ -98,7 +98,7 @@
 				onclick="location.href='<%=request.getContextPath()%>/teamC/start'">
 				<h3 style="font-size: 20px;">MBTI 유형에 맞는 찰떡 공부법</h3>
 			</button>
-			<button type="button" class="btn btn-warning btn-fink"
+			<%-- <button type="button" class="btn btn-warning btn-fink"
 				style="border-radius: 15px; margin-bottom: 10px;"
 				onclick="location.href='<%=request.getContextPath()%>/teamD/start'">
 				<h3 style="font-size: 20px;">짱구에서 나는 누굴까?</h3>
@@ -107,7 +107,7 @@
 				style="border-radius: 15px; margin-bottom: 10px;"
 				onclick="location.href='<%=request.getContextPath()%>/teamE/start'">
 				<h3 style="font-size: 20px;">인간관계 유형별 MBTI</h3>
-			</button>
+			</button> --%>
 		</div>
 <jsp:include page="../../ajaxContent/teamB/comment.jsp" flush="false" />
 	</div>
