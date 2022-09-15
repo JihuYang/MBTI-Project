@@ -64,7 +64,7 @@ progress {
 
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col" id="sideCol"></div>
+			<div class="col d-none d-lg-block" id="sideCol"></div>
 			<div class="col content" id="main">
 				<div id="mainCont" class="bg-white p-4 position-absolute top-50 start-50 translate-middle col-box">
 					
@@ -85,14 +85,14 @@ progress {
 					<button id="Button" class="btn2" onclick="nextButton(2)">${questions[1].answer}</button>
 				</div>
 				<div class="shareBtn mt-5">
-					<a id="home-btn" href="/index"><img src="<%=request.getContextPath()%>/resources/img/teamC/home.svg" alt="homeIcon" style="width:50px"></a>
+					<a id="home-btn" href="../index"><img src="<%=request.getContextPath()%>/resources/img/teamC/home.svg" alt="homeIcon" style="width:50px"></a>
 					<a id="redo-btn" href="./start"><img src="<%=request.getContextPath()%>/resources/img/teamC/redo.svg" alt="redoIcon"  style="width:50px"></a>
 
 			</div>
 			</div>
 			
 			</div>
-			<div class="col" id="sideCol"></div>
+			<div class="col d-none d-lg-block" id="sideCol"></div>
 	</div>
 	</div>
 	<footer class="text-center">

@@ -293,9 +293,9 @@ footer {
 		margin-right: 1rem !important;
 		margin-left: 1rem !important;
 	}
-	#mainCont {
+	/* #mainCont {
 		width: 60vw;			
-	}
+	} */
 }
 
 @media screen and (max-width: 1024px) {
@@ -306,10 +306,10 @@ footer {
 		margin-right: 1rem !important;
 		margin-left: 1rem !important;
 	}
-	#mainCont {
+	/* #mainCont {
 		position: relative !important;
 		width: 100%;	
-	}
+	} */
 	
 }
 
@@ -317,31 +317,31 @@ footer {
 	#sideCol {
     	display:none !important;
 	}
-	#mainCont {
+	/* #mainCont {
 		position: relative !important;
 		width: 100%;		
-	}
+	} */
 	
 }
 @media screen and (max-width: 600px) {
 	#sideCol {
     	display:none !important;
 	}
-	#mainCont {
+	/* #mainCont {
 		position: relative !important;	
 		width: 100%;
-	}
+	} */
 	
 }
 @media screen and (max-width: 430px) {
 	#sideCol {
     	display:none !important;
 	}
-	#mainCont {
+	/* #mainCont {
 		width: 100%;
 		padding-left:0;
 		padding-right:0;
-	}
+	} */
 	
 }
 

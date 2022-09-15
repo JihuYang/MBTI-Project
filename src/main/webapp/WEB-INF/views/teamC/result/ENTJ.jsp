@@ -57,7 +57,8 @@
 <div id="a_loader" style="display:none;">
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col" id="sideCol"></div>
+			<!-- <div class="col" id="sideCol"></div> -->
+			<div class="col d-none d-lg-block"></div>
 			<div class="col content" id="mainCont">
 				<div class="bg-white p-4 col-box">
 					<div class="resultName">
@@ -160,7 +161,8 @@
 
 				<jsp:include page="../../ajaxContent/teamC/comment.jsp" flush="false" />
 			</div>
-			<div class="col" id="sideCol"></div>
+			<!-- <div class="col" id="sideCol"></div> -->
+			<div class="col d-none d-lg-block"></div>
 		</div>
 	</div>
 </div>
