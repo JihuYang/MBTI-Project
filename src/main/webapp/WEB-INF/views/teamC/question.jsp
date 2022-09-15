@@ -50,13 +50,13 @@ progress {
 <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../../resources/css/teamC.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamC.css?ver=22">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <!--  Google font  -->
 <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Do Hyeon' rel='stylesheet'>
 
-<script src="../../resources/js/question.js?ver=112" ></script>
+<script src="<%=request.getContextPath()%>/resources/js/question.js?ver=112" ></script>
 
 <title>teamCQuestion</title>
 </head>
@@ -85,8 +85,8 @@ progress {
 					<button id="Button" class="btn2" onclick="nextButton(2)">${questions[1].answer}</button>
 				</div>
 				<div class="shareBtn mt-5">
-					<a id="home-btn" href="/index"><img src="../../resources/img/teamC/home.svg" alt="homeIcon" style="width:50px"></a>
-					<a id="redo-btn" href="./start"><img src="../../resources/img/teamC/redo.svg" alt="redoIcon"  style="width:50px"></a>
+					<a id="home-btn" href="/index"><img src="<%=request.getContextPath()%>/resources/img/teamC/home.svg" alt="homeIcon" style="width:50px"></a>
+					<a id="redo-btn" href="./start"><img src="<%=request.getContextPath()%>/resources/img/teamC/redo.svg" alt="redoIcon"  style="width:50px"></a>
 
 			</div>
 			</div>
