@@ -42,7 +42,7 @@ footer {
 }
 
 .title {
-	font-size: 6em;
+	font-size: 3em;
 	font-weight: 500;
 	letter-spacing: 0.05rem;
 	color: black;
@@ -112,7 +112,7 @@ footer {
 }
 /*result page*/
 .btntext1 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: black;
 }
 
@@ -310,6 +310,7 @@ footer {
 		position: relative !important;
 		width: 100%;	
 	}
+	
 }
 
 @media screen and (max-width: 850px) {
@@ -338,8 +339,10 @@ footer {
 	}
 	#mainCont {
 		width: 100%;
-			
+		padding-left:0;
+		padding-right:0;
 	}
+	
 }
 
 

@@ -112,8 +112,8 @@
 				<h3 style="font-size: 20px;">인간관계 유형별 MBTI</h3>
 			</button>
 		</div>
-		<jsp:include page="<%=request.getContextPath()%>/ajaxContent/teamB/comment.jsp" flush="false" />
-		<%-- <%@ include file="<%=request.getContextPath()%>/<%=request.getContextPath()%>/ajaxContent/teamB/comment.jsp"%> --%>
+		<jsp:include page="../../ajaxContent/teamB/comment.jsp" flush="false" />
+		<%-- <%@ include file="<%=request.getContextPath()%>/../../ajaxContent/teamB/comment.jsp"%> --%>
 	</div>
 	<div class="footer">
 		<p class=footer-text>@HGU 2022 Winter Camp</p>

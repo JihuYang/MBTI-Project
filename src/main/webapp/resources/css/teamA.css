@@ -387,7 +387,15 @@ footer {
   left:0;
   z-index: 99999;
 }
-
+#type-good > button {
+	min-height: 275px;
+}
+#type-bad > button {
+	min-height: 275px;
+}
+.btn > h3 {
+	word-break: keep-all;
+ }
 
 @media screen and (max-width: 1024px) {
   .content {
@@ -442,6 +450,11 @@ footer {
       padding-top: 0;
     padding-bottom: 0;
    }
+   .btn-save{
+   	font-size: 15px;
+   }
+   
+   
 }
 
 @media screen and (max-width: 320px) {
@@ -454,6 +467,8 @@ footer {
   .scroll-comment{
   height: 30vh;
   }
+
+  
 
 }
 #loader {
