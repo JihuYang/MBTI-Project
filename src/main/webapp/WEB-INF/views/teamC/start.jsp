@@ -40,9 +40,9 @@
 
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col" id="sideCol"></div>
+			<div class="col d-none d-lg-block"></div>
 			<div class="col content" id="mainCont1">
-				<div class="bg-white p-4 position-absolute top-50 start-50 translate-middle col-box" style="width:80vw;">
+				<div class="bg-white p-4 position-absolute top-50 start-50 translate-middle col-box">
 					
 					<div class="startHeader">
 						<div class="tag ">#MBTI &nbsp; #나에게 맞는 공부법은?</div>
@@ -76,7 +76,7 @@
 					</div>
 				</div>
 			
-			<div class="col" id="sideCol"></div>
+			<div class="col d-none d-lg-block"></div>
 </div>
 		</div>
 		

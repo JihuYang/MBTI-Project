@@ -59,7 +59,8 @@
 <div class="container-fluid mt-5">
 	<div class="text-center">
 		<div class="row">
-			<div class="col"></div>
+			<!-- <div class="col"></div> -->
+			<div class="col d-none d-lg-block"></div>
 			<div class="col content">
 				<div class="bg-white p-4 col-box text-center">
 					<div class="resultName">
@@ -185,7 +186,8 @@
 
 
 			</div>
-			<div class="col" id="sideCol"></div>
+			<!-- <div class="col" id="sideCol"></div> -->
+			<div class="col d-none d-lg-block"></div>
 		</div>
 	</div>
 	</div>
