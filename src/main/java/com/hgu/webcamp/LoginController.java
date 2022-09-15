@@ -67,7 +67,7 @@ public class LoginController {
 			session.setAttribute("tempUser", u);
 			session.setAttribute("token", paramMap.get("token"));
 			ModelAndView model = new ModelAndView();
-
+			System.out.println("테스트");
 			model.addObject("tempUser", u);
 			//model.setViewName("index");
 			return "home";
