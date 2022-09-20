@@ -1,5 +1,7 @@
 package com.hgu.webcamp;
 
+import java.io.UnsupportedEncodingException;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -72,8 +74,8 @@ public class User_Controller {
 	 }
 	 
 	 @RequestMapping(value = "/loginPost", method=RequestMethod.POST)
-     public String addUser(userDTO dto, HttpServletRequest request) { 
-
+     public String addUser(userDTO dto, HttpServletRequest request) throws UnsupportedEncodingException { 
+		request.setCharacterEncoding("utf-8");
 		String email  = ((userDTO)request.getSession().getAttribute("tempUser")).getEmail();
 		String name  = ((userDTO)request.getSession().getAttribute("tempUser")).getName();
 		String nickName = request.getParameter("nickname");

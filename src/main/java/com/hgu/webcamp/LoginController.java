@@ -34,7 +34,7 @@ public class LoginController {
 	@RequestMapping(value="/snsLogin", method= {RequestMethod.POST})
 	@ResponseBody
 	public String login_sns(@RequestParam Map<String,String> paramMap, HttpServletRequest request) throws SQLException, Exception{
-		
+		request.setCharacterEncoding("utf-8");
 		System.out.println("paramMap:" + paramMap);
 		System.out.println("name:" + paramMap.get("name"));
 		System.out.println("email:" + paramMap.get("email"));
