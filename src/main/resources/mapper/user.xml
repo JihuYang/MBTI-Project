@@ -5,11 +5,8 @@
 <mapper namespace="user">
 
 	<insert id="insertUser">
-		insert into camp1.user(name, email, nickName, mbti,
-		registration, admin)
-		values
-		(#{name}, #{email}, #{nickName}, #{mbti},
-		#{registration}, #{admin})
+		insert into camp1.user(name, email, nickName, mbti, registration, admin) values
+		(#{name}, #{email}, #{nickName}, #{mbti}, #{registration}, #{admin})
 	</insert>
 
 	<select id="getUser" resultType="com.hgu.webcamp.DTO.userDTO">

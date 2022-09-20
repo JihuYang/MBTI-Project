@@ -8,6 +8,7 @@
 	<name>MBTI Project</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
+	
 	<properties>
 		<java-version>1.8</java-version>
 		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
@@ -201,6 +202,19 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.2.2</version>
 			</plugin>
+	
+      <plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>3.0.3</version>
+        <configuration>
+		<processTypes>
+		<web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+		</processTypes>
+	</configuration>
+      </plugin>
+
 		</plugins>
+		
 	</build>
 </project>
