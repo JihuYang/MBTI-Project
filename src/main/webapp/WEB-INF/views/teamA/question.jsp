@@ -27,7 +27,8 @@
 <body>
 	<div class="container-fluid">
 		<div class="row text-center">
-			<!-- <div class="col d-none d-lg-block"></div> -->
+			<div class="col d-none d-lg-block"></div> 
+			
 			<div id="main" class="col content ">
 				<div id="questionContent">
 					<jsp:include page="../ajaxContent/teamA/question.jsp" flush="false"/>
@@ -55,7 +56,7 @@
 					
 				</div>
 			</div>
-			<!-- <div class="col d-none d-lg-block"></div> -->	
+			<div class="col d-none d-lg-block"></div>
 		</div>
 
 	</div>
