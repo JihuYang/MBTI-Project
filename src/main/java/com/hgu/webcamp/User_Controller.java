@@ -74,7 +74,7 @@ public class User_Controller {
 	 }
 	 
 	 @RequestMapping(value = "/loginPost", method=RequestMethod.POST)
-     public String addUser(userDTO dto, HttpServletRequest request) throws UnsupportedEncodingException { 
+     public String addUser(userDTO dto, HttpServletRequest request, HttpSession session) throws UnsupportedEncodingException { 
 		request.setCharacterEncoding("utf-8");
 		String email  = ((userDTO)request.getSession().getAttribute("tempUser")).getEmail();
 		String name  = ((userDTO)request.getSession().getAttribute("tempUser")).getName();
@@ -89,13 +89,17 @@ public class User_Controller {
 		dto.setNickName(nickName);
 		dto.setRegistration(1);
 		dto.setAdmin(1);
+	
 		
         int i = userService.insertUser(dto);
+        
+        session.invalidate();
+        
         if(i==0) {
-        	return "redirect:login" ;
+        	return "redirect:index" ;
         }
         else {
-        	return "forward:login" ;
+        	return "/alert2";
         }
      }
 	 

@@ -1,7 +1,8 @@
 var link = document.location.href;
 
 //카카오톡 공유하기 
-	Kakao.init("1841f627e245ac59ac935b451f4720e1"); //어플의 Javascript Key 값 
+	//Kakao.init("1841f627e245ac59ac935b451f4720e1"); //어플의 Javascript Key 값 
+	Kakao.init("89c38b72bcd34fd6808a77a6e1c0bcee");
   function sendLink() {
 	var again = 'http://localhost:8080/webcamp/teamA/start';
 	Kakao.Link.createDefaultButton({

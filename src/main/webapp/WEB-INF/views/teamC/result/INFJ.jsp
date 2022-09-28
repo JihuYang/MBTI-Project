@@ -141,7 +141,7 @@
 
 				<div class="wholeBox text-center two_btn re_btn" onclick="moveTo()">다시하기</div>
 				<div class="wholeBox text-center two_btn sv_btn">
-				<form method="post" action="/teamC/saved">
+				<form method="post" action="<%=request.getContextPath()%>/teamC/saved">
 					<input name="mbti" id="mbti" value="INFJ" style="display: none">
 					<button class="btn" type="submit">
 					저장하기

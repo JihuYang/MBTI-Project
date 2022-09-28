@@ -200,5 +200,17 @@ public class TeamProject_Controller {
 		
 		return "/alert";
 	}
+	
+	@RequestMapping(value = "/alert2", method = RequestMethod.GET)
+	public String teamProject_alert2(ModelAndView model, HttpServletRequest request) {
+		
+//		String msg = (String)request.getAttribute("msg");
+//		String url = (String)request.getAttribute("url");
+//		
+		System.out.println("alert2 page loaded");
+
+		
+		return "/alert2";
+	}
 
 }

@@ -19,7 +19,7 @@ body{
 
 .main-header::before {    
       content: "";
-     background-image: url("<%=request.getContextPath()%>/img/teamProject/main_background.png");
+     background-image: url("https://raw.githubusercontent.com/JihuYang/MBTI-Project/5b828d7138a56d0cea679721cf9da7604c399bcd/src/main/webapp/resources/img/teamProject/main_background.png");
      	
 	 background-position: center; /* Center the image */
 	  background-repeat: no-repeat; /* Do not repeat the image */
@@ -27,7 +27,7 @@ body{
       position: fixed;
       top: 0px;
       right: 0px;
-      bottom: 260px;
+      bottom: 250px;
       left: 0px;
       opacity: 0.2;
 }
@@ -103,7 +103,7 @@ body{
     
     .myPage-header::before {    
       content: "";
-     background-image: url("<%=request.getContextPath()%>/img/teamProject/main_background.png");
+     background-image: url("https://raw.githubusercontent.com/JihuYang/MBTI-Project/5b828d7138a56d0cea679721cf9da7604c399bcd/src/main/webapp/resources/img/teamProject/main_background.png");
      	
 	 background-position: center; /* Center the image */
 	  background-repeat: no-repeat; /* Do not repeat the image */

@@ -41,7 +41,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 	//kakao login
-	Kakao.init("0f073d0c9ad305070b99347eac9612a9");
+	Kakao.init("89c38b72bcd34fd6808a77a6e1c0bcee");
 	function kakaoLogin() {
 		window.Kakao.Auth.login({
 			scope: 'profile_nickname, profile_image, account_email', 

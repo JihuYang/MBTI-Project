@@ -13,10 +13,10 @@
 	
 	if (!confirm("로그인이 필요한 항목입니다. 로그인 하시겠습니까? ")) {
         // 취소(아니오) 버튼 클릭 시 이벤트
-        location.href = "/";
+        location.href = "<%=request.getContextPath()%>/";
     } else {
         // 확인(예) 버튼 클릭 시 이벤트
-        location.href="/login";
+        location.href="<%=request.getContextPath()%>/login";
     }
 		
 </script>

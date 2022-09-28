@@ -19,7 +19,7 @@
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/teamA.css">
 
 <!-- 공유하기 -->
-<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js" integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/share/teamA.js"></script>
 
 

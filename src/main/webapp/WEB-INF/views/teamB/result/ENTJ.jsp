@@ -67,7 +67,7 @@
 			<input type="button" value="다시하기"
 				class="btn btn-warning btn-yellow "
 				style="border-radius: 15px; margin: 10px; font-size: 25px;"
-				onclick="location.href='<%=request.getContextPath()%>/start'">
+				onclick="location.href='<%=request.getContextPath()%>/teamB/start'">
 			<form method="post"
 				action="<%=request.getContextPath()%>/teamB/saved"
 				style="display: inline-block;">

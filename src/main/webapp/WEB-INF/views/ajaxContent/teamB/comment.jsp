@@ -19,7 +19,7 @@
 <%@ page session="false"%>
 <div id="comment" class="mt-5 mb-3 p-3 comment">
 	<span class="text-black">댓글 [${count}]</span>
-	<form:form method="post" action="/teamB/addok">
+	<form:form method="post" action="../addok">
 		<div class="input-group mt-1 mb-1">
 			<input type="text" name="comment" class="form-control p-3"
 				placeholder="댓글을 입력하세요. " aria-label="댓글 입력"
@@ -58,7 +58,7 @@
 												</div>
 											</c:if>
 										</div>
-										<form:form method="post" action="/teamB/editok">
+										<form:form method="post" action="../editok">
 											<p id="${comment.id}2" class="text-dark"
 												style="display: block;">${comment.comment}</p>
 											<div class="p-2" id="${comment.id}" style="display: none;">
@@ -100,7 +100,7 @@ function delete_ok(id) {
 	<% String mbti = "/"+request.getRequestURI().substring(request.getRequestURI().indexOf("result")+7, request.getRequestURI().indexOf("result")+11); %> 
 	
 	if (a)
-		location.href = '/teamB/delete_ok/' + id +"<%=mbti%>";
+		location.href = '<%=request.getContextPath()%>/teamB/delete_ok/' + id +"<%=mbti%>";
 }
 function doDisplay(id) {
 	$("#" + id + "2").toggle();

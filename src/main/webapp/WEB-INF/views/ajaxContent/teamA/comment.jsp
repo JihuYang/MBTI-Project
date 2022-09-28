@@ -43,7 +43,7 @@
 						</div>
 					</c:if>
 				</div>
- 				<form:form method="post" action="/teamA/editok">
+ 				<form:form method="post" action="../editok">
 					<p id="${comment.id}2" class="text-dark" style="display: block;">${comment.comment}</p>
 					<div class="p-2" id="${comment.id}" style="display: none;">
 						<textarea rows="3" name="comment"
@@ -73,7 +73,7 @@
 	function delete_ok(id, path) {
 		var a = confirm("정말로 삭제하겠습니까?");
 		if (a)
-			location.href = '/teamA/delete_ok/' + id +path;
+			location.href = '<%=request.getContextPath()%>/teamA/delete_ok/' + id +path;
 	}
 	function doDisplay(id) {
 		$("#" + id + "2").toggle();
